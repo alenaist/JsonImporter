@@ -2,7 +2,8 @@ import React, { useState, useEffect, useCallback } from "react";
 import { convertStyleStringToObject, extractBaseUrl } from "./utils/utils";
 
 const WebsiteBuilder = () => {
-  const [template, setTemplate] = useState([]);
+  const [pages, setPages] = useState([]);
+  const [currentPageIndex, setCurrentPageIndex] = useState(0);
   const [baseUrl, setBaseUrl] = useState('');
 
   const handleFileUpload = (event) => {
@@ -12,15 +13,8 @@ const WebsiteBuilder = () => {
       reader.onload = (e) => {
         try {
           const json = JSON.parse(e.target.result);
-   
-          let children;
-          if (json.html && json.html.children) {
-            children = json.html.children;
-          } else if (json.structure && json.structure.children) {
-            children = json.structure.children;
-          }
-          
-          setTemplate(children || []);
+          const pagesData = json.pages || [];
+          setPages(pagesData);
           setBaseUrl(extractBaseUrl(json));
         } catch (error) {
           console.error("Error parsing JSON:", error);
@@ -99,6 +93,14 @@ const WebsiteBuilder = () => {
     return null;
   }, [baseUrl]);
 
+  const handleNextPage = () => {
+    setCurrentPageIndex((prevIndex) => Math.min(prevIndex + 1, pages.length - 1));
+  };
+
+  const handlePreviousPage = () => {
+    setCurrentPageIndex((prevIndex) => Math.max(prevIndex - 1, 0));
+  };
+
   return (
     <div>
       <div className="p-4">
@@ -114,12 +116,23 @@ const WebsiteBuilder = () => {
       </div>
 
       <div className="website-content">
-        {template.length > 0 ? (
-          template.map((element, index) => renderElement(element, index))
+        {pages.length > 0 ? (
+          pages[currentPageIndex].html.children.map((element, index) => renderElement(element, index))
         ) : (
           <div className="text-gray-500">No content to display</div>
         )}
       </div>
+
+      {pages.length > 1 && (
+        <div className="navigation-buttons">
+          <button onClick={handlePreviousPage} disabled={currentPageIndex === 0}>
+            Previous
+          </button>
+          <button onClick={handleNextPage} disabled={currentPageIndex === pages.length - 1}>
+            Next
+          </button>
+        </div>
+      )}
     </div>
   );
 };
