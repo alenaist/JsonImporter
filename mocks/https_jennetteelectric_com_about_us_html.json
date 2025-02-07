@@ -1,0 +1,873 @@
+{
+  "url": "https://jennetteelectric.com/about-us.html",
+  "html": {
+    "tag": "body",
+    "attributes": {
+      "class": "neo-publish"
+    },
+    "children": [
+      {
+        "tag": "div",
+        "attributes": {
+          "id": "includes",
+          "style": "display: none"
+        },
+        "children": [
+          {
+            "tag": "script",
+            "attributes": {
+              "type": "text/javascript",
+              "src": "//assets.neo.registeredsite.com/libs/libs.js?ct=1729783872182"
+            },
+            "children": [],
+            "text": null
+          },
+          {
+            "tag": "script",
+            "attributes": {
+              "type": "text/javascript",
+              "src": "//assets.neo.registeredsite.com/libs/tinymce/4.1.7/tinymce.min.js?ct=1729783872182"
+            },
+            "children": [],
+            "text": null
+          },
+          {
+            "tag": "div",
+            "attributes": {
+              "class": "sitesearch-plugin-inner"
+            },
+            "children": [
+              {
+                "tag": "div",
+                "attributes": {
+                  "class": "sitesearch-ng",
+                  "data-ng-controller": "neo.SiteSearchPlugin.ngPluginController"
+                },
+                "children": [
+                  {
+                    "tag": "div",
+                    "attributes": {
+                      "class": "ss-container ss-style-1 sitesearch-id-1",
+                      "style": "width:100%"
+                    },
+                    "children": [
+                      {
+                        "tag": "form",
+                        "attributes": {},
+                        "children": [
+                          {
+                            "tag": "span",
+                            "attributes": {
+                              "class": "ss-loading",
+                              "style": "display: none;"
+                            },
+                            "children": [],
+                            "text": null
+                          },
+                          {
+                            "tag": "input",
+                            "attributes": {
+                              "class": "ss-text",
+                              "type": "text",
+                              "value": "",
+                              "placeholder": "Search ..."
+                            },
+                            "children": [],
+                            "text": null
+                          },
+                          {
+                            "tag": "input",
+                            "attributes": {
+                              "class": "ss-submit",
+                              "type": "submit",
+                              "value": ""
+                            },
+                            "children": [],
+                            "text": null
+                          }
+                        ],
+                        "text": null
+                      }
+                    ],
+                    "text": null
+                  }
+                ],
+                "text": null
+              }
+            ],
+            "text": null
+          },
+          {
+            "tag": "script",
+            "attributes": {
+              "type": "text/webcom-template",
+              "id": "form-plugin-inner"
+            },
+            "children": [],
+            "text": "<div class=\"form-ng remove-on-save\">\n      <div id=\"{{FormId}}\">inject webcom-form here</div>\n    </div>"
+          },
+          {
+            "tag": "div",
+            "attributes": {
+              "class": "text-plugin-inner"
+            },
+            "children": [
+              {
+                "tag": "div",
+                "attributes": {
+                  "class": "text-ng tiny text-plugin",
+                  "data-ng-controller": "TextPluginController",
+                  "data-ng-click": "select();",
+                  "data-ng-dblclick": "selectAndEdit();",
+                  "data-module-class": "neo.TextModule"
+                },
+                "children": [],
+                "text": null
+              }
+            ],
+            "text": null
+          },
+          {
+            "tag": "div",
+            "attributes": {
+              "class": "map-plugin-inner"
+            },
+            "children": [
+              {
+                "tag": "div",
+                "attributes": {
+                  "class": "map-ng remove-on-save"
+                },
+                "children": [
+                  {
+                    "tag": "div",
+                    "attributes": {
+                      "class": "mapPlugin"
+                    },
+                    "children": [
+                      {
+                        "tag": "div",
+                        "attributes": {
+                          "class": "neo-map-address-show"
+                        },
+                        "children": [],
+                        "text": null
+                      },
+                      {
+                        "tag": "div",
+                        "attributes": {
+                          "class": "neo-mapquest"
+                        },
+                        "children": [],
+                        "text": null
+                      },
+                      {
+                        "tag": "div",
+                        "attributes": {
+                          "class": "neo-map-direction"
+                        },
+                        "children": [],
+                        "text": null
+                      }
+                    ],
+                    "text": null
+                  }
+                ],
+                "text": null
+              }
+            ],
+            "text": null
+          },
+          {
+            "tag": "div",
+            "attributes": {
+              "class": "share-plugin-inner"
+            },
+            "children": [
+              {
+                "tag": "div",
+                "attributes": {
+                  "class": "fb-share-button-placeholder",
+                  "data-type": "button"
+                },
+                "children": [],
+                "text": null
+              }
+            ],
+            "text": null
+          },
+          {
+            "tag": "div",
+            "attributes": {
+              "class": "google-share-plugin-inner"
+            },
+            "children": [
+              {
+                "tag": "div",
+                "attributes": {
+                  "class": "gplus-data",
+                  "data-action": "share"
+                },
+                "children": [
+                  {
+                    "tag": "div",
+                    "attributes": {
+                      "class": "g-plus",
+                      "data-action": "share"
+                    },
+                    "children": [],
+                    "text": null
+                  }
+                ],
+                "text": null
+              }
+            ],
+            "text": null
+          },
+          {
+            "tag": "div",
+            "attributes": {
+              "class": "google-plusone-plugin-inner"
+            },
+            "children": [
+              {
+                "tag": "div",
+                "attributes": {
+                  "class": "gplusone-data"
+                },
+                "children": [
+                  {
+                    "tag": "div",
+                    "attributes": {
+                      "class": "g-plusone"
+                    },
+                    "children": [],
+                    "text": null
+                  }
+                ],
+                "text": null
+              }
+            ],
+            "text": null
+          },
+          {
+            "tag": "div",
+            "attributes": {
+              "class": "tap-plugin-inner"
+            },
+            "children": [
+              {
+                "tag": "div",
+                "attributes": {
+                  "class": "product-data"
+                },
+                "children": [],
+                "text": null
+              }
+            ],
+            "text": null
+          },
+          {
+            "tag": "script",
+            "attributes": {
+              "type": "text/javascript",
+              "src": "//assets.neo.registeredsite.com/plugins/neo.js?ct=1729783872182"
+            },
+            "children": [],
+            "text": null
+          }
+        ],
+        "text": null
+      },
+      {
+        "tag": "div",
+        "attributes": {
+          "id": "neo-sitesearch-result-modal",
+          "class": "modal-wrapper modal-effect"
+        },
+        "children": [
+          {
+            "tag": "div",
+            "attributes": {
+              "class": "modal-window"
+            },
+            "children": [
+              {
+                "tag": "div",
+                "attributes": {
+                  "class": "modal-top"
+                },
+                "children": [],
+                "text": "Search Results"
+              },
+              {
+                "tag": "div",
+                "attributes": {
+                  "class": "modal-bottom"
+                },
+                "children": [],
+                "text": null
+              },
+              {
+                "tag": "div",
+                "attributes": {
+                  "class": "modal-x",
+                  "data-ng-click": "closeSearchResult()"
+                },
+                "children": [],
+                "text": null
+              }
+            ],
+            "text": null
+          }
+        ],
+        "text": null
+      },
+      {
+        "tag": "div",
+        "attributes": {
+          "class": "ss-modal-overlay"
+        },
+        "children": [],
+        "text": null
+      },
+      {
+        "tag": "div",
+        "attributes": {
+          "id": "canvas",
+          "data-ng-app": "webcomApp",
+          "class": "default-theme blank-sp ng-scope",
+          "style": "min-height: 905px;"
+        },
+        "children": [
+          {
+            "tag": "div",
+            "attributes": {
+              "id": "top-area",
+              "style": "height: 2.8px; width: 960px;",
+              "class": ""
+            },
+            "children": [],
+            "text": ""
+          },
+          {
+            "tag": "div",
+            "attributes": {
+              "id": "page-wrapper"
+            },
+            "children": [
+              {
+                "tag": "div",
+                "attributes": {
+                  "class": "global-region top",
+                  "id": "header"
+                },
+                "children": [
+                  {
+                    "tag": "div",
+                    "attributes": {
+                      "class": "global-region-inner",
+                      "style": "margin: 0px auto; position: relative; height: 136px; width: 962px;"
+                    },
+                    "children": [
+                      {
+                        "tag": "div",
+                        "attributes": {
+                          "class": "neo-asset image-plugin",
+                          "id": "asset-1513011952013",
+                          "style": "left: 106.5px; width: 115.19px; height: 157px; position: absolute; z-index: 394; top: 1.875px;",
+                          "data-original-height": "155",
+                          "data-original-width": "113",
+                          "data-settings": "{\"css\":{\"borderTopStyle\":null,\"borderBottomStyle\":null,\"borderLeftStyle\":null,\"borderRightStyle\":null,\"borderAllStyle\":\"none\",\"borderAllWidth\":\"\",\"borderTopWidth\":\"\",\"borderBottomWidth\":\"\",\"borderLeftWidth\":\"\",\"borderRightWidth\":\"\",\"borderTopColor\":null,\"borderLeftColor\":null,\"borderBottomColor\":null,\"borderRightColor\":null,\"borderAllColor\":\"#333333\",\"borderAllRadius\":null,\"borderTopLeftRadius\":\"\",\"borderTopRightRadius\":\"\",\"borderBottomLeftRadius\":\"\",\"borderBottomRightRadius\":\"\",\"paddingAll\":null,\"paddingTop\":\"\",\"paddingBottom\":\"\",\"paddingLeft\":\"\",\"paddingRight\":\"\",\"boxShadow\":\"0px 0px 0 0 rgba(0,0,0,0.5)\"},\"bgColor\":\"rgba(255, 255, 255, 0)\",\"backgroundOpacity\":100,\"shadowColor\":\"rgba(0,0,0,0.5)\",\"backgroundShadowAngle\":140,\"backgroundShadowOffset\":0}",
+                          "data-module-class": "neo.ImageModule"
+                        },
+                        "children": [
+                          {
+                            "tag": "div",
+                            "attributes": {
+                              "class": "neo-asset-inner",
+                              "style": "background-color: rgba(255, 255, 255, 0); opacity: 1; border-style: none; border-color: rgb(51, 51, 51); background-image: none; box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 0px 0px;"
+                            },
+                            "children": [
+                              {
+                                "tag": "img",
+                                "attributes": {
+                                  "style": "width: 113px; height: 155px;",
+                                  "alt": "",
+                                  "src": "assets/J34984.E._Logo.JPG"
+                                },
+                                "children": [],
+                                "text": null
+                              }
+                            ],
+                            "text": null
+                          }
+                        ],
+                        "text": null
+                      }
+                    ],
+                    "text": null
+                  }
+                ],
+                "text": null
+              },
+              {
+                "tag": "div",
+                "attributes": {
+                  "id": "content",
+                  "class": "global-region center"
+                },
+                "children": [
+                  {
+                    "tag": "div",
+                    "attributes": {
+                      "class": "global-region-inner",
+                      "style": "margin: 0px auto; position: relative; width: 960px; height: 595px;"
+                    },
+                    "children": [
+                      {
+                        "tag": "div",
+                        "attributes": {
+                          "class": "text-plugin neo-asset",
+                          "id": "asset-1513012093634",
+                          "style": "width: 742px; z-index: 395; position: absolute; top: -121.25px; left: 203.406px; height: auto;",
+                          "data-settings": "{\"css\":{\"borderTopStyle\":null,\"borderBottomStyle\":null,\"borderLeftStyle\":null,\"borderRightStyle\":null,\"borderAllStyle\":\"none\",\"borderAllWidth\":\"\",\"borderTopWidth\":\"\",\"borderBottomWidth\":\"\",\"borderLeftWidth\":\"\",\"borderRightWidth\":\"\",\"borderTopColor\":null,\"borderLeftColor\":null,\"borderBottomColor\":null,\"borderRightColor\":null,\"borderAllColor\":\"#333333\",\"borderAllRadius\":null,\"borderTopLeftRadius\":\"\",\"borderTopRightRadius\":\"\",\"borderBottomLeftRadius\":\"\",\"borderBottomRightRadius\":\"\",\"paddingAll\":null,\"paddingTop\":\"\",\"paddingBottom\":\"\",\"paddingLeft\":\"\",\"paddingRight\":\"\",\"boxShadow\":\"0px 0px 0 0 rgba(0,0,0,0.5)\"},\"bgColor\":\"rgba(255, 255, 255, 0)\",\"backgroundOpacity\":100,\"shadowColor\":\"rgba(0,0,0,0.5)\",\"backgroundShadowAngle\":140,\"backgroundShadowOffset\":0}",
+                          "data-module-class": "neo.TextModule",
+                          "data-ng-controller": "TextPluginController",
+                          "data-ng-click": "select();",
+                          "data-ng-dblclick": "selectAndEdit();"
+                        },
+                        "children": [
+                          {
+                            "tag": "div",
+                            "attributes": {
+                              "class": "neo-asset-inner mCS_destroyed",
+                              "id": "asset-1513012093634-neo-asset-inner",
+                              "style": "background-color: rgba(255, 255, 255, 0); position: relative; opacity: 1; border-style: none; border-color: rgb(51, 51, 51); background-image: none; box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 0px 0px;",
+                              "spellcheck": "false"
+                            },
+                            "children": [
+                              {
+                                "tag": "p",
+                                "attributes": {
+                                  "style": "text-align: center;"
+                                },
+                                "children": [
+                                  {
+                                    "tag": "strong",
+                                    "attributes": {},
+                                    "children": [
+                                      {
+                                        "tag": "span",
+                                        "attributes": {
+                                          "style": "font-size: 48px; font-family: 'Arial Black', Gadget, sans-serif;"
+                                        },
+                                        "children": [],
+                                        "text": "Jennette Electrical School"
+                                      }
+                                    ],
+                                    "text": null
+                                  }
+                                ],
+                                "text": null
+                              }
+                            ],
+                            "text": null
+                          }
+                        ],
+                        "text": null
+                      },
+                      {
+                        "tag": "div",
+                        "attributes": {
+                          "class": "text-plugin neo-asset context-menu-active",
+                          "style": "z-index: 399; position: absolute; top: 7.25px; left: 101px; width: 813px; height: auto;",
+                          "id": "asset-1729543846562",
+                          "data-module-class": "neo.TextModule",
+                          "data-settings": "{\"css\":{\"borderTopStyle\":null,\"borderBottomStyle\":null,\"borderLeftStyle\":null,\"borderRightStyle\":null,\"borderAllStyle\":\"none\",\"borderAllWidth\":\"\",\"borderTopWidth\":\"\",\"borderBottomWidth\":\"\",\"borderLeftWidth\":\"\",\"borderRightWidth\":\"\",\"borderTopColor\":null,\"borderLeftColor\":null,\"borderBottomColor\":null,\"borderRightColor\":null,\"borderAllColor\":\"#333333\",\"borderAllRadius\":null,\"borderTopLeftRadius\":\"\",\"borderTopRightRadius\":\"\",\"borderBottomLeftRadius\":\"\",\"borderBottomRightRadius\":\"\",\"paddingAll\":null,\"paddingTop\":\"\",\"paddingBottom\":\"\",\"paddingLeft\":\"\",\"paddingRight\":\"\",\"boxShadow\":\"0px 0px 0 0 rgba(0,0,0,0.5)\"},\"bgColor\":\"rgba(255, 255, 255, 0)\",\"backgroundOpacity\":100,\"shadowColor\":\"rgba(0,0,0,0.5)\",\"backgroundShadowAngle\":140,\"backgroundShadowOffset\":0}",
+                          "aria-disabled": "false",
+                          "data-ng-controller": "TextPluginController",
+                          "data-ng-click": "select();",
+                          "data-ng-dblclick": "selectAndEdit();"
+                        },
+                        "children": [
+                          {
+                            "tag": "div",
+                            "attributes": {
+                              "class": "neo-asset-inner mCS_destroyed",
+                              "style": "background-color: rgba(255, 255, 255, 0); position: relative; opacity: 1; border-style: none; border-color: rgb(51, 51, 51); background-image: none; box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 0px 0px;",
+                              "id": "asset-1729543846562-neo-asset-inner",
+                              "spellcheck": "false"
+                            },
+                            "children": [
+                              {
+                                "tag": "p",
+                                "attributes": {},
+                                "children": [
+                                  {
+                                    "tag": "strong",
+                                    "attributes": {},
+                                    "children": [
+                                      {
+                                        "tag": "span",
+                                        "attributes": {
+                                          "style": "font-size: 16px;"
+                                        },
+                                        "children": [],
+                                        "text": null
+                                      }
+                                    ],
+                                    "text": null
+                                  }
+                                ],
+                                "text": null
+                              },
+                              {
+                                "tag": "p",
+                                "attributes": {},
+                                "children": [
+                                  {
+                                    "tag": "strong",
+                                    "attributes": {},
+                                    "children": [
+                                      {
+                                        "tag": "span",
+                                        "attributes": {
+                                          "style": "font-size: 24px;"
+                                        },
+                                        "children": [],
+                                        "text": "About us"
+                                      }
+                                    ],
+                                    "text": null
+                                  }
+                                ],
+                                "text": null
+                              },
+                              {
+                                "tag": "p",
+                                "attributes": {},
+                                "children": [
+                                  {
+                                    "tag": "span",
+                                    "attributes": {
+                                      "style": "font-size: 16px;"
+                                    },
+                                    "children": [],
+                                    "text": "Jennette Electric and Jennette Electric School is owned and operated by Michael P Jennette. I have been in the"
+                                  },
+                                  {
+                                    "tag": "span",
+                                    "attributes": {
+                                      "style": "font-size: 16px;"
+                                    },
+                                    "children": [],
+                                    "text": "E"
+                                  },
+                                  {
+                                    "tag": "span",
+                                    "attributes": {
+                                      "style": "font-size: 16px;"
+                                    },
+                                    "children": [],
+                                    "text": "lectrical trade since 1964. I hold 5 Master licenses and 2 Journeyman Licenses. I started teaching for the Associated Builders and Contractors"
+                                  },
+                                  {
+                                    "tag": "span",
+                                    "attributes": {
+                                      "style": "font-size: 16px;"
+                                    },
+                                    "children": [],
+                                    "text": "Association in1988 at the Blue Hill Regional Vocational High School as a night instructor."
+                                  }
+                                ],
+                                "text": null
+                              },
+                              {
+                                "tag": "p",
+                                "attributes": {},
+                                "children": [
+                                  {
+                                    "tag": "span",
+                                    "attributes": {
+                                      "style": "font-size: 16px;"
+                                    },
+                                    "children": [],
+                                    "text": "I taught the Master and Journeyman course at Tri-County Regional Vocational High School at night in Franklin MA from 1993-2013. I am also a State Certified Provider for the 15 hour Massachusetts Continuing Education required by"
+                                  },
+                                  {
+                                    "tag": "span",
+                                    "attributes": {
+                                      "style": "font-size: 16px;"
+                                    },
+                                    "children": [],
+                                    "text": "the Commonwealth of Massachusetts, also with the states of  New Hampshire and Maine and by agreement for Rhode Island."
+                                  }
+                                ],
+                                "text": null
+                              },
+                              {
+                                "tag": "p",
+                                "attributes": {},
+                                "children": [
+                                  {
+                                    "tag": "span",
+                                    "attributes": {
+                                      "style": "font-size: 16px;"
+                                    },
+                                    "children": [
+                                      {
+                                        "tag": "strong",
+                                        "attributes": {},
+                                        "children": [],
+                                        "text": "must"
+                                      },
+                                      {
+                                        "tag": "strong",
+                                        "attributes": {},
+                                        "children": [],
+                                        "text": "The Commonwealth of Massachusetts Board of Electricians"
+                                      },
+                                      {
+                                        "tag": "strong",
+                                        "attributes": {},
+                                        "children": [],
+                                        "text": "now requires an E-Mail as they are no longer mailing renewal notices"
+                                      }
+                                    ],
+                                    "text": null
+                                  }
+                                ],
+                                "text": null
+                              },
+                              {
+                                "tag": "p",
+                                "attributes": {},
+                                "children": [
+                                  {
+                                    "tag": "span",
+                                    "attributes": {
+                                      "style": "font-size: 16px;"
+                                    },
+                                    "children": [],
+                                    "text": "Grounding and Bonding classes will be offered startingin Sept, this course comes with a text bookwhich is your to keep. The dates are as follows; Sept 28, Oct 26, November 23, Jan 25, Feb 22, Mar 22, Apr 26, May 17, and Jun 21. Coffee and pastry will be served. We now accept Visa, MasterCard, Discover, and American Express"
+                                  }
+                                ],
+                                "text": null
+                              }
+                            ],
+                            "text": null
+                          }
+                        ],
+                        "text": null
+                      }
+                    ],
+                    "text": null
+                  }
+                ],
+                "text": null
+              },
+              {
+                "tag": "div",
+                "attributes": {
+                  "class": "global-region bottom",
+                  "id": "footer"
+                },
+                "children": [
+                  {
+                    "tag": "div",
+                    "attributes": {
+                      "class": "global-region-inner",
+                      "style": "margin: 0px auto; height: 137px; position: relative; width: 962px;"
+                    },
+                    "children": [
+                      {
+                        "tag": "div",
+                        "attributes": {
+                          "class": "neo-asset image-plugin",
+                          "id": "asset-1513030166224",
+                          "style": "top: 27.3125px; left: 143.812px; position: absolute; width: 179px; z-index: 398;",
+                          "data-module-class": "neo.ImageModule",
+                          "data-settings": "{\"css\":{\"borderTopStyle\":null,\"borderBottomStyle\":null,\"borderLeftStyle\":null,\"borderRightStyle\":null,\"borderAllStyle\":\"none\",\"borderAllWidth\":\"\",\"borderTopWidth\":\"\",\"borderBottomWidth\":\"\",\"borderLeftWidth\":\"\",\"borderRightWidth\":\"\",\"borderTopColor\":null,\"borderLeftColor\":null,\"borderBottomColor\":null,\"borderRightColor\":null,\"borderAllColor\":\"#333333\",\"borderAllRadius\":null,\"borderTopLeftRadius\":\"\",\"borderTopRightRadius\":\"\",\"borderBottomLeftRadius\":\"\",\"borderBottomRightRadius\":\"\",\"paddingAll\":null,\"paddingTop\":\"\",\"paddingBottom\":\"\",\"paddingLeft\":\"\",\"paddingRight\":\"\",\"boxShadow\":\"0px 0px 0 0 rgba(0,0,0,0.5)\"},\"bgColor\":\"rgba(255, 255, 255, 0)\",\"backgroundOpacity\":100,\"shadowColor\":\"rgba(0,0,0,0.5)\",\"backgroundShadowAngle\":140,\"backgroundShadowOffset\":0}"
+                        },
+                        "children": [
+                          {
+                            "tag": "div",
+                            "attributes": {
+                              "class": "neo-asset-inner",
+                              "style": "background-color: rgba(255, 255, 255, 0); opacity: 1; border-style: none; border-color: rgb(51, 51, 51); background-image: none; box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 0px 0px;"
+                            },
+                            "children": [
+                              {
+                                "tag": "img",
+                                "attributes": {
+                                  "alt": "",
+                                  "src": "assets/register-site-seal.gif"
+                                },
+                                "children": [],
+                                "text": null
+                              }
+                            ],
+                            "text": null
+                          }
+                        ],
+                        "text": null
+                      },
+                      {
+                        "tag": "div",
+                        "attributes": {
+                          "class": "text-plugin neo-asset",
+                          "id": "asset-1513012249657",
+                          "style": "width: 587px; position: absolute; left: 298.097px; z-index: 396; top: 41.1042px; height: auto;",
+                          "data-settings": "{\"css\":{\"borderTopStyle\":null,\"borderBottomStyle\":null,\"borderLeftStyle\":null,\"borderRightStyle\":null,\"borderAllStyle\":\"none\",\"borderAllWidth\":\"\",\"borderTopWidth\":\"\",\"borderBottomWidth\":\"\",\"borderLeftWidth\":\"\",\"borderRightWidth\":\"\",\"borderTopColor\":null,\"borderLeftColor\":null,\"borderBottomColor\":null,\"borderRightColor\":null,\"borderAllColor\":\"#333333\",\"borderAllRadius\":null,\"borderTopLeftRadius\":\"\",\"borderTopRightRadius\":\"\",\"borderBottomLeftRadius\":\"\",\"borderBottomRightRadius\":\"\",\"paddingAll\":null,\"paddingTop\":\"\",\"paddingBottom\":\"\",\"paddingLeft\":\"\",\"paddingRight\":\"\",\"boxShadow\":\"0px 0px 0 0 rgba(0,0,0,0.5)\"},\"bgColor\":\"rgba(255, 255, 255, 0)\",\"backgroundOpacity\":100,\"shadowColor\":\"rgba(0,0,0,0.5)\",\"backgroundShadowAngle\":140,\"backgroundShadowOffset\":0}",
+                          "data-module-class": "neo.TextModule",
+                          "data-region": "footer",
+                          "data-ng-controller": "TextPluginController",
+                          "data-ng-click": "select();",
+                          "data-ng-dblclick": "selectAndEdit();"
+                        },
+                        "children": [
+                          {
+                            "tag": "div",
+                            "attributes": {
+                              "class": "neo-asset-inner mCS_destroyed",
+                              "id": "asset-1513012249657-neo-asset-inner",
+                              "style": "background-color: rgba(255, 255, 255, 0); position: relative; opacity: 1; border-style: none; border-color: rgb(51, 51, 51); background-image: none; box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 0px 0px;",
+                              "spellcheck": "false"
+                            },
+                            "children": [
+                              {
+                                "tag": "div",
+                                "attributes": {
+                                  "style": "text-align: center; line-height: 1;"
+                                },
+                                "children": [],
+                                "text": "160 WASHINGTON ST #24 PLAINVILLE MA 02762-1316"
+                              },
+                              {
+                                "tag": "div",
+                                "attributes": {
+                                  "style": "text-align: center; line-height: 1;"
+                                },
+                                "children": [
+                                  {
+                                    "tag": "span",
+                                    "attributes": {
+                                      "style": "font-size: 24px; font-family: Arial, Helvetica, sans-serif;"
+                                    },
+                                    "children": [
+                                      {
+                                        "tag": "br",
+                                        "attributes": {},
+                                        "children": [],
+                                        "text": null
+                                      }
+                                    ],
+                                    "text": null
+                                  }
+                                ],
+                                "text": null
+                              },
+                              {
+                                "tag": "p",
+                                "attributes": {},
+                                "children": [],
+                                "text": null
+                              },
+                              {
+                                "tag": "div",
+                                "attributes": {
+                                  "style": "line-height: 0.8;"
+                                },
+                                "children": [
+                                  {
+                                    "tag": "span",
+                                    "attributes": {
+                                      "style": "font-size: 24px; font-family: Arial, Helvetica, sans-serif;"
+                                    },
+                                    "children": [],
+                                    "text": null
+                                  }
+                                ],
+                                "text": null
+                              }
+                            ],
+                            "text": null
+                          }
+                        ],
+                        "text": null
+                      }
+                    ],
+                    "text": null
+                  }
+                ],
+                "text": null
+              }
+            ],
+            "text": null
+          },
+          {
+            "tag": "div",
+            "attributes": {
+              "id": "bottom-area",
+              "style": "width: 960px;",
+              "class": ""
+            },
+            "children": [],
+            "text": null
+          }
+        ],
+        "text": null
+      },
+      {
+        "tag": "script",
+        "attributes": {
+          "type": "text/javascript"
+        },
+        "children": [],
+        "text": "<!--\ndocument.write('<'+'img style=\"position:fixed;\" src=\"//scorecard.wspisp.net/logger.php'+'?tag=dW5waWQ6MjA2MTA5MjY7MjE%3D&ref='+document.referrer+'&x='+Math.random()+'\" '+'width=\"1\" height=\"1\" alt=\"\" '+'>');\n//-->"
+      },
+      {
+        "tag": "img",
+        "attributes": {
+          "style": "position:fixed;",
+          "src": "//scorecard.wspisp.net/logger.php?tag=dW5waWQ6MjA2MTA5MjY7MjE%3D&ref=&x=0.22045975059476097",
+          "width": "1",
+          "height": "1",
+          "alt": ""
+        },
+        "children": [],
+        "text": null
+      },
+      {
+        "tag": "noscript",
+        "attributes": {},
+        "children": [],
+        "text": "<img style=\"position:fixed;\" src=\"//scorecard.wspisp.net/logger.php?tag=dW5waWQ6MjA2MTA5MjY7MjE%3D\" width=\"1\" height=\"1\" alt=\"\" />"
+      }
+    ],
+    "text": null
+  },
+  "styles": {
+    "inline": [
+      "@charset \"UTF-8\";[ng\\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\\:form{display:block;}"
+    ],
+    "external": [
+      "https://fonts.googleapis.com/css?family=Lato",
+      "https://assets.neo.registeredsite.com/libs/libs.css?ct=1729783872182",
+      "https://assets.neo.registeredsite.com/plugins/neo.css?ct=1729783872182"
+    ]
+  },
+  "scripts": {
+    "inline": [
+      "var builderSettings = {\n    appRoot: '//app.neo.registeredsite.com/neo/',\n    appRelativePath: '/neo',\n    assetsRoot: '//assets.neo.registeredsite.com',\n    repositoryRoot: '//repository.neo.registeredsite.com',\n    spRoot: '//repository.neo.registeredsite.com/starting-points',\n    usersRoot: '//users.neo.registeredsite.com',\n    sitesearchUrl: '//sitesearch.services.matrixbuilder.com/sitesearch/search',\n    siteDomain: '000l8sl.rcomhost.com',\n    isBuilder : false,\n    isPreview : false\n  };",
+      "<div class=\"form-ng remove-on-save\">\n      <div id=\"{{FormId}}\">inject webcom-form here</div>\n    </div>",
+      "<!--\ndocument.write('<'+'img style=\"position:fixed;\" src=\"//scorecard.wspisp.net/logger.php'+'?tag=dW5waWQ6MjA2MTA5MjY7MjE%3D&ref='+document.referrer+'&x='+Math.random()+'\" '+'width=\"1\" height=\"1\" alt=\"\" '+'>');\n//-->"
+    ],
+    "external": [
+      "https://assets.neo.registeredsite.com/libs/libs.js?ct=1729783872182",
+      "https://assets.neo.registeredsite.com/libs/tinymce/4.1.7/tinymce.min.js?ct=1729783872182",
+      "https://assets.neo.registeredsite.com/plugins/neo.js?ct=1729783872182"
+    ]
+  }
+}

@@ -1,106 +1,9 @@
-import React, { useState } from "react";
-import { Upload } from "lucide-react";
-
-
-let currentBuilder = 'nexus';
-let nexusPlugins = [
-  {
-    type: 'text',
-    plugin: 'plugin-Text'
-  },
-  {
-    type: 'image',
-    plugin: 'plugin-Image'
-  },
-  {    
-    type: 'anchor',
-    plugin: 'plugin-Anchor'
-  }
-]
-
-// Sample JSON structure for demonstration
-const sampleJson = {
-  layout: {
-    header: {
-      type: "header",
-      content: "Enter your json",
-      style: { backgroundColor: "#f0f0f0", padding: "20px" },
-    },
-    sections: [
-      /*       {
-        type: 'image',
-        src: '/api/placeholder/400/300',
-        alt: 'Sample image',
-        style: { width: '100%', maxWidth: '400px' }
-      } */
-    ],
-  },
-};
+import React, { useState, useEffect, useCallback } from "react";
+import { convertStyleStringToObject, extractBaseUrl } from "./utils/utils";
 
 const WebsiteBuilder = () => {
-  const [template, setTemplate] = useState(sampleJson);
-  const [isNexus, setIsNexus] = useState(false);
-  const [isSiteplus, setIsSiteplus] = useState(false);
-
-  const wrapWithNexusStructure = (element, type) => {
-    switch (type) {
-      case 'text':
-        return (
-          <div className="container text-container">
-            <div className="inner-container text-inner">
-              <div className="wrapper text-wrapper" data-plugin="plugin-Text">
-                {element}
-              </div>
-            </div>
-          </div>
-        );
-      
-      case 'navigation':
-        return (
-          <div className="container nav-container">
-            <div className="inner-container nav-inner">
-              <div className="wrapper nav-wrapper" data-plugin="plugin-Navigation">
-                {element}
-              </div>
-            </div>
-          </div>
-        );
-      
-      case 'image':
-        return (
-          <div className="container image-container">
-            <div className="inner-container image-inner">
-              <div className="wrapper image-wrapper" data-plugin="plugin-Image">
-                {element}
-              </div>
-            </div>
-          </div>
-        );
-      
-      case 'header':
-        return (
-          <div className="container header-container">
-            <div className="inner-container header-inner">
-              <div className="wrapper header-wrapper" data-plugin="plugin-Header">
-                {element}
-              </div>
-            </div>
-          </div>
-        );
-      
-      default:
-        // Default wrapper if type is not specified
-        return (
-          <div className="container">
-            <div className="inner-container">
-              <div className="wrapper">
-                {element}
-              </div>
-            </div>
-          </div>
-        );
-    }
-  };
+  const [template, setTemplate] = useState([]);
+  const [baseUrl, setBaseUrl] = useState('');
 
   const handleFileUpload = (event) => {
     const file = event.target.files[0];
@@ -109,7 +12,16 @@ const WebsiteBuilder = () => {
       reader.onload = (e) => {
         try {
           const json = JSON.parse(e.target.result);
-          setTemplate(json);
+   
+          let children;
+          if (json.html && json.html.children) {
+            children = json.html.children;
+          } else if (json.structure && json.structure.children) {
+            children = json.structure.children;
+          }
+          
+          setTemplate(children || []);
+          setBaseUrl(extractBaseUrl(json));
         } catch (error) {
           console.error("Error parsing JSON:", error);
         }
@@ -118,122 +30,94 @@ const WebsiteBuilder = () => {
     }
   };
 
-  const renderElement = (element, index) => {
-    const commonStyles = {
-      position: "relative",
-      padding: "4px",
-      marginBottom: "10px",
+  const renderElement = useCallback((element, index) => {
+    if (!element) return null;
+    
+    const tagType = element.tagName || element.tag;
+    if (!tagType) return null;
+
+    const content = element.text || element.textContent;
+
+    const commonProps = {
+      key: index,
+      id: element.attributes?.id,
+      className: element.attributes?.class,
+      style: convertStyleStringToObject(element.attributes?.style)
     };
 
-    let renderedElement;
+    const children = element.children?.map((child, childIndex) =>
+      renderElement(child, `${index}-${childIndex}`)
+    );
 
-    switch (element.type) {
-      case "header":
-        renderedElement = (
-          <div key={index} style={{ ...commonStyles, ...element.style }}>
-            <h1>{element.content}</h1>
-          </div>
-        );
-        break;
+    const Tag = tagType.toLowerCase();
 
-      case "navigation":
-        renderedElement = (
-          <div
-            key={index}
-            style={{ ...element.style }}
-          >
-            <ul
-              style={{
-                display: "flex",
-                gap: "1rem",
-                listStyle: "none",
-                padding: 0,
-              }}
-            >
-              {element.items.map((item, i) => (
-                <li key={i}>
-                  <a
-                    href={item.href}
-                    style={{ ...element.itemStyle }}
-                  >
-                    {item.name}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-        );
-        break;
+    if (["div", "ul", "li", "strong", "span", "p", "a", "input", "script", "style", "img", "br", "meta", "link", "title", "form", "head", "body", "html", "noscript"].includes(Tag)) {
+      switch (Tag) {
+        case "script":
+        case "style":
+          return (
+            <Tag {...commonProps} 
+              dangerouslySetInnerHTML={{ __html: content || '' }}
+            />
+          );
 
-      case "text":
-        renderedElement = (
-          <div
-            key={index}
-            style={{ ...commonStyles, ...element.style }}
-            className="cursor-pointer"
-          >
-            <p>{element.content}</p>
-          </div>
-        );
-        break;
-        
-      case "image":
-        renderedElement = (
-          <div
-            key={index}
-            style={{ ...commonStyles, ...element.style }}
-          >
-            <img src={element.src} alt={element.alt} />
-          </div>
-        );
-        break;
+        case "img": {
+          const imageSrc = element.attributes?.src;
+          const fullSrc = imageSrc?.startsWith('assets/') 
+            ? `${baseUrl}${imageSrc}`
+            : imageSrc;
+          return <img {...commonProps} src={fullSrc} alt={element.attributes?.alt || ''} />;
+        }
 
-      default:
-        return null;
+        case "a":
+          return (
+            <Tag {...commonProps} href={element.attributes?.href}>
+              {children}
+              {content}
+            </Tag>
+          );
+
+        case "meta":
+        case "link":
+        case "br":
+        case "input":
+
+          const { children: _, dangerouslySetInnerHTML: __, ...attrs } = element.attributes || {};
+          return <Tag {...commonProps} {...attrs} />;
+
+        default:
+          return (
+            <Tag {...commonProps}>
+              {children}
+              {content}
+            </Tag>
+          );
+      }
     }
 
-    // Wrap with Nexus structure if Nexus is selected
-    return isNexus ? wrapWithNexusStructure(renderedElement, element.type) : renderedElement;
-  };
+    console.warn(`Unsupported tag: ${Tag}`);
+    return null;
+  }, [baseUrl]);
 
   return (
     <div>
-      <div style={{padding: '10px'}}>
-        <label>
+      <div className="p-4">
+        <label className="flex items-center gap-2">
           Import JSON
           <input
             type="file"
             accept=".json"
             onChange={handleFileUpload}
-            className="hidden"
-            style={{marginLeft: '10px', marginBottom: '10px'}}
+            className="ml-2 mb-2"
           />
         </label>
-
-        <p>convert to:</p>
-        <div>
-          <label>Nexus</label>
-          <input type="checkbox"       
-            checked={isNexus}
-            onChange={(e) => setIsNexus(e.target.checked)}></input>
-        </div>
-        <div>
-          <label>Siteplus</label>
-          <input type="checkbox"   
-            checked={isSiteplus}
-            onChange={(e) => setIsSiteplus(e.target.checked)}
-          ></input>
-        </div>
-        
-    
       </div>
 
-      <div>
-        {template.layout.navigation &&
-          renderElement(template.layout.navigation)}
-        {template.layout.header && renderElement(template.layout.header)}
-        {template.layout.sections?.map((section, index) =>
-          renderElement(section, index)
+      <div className="website-content">
+        {template.length > 0 ? (
+          template.map((element, index) => renderElement(element, index))
+        ) : (
+          <div className="text-gray-500">No content to display</div>
         )}
       </div>
     </div>

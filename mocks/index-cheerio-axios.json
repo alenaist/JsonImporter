@@ -1,0 +1,990 @@
+{
+  "url": "https://jennetteelectric.com/",
+  "structure": {
+    "tagName": "html",
+    "attributes": {},
+    "children": [
+      {
+        "tagName": "head",
+        "attributes": {},
+        "children": [
+          {
+            "tagName": "meta",
+            "attributes": {
+              "name": "keywords",
+              "content": ""
+            },
+            "children": [],
+            "textContent": ""
+          },
+          {
+            "tagName": "meta",
+            "attributes": {
+              "name": "description",
+              "content": ""
+            },
+            "children": [],
+            "textContent": ""
+          },
+          {
+            "tagName": "meta",
+            "attributes": {
+              "http-equiv": "content-type",
+              "content": "text/html;charset=utf-8"
+            },
+            "children": [],
+            "textContent": ""
+          },
+          {
+            "tagName": "title",
+            "attributes": {},
+            "children": [],
+            "textContent": ""
+          },
+          {
+            "tagName": "link",
+            "attributes": {
+              "href": "//fonts.googleapis.com/css?family=Lato",
+              "rel": "stylesheet",
+              "type": "text/css"
+            },
+            "children": [],
+            "textContent": ""
+          },
+          {
+            "tagName": "link",
+            "attributes": {
+              "rel": "stylesheet",
+              "type": "text/css",
+              "href": "//assets.neo.registeredsite.com/libs/libs.css?ct=1729783872182"
+            },
+            "children": [],
+            "textContent": ""
+          },
+          {
+            "tagName": "link",
+            "attributes": {
+              "rel": "stylesheet",
+              "type": "text/css",
+              "href": "//assets.neo.registeredsite.com/plugins/neo.css?ct=1729783872182"
+            },
+            "children": [],
+            "textContent": ""
+          },
+          {
+            "tagName": "script",
+            "attributes": {
+              "type": "text/javascript"
+            },
+            "children": [],
+            "textContent": "var builderSettings = {\n    appRoot: '//app.neo.registeredsite.com/neo/',\n    appRelativePath: '/neo',\n    assetsRoot: '//assets.neo.registeredsite.com',\n    repositoryRoot: '//repository.neo.registeredsite.com',\n    spRoot: '//repository.neo.registeredsite.com/starting-points',\n    usersRoot: '//users.neo.registeredsite.com',\n    sitesearchUrl: '//sitesearch.services.matrixbuilder.com/sitesearch/search',\n    siteDomain: '000l8sl.rcomhost.com',\n    isBuilder : false,\n    isPreview : false\n  };"
+          },
+          {
+            "tagName": "link",
+            "attributes": {
+              "rel": "stylesheet",
+              "type": "text/css",
+              "href": "//fonts.googleapis.com/css?family=Lato%7cActor"
+            },
+            "children": [],
+            "textContent": ""
+          }
+        ],
+        "textContent": "var builderSettings = {\n    appRoot: '//app.neo.registeredsite.com/neo/',\n    appRelativePath: '/neo',\n    assetsRoot: '//assets.neo.registeredsite.com',\n    repositoryRoot: '//repository.neo.registeredsite.com',\n    spRoot: '//repository.neo.registeredsite.com/starting-points',\n    usersRoot: '//users.neo.registeredsite.com',\n    sitesearchUrl: '//sitesearch.services.matrixbuilder.com/sitesearch/search',\n    siteDomain: '000l8sl.rcomhost.com',\n    isBuilder : false,\n    isPreview : false\n  };"
+      },
+      {
+        "tagName": "body",
+        "attributes": {
+          "class": "neo-publish"
+        },
+        "children": [
+          {
+            "tagName": "div",
+            "attributes": {
+              "id": "includes",
+              "style": "display: none"
+            },
+            "children": [
+              {
+                "tagName": "script",
+                "attributes": {
+                  "type": "text/javascript",
+                  "src": "//assets.neo.registeredsite.com/libs/libs.js?ct=1729783872182"
+                },
+                "children": [],
+                "textContent": ""
+              },
+              {
+                "tagName": "script",
+                "attributes": {
+                  "type": "text/javascript",
+                  "src": "//assets.neo.registeredsite.com/libs/tinymce/4.1.7/tinymce.min.js?ct=1729783872182"
+                },
+                "children": [],
+                "textContent": ""
+              },
+              {
+                "tagName": "div",
+                "attributes": {
+                  "class": "sitesearch-plugin-inner"
+                },
+                "children": [
+                  {
+                    "tagName": "div",
+                    "attributes": {
+                      "class": "sitesearch-ng",
+                      "data-ng-controller": "neo.SiteSearchPlugin.ngPluginController"
+                    },
+                    "children": [
+                      {
+                        "tagName": "div",
+                        "attributes": {
+                          "class": "ss-container ss-style-1 sitesearch-id-1",
+                          "style": "width:100%"
+                        },
+                        "children": [
+                          {
+                            "tagName": "form",
+                            "attributes": {},
+                            "children": [
+                              {
+                                "tagName": "span",
+                                "attributes": {
+                                  "class": "ss-loading",
+                                  "style": "display: none;"
+                                },
+                                "children": [],
+                                "textContent": ""
+                              },
+                              {
+                                "tagName": "input",
+                                "attributes": {
+                                  "class": "ss-text",
+                                  "type": "text",
+                                  "value": "",
+                                  "placeholder": "Search ..."
+                                },
+                                "children": [],
+                                "textContent": ""
+                              },
+                              {
+                                "tagName": "input",
+                                "attributes": {
+                                  "class": "ss-submit",
+                                  "type": "submit",
+                                  "value": ""
+                                },
+                                "children": [],
+                                "textContent": ""
+                              }
+                            ],
+                            "textContent": ""
+                          }
+                        ],
+                        "textContent": ""
+                      }
+                    ],
+                    "textContent": ""
+                  }
+                ],
+                "textContent": ""
+              },
+              {
+                "tagName": "div",
+                "attributes": {
+                  "id": "neo-sitesearch-result-modal",
+                  "class": "modal-wrapper modal-effect"
+                },
+                "children": [
+                  {
+                    "tagName": "div",
+                    "attributes": {
+                      "class": "modal-window"
+                    },
+                    "children": [
+                      {
+                        "tagName": "div",
+                        "attributes": {
+                          "class": "modal-top"
+                        },
+                        "children": [],
+                        "textContent": "Search Results"
+                      },
+                      {
+                        "tagName": "div",
+                        "attributes": {
+                          "class": "modal-bottom"
+                        },
+                        "children": [],
+                        "textContent": ""
+                      },
+                      {
+                        "tagName": "div",
+                        "attributes": {
+                          "class": "modal-x",
+                          "data-ng-click": "closeSearchResult()"
+                        },
+                        "children": [],
+                        "textContent": ""
+                      }
+                    ],
+                    "textContent": "Search Results"
+                  }
+                ],
+                "textContent": "Search Results"
+              },
+              {
+                "tagName": "script",
+                "attributes": {
+                  "type": "text/webcom-template",
+                  "id": "form-plugin-inner"
+                },
+                "children": [],
+                "textContent": "<div class=\"form-ng remove-on-save\">\n      <div id=\"{{FormId}}\">inject webcom-form here</div>\n    </div>"
+              },
+              {
+                "tagName": "div",
+                "attributes": {
+                  "class": "text-plugin-inner"
+                },
+                "children": [
+                  {
+                    "tagName": "div",
+                    "attributes": {
+                      "class": "text-ng tiny text-plugin"
+                    },
+                    "children": [],
+                    "textContent": ""
+                  }
+                ],
+                "textContent": ""
+              },
+              {
+                "tagName": "div",
+                "attributes": {
+                  "class": "map-plugin-inner"
+                },
+                "children": [
+                  {
+                    "tagName": "div",
+                    "attributes": {
+                      "class": "map-ng remove-on-save"
+                    },
+                    "children": [
+                      {
+                        "tagName": "div",
+                        "attributes": {
+                          "class": "mapPlugin"
+                        },
+                        "children": [
+                          {
+                            "tagName": "div",
+                            "attributes": {
+                              "class": "neo-map-address-show"
+                            },
+                            "children": [],
+                            "textContent": ""
+                          },
+                          {
+                            "tagName": "div",
+                            "attributes": {
+                              "class": "neo-mapquest"
+                            },
+                            "children": [],
+                            "textContent": ""
+                          },
+                          {
+                            "tagName": "div",
+                            "attributes": {
+                              "class": "neo-map-direction"
+                            },
+                            "children": [],
+                            "textContent": ""
+                          }
+                        ],
+                        "textContent": ""
+                      }
+                    ],
+                    "textContent": ""
+                  }
+                ],
+                "textContent": ""
+              },
+              {
+                "tagName": "div",
+                "attributes": {
+                  "class": "share-plugin-inner"
+                },
+                "children": [
+                  {
+                    "tagName": "div",
+                    "attributes": {
+                      "class": "fb-share-button-placeholder",
+                      "data-type": "button"
+                    },
+                    "children": [],
+                    "textContent": ""
+                  }
+                ],
+                "textContent": ""
+              },
+              {
+                "tagName": "div",
+                "attributes": {
+                  "class": "google-share-plugin-inner"
+                },
+                "children": [
+                  {
+                    "tagName": "div",
+                    "attributes": {
+                      "class": "gplus-data",
+                      "data-action": "share"
+                    },
+                    "children": [
+                      {
+                        "tagName": "div",
+                        "attributes": {
+                          "class": "g-plus",
+                          "data-action": "share"
+                        },
+                        "children": [],
+                        "textContent": ""
+                      }
+                    ],
+                    "textContent": ""
+                  }
+                ],
+                "textContent": ""
+              },
+              {
+                "tagName": "div",
+                "attributes": {
+                  "class": "google-plusone-plugin-inner"
+                },
+                "children": [
+                  {
+                    "tagName": "div",
+                    "attributes": {
+                      "class": "gplusone-data"
+                    },
+                    "children": [
+                      {
+                        "tagName": "div",
+                        "attributes": {
+                          "class": "g-plusone"
+                        },
+                        "children": [],
+                        "textContent": ""
+                      }
+                    ],
+                    "textContent": ""
+                  }
+                ],
+                "textContent": ""
+              },
+              {
+                "tagName": "div",
+                "attributes": {
+                  "class": "tap-plugin-inner"
+                },
+                "children": [
+                  {
+                    "tagName": "div",
+                    "attributes": {
+                      "class": "product-data"
+                    },
+                    "children": [],
+                    "textContent": ""
+                  }
+                ],
+                "textContent": ""
+              },
+              {
+                "tagName": "script",
+                "attributes": {
+                  "type": "text/javascript",
+                  "src": "//assets.neo.registeredsite.com/plugins/neo.js?ct=1729783872182"
+                },
+                "children": [],
+                "textContent": ""
+              }
+            ],
+            "textContent": "Search Results\n     \n     \n     \n    \n   \n  \n    <div class=\"form-ng remove-on-save\">\n      <div id=\"{{FormId}}\">inject webcom-form here</div>\n    </div>"
+          },
+          {
+            "tagName": "div",
+            "attributes": {
+              "id": "canvas",
+              "data-ng-app": "webcomApp",
+              "class": "default-theme blank-sp ui-selectable",
+              "style": "min-height: 866px;"
+            },
+            "children": [
+              {
+                "tagName": "div",
+                "attributes": {
+                  "id": "top-area",
+                  "style": "height: 55.3277px; width: 960px;",
+                  "class": ""
+                },
+                "children": [],
+                "textContent": ""
+              },
+              {
+                "tagName": "div",
+                "attributes": {
+                  "id": "page-wrapper"
+                },
+                "children": [
+                  {
+                    "tagName": "div",
+                    "attributes": {
+                      "class": "global-region top",
+                      "id": "header"
+                    },
+                    "children": [
+                      {
+                        "tagName": "div",
+                        "attributes": {
+                          "class": "global-region-inner",
+                          "style": "margin: 0px auto; position: relative; height: 136px; width: 962px;"
+                        },
+                        "children": [
+                          {
+                            "tagName": "div",
+                            "attributes": {
+                              "class": "neo-asset image-plugin",
+                              "id": "asset-1513011952013",
+                              "style": "left: 106.5px; width: 115.19px; height: 157px; position: absolute; z-index: 394; top: 1.875px;",
+                              "data-original-height": "155",
+                              "data-original-width": "113",
+                              "data-settings": "{\"css\":{\"borderTopStyle\":null,\"borderBottomStyle\":null,\"borderLeftStyle\":null,\"borderRightStyle\":null,\"borderAllStyle\":\"none\",\"borderAllWidth\":\"\",\"borderTopWidth\":\"\",\"borderBottomWidth\":\"\",\"borderLeftWidth\":\"\",\"borderRightWidth\":\"\",\"borderTopColor\":null,\"borderLeftColor\":null,\"borderBottomColor\":null,\"borderRightColor\":null,\"borderAllColor\":\"#333333\",\"borderAllRadius\":null,\"borderTopLeftRadius\":\"\",\"borderTopRightRadius\":\"\",\"borderBottomLeftRadius\":\"\",\"borderBottomRightRadius\":\"\",\"paddingAll\":null,\"paddingTop\":\"\",\"paddingBottom\":\"\",\"paddingLeft\":\"\",\"paddingRight\":\"\",\"boxShadow\":\"0px 0px 0 0 rgba(0,0,0,0.5)\"},\"bgColor\":\"rgba(255, 255, 255, 0)\",\"backgroundOpacity\":100,\"shadowColor\":\"rgba(0,0,0,0.5)\",\"backgroundShadowAngle\":140,\"backgroundShadowOffset\":0}",
+                              "data-module-class": "neo.ImageModule"
+                            },
+                            "children": [
+                              {
+                                "tagName": "div",
+                                "attributes": {
+                                  "class": "neo-asset-inner",
+                                  "style": "background-color: rgba(255, 255, 255, 0); opacity: 1; border-style: none; border-color: rgb(51, 51, 51); background-image: none; box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 0px 0px;"
+                                },
+                                "children": [
+                                  {
+                                    "tagName": "img",
+                                    "attributes": {
+                                      "style": "width: 113px; height: 155px;",
+                                      "alt": "",
+                                      "src": "assets/J34984.E._Logo.JPG"
+                                    },
+                                    "children": [],
+                                    "textContent": ""
+                                  }
+                                ],
+                                "textContent": ""
+                              }
+                            ],
+                            "textContent": ""
+                          }
+                        ],
+                        "textContent": ""
+                      }
+                    ],
+                    "textContent": ""
+                  },
+                  {
+                    "tagName": "div",
+                    "attributes": {
+                      "class": "global-region center",
+                      "id": "content"
+                    },
+                    "children": [
+                      {
+                        "tagName": "div",
+                        "attributes": {
+                          "class": "global-region-inner",
+                          "style": "margin: 0px auto; height: 530px; position: relative; width: 962px;"
+                        },
+                        "children": [
+                          {
+                            "tagName": "div",
+                            "attributes": {
+                              "class": "text-plugin neo-asset ui-draggable-disabled",
+                              "id": "asset-1513000282349",
+                              "style": "position: absolute; top: 17px; left: 130px; width: 807px; height: auto; z-index: 392;",
+                              "data-settings": "{\"css\":{\"borderTopStyle\":null,\"borderBottomStyle\":null,\"borderLeftStyle\":null,\"borderRightStyle\":null,\"borderAllStyle\":\"none\",\"borderAllWidth\":\"\",\"borderTopWidth\":\"\",\"borderBottomWidth\":\"\",\"borderLeftWidth\":\"\",\"borderRightWidth\":\"\",\"borderTopColor\":null,\"borderLeftColor\":null,\"borderBottomColor\":null,\"borderRightColor\":null,\"borderAllColor\":\"#333333\",\"borderAllRadius\":null,\"borderTopLeftRadius\":\"\",\"borderTopRightRadius\":\"\",\"borderBottomLeftRadius\":\"\",\"borderBottomRightRadius\":\"\",\"paddingAll\":null,\"paddingTop\":\"\",\"paddingBottom\":\"\",\"paddingLeft\":\"\",\"paddingRight\":\"\",\"boxShadow\":\"0px 0px 0 0 rgba(0,0,0,0.5)\"},\"bgColor\":\"rgb(255, 255, 255)\",\"backgroundOpacity\":100,\"shadowColor\":\"rgba(0,0,0,0.5)\",\"backgroundShadowAngle\":140,\"backgroundShadowOffset\":0}",
+                              "data-module-class": "neo.TextModule"
+                            },
+                            "children": [
+                              {
+                                "tagName": "div",
+                                "attributes": {
+                                  "class": "neo-asset-inner mce-content-body mce-edit-focus mCS_destroyed",
+                                  "id": "asset-1513000282349-neo-asset-inner",
+                                  "style": "background-color: rgb(255, 255, 255); opacity: 1; border-style: none; border-color: rgb(51, 51, 51); background-image: none; box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 0px 0px; position: relative;",
+                                  "spellcheck": "false"
+                                },
+                                "children": [
+                                  {
+                                    "tagName": "p",
+                                    "attributes": {},
+                                    "children": [
+                                      {
+                                        "tagName": "br",
+                                        "attributes": {
+                                          "data-mce-bogus": "1"
+                                        },
+                                        "children": [],
+                                        "textContent": ""
+                                      }
+                                    ],
+                                    "textContent": ""
+                                  }
+                                ],
+                                "textContent": ""
+                              }
+                            ],
+                            "textContent": ""
+                          },
+                          {
+                            "tagName": "div",
+                            "attributes": {
+                              "class": "text-plugin neo-asset",
+                              "id": "asset-1513001245898",
+                              "style": "width: 796px; position: absolute; top: 27px; left: 135.5px; z-index: 393; height: auto;",
+                              "data-settings": "{\"css\":{\"borderTopStyle\":null,\"borderBottomStyle\":null,\"borderLeftStyle\":null,\"borderRightStyle\":null,\"borderAllStyle\":\"none\",\"borderAllWidth\":\"\",\"borderTopWidth\":\"\",\"borderBottomWidth\":\"\",\"borderLeftWidth\":\"\",\"borderRightWidth\":\"\",\"borderTopColor\":null,\"borderLeftColor\":null,\"borderBottomColor\":null,\"borderRightColor\":null,\"borderAllColor\":\"#333333\",\"borderAllRadius\":null,\"borderTopLeftRadius\":\"\",\"borderTopRightRadius\":\"\",\"borderBottomLeftRadius\":\"\",\"borderBottomRightRadius\":\"\",\"paddingAll\":null,\"paddingTop\":\"\",\"paddingBottom\":\"\",\"paddingLeft\":\"\",\"paddingRight\":\"\",\"boxShadow\":\"0px 0px 0 0 rgba(0,0,0,0.5)\"},\"bgColor\":\"rgb(255, 255, 255)\",\"backgroundOpacity\":100,\"shadowColor\":\"rgba(0,0,0,0.5)\",\"backgroundShadowAngle\":140,\"backgroundShadowOffset\":0}",
+                              "data-module-class": "neo.TextModule"
+                            },
+                            "children": [
+                              {
+                                "tagName": "div",
+                                "attributes": {
+                                  "class": "neo-asset-inner mCS_destroyed",
+                                  "id": "asset-1513001245898-neo-asset-inner",
+                                  "style": "background-color: rgb(255, 255, 255); position: relative; opacity: 1; border-style: none; border-color: rgb(51, 51, 51); background-image: none; box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 0px 0px;",
+                                  "spellcheck": "false"
+                                },
+                                "children": [
+                                  {
+                                    "tagName": "p",
+                                    "attributes": {},
+                                    "children": [
+                                      {
+                                        "tagName": "strong",
+                                        "attributes": {},
+                                        "children": [
+                                          {
+                                            "tagName": "span",
+                                            "attributes": {
+                                              "style": "font-family: Impact, Charcoal, sans-serif;"
+                                            },
+                                            "children": [
+                                              {
+                                                "tagName": "span",
+                                                "attributes": {
+                                                  "style": "font-family: Arial Black, Gadget, sans-serif; font-size: 24px;"
+                                                },
+                                                "children": [],
+                                                "textContent": "Welcome!"
+                                              }
+                                            ],
+                                            "textContent": "Welcome!"
+                                          }
+                                        ],
+                                        "textContent": "Welcome!"
+                                      }
+                                    ],
+                                    "textContent": "Welcome!"
+                                  },
+                                  {
+                                    "tagName": "p",
+                                    "attributes": {},
+                                    "children": [
+                                      {
+                                        "tagName": "span",
+                                        "attributes": {
+                                          "style": "font-size: 16px;"
+                                        },
+                                        "children": [
+                                          {
+                                            "tagName": "span",
+                                            "attributes": {
+                                              "style": "font-family: Impact, Charcoal, sans-serif;"
+                                            },
+                                            "children": [
+                                              {
+                                                "tagName": "span",
+                                                "attributes": {
+                                                  "style": "font-family: Arial Black, Gadget, sans-serif;"
+                                                },
+                                                "children": [
+                                                  {
+                                                    "tagName": "span",
+                                                    "attributes": {
+                                                      "style": "font-family: Actor, sans-serif;"
+                                                    },
+                                                    "children": [],
+                                                    "textContent": "Receive high-quality professional services, from Jennette Electric School based in Plainville MA 02762. Weather you are an individual or a large or small company, our teachers can provide the continuing education credits you need to get your license(s) renewed. Our track record for consistency, timely, service, and subject matter expertise makes your attendance an enjoyable experience."
+                                                  }
+                                                ],
+                                                "textContent": "Receive high-quality professional services, from Jennette Electric School based in Plainville MA 02762. Weather you are an individual or a large or small company, our teachers can provide the continuing education credits you need to get your license(s) renewed. Our track record for consistency, timely, service, and subject matter expertise makes your attendance an enjoyable experience."
+                                              }
+                                            ],
+                                            "textContent": "Receive high-quality professional services, from Jennette Electric School based in Plainville MA 02762. Weather you are an individual or a large or small company, our teachers can provide the continuing education credits you need to get your license(s) renewed. Our track record for consistency, timely, service, and subject matter expertise makes your attendance an enjoyable experience."
+                                          }
+                                        ],
+                                        "textContent": "Receive high-quality professional services, from Jennette Electric School based in Plainville MA 02762. Weather you are an individual or a large or small company, our teachers can provide the continuing education credits you need to get your license(s) renewed. Our track record for consistency, timely, service, and subject matter expertise makes your attendance an enjoyable experience."
+                                      }
+                                    ],
+                                    "textContent": "Receive high-quality professional services, from Jennette Electric School based in Plainville MA 02762. Weather you are an individual or a large or small company, our teachers can provide the continuing education credits you need to get your license(s) renewed. Our track record for consistency, timely, service, and subject matter expertise makes your attendance an enjoyable experience."
+                                  },
+                                  {
+                                    "tagName": "p",
+                                    "attributes": {},
+                                    "children": [
+                                      {
+                                        "tagName": "span",
+                                        "attributes": {
+                                          "style": "font-size: 16px;"
+                                        },
+                                        "children": [
+                                          {
+                                            "tagName": "span",
+                                            "attributes": {
+                                              "style": "font-family: Impact, Charcoal, sans-serif;"
+                                            },
+                                            "children": [
+                                              {
+                                                "tagName": "span",
+                                                "attributes": {
+                                                  "style": "font-family: Arial Black, Gadget, sans-serif;"
+                                                },
+                                                "children": [
+                                                  {
+                                                    "tagName": "span",
+                                                    "attributes": {
+                                                      "style": "font-family: Actor, sans-serif;"
+                                                    },
+                                                    "children": [],
+                                                    "textContent": "We offer discounted pricing for companies who wish to hold private course at their facilities. To speak with an experienced member of our staff, simply contact us in Plainville MA 02762 at your convenience."
+                                                  }
+                                                ],
+                                                "textContent": "We offer discounted pricing for companies who wish to hold private course at their facilities. To speak with an experienced member of our staff, simply contact us in Plainville MA 02762 at your convenience."
+                                              }
+                                            ],
+                                            "textContent": "We offer discounted pricing for companies who wish to hold private course at their facilities. To speak with an experienced member of our staff, simply contact us in Plainville MA 02762 at your convenience."
+                                          }
+                                        ],
+                                        "textContent": "We offer discounted pricing for companies who wish to hold private course at their facilities. To speak with an experienced member of our staff, simply contact us in Plainville MA 02762 at your convenience."
+                                      }
+                                    ],
+                                    "textContent": "We offer discounted pricing for companies who wish to hold private course at their facilities. To speak with an experienced member of our staff, simply contact us in Plainville MA 02762 at your convenience."
+                                  }
+                                ],
+                                "textContent": "Welcome! \n       Receive high-quality professional services, from Jennette Electric School based in Plainville MA 02762. Weather you are an individual or a large or small company, our teachers can provide the continuing education credits you need to get your license(s) renewed. Our track record for consistency, timely, service, and subject matter expertise makes your attendance an enjoyable experience. \n       We offer discounted pricing for companies who wish to hold private course at their facilities. To speak with an experienced member of our staff, simply contact us in Plainville MA 02762 at your convenience."
+                              }
+                            ],
+                            "textContent": "Welcome! \n       Receive high-quality professional services, from Jennette Electric School based in Plainville MA 02762. Weather you are an individual or a large or small company, our teachers can provide the continuing education credits you need to get your license(s) renewed. Our track record for consistency, timely, service, and subject matter expertise makes your attendance an enjoyable experience. \n       We offer discounted pricing for companies who wish to hold private course at their facilities. To speak with an experienced member of our staff, simply contact us in Plainville MA 02762 at your convenience."
+                          },
+                          {
+                            "tagName": "div",
+                            "attributes": {
+                              "class": "navigation-2-plugin neo-asset",
+                              "id": "asset-1513001945957",
+                              "style": "top: 435px; left: 431.5px; position: absolute; z-index: 399;",
+                              "data-settings": "{\"css\":{\"borderTopStyle\":null,\"borderBottomStyle\":null,\"borderLeftStyle\":null,\"borderRightStyle\":null,\"borderAllStyle\":\"none\",\"borderAllWidth\":\"\",\"borderTopWidth\":\"\",\"borderBottomWidth\":\"\",\"borderLeftWidth\":\"\",\"borderRightWidth\":\"\",\"borderTopColor\":null,\"borderLeftColor\":null,\"borderBottomColor\":null,\"borderRightColor\":null,\"borderAllColor\":\"#333333\",\"borderAllRadius\":null,\"borderTopLeftRadius\":\"\",\"borderTopRightRadius\":\"\",\"borderBottomLeftRadius\":\"\",\"borderBottomRightRadius\":\"\",\"paddingAll\":null,\"paddingTop\":\"\",\"paddingBottom\":\"\",\"paddingLeft\":\"\",\"paddingRight\":\"\",\"boxShadow\":\"0px 0px 0 0 rgba(0,0,0,0.5)\"},\"bgColor\":\"rgba(255, 255, 255, 0)\",\"backgroundOpacity\":100,\"shadowColor\":\"rgba(0,0,0,0.5)\",\"backgroundShadowAngle\":140,\"backgroundShadowOffset\":0}",
+                              "data-module-class": "neo.Navigation2Module"
+                            },
+                            "children": [
+                              {
+                                "tagName": "style",
+                                "attributes": {
+                                  "id": "custom-style-for-asset-1513001945957"
+                                },
+                                "children": [],
+                                "textContent": "/****************/\n                              /* neo main nav */\n                              /****************/\n                              #asset-1513001945957.main-nav-fixed-plugin .neo-asset-inner > ul > li {\n                                width: 130px;\n                              }\n                              #asset-1513001945957 .neo-asset-inner > ul > li {\n                                padding-top: 5px;\n                                padding-right: 10px;\n                                padding-bottom: 5px;\n                                padding-left: 10px;\n                                margin-right: 0;\n                                margin-bottom: 0;\n                                background-color: rgb(0, 0, 0);\n                                font-style: normal;\n                                font-weight: normal;\n                                font-size: 12px;\n                                font-family: Lato;\n                                text-align: left;\n\n                                border-left-color: rgb(51, 51, 51);\n                                border-left-style: none;\n                                border-left-width: 0;\n                                border-right-color: rgb(51, 51, 51);\n                                border-right-style: none;\n                                border-right-width: 0;\n                                border-bottom-color: rgb(51, 51, 51);\n                                border-bottom-style: none;\n                                border-bottom-width: 0;\n                                border-top-color: rgb(51, 51, 51);\n                                border-top-style: none;\n                                border-top-width: 0;\n                                border-top-left-radius:0;\n                                border-top-right-radius:0;\n                                border-bottom-left-radius:0;\n                                border-bottom-right-radius:0;\n\n                                -moz-box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                                -webkit-box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                                box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                              }\n                              #asset-1513001945957 .neo-asset-inner > ul > li > a {\n                                color: rgb(255, 255, 255);\n                              }\n                              #asset-1513001945957 .neo-asset-inner > ul > li.k-state-hover {\n                                padding-top: 5px;\n                                padding-right: 10px;\n                                padding-bottom: 5px;\n                                padding-left: 10px;\n                                background-color: rgb(16, 196, 178);\n                                font-style: normal;\n                                font-weight: normal;\n                                font-size: 12px;\n                                font-family: Lato;\n                                text-align: left;\n\n                                border-left-color: rgb(46, 179, 166);\n                                border-left-style: none;\n                                border-left-width: 0;\n                                border-right-color: rgb(46, 179, 166);\n                                border-right-style: none;\n                                border-right-width: 0;\n                                border-bottom-color: rgb(46, 179, 166);\n                                border-bottom-style: none;\n                                border-bottom-width: 0;\n                                border-top-color: rgb(46, 179, 166);\n                                border-top-style: none;\n                                border-top-width: 0;\n                                border-top-left-radius:0;\n                                border-top-right-radius:0;\n                                border-bottom-left-radius:0;\n                                border-bottom-right-radius:0;\n\n                                -moz-box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                                -webkit-box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                                box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                              }\n                              #asset-1513001945957 .neo-asset-inner > ul > li.k-state-hover > a {\n                                color: rgb(255, 255, 255);\n                              }\n                              #asset-1513001945957 .neo-asset-inner > ul > li.k-state-active {\n                                padding-top: 5px;\n                                padding-right: 10px;\n                                padding-bottom: 5px;\n                                padding-left: 10px;\n                                background-color: rgb(16, 196, 178);\n                                font-style: normal;\n                                font-weight: normal;\n                                font-size: 12px;\n                                font-family: Lato;\n                                text-align: left;\n\n                                border-left-color: rgb(16, 196, 178);\n                                border-left-style: none;\n                                border-left-width: 0;\n                                border-right-color: rgb(16, 196, 178);\n                                border-right-style: none;\n                                border-right-width: 0;\n                                border-bottom-color: rgb(16, 196, 178);\n                                border-bottom-style: none;\n                                border-bottom-width: 0;\n                                border-top-color: rgb(16, 196, 178);\n                                border-top-style: none;\n                                border-top-width: 0;\n                                border-top-left-radius:0;\n                                border-top-right-radius:0;\n                                border-bottom-left-radius:0;\n                                border-bottom-right-radius:0;\n\n                                -moz-box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                                -webkit-box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                                box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                              }\n                              #asset-1513001945957 .neo-asset-inner > ul > li.k-state-active > a {\n                                color: rgb(255, 255, 255);\n                              }\n                              /***************/\n                              /* neo sub nav */\n                              /***************/\n                              #asset-1513001945957.sub-nav-fixed-plugin ul ul > li {\n                                width: 130px;\n                              }\n                              #asset-1513001945957 ul ul > li {\n                                padding-top: 5px;\n                                padding-right: 10px;\n                                padding-bottom: 5px;\n                                padding-left: 10px;\n                                margin-bottom: 0;\n                                background-color: rgb(0, 0, 0);\n                                font-style: normal;\n                                font-weight: normal;\n                                font-size: 12px;\n                                font-family: Lato;\n                                text-align: left;\n\n                                border-left-color: rgb(51, 51, 51);\n                                border-left-style: none;\n                                border-left-width: 0;\n                                border-right-color: rgb(51, 51, 51);\n                                border-right-style: none;\n                                border-right-width: 0;\n                                border-bottom-color: rgb(51, 51, 51);\n                                border-bottom-style: none;\n                                border-bottom-width: 0;\n                                border-top-color: rgb(51, 51, 51);\n                                border-top-style: none;\n                                border-top-width: 0;\n                                border-top-left-radius:0;\n                                border-top-right-radius:0;\n                                border-bottom-left-radius:0;\n                                border-bottom-right-radius:0;\n\n                                -moz-box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                                -webkit-box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                                box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                              }\n                              #asset-1513001945957 ul ul > li > a {\n                                color: rgb(255, 255, 255);\n                              }\n                              #asset-1513001945957 ul ul > li.k-state-hover {\n                                padding-top: 5px;\n                                padding-right: 10px;\n                                padding-bottom: 5px;\n                                padding-left: 10px;\n                                background-color: rgb(16, 196, 178);\n                                font-style: normal;\n                                font-weight: normal;\n                                font-size: 12px;\n                                font-family: Lato;\n                                text-align: left;\n\n                                border-left-color: rgb(46, 179, 166);\n                                border-left-style: none;\n                                border-left-width: 0;\n                                border-right-color: rgb(46, 179, 166);\n                                border-right-style: none;\n                                border-right-width: 0;\n                                border-bottom-color: rgb(46, 179, 166);\n                                border-bottom-style: none;\n                                border-bottom-width: 0;\n                                border-top-color: rgb(46, 179, 166);\n                                border-top-style: none;\n                                border-top-width: 0;\n                                border-top-left-radius:0;\n                                border-top-right-radius:0;\n                                border-bottom-left-radius:0;\n                                border-bottom-right-radius:0;\n\n                                -moz-box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                                -webkit-box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                                box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                              }\n                              #asset-1513001945957 ul ul > li.k-state-hover > a {\n                                color: rgb(255, 255, 255);\n                              }\n                              #asset-1513001945957 ul ul > li.k-state-active {\n                                padding-top: 5px;\n                                padding-right: 10px;\n                                padding-bottom: 5px;\n                                padding-left: 10px;\n                                background-color: rgb(16, 196, 178);\n                                font-style: normal;\n                                font-weight: normal;\n                                font-size: 12px;\n                                font-family: Lato;\n                                text-align: left;\n\n                                border-left-color: rgb(16, 196, 178);\n                                border-left-style: none;\n                                border-left-width: 0;\n                                border-right-color: rgb(16, 196, 178);\n                                border-right-style: none;\n                                border-right-width: 0;\n                                border-bottom-color: rgb(16, 196, 178);\n                                border-bottom-style: none;\n                                border-bottom-width: 0;\n                                border-top-color: rgb(16, 196, 178);\n                                border-top-style: none;\n                                border-top-width: 0;\n                                border-top-left-radius:0;\n                                border-top-right-radius:0;\n                                border-bottom-left-radius:0;\n                                border-bottom-right-radius:0;\n\n                                -moz-box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                                -webkit-box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                                box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                              }\n                              #asset-1513001945957 ul ul > li.k-state-active > a {\n                                color: rgb(255, 255, 255);\n                              }"
+                              },
+                              {
+                                "tagName": "div",
+                                "attributes": {
+                                  "class": "neo-asset-inner",
+                                  "style": "background-color: rgba(255, 255, 255, 0); opacity: 1; border-style: none; border-color: rgb(51, 51, 51); background-image: none; box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 0px 0px;"
+                                },
+                                "children": [
+                                  {
+                                    "tagName": "ul",
+                                    "attributes": {
+                                      "class": "neo-navigation-menu k-widget k-reset k-header k-menu k-menu-horizontal",
+                                      "role": "menubar",
+                                      "data-role": "menu",
+                                      "data-k-on-select": "onKendoMenuSelect(kendoEvent)",
+                                      "data-k-on-open": "onKendoMenuOpen(kendoEvent)",
+                                      "data-k-orientation": "'horizontal'",
+                                      "data-kendo-menu": "",
+                                      "tabindex": "0"
+                                    },
+                                    "children": [
+                                      {
+                                        "tagName": "li",
+                                        "attributes": {
+                                          "class": "k-item k-state-default k-first k-state-active selected-page k-state-highlight",
+                                          "id": "page-9923709-243517921334",
+                                          "role": "menuitem"
+                                        },
+                                        "children": [
+                                          {
+                                            "tagName": "a",
+                                            "attributes": {
+                                              "class": "k-link",
+                                              "href": "index.html"
+                                            },
+                                            "children": [],
+                                            "textContent": "Home"
+                                          }
+                                        ],
+                                        "textContent": "Home"
+                                      },
+                                      {
+                                        "tagName": "li",
+                                        "attributes": {
+                                          "class": "k-item k-state-default",
+                                          "id": "page-9923711-1547826230820",
+                                          "role": "menuitem"
+                                        },
+                                        "children": [
+                                          {
+                                            "tagName": "a",
+                                            "attributes": {
+                                              "class": "k-link",
+                                              "href": "about-us.html"
+                                            },
+                                            "children": [],
+                                            "textContent": "About us"
+                                          }
+                                        ],
+                                        "textContent": "About us"
+                                      },
+                                      {
+                                        "tagName": "li",
+                                        "attributes": {
+                                          "class": "k-item k-state-default",
+                                          "id": "page-9923708-1499964300841",
+                                          "role": "menuitem"
+                                        },
+                                        "children": [
+                                          {
+                                            "tagName": "a",
+                                            "attributes": {
+                                              "class": "k-link",
+                                              "href": "contact-us.html"
+                                            },
+                                            "children": [],
+                                            "textContent": "Contact Us"
+                                          }
+                                        ],
+                                        "textContent": "Contact Us"
+                                      },
+                                      {
+                                        "tagName": "li",
+                                        "attributes": {
+                                          "class": "k-item k-state-default k-last",
+                                          "id": "page-9923710-1597652206519",
+                                          "role": "menuitem"
+                                        },
+                                        "children": [
+                                          {
+                                            "tagName": "a",
+                                            "attributes": {
+                                              "class": "k-link",
+                                              "href": "application.html"
+                                            },
+                                            "children": [],
+                                            "textContent": "Application"
+                                          }
+                                        ],
+                                        "textContent": "Application"
+                                      }
+                                    ],
+                                    "textContent": "Home \n        About us \n        Contact Us \n        Application"
+                                  }
+                                ],
+                                "textContent": "Home \n        About us \n        Contact Us \n        Application"
+                              }
+                            ],
+                            "textContent": "/****************/\n                              /* neo main nav */\n                              /****************/\n                              #asset-1513001945957.main-nav-fixed-plugin .neo-asset-inner > ul > li {\n                                width: 130px;\n                              }\n                              #asset-1513001945957 .neo-asset-inner > ul > li {\n                                padding-top: 5px;\n                                padding-right: 10px;\n                                padding-bottom: 5px;\n                                padding-left: 10px;\n                                margin-right: 0;\n                                margin-bottom: 0;\n                                background-color: rgb(0, 0, 0);\n                                font-style: normal;\n                                font-weight: normal;\n                                font-size: 12px;\n                                font-family: Lato;\n                                text-align: left;\n\n                                border-left-color: rgb(51, 51, 51);\n                                border-left-style: none;\n                                border-left-width: 0;\n                                border-right-color: rgb(51, 51, 51);\n                                border-right-style: none;\n                                border-right-width: 0;\n                                border-bottom-color: rgb(51, 51, 51);\n                                border-bottom-style: none;\n                                border-bottom-width: 0;\n                                border-top-color: rgb(51, 51, 51);\n                                border-top-style: none;\n                                border-top-width: 0;\n                                border-top-left-radius:0;\n                                border-top-right-radius:0;\n                                border-bottom-left-radius:0;\n                                border-bottom-right-radius:0;\n\n                                -moz-box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                                -webkit-box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                                box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                              }\n                              #asset-1513001945957 .neo-asset-inner > ul > li > a {\n                                color: rgb(255, 255, 255);\n                              }\n                              #asset-1513001945957 .neo-asset-inner > ul > li.k-state-hover {\n                                padding-top: 5px;\n                                padding-right: 10px;\n                                padding-bottom: 5px;\n                                padding-left: 10px;\n                                background-color: rgb(16, 196, 178);\n                                font-style: normal;\n                                font-weight: normal;\n                                font-size: 12px;\n                                font-family: Lato;\n                                text-align: left;\n\n                                border-left-color: rgb(46, 179, 166);\n                                border-left-style: none;\n                                border-left-width: 0;\n                                border-right-color: rgb(46, 179, 166);\n                                border-right-style: none;\n                                border-right-width: 0;\n                                border-bottom-color: rgb(46, 179, 166);\n                                border-bottom-style: none;\n                                border-bottom-width: 0;\n                                border-top-color: rgb(46, 179, 166);\n                                border-top-style: none;\n                                border-top-width: 0;\n                                border-top-left-radius:0;\n                                border-top-right-radius:0;\n                                border-bottom-left-radius:0;\n                                border-bottom-right-radius:0;\n\n                                -moz-box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                                -webkit-box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                                box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                              }\n                              #asset-1513001945957 .neo-asset-inner > ul > li.k-state-hover > a {\n                                color: rgb(255, 255, 255);\n                              }\n                              #asset-1513001945957 .neo-asset-inner > ul > li.k-state-active {\n                                padding-top: 5px;\n                                padding-right: 10px;\n                                padding-bottom: 5px;\n                                padding-left: 10px;\n                                background-color: rgb(16, 196, 178);\n                                font-style: normal;\n                                font-weight: normal;\n                                font-size: 12px;\n                                font-family: Lato;\n                                text-align: left;\n\n                                border-left-color: rgb(16, 196, 178);\n                                border-left-style: none;\n                                border-left-width: 0;\n                                border-right-color: rgb(16, 196, 178);\n                                border-right-style: none;\n                                border-right-width: 0;\n                                border-bottom-color: rgb(16, 196, 178);\n                                border-bottom-style: none;\n                                border-bottom-width: 0;\n                                border-top-color: rgb(16, 196, 178);\n                                border-top-style: none;\n                                border-top-width: 0;\n                                border-top-left-radius:0;\n                                border-top-right-radius:0;\n                                border-bottom-left-radius:0;\n                                border-bottom-right-radius:0;\n\n                                -moz-box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                                -webkit-box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                                box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                              }\n                              #asset-1513001945957 .neo-asset-inner > ul > li.k-state-active > a {\n                                color: rgb(255, 255, 255);\n                              }\n                              /***************/\n                              /* neo sub nav */\n                              /***************/\n                              #asset-1513001945957.sub-nav-fixed-plugin ul ul > li {\n                                width: 130px;\n                              }\n                              #asset-1513001945957 ul ul > li {\n                                padding-top: 5px;\n                                padding-right: 10px;\n                                padding-bottom: 5px;\n                                padding-left: 10px;\n                                margin-bottom: 0;\n                                background-color: rgb(0, 0, 0);\n                                font-style: normal;\n                                font-weight: normal;\n                                font-size: 12px;\n                                font-family: Lato;\n                                text-align: left;\n\n                                border-left-color: rgb(51, 51, 51);\n                                border-left-style: none;\n                                border-left-width: 0;\n                                border-right-color: rgb(51, 51, 51);\n                                border-right-style: none;\n                                border-right-width: 0;\n                                border-bottom-color: rgb(51, 51, 51);\n                                border-bottom-style: none;\n                                border-bottom-width: 0;\n                                border-top-color: rgb(51, 51, 51);\n                                border-top-style: none;\n                                border-top-width: 0;\n                                border-top-left-radius:0;\n                                border-top-right-radius:0;\n                                border-bottom-left-radius:0;\n                                border-bottom-right-radius:0;\n\n                                -moz-box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                                -webkit-box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                                box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                              }\n                              #asset-1513001945957 ul ul > li > a {\n                                color: rgb(255, 255, 255);\n                              }\n                              #asset-1513001945957 ul ul > li.k-state-hover {\n                                padding-top: 5px;\n                                padding-right: 10px;\n                                padding-bottom: 5px;\n                                padding-left: 10px;\n                                background-color: rgb(16, 196, 178);\n                                font-style: normal;\n                                font-weight: normal;\n                                font-size: 12px;\n                                font-family: Lato;\n                                text-align: left;\n\n                                border-left-color: rgb(46, 179, 166);\n                                border-left-style: none;\n                                border-left-width: 0;\n                                border-right-color: rgb(46, 179, 166);\n                                border-right-style: none;\n                                border-right-width: 0;\n                                border-bottom-color: rgb(46, 179, 166);\n                                border-bottom-style: none;\n                                border-bottom-width: 0;\n                                border-top-color: rgb(46, 179, 166);\n                                border-top-style: none;\n                                border-top-width: 0;\n                                border-top-left-radius:0;\n                                border-top-right-radius:0;\n                                border-bottom-left-radius:0;\n                                border-bottom-right-radius:0;\n\n                                -moz-box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                                -webkit-box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                                box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                              }\n                              #asset-1513001945957 ul ul > li.k-state-hover > a {\n                                color: rgb(255, 255, 255);\n                              }\n                              #asset-1513001945957 ul ul > li.k-state-active {\n                                padding-top: 5px;\n                                padding-right: 10px;\n                                padding-bottom: 5px;\n                                padding-left: 10px;\n                                background-color: rgb(16, 196, 178);\n                                font-style: normal;\n                                font-weight: normal;\n                                font-size: 12px;\n                                font-family: Lato;\n                                text-align: left;\n\n                                border-left-color: rgb(16, 196, 178);\n                                border-left-style: none;\n                                border-left-width: 0;\n                                border-right-color: rgb(16, 196, 178);\n                                border-right-style: none;\n                                border-right-width: 0;\n                                border-bottom-color: rgb(16, 196, 178);\n                                border-bottom-style: none;\n                                border-bottom-width: 0;\n                                border-top-color: rgb(16, 196, 178);\n                                border-top-style: none;\n                                border-top-width: 0;\n                                border-top-left-radius:0;\n                                border-top-right-radius:0;\n                                border-bottom-left-radius:0;\n                                border-bottom-right-radius:0;\n\n                                -moz-box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                                -webkit-box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                                box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                              }\n                              #asset-1513001945957 ul ul > li.k-state-active > a {\n                                color: rgb(255, 255, 255);\n                              }\n                           \n       \n        \n        Home \n        About us \n        Contact Us \n        Application"
+                          }
+                        ],
+                        "textContent": "Welcome! \n       Receive high-quality professional services, from Jennette Electric School based in Plainville MA 02762. Weather you are an individual or a large or small company, our teachers can provide the continuing education credits you need to get your license(s) renewed. Our track record for consistency, timely, service, and subject matter expertise makes your attendance an enjoyable experience. \n       We offer discounted pricing for companies who wish to hold private course at their facilities. To speak with an experienced member of our staff, simply contact us in Plainville MA 02762 at your convenience. \n       \n      \n      \n         \n                              /****************/\n                              /* neo main nav */\n                              /****************/\n                              #asset-1513001945957.main-nav-fixed-plugin .neo-asset-inner > ul > li {\n                                width: 130px;\n                              }\n                              #asset-1513001945957 .neo-asset-inner > ul > li {\n                                padding-top: 5px;\n                                padding-right: 10px;\n                                padding-bottom: 5px;\n                                padding-left: 10px;\n                                margin-right: 0;\n                                margin-bottom: 0;\n                                background-color: rgb(0, 0, 0);\n                                font-style: normal;\n                                font-weight: normal;\n                                font-size: 12px;\n                                font-family: Lato;\n                                text-align: left;\n\n                                border-left-color: rgb(51, 51, 51);\n                                border-left-style: none;\n                                border-left-width: 0;\n                                border-right-color: rgb(51, 51, 51);\n                                border-right-style: none;\n                                border-right-width: 0;\n                                border-bottom-color: rgb(51, 51, 51);\n                                border-bottom-style: none;\n                                border-bottom-width: 0;\n                                border-top-color: rgb(51, 51, 51);\n                                border-top-style: none;\n                                border-top-width: 0;\n                                border-top-left-radius:0;\n                                border-top-right-radius:0;\n                                border-bottom-left-radius:0;\n                                border-bottom-right-radius:0;\n\n                                -moz-box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                                -webkit-box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                                box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                              }\n                              #asset-1513001945957 .neo-asset-inner > ul > li > a {\n                                color: rgb(255, 255, 255);\n                              }\n                              #asset-1513001945957 .neo-asset-inner > ul > li.k-state-hover {\n                                padding-top: 5px;\n                                padding-right: 10px;\n                                padding-bottom: 5px;\n                                padding-left: 10px;\n                                background-color: rgb(16, 196, 178);\n                                font-style: normal;\n                                font-weight: normal;\n                                font-size: 12px;\n                                font-family: Lato;\n                                text-align: left;\n\n                                border-left-color: rgb(46, 179, 166);\n                                border-left-style: none;\n                                border-left-width: 0;\n                                border-right-color: rgb(46, 179, 166);\n                                border-right-style: none;\n                                border-right-width: 0;\n                                border-bottom-color: rgb(46, 179, 166);\n                                border-bottom-style: none;\n                                border-bottom-width: 0;\n                                border-top-color: rgb(46, 179, 166);\n                                border-top-style: none;\n                                border-top-width: 0;\n                                border-top-left-radius:0;\n                                border-top-right-radius:0;\n                                border-bottom-left-radius:0;\n                                border-bottom-right-radius:0;\n\n                                -moz-box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                                -webkit-box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                                box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                              }\n                              #asset-1513001945957 .neo-asset-inner > ul > li.k-state-hover > a {\n                                color: rgb(255, 255, 255);\n                              }\n                              #asset-1513001945957 .neo-asset-inner > ul > li.k-state-active {\n                                padding-top: 5px;\n                                padding-right: 10px;\n                                padding-bottom: 5px;\n                                padding-left: 10px;\n                                background-color: rgb(16, 196, 178);\n                                font-style: normal;\n                                font-weight: normal;\n                                font-size: 12px;\n                                font-family: Lato;\n                                text-align: left;\n\n                                border-left-color: rgb(16, 196, 178);\n                                border-left-style: none;\n                                border-left-width: 0;\n                                border-right-color: rgb(16, 196, 178);\n                                border-right-style: none;\n                                border-right-width: 0;\n                                border-bottom-color: rgb(16, 196, 178);\n                                border-bottom-style: none;\n                                border-bottom-width: 0;\n                                border-top-color: rgb(16, 196, 178);\n                                border-top-style: none;\n                                border-top-width: 0;\n                                border-top-left-radius:0;\n                                border-top-right-radius:0;\n                                border-bottom-left-radius:0;\n                                border-bottom-right-radius:0;\n\n                                -moz-box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                                -webkit-box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                                box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                              }\n                              #asset-1513001945957 .neo-asset-inner > ul > li.k-state-active > a {\n                                color: rgb(255, 255, 255);\n                              }\n                              /***************/\n                              /* neo sub nav */\n                              /***************/\n                              #asset-1513001945957.sub-nav-fixed-plugin ul ul > li {\n                                width: 130px;\n                              }\n                              #asset-1513001945957 ul ul > li {\n                                padding-top: 5px;\n                                padding-right: 10px;\n                                padding-bottom: 5px;\n                                padding-left: 10px;\n                                margin-bottom: 0;\n                                background-color: rgb(0, 0, 0);\n                                font-style: normal;\n                                font-weight: normal;\n                                font-size: 12px;\n                                font-family: Lato;\n                                text-align: left;\n\n                                border-left-color: rgb(51, 51, 51);\n                                border-left-style: none;\n                                border-left-width: 0;\n                                border-right-color: rgb(51, 51, 51);\n                                border-right-style: none;\n                                border-right-width: 0;\n                                border-bottom-color: rgb(51, 51, 51);\n                                border-bottom-style: none;\n                                border-bottom-width: 0;\n                                border-top-color: rgb(51, 51, 51);\n                                border-top-style: none;\n                                border-top-width: 0;\n                                border-top-left-radius:0;\n                                border-top-right-radius:0;\n                                border-bottom-left-radius:0;\n                                border-bottom-right-radius:0;\n\n                                -moz-box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                                -webkit-box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                                box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                              }\n                              #asset-1513001945957 ul ul > li > a {\n                                color: rgb(255, 255, 255);\n                              }\n                              #asset-1513001945957 ul ul > li.k-state-hover {\n                                padding-top: 5px;\n                                padding-right: 10px;\n                                padding-bottom: 5px;\n                                padding-left: 10px;\n                                background-color: rgb(16, 196, 178);\n                                font-style: normal;\n                                font-weight: normal;\n                                font-size: 12px;\n                                font-family: Lato;\n                                text-align: left;\n\n                                border-left-color: rgb(46, 179, 166);\n                                border-left-style: none;\n                                border-left-width: 0;\n                                border-right-color: rgb(46, 179, 166);\n                                border-right-style: none;\n                                border-right-width: 0;\n                                border-bottom-color: rgb(46, 179, 166);\n                                border-bottom-style: none;\n                                border-bottom-width: 0;\n                                border-top-color: rgb(46, 179, 166);\n                                border-top-style: none;\n                                border-top-width: 0;\n                                border-top-left-radius:0;\n                                border-top-right-radius:0;\n                                border-bottom-left-radius:0;\n                                border-bottom-right-radius:0;\n\n                                -moz-box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                                -webkit-box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                                box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                              }\n                              #asset-1513001945957 ul ul > li.k-state-hover > a {\n                                color: rgb(255, 255, 255);\n                              }\n                              #asset-1513001945957 ul ul > li.k-state-active {\n                                padding-top: 5px;\n                                padding-right: 10px;\n                                padding-bottom: 5px;\n                                padding-left: 10px;\n                                background-color: rgb(16, 196, 178);\n                                font-style: normal;\n                                font-weight: normal;\n                                font-size: 12px;\n                                font-family: Lato;\n                                text-align: left;\n\n                                border-left-color: rgb(16, 196, 178);\n                                border-left-style: none;\n                                border-left-width: 0;\n                                border-right-color: rgb(16, 196, 178);\n                                border-right-style: none;\n                                border-right-width: 0;\n                                border-bottom-color: rgb(16, 196, 178);\n                                border-bottom-style: none;\n                                border-bottom-width: 0;\n                                border-top-color: rgb(16, 196, 178);\n                                border-top-style: none;\n                                border-top-width: 0;\n                                border-top-left-radius:0;\n                                border-top-right-radius:0;\n                                border-bottom-left-radius:0;\n                                border-bottom-right-radius:0;\n\n                                -moz-box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                                -webkit-box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                                box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                              }\n                              #asset-1513001945957 ul ul > li.k-state-active > a {\n                                color: rgb(255, 255, 255);\n                              }\n                           \n       \n        \n        Home \n        About us \n        Contact Us \n        Application"
+                      }
+                    ],
+                    "textContent": "Welcome! \n       Receive high-quality professional services, from Jennette Electric School based in Plainville MA 02762. Weather you are an individual or a large or small company, our teachers can provide the continuing education credits you need to get your license(s) renewed. Our track record for consistency, timely, service, and subject matter expertise makes your attendance an enjoyable experience. \n       We offer discounted pricing for companies who wish to hold private course at their facilities. To speak with an experienced member of our staff, simply contact us in Plainville MA 02762 at your convenience. \n       \n      \n      \n         \n                              /****************/\n                              /* neo main nav */\n                              /****************/\n                              #asset-1513001945957.main-nav-fixed-plugin .neo-asset-inner > ul > li {\n                                width: 130px;\n                              }\n                              #asset-1513001945957 .neo-asset-inner > ul > li {\n                                padding-top: 5px;\n                                padding-right: 10px;\n                                padding-bottom: 5px;\n                                padding-left: 10px;\n                                margin-right: 0;\n                                margin-bottom: 0;\n                                background-color: rgb(0, 0, 0);\n                                font-style: normal;\n                                font-weight: normal;\n                                font-size: 12px;\n                                font-family: Lato;\n                                text-align: left;\n\n                                border-left-color: rgb(51, 51, 51);\n                                border-left-style: none;\n                                border-left-width: 0;\n                                border-right-color: rgb(51, 51, 51);\n                                border-right-style: none;\n                                border-right-width: 0;\n                                border-bottom-color: rgb(51, 51, 51);\n                                border-bottom-style: none;\n                                border-bottom-width: 0;\n                                border-top-color: rgb(51, 51, 51);\n                                border-top-style: none;\n                                border-top-width: 0;\n                                border-top-left-radius:0;\n                                border-top-right-radius:0;\n                                border-bottom-left-radius:0;\n                                border-bottom-right-radius:0;\n\n                                -moz-box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                                -webkit-box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                                box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                              }\n                              #asset-1513001945957 .neo-asset-inner > ul > li > a {\n                                color: rgb(255, 255, 255);\n                              }\n                              #asset-1513001945957 .neo-asset-inner > ul > li.k-state-hover {\n                                padding-top: 5px;\n                                padding-right: 10px;\n                                padding-bottom: 5px;\n                                padding-left: 10px;\n                                background-color: rgb(16, 196, 178);\n                                font-style: normal;\n                                font-weight: normal;\n                                font-size: 12px;\n                                font-family: Lato;\n                                text-align: left;\n\n                                border-left-color: rgb(46, 179, 166);\n                                border-left-style: none;\n                                border-left-width: 0;\n                                border-right-color: rgb(46, 179, 166);\n                                border-right-style: none;\n                                border-right-width: 0;\n                                border-bottom-color: rgb(46, 179, 166);\n                                border-bottom-style: none;\n                                border-bottom-width: 0;\n                                border-top-color: rgb(46, 179, 166);\n                                border-top-style: none;\n                                border-top-width: 0;\n                                border-top-left-radius:0;\n                                border-top-right-radius:0;\n                                border-bottom-left-radius:0;\n                                border-bottom-right-radius:0;\n\n                                -moz-box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                                -webkit-box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                                box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                              }\n                              #asset-1513001945957 .neo-asset-inner > ul > li.k-state-hover > a {\n                                color: rgb(255, 255, 255);\n                              }\n                              #asset-1513001945957 .neo-asset-inner > ul > li.k-state-active {\n                                padding-top: 5px;\n                                padding-right: 10px;\n                                padding-bottom: 5px;\n                                padding-left: 10px;\n                                background-color: rgb(16, 196, 178);\n                                font-style: normal;\n                                font-weight: normal;\n                                font-size: 12px;\n                                font-family: Lato;\n                                text-align: left;\n\n                                border-left-color: rgb(16, 196, 178);\n                                border-left-style: none;\n                                border-left-width: 0;\n                                border-right-color: rgb(16, 196, 178);\n                                border-right-style: none;\n                                border-right-width: 0;\n                                border-bottom-color: rgb(16, 196, 178);\n                                border-bottom-style: none;\n                                border-bottom-width: 0;\n                                border-top-color: rgb(16, 196, 178);\n                                border-top-style: none;\n                                border-top-width: 0;\n                                border-top-left-radius:0;\n                                border-top-right-radius:0;\n                                border-bottom-left-radius:0;\n                                border-bottom-right-radius:0;\n\n                                -moz-box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                                -webkit-box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                                box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                              }\n                              #asset-1513001945957 .neo-asset-inner > ul > li.k-state-active > a {\n                                color: rgb(255, 255, 255);\n                              }\n                              /***************/\n                              /* neo sub nav */\n                              /***************/\n                              #asset-1513001945957.sub-nav-fixed-plugin ul ul > li {\n                                width: 130px;\n                              }\n                              #asset-1513001945957 ul ul > li {\n                                padding-top: 5px;\n                                padding-right: 10px;\n                                padding-bottom: 5px;\n                                padding-left: 10px;\n                                margin-bottom: 0;\n                                background-color: rgb(0, 0, 0);\n                                font-style: normal;\n                                font-weight: normal;\n                                font-size: 12px;\n                                font-family: Lato;\n                                text-align: left;\n\n                                border-left-color: rgb(51, 51, 51);\n                                border-left-style: none;\n                                border-left-width: 0;\n                                border-right-color: rgb(51, 51, 51);\n                                border-right-style: none;\n                                border-right-width: 0;\n                                border-bottom-color: rgb(51, 51, 51);\n                                border-bottom-style: none;\n                                border-bottom-width: 0;\n                                border-top-color: rgb(51, 51, 51);\n                                border-top-style: none;\n                                border-top-width: 0;\n                                border-top-left-radius:0;\n                                border-top-right-radius:0;\n                                border-bottom-left-radius:0;\n                                border-bottom-right-radius:0;\n\n                                -moz-box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                                -webkit-box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                                box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                              }\n                              #asset-1513001945957 ul ul > li > a {\n                                color: rgb(255, 255, 255);\n                              }\n                              #asset-1513001945957 ul ul > li.k-state-hover {\n                                padding-top: 5px;\n                                padding-right: 10px;\n                                padding-bottom: 5px;\n                                padding-left: 10px;\n                                background-color: rgb(16, 196, 178);\n                                font-style: normal;\n                                font-weight: normal;\n                                font-size: 12px;\n                                font-family: Lato;\n                                text-align: left;\n\n                                border-left-color: rgb(46, 179, 166);\n                                border-left-style: none;\n                                border-left-width: 0;\n                                border-right-color: rgb(46, 179, 166);\n                                border-right-style: none;\n                                border-right-width: 0;\n                                border-bottom-color: rgb(46, 179, 166);\n                                border-bottom-style: none;\n                                border-bottom-width: 0;\n                                border-top-color: rgb(46, 179, 166);\n                                border-top-style: none;\n                                border-top-width: 0;\n                                border-top-left-radius:0;\n                                border-top-right-radius:0;\n                                border-bottom-left-radius:0;\n                                border-bottom-right-radius:0;\n\n                                -moz-box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                                -webkit-box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                                box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                              }\n                              #asset-1513001945957 ul ul > li.k-state-hover > a {\n                                color: rgb(255, 255, 255);\n                              }\n                              #asset-1513001945957 ul ul > li.k-state-active {\n                                padding-top: 5px;\n                                padding-right: 10px;\n                                padding-bottom: 5px;\n                                padding-left: 10px;\n                                background-color: rgb(16, 196, 178);\n                                font-style: normal;\n                                font-weight: normal;\n                                font-size: 12px;\n                                font-family: Lato;\n                                text-align: left;\n\n                                border-left-color: rgb(16, 196, 178);\n                                border-left-style: none;\n                                border-left-width: 0;\n                                border-right-color: rgb(16, 196, 178);\n                                border-right-style: none;\n                                border-right-width: 0;\n                                border-bottom-color: rgb(16, 196, 178);\n                                border-bottom-style: none;\n                                border-bottom-width: 0;\n                                border-top-color: rgb(16, 196, 178);\n                                border-top-style: none;\n                                border-top-width: 0;\n                                border-top-left-radius:0;\n                                border-top-right-radius:0;\n                                border-bottom-left-radius:0;\n                                border-bottom-right-radius:0;\n\n                                -moz-box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                                -webkit-box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                                box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                              }\n                              #asset-1513001945957 ul ul > li.k-state-active > a {\n                                color: rgb(255, 255, 255);\n                              }\n                           \n       \n        \n        Home \n        About us \n        Contact Us \n        Application"
+                  },
+                  {
+                    "tagName": "div",
+                    "attributes": {
+                      "class": "global-region bottom",
+                      "id": "footer"
+                    },
+                    "children": [
+                      {
+                        "tagName": "div",
+                        "attributes": {
+                          "class": "global-region-inner",
+                          "style": "margin: 0px auto; height: 137px; position: relative; width: 962px;"
+                        },
+                        "children": [
+                          {
+                            "tagName": "div",
+                            "attributes": {
+                              "class": "neo-asset image-plugin",
+                              "id": "asset-1513030166224",
+                              "style": "top: 27.3125px; left: 143.812px; position: absolute; width: 179px; z-index: 398;",
+                              "data-module-class": "neo.ImageModule",
+                              "data-settings": "{\"css\":{\"borderTopStyle\":null,\"borderBottomStyle\":null,\"borderLeftStyle\":null,\"borderRightStyle\":null,\"borderAllStyle\":\"none\",\"borderAllWidth\":\"\",\"borderTopWidth\":\"\",\"borderBottomWidth\":\"\",\"borderLeftWidth\":\"\",\"borderRightWidth\":\"\",\"borderTopColor\":null,\"borderLeftColor\":null,\"borderBottomColor\":null,\"borderRightColor\":null,\"borderAllColor\":\"#333333\",\"borderAllRadius\":null,\"borderTopLeftRadius\":\"\",\"borderTopRightRadius\":\"\",\"borderBottomLeftRadius\":\"\",\"borderBottomRightRadius\":\"\",\"paddingAll\":null,\"paddingTop\":\"\",\"paddingBottom\":\"\",\"paddingLeft\":\"\",\"paddingRight\":\"\",\"boxShadow\":\"0px 0px 0 0 rgba(0,0,0,0.5)\"},\"bgColor\":\"rgba(255, 255, 255, 0)\",\"backgroundOpacity\":100,\"shadowColor\":\"rgba(0,0,0,0.5)\",\"backgroundShadowAngle\":140,\"backgroundShadowOffset\":0}"
+                            },
+                            "children": [
+                              {
+                                "tagName": "div",
+                                "attributes": {
+                                  "class": "neo-asset-inner",
+                                  "style": "background-color: rgba(255, 255, 255, 0); opacity: 1; border-style: none; border-color: rgb(51, 51, 51); background-image: none; box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 0px 0px;"
+                                },
+                                "children": [
+                                  {
+                                    "tagName": "img",
+                                    "attributes": {
+                                      "alt": "",
+                                      "src": "assets/register-site-seal.gif"
+                                    },
+                                    "children": [],
+                                    "textContent": ""
+                                  }
+                                ],
+                                "textContent": ""
+                              }
+                            ],
+                            "textContent": ""
+                          },
+                          {
+                            "tagName": "div",
+                            "attributes": {
+                              "class": "text-plugin neo-asset",
+                              "id": "asset-1513012249657",
+                              "style": "width: 587px; position: absolute; left: 298.097px; z-index: 396; top: 41.1042px; height: auto;",
+                              "data-settings": "{\"css\":{\"borderTopStyle\":null,\"borderBottomStyle\":null,\"borderLeftStyle\":null,\"borderRightStyle\":null,\"borderAllStyle\":\"none\",\"borderAllWidth\":\"\",\"borderTopWidth\":\"\",\"borderBottomWidth\":\"\",\"borderLeftWidth\":\"\",\"borderRightWidth\":\"\",\"borderTopColor\":null,\"borderLeftColor\":null,\"borderBottomColor\":null,\"borderRightColor\":null,\"borderAllColor\":\"#333333\",\"borderAllRadius\":null,\"borderTopLeftRadius\":\"\",\"borderTopRightRadius\":\"\",\"borderBottomLeftRadius\":\"\",\"borderBottomRightRadius\":\"\",\"paddingAll\":null,\"paddingTop\":\"\",\"paddingBottom\":\"\",\"paddingLeft\":\"\",\"paddingRight\":\"\",\"boxShadow\":\"0px 0px 0 0 rgba(0,0,0,0.5)\"},\"bgColor\":\"rgba(255, 255, 255, 0)\",\"backgroundOpacity\":100,\"shadowColor\":\"rgba(0,0,0,0.5)\",\"backgroundShadowAngle\":140,\"backgroundShadowOffset\":0}",
+                              "data-module-class": "neo.TextModule",
+                              "data-region": "footer"
+                            },
+                            "children": [
+                              {
+                                "tagName": "div",
+                                "attributes": {
+                                  "class": "neo-asset-inner mCS_destroyed",
+                                  "id": "asset-1513012249657-neo-asset-inner",
+                                  "style": "background-color: rgba(255, 255, 255, 0); position: relative; opacity: 1; border-style: none; border-color: rgb(51, 51, 51); background-image: none; box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 0px 0px;",
+                                  "spellcheck": "false"
+                                },
+                                "children": [
+                                  {
+                                    "tagName": "div",
+                                    "attributes": {
+                                      "style": "text-align: center; line-height: 1;"
+                                    },
+                                    "children": [],
+                                    "textContent": "160 WASHINGTON ST #24 PLAINVILLE MA 02762-1316"
+                                  },
+                                  {
+                                    "tagName": "div",
+                                    "attributes": {
+                                      "style": "text-align: center; line-height: 1;"
+                                    },
+                                    "children": [
+                                      {
+                                        "tagName": "span",
+                                        "attributes": {
+                                          "style": "font-size: 24px; font-family: Arial, Helvetica, sans-serif;"
+                                        },
+                                        "children": [
+                                          {
+                                            "tagName": "br",
+                                            "attributes": {},
+                                            "children": [],
+                                            "textContent": ""
+                                          }
+                                        ],
+                                        "textContent": "508-380-7134 or Fax 774-643-6588"
+                                      }
+                                    ],
+                                    "textContent": "508-380-7134 or Fax 774-643-6588"
+                                  },
+                                  {
+                                    "tagName": "p",
+                                    "attributes": {},
+                                    "children": [],
+                                    "textContent": ""
+                                  },
+                                  {
+                                    "tagName": "div",
+                                    "attributes": {
+                                      "style": "line-height: 0.8;"
+                                    },
+                                    "children": [
+                                      {
+                                        "tagName": "span",
+                                        "attributes": {
+                                          "style": "font-size: 24px; font-family: Arial, Helvetica, sans-serif;"
+                                        },
+                                        "children": [],
+                                        "textContent": ""
+                                      }
+                                    ],
+                                    "textContent": ""
+                                  }
+                                ],
+                                "textContent": "160 WASHINGTON ST #24 PLAINVILLE MA 02762-1316 \n        \n        \n        508-380-7134 or Fax 774-643-6588"
+                              }
+                            ],
+                            "textContent": "160 WASHINGTON ST #24 PLAINVILLE MA 02762-1316 \n        \n        \n        508-380-7134 or Fax 774-643-6588"
+                          }
+                        ],
+                        "textContent": "160 WASHINGTON ST #24 PLAINVILLE MA 02762-1316 \n        \n        \n        508-380-7134 or Fax 774-643-6588"
+                      }
+                    ],
+                    "textContent": "160 WASHINGTON ST #24 PLAINVILLE MA 02762-1316 \n        \n        \n        508-380-7134 or Fax 774-643-6588"
+                  }
+                ],
+                "textContent": "Welcome! \n       Receive high-quality professional services, from Jennette Electric School based in Plainville MA 02762. Weather you are an individual or a large or small company, our teachers can provide the continuing education credits you need to get your license(s) renewed. Our track record for consistency, timely, service, and subject matter expertise makes your attendance an enjoyable experience. \n       We offer discounted pricing for companies who wish to hold private course at their facilities. To speak with an experienced member of our staff, simply contact us in Plainville MA 02762 at your convenience. \n       \n      \n      \n         \n                              /****************/\n                              /* neo main nav */\n                              /****************/\n                              #asset-1513001945957.main-nav-fixed-plugin .neo-asset-inner > ul > li {\n                                width: 130px;\n                              }\n                              #asset-1513001945957 .neo-asset-inner > ul > li {\n                                padding-top: 5px;\n                                padding-right: 10px;\n                                padding-bottom: 5px;\n                                padding-left: 10px;\n                                margin-right: 0;\n                                margin-bottom: 0;\n                                background-color: rgb(0, 0, 0);\n                                font-style: normal;\n                                font-weight: normal;\n                                font-size: 12px;\n                                font-family: Lato;\n                                text-align: left;\n\n                                border-left-color: rgb(51, 51, 51);\n                                border-left-style: none;\n                                border-left-width: 0;\n                                border-right-color: rgb(51, 51, 51);\n                                border-right-style: none;\n                                border-right-width: 0;\n                                border-bottom-color: rgb(51, 51, 51);\n                                border-bottom-style: none;\n                                border-bottom-width: 0;\n                                border-top-color: rgb(51, 51, 51);\n                                border-top-style: none;\n                                border-top-width: 0;\n                                border-top-left-radius:0;\n                                border-top-right-radius:0;\n                                border-bottom-left-radius:0;\n                                border-bottom-right-radius:0;\n\n                                -moz-box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                                -webkit-box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                                box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                              }\n                              #asset-1513001945957 .neo-asset-inner > ul > li > a {\n                                color: rgb(255, 255, 255);\n                              }\n                              #asset-1513001945957 .neo-asset-inner > ul > li.k-state-hover {\n                                padding-top: 5px;\n                                padding-right: 10px;\n                                padding-bottom: 5px;\n                                padding-left: 10px;\n                                background-color: rgb(16, 196, 178);\n                                font-style: normal;\n                                font-weight: normal;\n                                font-size: 12px;\n                                font-family: Lato;\n                                text-align: left;\n\n                                border-left-color: rgb(46, 179, 166);\n                                border-left-style: none;\n                                border-left-width: 0;\n                                border-right-color: rgb(46, 179, 166);\n                                border-right-style: none;\n                                border-right-width: 0;\n                                border-bottom-color: rgb(46, 179, 166);\n                                border-bottom-style: none;\n                                border-bottom-width: 0;\n                                border-top-color: rgb(46, 179, 166);\n                                border-top-style: none;\n                                border-top-width: 0;\n                                border-top-left-radius:0;\n                                border-top-right-radius:0;\n                                border-bottom-left-radius:0;\n                                border-bottom-right-radius:0;\n\n                                -moz-box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                                -webkit-box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                                box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                              }\n                              #asset-1513001945957 .neo-asset-inner > ul > li.k-state-hover > a {\n                                color: rgb(255, 255, 255);\n                              }\n                              #asset-1513001945957 .neo-asset-inner > ul > li.k-state-active {\n                                padding-top: 5px;\n                                padding-right: 10px;\n                                padding-bottom: 5px;\n                                padding-left: 10px;\n                                background-color: rgb(16, 196, 178);\n                                font-style: normal;\n                                font-weight: normal;\n                                font-size: 12px;\n                                font-family: Lato;\n                                text-align: left;\n\n                                border-left-color: rgb(16, 196, 178);\n                                border-left-style: none;\n                                border-left-width: 0;\n                                border-right-color: rgb(16, 196, 178);\n                                border-right-style: none;\n                                border-right-width: 0;\n                                border-bottom-color: rgb(16, 196, 178);\n                                border-bottom-style: none;\n                                border-bottom-width: 0;\n                                border-top-color: rgb(16, 196, 178);\n                                border-top-style: none;\n                                border-top-width: 0;\n                                border-top-left-radius:0;\n                                border-top-right-radius:0;\n                                border-bottom-left-radius:0;\n                                border-bottom-right-radius:0;\n\n                                -moz-box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                                -webkit-box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                                box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                              }\n                              #asset-1513001945957 .neo-asset-inner > ul > li.k-state-active > a {\n                                color: rgb(255, 255, 255);\n                              }\n                              /***************/\n                              /* neo sub nav */\n                              /***************/\n                              #asset-1513001945957.sub-nav-fixed-plugin ul ul > li {\n                                width: 130px;\n                              }\n                              #asset-1513001945957 ul ul > li {\n                                padding-top: 5px;\n                                padding-right: 10px;\n                                padding-bottom: 5px;\n                                padding-left: 10px;\n                                margin-bottom: 0;\n                                background-color: rgb(0, 0, 0);\n                                font-style: normal;\n                                font-weight: normal;\n                                font-size: 12px;\n                                font-family: Lato;\n                                text-align: left;\n\n                                border-left-color: rgb(51, 51, 51);\n                                border-left-style: none;\n                                border-left-width: 0;\n                                border-right-color: rgb(51, 51, 51);\n                                border-right-style: none;\n                                border-right-width: 0;\n                                border-bottom-color: rgb(51, 51, 51);\n                                border-bottom-style: none;\n                                border-bottom-width: 0;\n                                border-top-color: rgb(51, 51, 51);\n                                border-top-style: none;\n                                border-top-width: 0;\n                                border-top-left-radius:0;\n                                border-top-right-radius:0;\n                                border-bottom-left-radius:0;\n                                border-bottom-right-radius:0;\n\n                                -moz-box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                                -webkit-box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                                box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                              }\n                              #asset-1513001945957 ul ul > li > a {\n                                color: rgb(255, 255, 255);\n                              }\n                              #asset-1513001945957 ul ul > li.k-state-hover {\n                                padding-top: 5px;\n                                padding-right: 10px;\n                                padding-bottom: 5px;\n                                padding-left: 10px;\n                                background-color: rgb(16, 196, 178);\n                                font-style: normal;\n                                font-weight: normal;\n                                font-size: 12px;\n                                font-family: Lato;\n                                text-align: left;\n\n                                border-left-color: rgb(46, 179, 166);\n                                border-left-style: none;\n                                border-left-width: 0;\n                                border-right-color: rgb(46, 179, 166);\n                                border-right-style: none;\n                                border-right-width: 0;\n                                border-bottom-color: rgb(46, 179, 166);\n                                border-bottom-style: none;\n                                border-bottom-width: 0;\n                                border-top-color: rgb(46, 179, 166);\n                                border-top-style: none;\n                                border-top-width: 0;\n                                border-top-left-radius:0;\n                                border-top-right-radius:0;\n                                border-bottom-left-radius:0;\n                                border-bottom-right-radius:0;\n\n                                -moz-box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                                -webkit-box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                                box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                              }\n                              #asset-1513001945957 ul ul > li.k-state-hover > a {\n                                color: rgb(255, 255, 255);\n                              }\n                              #asset-1513001945957 ul ul > li.k-state-active {\n                                padding-top: 5px;\n                                padding-right: 10px;\n                                padding-bottom: 5px;\n                                padding-left: 10px;\n                                background-color: rgb(16, 196, 178);\n                                font-style: normal;\n                                font-weight: normal;\n                                font-size: 12px;\n                                font-family: Lato;\n                                text-align: left;\n\n                                border-left-color: rgb(16, 196, 178);\n                                border-left-style: none;\n                                border-left-width: 0;\n                                border-right-color: rgb(16, 196, 178);\n                                border-right-style: none;\n                                border-right-width: 0;\n                                border-bottom-color: rgb(16, 196, 178);\n                                border-bottom-style: none;\n                                border-bottom-width: 0;\n                                border-top-color: rgb(16, 196, 178);\n                                border-top-style: none;\n                                border-top-width: 0;\n                                border-top-left-radius:0;\n                                border-top-right-radius:0;\n                                border-bottom-left-radius:0;\n                                border-bottom-right-radius:0;\n\n                                -moz-box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                                -webkit-box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                                box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                              }\n                              #asset-1513001945957 ul ul > li.k-state-active > a {\n                                color: rgb(255, 255, 255);\n                              }\n                           \n       \n        \n        Home \n        About us \n        Contact Us \n        Application \n        \n       \n      \n     \n    \n    \n     \n      \n       \n        \n       \n      \n      \n       \n       \n         160 WASHINGTON ST #24 PLAINVILLE MA 02762-1316 \n        \n        \n        508-380-7134 or Fax 774-643-6588"
+              },
+              {
+                "tagName": "div",
+                "attributes": {
+                  "id": "bottom-area",
+                  "style": "width: 960px;",
+                  "class": ""
+                },
+                "children": [],
+                "textContent": ""
+              }
+            ],
+            "textContent": "Welcome! \n       Receive high-quality professional services, from Jennette Electric School based in Plainville MA 02762. Weather you are an individual or a large or small company, our teachers can provide the continuing education credits you need to get your license(s) renewed. Our track record for consistency, timely, service, and subject matter expertise makes your attendance an enjoyable experience. \n       We offer discounted pricing for companies who wish to hold private course at their facilities. To speak with an experienced member of our staff, simply contact us in Plainville MA 02762 at your convenience. \n       \n      \n      \n         \n                              /****************/\n                              /* neo main nav */\n                              /****************/\n                              #asset-1513001945957.main-nav-fixed-plugin .neo-asset-inner > ul > li {\n                                width: 130px;\n                              }\n                              #asset-1513001945957 .neo-asset-inner > ul > li {\n                                padding-top: 5px;\n                                padding-right: 10px;\n                                padding-bottom: 5px;\n                                padding-left: 10px;\n                                margin-right: 0;\n                                margin-bottom: 0;\n                                background-color: rgb(0, 0, 0);\n                                font-style: normal;\n                                font-weight: normal;\n                                font-size: 12px;\n                                font-family: Lato;\n                                text-align: left;\n\n                                border-left-color: rgb(51, 51, 51);\n                                border-left-style: none;\n                                border-left-width: 0;\n                                border-right-color: rgb(51, 51, 51);\n                                border-right-style: none;\n                                border-right-width: 0;\n                                border-bottom-color: rgb(51, 51, 51);\n                                border-bottom-style: none;\n                                border-bottom-width: 0;\n                                border-top-color: rgb(51, 51, 51);\n                                border-top-style: none;\n                                border-top-width: 0;\n                                border-top-left-radius:0;\n                                border-top-right-radius:0;\n                                border-bottom-left-radius:0;\n                                border-bottom-right-radius:0;\n\n                                -moz-box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                                -webkit-box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                                box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                              }\n                              #asset-1513001945957 .neo-asset-inner > ul > li > a {\n                                color: rgb(255, 255, 255);\n                              }\n                              #asset-1513001945957 .neo-asset-inner > ul > li.k-state-hover {\n                                padding-top: 5px;\n                                padding-right: 10px;\n                                padding-bottom: 5px;\n                                padding-left: 10px;\n                                background-color: rgb(16, 196, 178);\n                                font-style: normal;\n                                font-weight: normal;\n                                font-size: 12px;\n                                font-family: Lato;\n                                text-align: left;\n\n                                border-left-color: rgb(46, 179, 166);\n                                border-left-style: none;\n                                border-left-width: 0;\n                                border-right-color: rgb(46, 179, 166);\n                                border-right-style: none;\n                                border-right-width: 0;\n                                border-bottom-color: rgb(46, 179, 166);\n                                border-bottom-style: none;\n                                border-bottom-width: 0;\n                                border-top-color: rgb(46, 179, 166);\n                                border-top-style: none;\n                                border-top-width: 0;\n                                border-top-left-radius:0;\n                                border-top-right-radius:0;\n                                border-bottom-left-radius:0;\n                                border-bottom-right-radius:0;\n\n                                -moz-box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                                -webkit-box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                                box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                              }\n                              #asset-1513001945957 .neo-asset-inner > ul > li.k-state-hover > a {\n                                color: rgb(255, 255, 255);\n                              }\n                              #asset-1513001945957 .neo-asset-inner > ul > li.k-state-active {\n                                padding-top: 5px;\n                                padding-right: 10px;\n                                padding-bottom: 5px;\n                                padding-left: 10px;\n                                background-color: rgb(16, 196, 178);\n                                font-style: normal;\n                                font-weight: normal;\n                                font-size: 12px;\n                                font-family: Lato;\n                                text-align: left;\n\n                                border-left-color: rgb(16, 196, 178);\n                                border-left-style: none;\n                                border-left-width: 0;\n                                border-right-color: rgb(16, 196, 178);\n                                border-right-style: none;\n                                border-right-width: 0;\n                                border-bottom-color: rgb(16, 196, 178);\n                                border-bottom-style: none;\n                                border-bottom-width: 0;\n                                border-top-color: rgb(16, 196, 178);\n                                border-top-style: none;\n                                border-top-width: 0;\n                                border-top-left-radius:0;\n                                border-top-right-radius:0;\n                                border-bottom-left-radius:0;\n                                border-bottom-right-radius:0;\n\n                                -moz-box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                                -webkit-box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                                box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                              }\n                              #asset-1513001945957 .neo-asset-inner > ul > li.k-state-active > a {\n                                color: rgb(255, 255, 255);\n                              }\n                              /***************/\n                              /* neo sub nav */\n                              /***************/\n                              #asset-1513001945957.sub-nav-fixed-plugin ul ul > li {\n                                width: 130px;\n                              }\n                              #asset-1513001945957 ul ul > li {\n                                padding-top: 5px;\n                                padding-right: 10px;\n                                padding-bottom: 5px;\n                                padding-left: 10px;\n                                margin-bottom: 0;\n                                background-color: rgb(0, 0, 0);\n                                font-style: normal;\n                                font-weight: normal;\n                                font-size: 12px;\n                                font-family: Lato;\n                                text-align: left;\n\n                                border-left-color: rgb(51, 51, 51);\n                                border-left-style: none;\n                                border-left-width: 0;\n                                border-right-color: rgb(51, 51, 51);\n                                border-right-style: none;\n                                border-right-width: 0;\n                                border-bottom-color: rgb(51, 51, 51);\n                                border-bottom-style: none;\n                                border-bottom-width: 0;\n                                border-top-color: rgb(51, 51, 51);\n                                border-top-style: none;\n                                border-top-width: 0;\n                                border-top-left-radius:0;\n                                border-top-right-radius:0;\n                                border-bottom-left-radius:0;\n                                border-bottom-right-radius:0;\n\n                                -moz-box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                                -webkit-box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                                box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                              }\n                              #asset-1513001945957 ul ul > li > a {\n                                color: rgb(255, 255, 255);\n                              }\n                              #asset-1513001945957 ul ul > li.k-state-hover {\n                                padding-top: 5px;\n                                padding-right: 10px;\n                                padding-bottom: 5px;\n                                padding-left: 10px;\n                                background-color: rgb(16, 196, 178);\n                                font-style: normal;\n                                font-weight: normal;\n                                font-size: 12px;\n                                font-family: Lato;\n                                text-align: left;\n\n                                border-left-color: rgb(46, 179, 166);\n                                border-left-style: none;\n                                border-left-width: 0;\n                                border-right-color: rgb(46, 179, 166);\n                                border-right-style: none;\n                                border-right-width: 0;\n                                border-bottom-color: rgb(46, 179, 166);\n                                border-bottom-style: none;\n                                border-bottom-width: 0;\n                                border-top-color: rgb(46, 179, 166);\n                                border-top-style: none;\n                                border-top-width: 0;\n                                border-top-left-radius:0;\n                                border-top-right-radius:0;\n                                border-bottom-left-radius:0;\n                                border-bottom-right-radius:0;\n\n                                -moz-box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                                -webkit-box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                                box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                              }\n                              #asset-1513001945957 ul ul > li.k-state-hover > a {\n                                color: rgb(255, 255, 255);\n                              }\n                              #asset-1513001945957 ul ul > li.k-state-active {\n                                padding-top: 5px;\n                                padding-right: 10px;\n                                padding-bottom: 5px;\n                                padding-left: 10px;\n                                background-color: rgb(16, 196, 178);\n                                font-style: normal;\n                                font-weight: normal;\n                                font-size: 12px;\n                                font-family: Lato;\n                                text-align: left;\n\n                                border-left-color: rgb(16, 196, 178);\n                                border-left-style: none;\n                                border-left-width: 0;\n                                border-right-color: rgb(16, 196, 178);\n                                border-right-style: none;\n                                border-right-width: 0;\n                                border-bottom-color: rgb(16, 196, 178);\n                                border-bottom-style: none;\n                                border-bottom-width: 0;\n                                border-top-color: rgb(16, 196, 178);\n                                border-top-style: none;\n                                border-top-width: 0;\n                                border-top-left-radius:0;\n                                border-top-right-radius:0;\n                                border-bottom-left-radius:0;\n                                border-bottom-right-radius:0;\n\n                                -moz-box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                                -webkit-box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                                box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                              }\n                              #asset-1513001945957 ul ul > li.k-state-active > a {\n                                color: rgb(255, 255, 255);\n                              }\n                           \n       \n        \n        Home \n        About us \n        Contact Us \n        Application \n        \n       \n      \n     \n    \n    \n     \n      \n       \n        \n       \n      \n      \n       \n       \n         160 WASHINGTON ST #24 PLAINVILLE MA 02762-1316 \n        \n        \n        508-380-7134 or Fax 774-643-6588"
+          },
+          {
+            "tagName": "script",
+            "attributes": {
+              "type": "text/javascript"
+            },
+            "children": [],
+            "textContent": "<!--\ndocument.write('<'+'img style=\"position:fixed;\" src=\"//scorecard.wspisp.net/logger.php'+'?tag=dW5waWQ6MjA2MTA5MjY7MjE%3D&ref='+document.referrer+'&x='+Math.random()+'\" '+'width=\"1\" height=\"1\" alt=\"\" '+'>');\n//-->"
+          },
+          {
+            "tagName": "noscript",
+            "attributes": {},
+            "children": [],
+            "textContent": "<img style=\"position:fixed;\" src=\"//scorecard.wspisp.net/logger.php?tag=dW5waWQ6MjA2MTA5MjY7MjE%3D\" width=\"1\" height=\"1\" alt=\"\" />"
+          }
+        ],
+        "textContent": "Search Results\n     \n     \n     \n    \n   \n  \n    <div class=\"form-ng remove-on-save\">\n      <div id=\"{{FormId}}\">inject webcom-form here</div>\n    </div>\n \n   \n    \n  \n   \n    \n     \n      \n      \n      \n     \n    \n   \n   \n    \n   \n   \n    \n     \n    \n   \n   \n    \n     \n    \n   \n   \n    \n     \n    \n   \n  \n \n \n  \n   \n   \n   \n    \n     \n      \n       \n        \n       \n      \n     \n    \n    \n     \n      \n       \n        \n       \n      \n      \n       \n       Welcome! \n       Receive high-quality professional services, from Jennette Electric School based in Plainville MA 02762. Weather you are an individual or a large or small company, our teachers can provide the continuing education credits you need to get your license(s) renewed. Our track record for consistency, timely, service, and subject matter expertise makes your attendance an enjoyable experience. \n       We offer discounted pricing for companies who wish to hold private course at their facilities. To speak with an experienced member of our staff, simply contact us in Plainville MA 02762 at your convenience. \n       \n      \n      \n         \n                              /****************/\n                              /* neo main nav */\n                              /****************/\n                              #asset-1513001945957.main-nav-fixed-plugin .neo-asset-inner > ul > li {\n                                width: 130px;\n                              }\n                              #asset-1513001945957 .neo-asset-inner > ul > li {\n                                padding-top: 5px;\n                                padding-right: 10px;\n                                padding-bottom: 5px;\n                                padding-left: 10px;\n                                margin-right: 0;\n                                margin-bottom: 0;\n                                background-color: rgb(0, 0, 0);\n                                font-style: normal;\n                                font-weight: normal;\n                                font-size: 12px;\n                                font-family: Lato;\n                                text-align: left;\n\n                                border-left-color: rgb(51, 51, 51);\n                                border-left-style: none;\n                                border-left-width: 0;\n                                border-right-color: rgb(51, 51, 51);\n                                border-right-style: none;\n                                border-right-width: 0;\n                                border-bottom-color: rgb(51, 51, 51);\n                                border-bottom-style: none;\n                                border-bottom-width: 0;\n                                border-top-color: rgb(51, 51, 51);\n                                border-top-style: none;\n                                border-top-width: 0;\n                                border-top-left-radius:0;\n                                border-top-right-radius:0;\n                                border-bottom-left-radius:0;\n                                border-bottom-right-radius:0;\n\n                                -moz-box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                                -webkit-box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                                box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                              }\n                              #asset-1513001945957 .neo-asset-inner > ul > li > a {\n                                color: rgb(255, 255, 255);\n                              }\n                              #asset-1513001945957 .neo-asset-inner > ul > li.k-state-hover {\n                                padding-top: 5px;\n                                padding-right: 10px;\n                                padding-bottom: 5px;\n                                padding-left: 10px;\n                                background-color: rgb(16, 196, 178);\n                                font-style: normal;\n                                font-weight: normal;\n                                font-size: 12px;\n                                font-family: Lato;\n                                text-align: left;\n\n                                border-left-color: rgb(46, 179, 166);\n                                border-left-style: none;\n                                border-left-width: 0;\n                                border-right-color: rgb(46, 179, 166);\n                                border-right-style: none;\n                                border-right-width: 0;\n                                border-bottom-color: rgb(46, 179, 166);\n                                border-bottom-style: none;\n                                border-bottom-width: 0;\n                                border-top-color: rgb(46, 179, 166);\n                                border-top-style: none;\n                                border-top-width: 0;\n                                border-top-left-radius:0;\n                                border-top-right-radius:0;\n                                border-bottom-left-radius:0;\n                                border-bottom-right-radius:0;\n\n                                -moz-box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                                -webkit-box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                                box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                              }\n                              #asset-1513001945957 .neo-asset-inner > ul > li.k-state-hover > a {\n                                color: rgb(255, 255, 255);\n                              }\n                              #asset-1513001945957 .neo-asset-inner > ul > li.k-state-active {\n                                padding-top: 5px;\n                                padding-right: 10px;\n                                padding-bottom: 5px;\n                                padding-left: 10px;\n                                background-color: rgb(16, 196, 178);\n                                font-style: normal;\n                                font-weight: normal;\n                                font-size: 12px;\n                                font-family: Lato;\n                                text-align: left;\n\n                                border-left-color: rgb(16, 196, 178);\n                                border-left-style: none;\n                                border-left-width: 0;\n                                border-right-color: rgb(16, 196, 178);\n                                border-right-style: none;\n                                border-right-width: 0;\n                                border-bottom-color: rgb(16, 196, 178);\n                                border-bottom-style: none;\n                                border-bottom-width: 0;\n                                border-top-color: rgb(16, 196, 178);\n                                border-top-style: none;\n                                border-top-width: 0;\n                                border-top-left-radius:0;\n                                border-top-right-radius:0;\n                                border-bottom-left-radius:0;\n                                border-bottom-right-radius:0;\n\n                                -moz-box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                                -webkit-box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                                box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                              }\n                              #asset-1513001945957 .neo-asset-inner > ul > li.k-state-active > a {\n                                color: rgb(255, 255, 255);\n                              }\n                              /***************/\n                              /* neo sub nav */\n                              /***************/\n                              #asset-1513001945957.sub-nav-fixed-plugin ul ul > li {\n                                width: 130px;\n                              }\n                              #asset-1513001945957 ul ul > li {\n                                padding-top: 5px;\n                                padding-right: 10px;\n                                padding-bottom: 5px;\n                                padding-left: 10px;\n                                margin-bottom: 0;\n                                background-color: rgb(0, 0, 0);\n                                font-style: normal;\n                                font-weight: normal;\n                                font-size: 12px;\n                                font-family: Lato;\n                                text-align: left;\n\n                                border-left-color: rgb(51, 51, 51);\n                                border-left-style: none;\n                                border-left-width: 0;\n                                border-right-color: rgb(51, 51, 51);\n                                border-right-style: none;\n                                border-right-width: 0;\n                                border-bottom-color: rgb(51, 51, 51);\n                                border-bottom-style: none;\n                                border-bottom-width: 0;\n                                border-top-color: rgb(51, 51, 51);\n                                border-top-style: none;\n                                border-top-width: 0;\n                                border-top-left-radius:0;\n                                border-top-right-radius:0;\n                                border-bottom-left-radius:0;\n                                border-bottom-right-radius:0;\n\n                                -moz-box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                                -webkit-box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                                box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                              }\n                              #asset-1513001945957 ul ul > li > a {\n                                color: rgb(255, 255, 255);\n                              }\n                              #asset-1513001945957 ul ul > li.k-state-hover {\n                                padding-top: 5px;\n                                padding-right: 10px;\n                                padding-bottom: 5px;\n                                padding-left: 10px;\n                                background-color: rgb(16, 196, 178);\n                                font-style: normal;\n                                font-weight: normal;\n                                font-size: 12px;\n                                font-family: Lato;\n                                text-align: left;\n\n                                border-left-color: rgb(46, 179, 166);\n                                border-left-style: none;\n                                border-left-width: 0;\n                                border-right-color: rgb(46, 179, 166);\n                                border-right-style: none;\n                                border-right-width: 0;\n                                border-bottom-color: rgb(46, 179, 166);\n                                border-bottom-style: none;\n                                border-bottom-width: 0;\n                                border-top-color: rgb(46, 179, 166);\n                                border-top-style: none;\n                                border-top-width: 0;\n                                border-top-left-radius:0;\n                                border-top-right-radius:0;\n                                border-bottom-left-radius:0;\n                                border-bottom-right-radius:0;\n\n                                -moz-box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                                -webkit-box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                                box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                              }\n                              #asset-1513001945957 ul ul > li.k-state-hover > a {\n                                color: rgb(255, 255, 255);\n                              }\n                              #asset-1513001945957 ul ul > li.k-state-active {\n                                padding-top: 5px;\n                                padding-right: 10px;\n                                padding-bottom: 5px;\n                                padding-left: 10px;\n                                background-color: rgb(16, 196, 178);\n                                font-style: normal;\n                                font-weight: normal;\n                                font-size: 12px;\n                                font-family: Lato;\n                                text-align: left;\n\n                                border-left-color: rgb(16, 196, 178);\n                                border-left-style: none;\n                                border-left-width: 0;\n                                border-right-color: rgb(16, 196, 178);\n                                border-right-style: none;\n                                border-right-width: 0;\n                                border-bottom-color: rgb(16, 196, 178);\n                                border-bottom-style: none;\n                                border-bottom-width: 0;\n                                border-top-color: rgb(16, 196, 178);\n                                border-top-style: none;\n                                border-top-width: 0;\n                                border-top-left-radius:0;\n                                border-top-right-radius:0;\n                                border-bottom-left-radius:0;\n                                border-bottom-right-radius:0;\n\n                                -moz-box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                                -webkit-box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                                box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                              }\n                              #asset-1513001945957 ul ul > li.k-state-active > a {\n                                color: rgb(255, 255, 255);\n                              }\n                           \n       \n        \n        Home \n        About us \n        Contact Us \n        Application \n        \n       \n      \n     \n    \n    \n     \n      \n       \n        \n       \n      \n      \n       \n       \n         160 WASHINGTON ST #24 PLAINVILLE MA 02762-1316 \n        \n        \n        508-380-7134 or Fax 774-643-6588 \n        \n        \n        \n         \n        \n       \n      \n     \n    \n   \n   \n  \n  \n \n<!--\ndocument.write('<'+'img style=\"position:fixed;\" src=\"//scorecard.wspisp.net/logger.php'+'?tag=dW5waWQ6MjA2MTA5MjY7MjE%3D&ref='+document.referrer+'&x='+Math.random()+'\" '+'width=\"1\" height=\"1\" alt=\"\" '+'>');\n//-->\n \n \n  <img style=\"position:fixed;\" src=\"//scorecard.wspisp.net/logger.php?tag=dW5waWQ6MjA2MTA5MjY7MjE%3D\" width=\"1\" height=\"1\" alt=\"\" />"
+      }
+    ],
+    "textContent": "var builderSettings = {\n    appRoot: '//app.neo.registeredsite.com/neo/',\n    appRelativePath: '/neo',\n    assetsRoot: '//assets.neo.registeredsite.com',\n    repositoryRoot: '//repository.neo.registeredsite.com',\n    spRoot: '//repository.neo.registeredsite.com/starting-points',\n    usersRoot: '//users.neo.registeredsite.com',\n    sitesearchUrl: '//sitesearch.services.matrixbuilder.com/sitesearch/search',\n    siteDomain: '000l8sl.rcomhost.com',\n    isBuilder : false,\n    isPreview : false\n  };\n \n  \n\n \n \n  \n  \n   \n    \n     \n      \n       \n       \n       \n      \n     \n    \n   \n   \n    \n    \n     Search Results\n     \n     \n     \n    \n   \n  \n    <div class=\"form-ng remove-on-save\">\n      <div id=\"{{FormId}}\">inject webcom-form here</div>\n    </div>\n \n   \n    \n  \n   \n    \n     \n      \n      \n      \n     \n    \n   \n   \n    \n   \n   \n    \n     \n    \n   \n   \n    \n     \n    \n   \n   \n    \n     \n    \n   \n  \n \n \n  \n   \n   \n   \n    \n     \n      \n       \n        \n       \n      \n     \n    \n    \n     \n      \n       \n        \n       \n      \n      \n       \n       Welcome! \n       Receive high-quality professional services, from Jennette Electric School based in Plainville MA 02762. Weather you are an individual or a large or small company, our teachers can provide the continuing education credits you need to get your license(s) renewed. Our track record for consistency, timely, service, and subject matter expertise makes your attendance an enjoyable experience. \n       We offer discounted pricing for companies who wish to hold private course at their facilities. To speak with an experienced member of our staff, simply contact us in Plainville MA 02762 at your convenience. \n       \n      \n      \n         \n                              /****************/\n                              /* neo main nav */\n                              /****************/\n                              #asset-1513001945957.main-nav-fixed-plugin .neo-asset-inner > ul > li {\n                                width: 130px;\n                              }\n                              #asset-1513001945957 .neo-asset-inner > ul > li {\n                                padding-top: 5px;\n                                padding-right: 10px;\n                                padding-bottom: 5px;\n                                padding-left: 10px;\n                                margin-right: 0;\n                                margin-bottom: 0;\n                                background-color: rgb(0, 0, 0);\n                                font-style: normal;\n                                font-weight: normal;\n                                font-size: 12px;\n                                font-family: Lato;\n                                text-align: left;\n\n                                border-left-color: rgb(51, 51, 51);\n                                border-left-style: none;\n                                border-left-width: 0;\n                                border-right-color: rgb(51, 51, 51);\n                                border-right-style: none;\n                                border-right-width: 0;\n                                border-bottom-color: rgb(51, 51, 51);\n                                border-bottom-style: none;\n                                border-bottom-width: 0;\n                                border-top-color: rgb(51, 51, 51);\n                                border-top-style: none;\n                                border-top-width: 0;\n                                border-top-left-radius:0;\n                                border-top-right-radius:0;\n                                border-bottom-left-radius:0;\n                                border-bottom-right-radius:0;\n\n                                -moz-box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                                -webkit-box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                                box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                              }\n                              #asset-1513001945957 .neo-asset-inner > ul > li > a {\n                                color: rgb(255, 255, 255);\n                              }\n                              #asset-1513001945957 .neo-asset-inner > ul > li.k-state-hover {\n                                padding-top: 5px;\n                                padding-right: 10px;\n                                padding-bottom: 5px;\n                                padding-left: 10px;\n                                background-color: rgb(16, 196, 178);\n                                font-style: normal;\n                                font-weight: normal;\n                                font-size: 12px;\n                                font-family: Lato;\n                                text-align: left;\n\n                                border-left-color: rgb(46, 179, 166);\n                                border-left-style: none;\n                                border-left-width: 0;\n                                border-right-color: rgb(46, 179, 166);\n                                border-right-style: none;\n                                border-right-width: 0;\n                                border-bottom-color: rgb(46, 179, 166);\n                                border-bottom-style: none;\n                                border-bottom-width: 0;\n                                border-top-color: rgb(46, 179, 166);\n                                border-top-style: none;\n                                border-top-width: 0;\n                                border-top-left-radius:0;\n                                border-top-right-radius:0;\n                                border-bottom-left-radius:0;\n                                border-bottom-right-radius:0;\n\n                                -moz-box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                                -webkit-box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                                box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                              }\n                              #asset-1513001945957 .neo-asset-inner > ul > li.k-state-hover > a {\n                                color: rgb(255, 255, 255);\n                              }\n                              #asset-1513001945957 .neo-asset-inner > ul > li.k-state-active {\n                                padding-top: 5px;\n                                padding-right: 10px;\n                                padding-bottom: 5px;\n                                padding-left: 10px;\n                                background-color: rgb(16, 196, 178);\n                                font-style: normal;\n                                font-weight: normal;\n                                font-size: 12px;\n                                font-family: Lato;\n                                text-align: left;\n\n                                border-left-color: rgb(16, 196, 178);\n                                border-left-style: none;\n                                border-left-width: 0;\n                                border-right-color: rgb(16, 196, 178);\n                                border-right-style: none;\n                                border-right-width: 0;\n                                border-bottom-color: rgb(16, 196, 178);\n                                border-bottom-style: none;\n                                border-bottom-width: 0;\n                                border-top-color: rgb(16, 196, 178);\n                                border-top-style: none;\n                                border-top-width: 0;\n                                border-top-left-radius:0;\n                                border-top-right-radius:0;\n                                border-bottom-left-radius:0;\n                                border-bottom-right-radius:0;\n\n                                -moz-box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                                -webkit-box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                                box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                              }\n                              #asset-1513001945957 .neo-asset-inner > ul > li.k-state-active > a {\n                                color: rgb(255, 255, 255);\n                              }\n                              /***************/\n                              /* neo sub nav */\n                              /***************/\n                              #asset-1513001945957.sub-nav-fixed-plugin ul ul > li {\n                                width: 130px;\n                              }\n                              #asset-1513001945957 ul ul > li {\n                                padding-top: 5px;\n                                padding-right: 10px;\n                                padding-bottom: 5px;\n                                padding-left: 10px;\n                                margin-bottom: 0;\n                                background-color: rgb(0, 0, 0);\n                                font-style: normal;\n                                font-weight: normal;\n                                font-size: 12px;\n                                font-family: Lato;\n                                text-align: left;\n\n                                border-left-color: rgb(51, 51, 51);\n                                border-left-style: none;\n                                border-left-width: 0;\n                                border-right-color: rgb(51, 51, 51);\n                                border-right-style: none;\n                                border-right-width: 0;\n                                border-bottom-color: rgb(51, 51, 51);\n                                border-bottom-style: none;\n                                border-bottom-width: 0;\n                                border-top-color: rgb(51, 51, 51);\n                                border-top-style: none;\n                                border-top-width: 0;\n                                border-top-left-radius:0;\n                                border-top-right-radius:0;\n                                border-bottom-left-radius:0;\n                                border-bottom-right-radius:0;\n\n                                -moz-box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                                -webkit-box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                                box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                              }\n                              #asset-1513001945957 ul ul > li > a {\n                                color: rgb(255, 255, 255);\n                              }\n                              #asset-1513001945957 ul ul > li.k-state-hover {\n                                padding-top: 5px;\n                                padding-right: 10px;\n                                padding-bottom: 5px;\n                                padding-left: 10px;\n                                background-color: rgb(16, 196, 178);\n                                font-style: normal;\n                                font-weight: normal;\n                                font-size: 12px;\n                                font-family: Lato;\n                                text-align: left;\n\n                                border-left-color: rgb(46, 179, 166);\n                                border-left-style: none;\n                                border-left-width: 0;\n                                border-right-color: rgb(46, 179, 166);\n                                border-right-style: none;\n                                border-right-width: 0;\n                                border-bottom-color: rgb(46, 179, 166);\n                                border-bottom-style: none;\n                                border-bottom-width: 0;\n                                border-top-color: rgb(46, 179, 166);\n                                border-top-style: none;\n                                border-top-width: 0;\n                                border-top-left-radius:0;\n                                border-top-right-radius:0;\n                                border-bottom-left-radius:0;\n                                border-bottom-right-radius:0;\n\n                                -moz-box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                                -webkit-box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                                box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                              }\n                              #asset-1513001945957 ul ul > li.k-state-hover > a {\n                                color: rgb(255, 255, 255);\n                              }\n                              #asset-1513001945957 ul ul > li.k-state-active {\n                                padding-top: 5px;\n                                padding-right: 10px;\n                                padding-bottom: 5px;\n                                padding-left: 10px;\n                                background-color: rgb(16, 196, 178);\n                                font-style: normal;\n                                font-weight: normal;\n                                font-size: 12px;\n                                font-family: Lato;\n                                text-align: left;\n\n                                border-left-color: rgb(16, 196, 178);\n                                border-left-style: none;\n                                border-left-width: 0;\n                                border-right-color: rgb(16, 196, 178);\n                                border-right-style: none;\n                                border-right-width: 0;\n                                border-bottom-color: rgb(16, 196, 178);\n                                border-bottom-style: none;\n                                border-bottom-width: 0;\n                                border-top-color: rgb(16, 196, 178);\n                                border-top-style: none;\n                                border-top-width: 0;\n                                border-top-left-radius:0;\n                                border-top-right-radius:0;\n                                border-bottom-left-radius:0;\n                                border-bottom-right-radius:0;\n\n                                -moz-box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                                -webkit-box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                                box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                              }\n                              #asset-1513001945957 ul ul > li.k-state-active > a {\n                                color: rgb(255, 255, 255);\n                              }\n                           \n       \n        \n        Home \n        About us \n        Contact Us \n        Application \n        \n       \n      \n     \n    \n    \n     \n      \n       \n        \n       \n      \n      \n       \n       \n         160 WASHINGTON ST #24 PLAINVILLE MA 02762-1316 \n        \n        \n        508-380-7134 or Fax 774-643-6588 \n        \n        \n        \n         \n        \n       \n      \n     \n    \n   \n   \n  \n  \n \n<!--\ndocument.write('<'+'img style=\"position:fixed;\" src=\"//scorecard.wspisp.net/logger.php'+'?tag=dW5waWQ6MjA2MTA5MjY7MjE%3D&ref='+document.referrer+'&x='+Math.random()+'\" '+'width=\"1\" height=\"1\" alt=\"\" '+'>');\n//-->\n \n \n  <img style=\"position:fixed;\" src=\"//scorecard.wspisp.net/logger.php?tag=dW5waWQ6MjA2MTA5MjY7MjE%3D\" width=\"1\" height=\"1\" alt=\"\" />"
+  }
+}
