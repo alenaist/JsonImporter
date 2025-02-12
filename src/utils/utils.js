@@ -1,6 +1,6 @@
 export const extractBaseUrl = (json) => {
-    if (json.url) {
-      const match = json.url.match(/(https?:\/\/[^\/]+)/);
+    if (json) {
+      const match = json.pages[0].url.match(/(https?:\/\/[^\/]+)/);
       return match ? match[0] + '/' : '';
     }
     return '';

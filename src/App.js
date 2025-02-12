@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useCallback } from "react";
 import { convertStyleStringToObject, extractBaseUrl } from "./utils/utils";
+import { Link } from "react-router-dom";
 
 const WebsiteBuilder = () => {
   const [pages, setPages] = useState([]);
@@ -14,8 +15,10 @@ const WebsiteBuilder = () => {
         try {
           const json = JSON.parse(e.target.result);
           const pagesData = json.pages || [];
+          console.log(json, 'la json');
           setPages(pagesData);
           setBaseUrl(extractBaseUrl(json));
+          console.log(baseUrl, 'la base');
         } catch (error) {
           console.error("Error parsing JSON:", error);
         }
@@ -56,6 +59,9 @@ const WebsiteBuilder = () => {
           );
 
         case "img": {
+
+          console.log(baseUrl)
+          
           const imageSrc = element.attributes?.src;
           const fullSrc = imageSrc?.startsWith('assets/') 
             ? `${baseUrl}${imageSrc}`
@@ -64,11 +70,45 @@ const WebsiteBuilder = () => {
         }
 
         case "a":
+          console.log("About us href:", element.attributes?.href);
+
           return (
-            <Tag {...commonProps} href={element.attributes?.href}>
+            <span
+              {...commonProps}
+              onClick={() => {
+                if (element.attributes?.href) {
+
+                  console.log(element.attributes.href);
+                  
+                  let hrefPath = element.attributes.href.replace(/\.html$/, '');
+                  console.log("Processed hrefPath:", hrefPath);
+
+                  const pathMapping = {
+                    'about-us': '/about',
+                  };
+
+                  hrefPath = pathMapping[hrefPath] || hrefPath;
+
+                  const pageIndex = pages.findIndex(page => {
+                    const pageUrlPath = new URL(page.url).pathname.replace(/\/$/, '');
+                    console.log("Comparing with pageUrlPath:", pageUrlPath);
+                    return pageUrlPath.endsWith(hrefPath);
+                  });
+
+                  console.log("Page index for About us:", pageIndex);
+
+                  if (pageIndex !== -1) {
+                    setCurrentPageIndex(pageIndex);
+                  } else {
+                    console.error("Page not found for href:", element.attributes.href);
+                  }
+                }
+              }}
+              style={{ cursor: 'pointer', ...commonProps.style }}
+            >
               {children}
               {content}
-            </Tag>
+            </span>
           );
 
         case "meta":
@@ -91,15 +131,7 @@ const WebsiteBuilder = () => {
 
     console.warn(`Unsupported tag: ${Tag}`);
     return null;
-  }, [baseUrl]);
-
-  const handleNextPage = () => {
-    setCurrentPageIndex((prevIndex) => Math.min(prevIndex + 1, pages.length - 1));
-  };
-
-  const handlePreviousPage = () => {
-    setCurrentPageIndex((prevIndex) => Math.max(prevIndex - 1, 0));
-  };
+  }, [baseUrl, pages]);
 
   return (
     <div>
@@ -122,17 +154,6 @@ const WebsiteBuilder = () => {
           <div className="text-gray-500">No content to display</div>
         )}
       </div>
-
-      {pages.length > 1 && (
-        <div className="navigation-buttons">
-          <button onClick={handlePreviousPage} disabled={currentPageIndex === 0}>
-            Previous
-          </button>
-          <button onClick={handleNextPage} disabled={currentPageIndex === pages.length - 1}>
-            Next
-          </button>
-        </div>
-      )}
     </div>
   );
 };
