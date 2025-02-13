@@ -79,10 +79,7 @@ const WebsiteBuilder = () => {
               <span
                 {...commonProps}
                 onClick={() => {
-                  if (element.attributes?.href) {
-
-                    console.log(element.attributes.href);
-                    
+                  if (element.attributes?.href) {                    
                     let hrefPath = element.attributes.href.replace(/\.html$/, '');
                     console.log("Processed hrefPath:", hrefPath);
 
