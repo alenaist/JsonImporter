@@ -15,10 +15,8 @@ const WebsiteBuilder = () => {
         try {
           const json = JSON.parse(e.target.result);
           const pagesData = json.pages || [];
-          console.log(json, 'la json');
           setPages(pagesData);
           setBaseUrl(extractBaseUrl(json));
-          console.log(baseUrl, 'la base');
         } catch (error) {
           console.error("Error parsing JSON:", error);
         }
@@ -58,10 +56,7 @@ const WebsiteBuilder = () => {
             />
           );
 
-        case "img": {
-
-          console.log(baseUrl)
-          
+        case "img": {          
           const imageSrc = element.attributes?.src;
           const fullSrc = imageSrc?.startsWith('assets/') 
             ? `${baseUrl}${imageSrc}`
@@ -69,49 +64,36 @@ const WebsiteBuilder = () => {
           return <img {...commonProps} src={fullSrc} alt={element.attributes?.alt || ''} />;
         }
 
-        case "a":
-
+        case "a": {
           return (
             <a onClick={(e) => { e.preventDefault(); }}>
-            <span
-              {...commonProps}
-              onClick={() => {
-                if (element.attributes?.href) {
+              <span
+                {...commonProps}
+                onClick={() => {
+                  if (element.attributes?.href) {
+                    console.log("Link clicked:", element.attributes.href);
+                    
+                    const pageIndex = pages.findIndex(page => 
+                      page.link === element.attributes.href
+                    );
 
-                  console.log(element.attributes.href);
-                  
-                  let hrefPath = element.attributes.href.replace(/\.html$/, '');
-                  console.log("Processed hrefPath:", hrefPath);
+                    console.log("Found page index:", pageIndex);
 
-                  //update this to handle better routing without hardcoding
-                  const pathMapping = {
-                    'about-us': '/about',
-                  };
-
-                  hrefPath = pathMapping[hrefPath] || hrefPath;
-
-                  const pageIndex = pages.findIndex(page => {
-                    const pageUrlPath = new URL(page.url).pathname.replace(/\/$/, '');
-                    console.log("Comparing with pageUrlPath:", pageUrlPath);
-                    return pageUrlPath.endsWith(hrefPath);
-                  });
-
-                  console.log("Page index for About us:", pageIndex);
-
-                  if (pageIndex !== -1) {
-                    setCurrentPageIndex(pageIndex);
-                  } else {
-                    console.error("Page not found for href:", element.attributes.href);
+                    if (pageIndex !== -1) {
+                      setCurrentPageIndex(pageIndex);
+                    } else {
+                      console.error("Page not found for href:", element.attributes.href);
+                    }
                   }
-                }
-              }}
-              style={{ cursor: 'pointer', ...commonProps.style }}
-            >
-              {children}
-              {content}
-            </span>
-          </a>
+                }}
+                style={{ cursor: 'pointer', ...commonProps.style }}
+              >
+                {children}
+                {content}
+              </span>
+            </a>
           );
+        }
 
         case "meta":
         case "link":

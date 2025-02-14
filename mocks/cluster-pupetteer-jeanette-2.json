@@ -1,5 +1,6 @@
 { "pages" : [{
   "url": "https://jennetteelectric.com/",
+  "link": "index.html",
   "html": {
     "tag": "body",
     "attributes": {
@@ -927,6 +928,7 @@
   }
 }, {
   "url": "https://jennetteelectric.com/about",
+  "link": "about-us.html",
   "html": {
     "tag": "body",
     "attributes": {
@@ -1854,6 +1856,7 @@
   }
 }, {
   "url": "https://jennetteelectric.com/products",
+  "link": "products.html",
   "html": {
     "tag": "body",
     "attributes": {
@@ -2781,6 +2784,7 @@
   }
 }, {
   "url": "https://jennetteelectric.com/contact",
+  "link": "contact-us.html",
   "html": {
     "tag": "body",
     "attributes": {
