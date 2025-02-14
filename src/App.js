@@ -70,46 +70,47 @@ const WebsiteBuilder = () => {
         }
 
         case "a":
-          console.log("About us href:", element.attributes?.href);
 
           return (
-            <a onClick={(e) => {
-              e.preventDefault();
-            }}>
-              <span
-                {...commonProps}
-                onClick={() => {
-                  if (element.attributes?.href) {                    
-                    let hrefPath = element.attributes.href.replace(/\.html$/, '');
-                    console.log("Processed hrefPath:", hrefPath);
+            <a onClick={(e) => { e.preventDefault(); }}>
+            <span
+              {...commonProps}
+              onClick={() => {
+                if (element.attributes?.href) {
 
-                    const pathMapping = {
-                      'about-us': '/about',
-                    };
+                  console.log(element.attributes.href);
+                  
+                  let hrefPath = element.attributes.href.replace(/\.html$/, '');
+                  console.log("Processed hrefPath:", hrefPath);
 
-                    hrefPath = pathMapping[hrefPath] || hrefPath;
+                  //update this to handle better routing without hardcoding
+                  const pathMapping = {
+                    'about-us': '/about',
+                  };
 
-                    const pageIndex = pages.findIndex(page => {
-                      const pageUrlPath = new URL(page.url).pathname.replace(/\/$/, '');
-                      console.log("Comparing with pageUrlPath:", pageUrlPath);
-                      return pageUrlPath.endsWith(hrefPath);
-                    });
+                  hrefPath = pathMapping[hrefPath] || hrefPath;
 
-                    console.log("Page index for About us:", pageIndex);
+                  const pageIndex = pages.findIndex(page => {
+                    const pageUrlPath = new URL(page.url).pathname.replace(/\/$/, '');
+                    console.log("Comparing with pageUrlPath:", pageUrlPath);
+                    return pageUrlPath.endsWith(hrefPath);
+                  });
 
-                    if (pageIndex !== -1) {
-                      setCurrentPageIndex(pageIndex);
-                    } else {
-                      console.error("Page not found for href:", element.attributes.href);
-                    }
+                  console.log("Page index for About us:", pageIndex);
+
+                  if (pageIndex !== -1) {
+                    setCurrentPageIndex(pageIndex);
+                  } else {
+                    console.error("Page not found for href:", element.attributes.href);
                   }
-                }}
-                style={{ cursor: 'pointer', ...commonProps.style }}
-              >
-                {children}
-                {content}
-              </span>
-            </a>
+                }
+              }}
+              style={{ cursor: 'pointer', ...commonProps.style }}
+            >
+              {children}
+              {content}
+            </span>
+          </a>
           );
 
         case "meta":
