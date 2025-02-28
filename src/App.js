@@ -6,6 +6,10 @@ const WebsiteBuilder = () => {
   const [pages, setPages] = useState([]);
   const [currentPageIndex, setCurrentPageIndex] = useState(0);
   const [baseUrl, setBaseUrl] = useState('');
+  const [jsonData, setJsonData] = useState(null);
+  const [generationStatus, setGenerationStatus] = useState('');
+  const [generatedSites, setGeneratedSites] = useState([]);
+  const [isGenerating, setIsGenerating] = useState(false);
 
   const handleFileUpload = (event) => {
     const file = event.target.files[0];
@@ -14,6 +18,7 @@ const WebsiteBuilder = () => {
       reader.onload = (e) => {
         try {
           const json = JSON.parse(e.target.result);
+          setJsonData(json); // Store the full JSON data
           const pagesData = json.pages || [];
           setPages(pagesData);
           setBaseUrl(extractBaseUrl(json));
@@ -22,6 +27,43 @@ const WebsiteBuilder = () => {
         }
       };
       reader.readAsText(file);
+    }
+  };
+
+  const handleGenerateStaticFiles = async () => {
+    if (!jsonData) {
+      setGenerationStatus('No JSON data loaded. Please upload a file first.');
+      return;
+    }
+
+    setIsGenerating(true);
+    setGenerationStatus('Generating static files...');
+
+    try {
+      const response = await fetch('http://localhost:3001/api/generate-static', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(jsonData),
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
+        setGenerationStatus(`Static files generated successfully in: ${result.siteName}`);
+        setGeneratedSites(prevSites => [...prevSites, {
+          name: result.siteName,
+          url: `http://localhost:3001/generated/${result.siteName}/index.html`
+        }]);
+      } else {
+        setGenerationStatus(`Error: ${result.message}`);
+      }
+    } catch (error) {
+      console.error('Error generating static files:', error);
+      setGenerationStatus(`Error: ${error.message}`);
+    } finally {
+      setIsGenerating(false);
     }
   };
 
@@ -64,36 +106,49 @@ const WebsiteBuilder = () => {
           return <img {...commonProps} src={fullSrc} alt={element.attributes?.alt || ''} />;
         }
 
-        case "a": {
+        case "a":
+
           return (
             <a onClick={(e) => { e.preventDefault(); }}>
-              <span
-                {...commonProps}
-                onClick={() => {
-                  if (element.attributes?.href) {
-                    console.log("Link clicked:", element.attributes.href);
-                    
-                    const pageIndex = pages.findIndex(page => 
-                      page.link === element.attributes.href
-                    );
+            <span
+              {...commonProps}
+              onClick={() => {
+                if (element.attributes?.href) {
 
-                    console.log("Found page index:", pageIndex);
+                  console.log(element.attributes.href);
+                  
+                  let hrefPath = element.attributes.href.replace(/\.html$/, '');
+                  console.log("Processed hrefPath:", hrefPath);
 
-                    if (pageIndex !== -1) {
-                      setCurrentPageIndex(pageIndex);
-                    } else {
-                      console.error("Page not found for href:", element.attributes.href);
-                    }
+                  //update this to handle better routing without hardcoding
+                  const pathMapping = {
+                    'about-us': '/about',
+                  };
+
+                  hrefPath = pathMapping[hrefPath] || hrefPath;
+
+                  const pageIndex = pages.findIndex(page => {
+                    const pageUrlPath = new URL(page.url).pathname.replace(/\/$/, '');
+                    console.log("Comparing with pageUrlPath:", pageUrlPath);
+                    return pageUrlPath.endsWith(hrefPath);
+                  });
+
+                  console.log("Page index for About us:", pageIndex);
+
+                  if (pageIndex !== -1) {
+                    setCurrentPageIndex(pageIndex);
+                  } else {
+                    console.error("Page not found for href:", element.attributes.href);
                   }
-                }}
-                style={{ cursor: 'pointer', ...commonProps.style }}
-              >
-                {children}
-                {content}
-              </span>
-            </a>
+                }
+              }}
+              style={{ cursor: 'pointer', ...commonProps.style }}
+            >
+              {children}
+              {content}
+            </span>
+          </a>
           );
-        }
 
         case "meta":
         case "link":
@@ -119,8 +174,8 @@ const WebsiteBuilder = () => {
 
   return (
     <div>
-      <div className="p-4">
-        <label className="flex items-center gap-2">
+      <div className="control-container">
+        <label>
           Import JSON
           <input
             type="file"
@@ -129,6 +184,49 @@ const WebsiteBuilder = () => {
             className="ml-2 mb-2"
           />
         </label>
+        
+        {/* Add the button for generating static files */}
+        <div className="mt-4">
+          <button
+            onClick={handleGenerateStaticFiles}
+            disabled={!jsonData || isGenerating}
+            className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 disabled:bg-gray-300 disabled:cursor-not-allowed"
+            style={{ 
+      
+              cursor: jsonData && !isGenerating ? 'pointer' : 'not-allowed',
+              marginTop: '10px'
+            }}
+          >
+            {isGenerating ? 'Generating...' : 'Generate Static HTML Files'}
+          </button>
+          
+          {generationStatus && (
+            <div className="mt-2 text-sm" style={{ marginTop: '8px', fontSize: '14px' }}>
+              {generationStatus}
+            </div>
+          )}
+          
+          {/* Display list of generated sites */}
+          {generatedSites.length > 0 && (
+            <div> 
+              <h3>Generated Sites:</h3>
+              <ul>
+                {generatedSites.map((site, index) => (
+                  <li key={index}>
+                    <a 
+                      href={site.url} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="text-blue-500 hover:underline"
+                    >
+                      {site.name}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+        </div>
       </div>
 
       <div className="website-content">
