@@ -133,8 +133,6 @@ const WebsiteBuilder = () => {
                     return pageUrlPath.endsWith(hrefPath);
                   });
 
-                  console.log("Page index for About us:", pageIndex);
-
                   if (pageIndex !== -1) {
                     setCurrentPageIndex(pageIndex);
                   } else {
