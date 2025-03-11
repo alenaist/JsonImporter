@@ -1,6 +1,8 @@
+// Test change to verify hot reloading - added on troubleshooting
 import React, { useState, useEffect, useCallback } from "react";
 import { convertStyleStringToObject, extractBaseUrl } from "./utils/utils";
 import { Link } from "react-router-dom";
+import style from './style.module.scss';
 
 const WebsiteBuilder = () => {
   const [pages, setPages] = useState([]);
@@ -10,6 +12,8 @@ const WebsiteBuilder = () => {
   const [generationStatus, setGenerationStatus] = useState('');
   const [generatedSites, setGeneratedSites] = useState([]);
   const [isGenerating, setIsGenerating] = useState(false);
+  const [runningSites, setRunningSites] = useState({});
+  const [isStartingSite, setIsStartingSite] = useState(false);
 
   const handleFileUpload = (event) => {
     const file = event.target.files[0];
@@ -67,6 +71,80 @@ const WebsiteBuilder = () => {
     }
   };
 
+  const handleRunSite = async (siteName) => {
+    try {
+      console.log(`Starting site: ${siteName}`);
+      
+      setIsStartingSite(true); // Set to true before making the API call
+      
+      const response = await fetch('http://localhost:3001/api/serve-site', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ siteName }),
+      });
+      
+      if (!response.ok) {
+        throw new Error(`Server responded with status: ${response.status}`);
+      }
+      
+      const result = await response.json();
+      
+      if (result.success) {
+        console.log(`Site started successfully: ${result.url}`);
+        
+        // Update the running sites state
+        setRunningSites(prev => ({
+          ...prev,
+          [siteName]: {
+            url: result.url,
+            port: result.port
+          }
+        }));
+        
+        // Open the site in a new tab
+        window.open(result.url, '_blank');
+      } else {
+        console.error(`Failed to start site: ${result.message}`);
+        alert(`Failed to start site: ${result.message}`);
+      }
+    } catch (error) {
+      console.error('Error starting site:', error);
+      alert(`Error starting site: ${error.message}`);
+    } finally {
+      setIsStartingSite(false); // Set back to false after the API call completes
+    }
+  };
+
+  const handleStopSite = async (siteName) => {
+    try {
+      const response = await fetch('http://localhost:3001/api/stop-site', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ siteName }),
+      });
+      
+      const result = await response.json();
+      
+      if (result.success) {
+        // Remove from running sites
+        setRunningSites(prev => {
+          const newState = { ...prev };
+          delete newState[siteName];
+          return newState;
+        });
+      } else {
+        alert(`Failed to stop site: ${result.message}`);
+      }
+    } catch (error) {
+      console.error('Error stopping site:', error);
+      alert(`Error stopping site: ${error.message}`);
+    }
+  };
+
   const renderElement = useCallback((element, index) => {
     if (!element) return null;
     
@@ -107,36 +185,67 @@ const WebsiteBuilder = () => {
         }
 
         case "a":
-
           return (
-            <a onClick={(e) => { e.preventDefault(); }}>
-            <span
+            <a 
               {...commonProps}
-              onClick={() => {
+              href={element.attributes?.href || '#'} 
+              onClick={(e) => { 
+                e.preventDefault();
                 if (element.attributes?.href) {
-
-                  console.log(element.attributes.href);
+                  console.log(`Link clicked: ${element.attributes.href}`);
                   
+                  // Clean up the href path
                   let hrefPath = element.attributes.href.replace(/\.html$/, '');
+                  if (hrefPath.startsWith('/')) {
+                    hrefPath = hrefPath.substring(1);
+                  }
                   console.log("Processed hrefPath:", hrefPath);
 
-                  //update this to handle better routing without hardcoding
+                  // Map common path patterns
                   const pathMapping = {
-                    'about-us': '/about',
+                    'about-us': 'about',
+                    'about_us': 'about',
+                    'aboutus': 'about',
+                    'products-services': 'products',
+                    'products_services': 'products',
+                    'productsservices': 'products',
+                    'contact-us': 'contact',
+                    'contact_us': 'contact',
+                    'contactus': 'contact',
                   };
 
-                  hrefPath = pathMapping[hrefPath] || hrefPath;
-
+                  // Apply mapping if available
+                  const mappedPath = pathMapping[hrefPath] || hrefPath;
+                  
+                  // Find the matching page
                   const pageIndex = pages.findIndex(page => {
-                    const pageUrlPath = new URL(page.url).pathname.replace(/\/$/, '');
-                    console.log("Comparing with pageUrlPath:", pageUrlPath);
-                    return pageUrlPath.endsWith(hrefPath);
+                    // Extract the path from the URL
+                    const pageUrlPath = new URL(page.url).pathname;
+                    
+                    // Clean up the page URL path
+                    const cleanPagePath = pageUrlPath.replace(/\/$/, '').replace(/^\//, '');
+                    
+                    console.log(`Comparing '${mappedPath}' with page path '${cleanPagePath}'`);
+                    
+                    // Check for exact match
+                    if (cleanPagePath === mappedPath) return true;
+                    
+                    // Check for partial match (end of path)
+                    if (cleanPagePath.endsWith(`/${mappedPath}`)) return true;
+                    
+                    // Check if the page filename matches
+                    if (mappedPath === 'about' && cleanPagePath.includes('about')) return true;
+                    if (mappedPath === 'products' && cleanPagePath.includes('product')) return true;
+                    if (mappedPath === 'contact' && cleanPagePath.includes('contact')) return true;
+                    
+                    return false;
                   });
 
                   if (pageIndex !== -1) {
+                    console.log(`Found matching page at index ${pageIndex}`);
                     setCurrentPageIndex(pageIndex);
                   } else {
-                    console.error("Page not found for href:", element.attributes.href);
+                    console.error(`Page not found for href: ${element.attributes.href}`);
                   }
                 }
               }}
@@ -144,8 +253,7 @@ const WebsiteBuilder = () => {
             >
               {children}
               {content}
-            </span>
-          </a>
+            </a>
           );
 
         case "meta":
@@ -173,13 +281,13 @@ const WebsiteBuilder = () => {
   return (
     <div>
       <div className="control-container">
-        <label>
-          Import JSON
+        <label className={ style.control_label }>
+          Import JSONS
           <input
             type="file"
             accept=".json"
             onChange={handleFileUpload}
-            className="ml-2 mb-2"
+            style={{ marginLeft: '20px'}}
           />
         </label>
         
@@ -188,7 +296,6 @@ const WebsiteBuilder = () => {
           <button
             onClick={handleGenerateStaticFiles}
             disabled={!jsonData || isGenerating}
-            className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 disabled:bg-gray-300 disabled:cursor-not-allowed"
             style={{ 
       
               cursor: jsonData && !isGenerating ? 'pointer' : 'not-allowed',
@@ -206,19 +313,55 @@ const WebsiteBuilder = () => {
           
           {/* Display list of generated sites */}
           {generatedSites.length > 0 && (
-            <div> 
+            <div className={style.section}> 
               <h3>Generated Sites:</h3>
               <ul>
                 {generatedSites.map((site, index) => (
-                  <li key={index}>
-                    <a 
-                      href={site.url} 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="text-blue-500 hover:underline"
-                    >
-                      {site.name}
-                    </a>
+                  <li key={index} className={style.site_item}>
+                    <div className={style.site_info}>
+                      <a 
+                        href={site.url} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                      >
+                        {site.name}
+                      </a>
+                      
+                      {runningSites[site.name] && (
+                        <span className={style.running_badge}>
+                          Running on port {runningSites[site.name].port}
+                        </span>
+                      )}
+                    </div>
+                    
+                    <div className={style.site_actions}>
+                      {!runningSites[site.name] ? (
+                        <button
+                          onClick={() => handleRunSite(site.name)}
+                          disabled={isStartingSite}
+                          className={style.run_button}
+                        >
+                          {isStartingSite ? 'Starting...' : 'Run on New Port'}
+                        </button>
+                      ) : (
+                        <div>
+                          <a 
+                            href={runningSites[site.name].url}
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className={style.view_button}
+                          >
+                            View Site
+                          </a>
+                          <button
+                            onClick={() => handleStopSite(site.name)}
+                            className={style.stop_button}
+                          >
+                            Stop Server
+                          </button>
+                        </div>
+                      )}
+                    </div>
                   </li>
                 ))}
               </ul>
@@ -231,7 +374,7 @@ const WebsiteBuilder = () => {
         {pages.length > 0 ? (
           pages[currentPageIndex].html.children.map((element, index) => renderElement(element, index))
         ) : (
-          <div className="text-gray-500">No content to display</div>
+          <div className="text-gray-500">No content to display - Hot Reload Test (Updated)</div>
         )}
       </div>
     </div>
