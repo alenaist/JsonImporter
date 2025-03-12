@@ -23,26 +23,14 @@ async function generateStaticFiles(jsonFilePath, outputDir = 'static-site') {
   
   await extractAndSaveImages(jsonData, assetsDir);
   
-  // Create a mapping object to store URL to filename relationships
-  const pageMapping = {};
-  
   jsonData.pages.forEach(page => {
     const url = new URL(page.url);
     let pagePath = url.pathname;
     
     let outputPath;
-    let filename;
     
     if (pagePath === '/' || pagePath === '') {
       outputPath = path.join(outputDir, 'index.html');
-      filename = 'index.html';
-      
-      // Add mappings for index
-      pageMapping['/'] = 'index.html';
-      pageMapping['/index'] = 'index.html';
-      pageMapping['/index.html'] = 'index.html';
-      pageMapping['/home'] = 'index.html';
-      pageMapping['/home.html'] = 'index.html';
     } else {
       pagePath = pagePath.startsWith('/') ? pagePath.substring(1) : pagePath;
       
@@ -54,32 +42,6 @@ async function generateStaticFiles(jsonFilePath, outputDir = 'static-site') {
       outputPath = path.join(outputDir, pagePath);
       if (!outputPath.endsWith('.html')) {
         outputPath += '.html';
-      }
-      
-      // Get the filename relative to the output directory
-      filename = path.relative(outputDir, outputPath);
-      
-      // Extract the page name without extension
-      const pageName = path.basename(pagePath, '.html');
-      
-      // Add mappings for this page
-      pageMapping[`/${pagePath}`] = filename;
-      pageMapping[`/${pageName}`] = filename;
-      pageMapping[`/${pageName}.html`] = filename;
-      
-      // Add common variations
-      const variations = [
-        pageName,
-        pageName.replace(/-/g, '_'),
-        pageName.replace(/-/g, ''),
-        pageName.replace(/_/g, '-'),
-        pageName.replace(/_/g, '')
-      ];
-      
-      // Add mappings for about-us, aboutus, about_us, etc.
-      for (const variation of variations) {
-        pageMapping[`/${variation}`] = filename;
-        pageMapping[`/${variation}.html`] = filename;
       }
     }
     
@@ -118,19 +80,6 @@ async function generateStaticFiles(jsonFilePath, outputDir = 'static-site') {
   `;
   fs.writeFileSync(path.join(outputDir, 'site-info.html'), indexContent);
   console.log(`Generated: ${path.join(outputDir, 'site-info.html')}`);
-  
-  // Add site-info.html to the mappings
-  pageMapping['/site-info'] = 'site-info.html';
-  pageMapping['/site-info.html'] = 'site-info.html';
-  pageMapping['/site_info'] = 'site-info.html';
-  pageMapping['/site_info.html'] = 'site-info.html';
-  pageMapping['/siteinfo'] = 'site-info.html';
-  pageMapping['/siteinfo.html'] = 'site-info.html';
-  
-  // Save the page mapping to a JSON file
-  const mappingPath = path.join(outputDir, 'page-mappings.json');
-  fs.writeFileSync(mappingPath, JSON.stringify(pageMapping, null, 2));
-  console.log(`Generated page mappings: ${mappingPath}`);
   
   console.log(`Static site generation complete! Files are in the '${outputDir}' directory.`);
   return outputDir;
@@ -188,54 +137,9 @@ async function extractImagesFromElement(element, assetsDir) {
       }
       
       // If the image source already starts with 'assets/', it might be a local reference
-      // or it might be a path on the original website
       if (imgSrc.startsWith('assets/')) {
         console.log(`Image using assets path: ${imgSrc}`);
-        
-        // Try to download from the original website using the baseUrl
-        if (element.baseUrl) {
-          const fullUrl = new URL(imgSrc, element.baseUrl).toString();
-          
-          console.log(`Attempting to download from: ${fullUrl}`);
-          
-          try {
-            const response = await axios({
-              method: 'GET',
-              url: fullUrl,
-              responseType: 'arraybuffer',
-              timeout: 30000,
-              maxContentLength: 50 * 1024 * 1024,
-              headers: {
-                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
-                'Accept': 'image/*',
-                'Accept-Encoding': 'gzip, deflate, br'
-              },
-              maxRedirects: 5,
-              validateStatus: status => status < 400
-            });
-            
-            const contentType = response.headers['content-type'];
-            console.log(`Response content type: ${contentType}`);
-            
-            if (contentType && contentType.startsWith('image/')) {
-              const imgFilename = path.basename(imgSrc);
-              const outputPath = path.join(assetsDir, imgFilename);
-              
-              fs.writeFileSync(outputPath, Buffer.from(response.data));
-              console.log(`Downloaded image to: ${outputPath}`);
-              
-              // Keep the same path
-              return;
-            }
-          } catch (error) {
-            console.error(`Error downloading image from ${fullUrl}: ${error.message}`);
-            // Continue with the existing path
-            return;
-          }
-        } else {
-          console.log(`No baseUrl available for downloading asset: ${imgSrc}`);
-          return;
-        }
+        return;
       }
       
       let imgFilename;
@@ -336,12 +240,6 @@ async function extractImagesFromElement(element, assetsDir) {
           }
         } catch (error) {
           console.error(`Error downloading image: ${error.message}`);
-          console.error(`Error details: ${error.stack}`);
-          
-          if (error.response) {
-            console.error(`Response status: ${error.response.status}`);
-            console.error(`Response headers: ${JSON.stringify(error.response.headers)}`);
-          }
           
           createPlaceholderImage(imgFilename, outputPath, targetDir);
           

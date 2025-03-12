@@ -97,75 +97,37 @@ app.post('/api/serve-site', async (req, res) => {
     const server = express();
     server.use(express.static(siteDir));
     
-    // Handle all routes to support navigation
+    // Simple fallback for direct file access
     server.get('*', (req, res) => {
-      const requestPath = req.path === '/' ? '/index.html' : req.path;
+      const requestPath = req.path;
       console.log(`[Site Server ${siteName}] Request for: ${requestPath}`);
       
-      // Try to load the page mappings file
-      const mappingsPath = path.join(siteDir, 'page-mappings.json');
-      let pageMappings = {};
-      
-      if (fs.existsSync(mappingsPath)) {
-        try {
-          pageMappings = JSON.parse(fs.readFileSync(mappingsPath, 'utf8'));
-          console.log(`[Site Server ${siteName}] Loaded page mappings from ${mappingsPath}`);
-        } catch (error) {
-          console.error(`[Site Server ${siteName}] Error loading page mappings: ${error.message}`);
-        }
-      }
-      
-      // Log all available mappings for debugging
-      console.log(`[Site Server ${siteName}] Available mappings:`, Object.keys(pageMappings));
-      
-      // Case 1: Check if the path exists in our mappings
-      if (pageMappings[requestPath]) {
-        const mappedFile = path.join(siteDir, pageMappings[requestPath]);
-        if (fs.existsSync(mappedFile)) {
-          console.log(`[Site Server ${siteName}] Serving mapped file: ${mappedFile}`);
-          return res.sendFile(mappedFile);
-        }
-      }
-      
-      // Case 2: Direct file match (e.g., /about.html)
+      // Direct file match
       let filePath = path.join(siteDir, requestPath);
       if (fs.existsSync(filePath) && fs.statSync(filePath).isFile()) {
-        console.log(`[Site Server ${siteName}] Serving exact file: ${filePath}`);
+        console.log(`[Site Server ${siteName}] Serving file: ${filePath}`);
         return res.sendFile(filePath);
       }
       
-      // Case 3: Clean URL without .html extension (e.g., /about)
+      // Try with .html extension
       const htmlPath = `${filePath}.html`;
       if (fs.existsSync(htmlPath)) {
         console.log(`[Site Server ${siteName}] Serving with .html extension: ${htmlPath}`);
         return res.sendFile(htmlPath);
       }
       
-      // Case 4: URL with trailing slash (e.g., /about/)
-      if (requestPath.endsWith('/')) {
+      // Default to index.html for root or directories
+      if (requestPath === '/' || requestPath.endsWith('/')) {
         const indexPath = path.join(filePath, 'index.html');
         if (fs.existsSync(indexPath)) {
-          console.log(`[Site Server ${siteName}] Serving index.html from directory: ${indexPath}`);
+          console.log(`[Site Server ${siteName}] Serving index.html: ${indexPath}`);
           return res.sendFile(indexPath);
         }
       }
       
-      // Case 5: URL with additional path segments (e.g., /about/team)
-      // Try to find a matching HTML file by removing segments
-      const segments = requestPath.split('/').filter(Boolean);
-      for (let i = segments.length - 1; i >= 0; i--) {
-        const partialPath = '/' + segments.slice(0, i).join('/');
-        const partialFilePath = path.join(siteDir, partialPath + '.html');
-        
-        if (fs.existsSync(partialFilePath)) {
-          console.log(`[Site Server ${siteName}] Serving partial match: ${partialFilePath}`);
-          return res.sendFile(partialFilePath);
-        }
-      }
-      
-      // Default: Serve index.html as fallback
-      console.log(`[Site Server ${siteName}] Falling back to index.html`);
-      res.sendFile(path.join(siteDir, 'index.html'));
+      // If nothing found, return 404
+      console.log(`[Site Server ${siteName}] File not found: ${requestPath}`);
+      res.status(404).send('File not found');
     });
     
     // Start the server
