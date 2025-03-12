@@ -3,7 +3,7 @@ const path = require('path');
 const axios = require('axios');
 
 async function generateStaticFiles(jsonFilePath, outputDir = 'static-site') {
-  console.log(`Generating static site from ${jsonFilePath} to ${outputDir}...`);
+  console.log(`Generating site from ${jsonFilePath} to ${outputDir}...`);
   
   let jsonData;
   try {
@@ -21,6 +21,7 @@ async function generateStaticFiles(jsonFilePath, outputDir = 'static-site') {
   const assetsDir = path.join(outputDir, 'assets');
   fs.mkdirSync(assetsDir);
   
+  //TODO - fix Extract and save images
   await extractAndSaveImages(jsonData, assetsDir);
   
   jsonData.pages.forEach(page => {
@@ -28,7 +29,6 @@ async function generateStaticFiles(jsonFilePath, outputDir = 'static-site') {
     let pagePath = url.pathname;
     
     let outputPath;
-    
     if (pagePath === '/' || pagePath === '') {
       outputPath = path.join(outputDir, 'index.html');
     } else {
@@ -51,75 +51,16 @@ async function generateStaticFiles(jsonFilePath, outputDir = 'static-site') {
     console.log(`Generated: ${outputPath}`);
   });
   
-  const indexContent = `
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Generated Site</title>
-    </head>
-    <body>
-      <h1>Generated Static Site</h1>
-      <div class="site-info">
-        <p>Generated from: ${path.basename(jsonFilePath)}</p>
-        <p>Generated on: ${new Date().toLocaleString()}</p>
-      </div>
-      <div class="pages">
-        <h2>Pages:</h2>
-        ${jsonData.pages.map(page => {
-          const url = new URL(page.url);
-          let pagePath = url.pathname;
-          let href = pagePath === '/' || pagePath === '' ? 'index.html' : `${pagePath.replace(/^\//, '')}.html`;
-          let title = getPageTitle(page);
-          return `<a href="${href}">${title}</a>`;
-        }).join('\n        ')}
-      </div>
-    </body>
-    </html>
-  `;
-  fs.writeFileSync(path.join(outputDir, 'site-info.html'), indexContent);
-  console.log(`Generated: ${path.join(outputDir, 'site-info.html')}`);
-  
   console.log(`Static site generation complete! Files are in the '${outputDir}' directory.`);
   return outputDir;
 }
 
 async function extractAndSaveImages(jsonData, assetsDir) {
-  // Extract base URL from the first page
-  let baseUrl = '';
-  if (jsonData.pages && jsonData.pages.length > 0) {
-    try {
-      const firstPageUrl = new URL(jsonData.pages[0].url);
-      baseUrl = `${firstPageUrl.protocol}//${firstPageUrl.host}`;
-      console.log(`Extracted base URL: ${baseUrl}`);
-    } catch (error) {
-      console.error(`Error extracting base URL: ${error.message}`);
-    }
-  }
-
   if (jsonData.pages) {
     for (const page of jsonData.pages) {
       if (page.html) {
-        // Add baseUrl to the root element and propagate it to all children
-        addBaseUrlToElement(page.html, baseUrl);
         await extractImagesFromElement(page.html, assetsDir);
       }
-    }
-  }
-}
-
-// Helper function to add baseUrl to all elements in the tree
-function addBaseUrlToElement(element, baseUrl) {
-  if (!element || !baseUrl) return;
-  
-  // Add baseUrl to the current element
-  element.baseUrl = baseUrl;
-  
-  // Recursively add baseUrl to all children
-  if (element.children && Array.isArray(element.children)) {
-    for (const child of element.children) {
-      addBaseUrlToElement(child, baseUrl);
     }
   }
 }
@@ -132,13 +73,7 @@ async function extractImagesFromElement(element, assetsDir) {
     const imgSrc = element.attributes.src;
     
     try {
-      if (imgSrc.includes('logger.php') || imgSrc.trim() === '') {
-        return;
-      }
-      
-      // If the image source already starts with 'assets/', it might be a local reference
-      if (imgSrc.startsWith('assets/')) {
-        console.log(`Image using assets path: ${imgSrc}`);
+      if (imgSrc.trim() === '') {
         return;
       }
       
@@ -146,56 +81,22 @@ async function extractImagesFromElement(element, assetsDir) {
       let imgPath = '';
       let fullUrl = imgSrc;
       
-      // Handle different URL formats
       if (imgSrc.startsWith('//')) {
-        // Protocol-relative URL
-        fullUrl = `https:${imgSrc}`;
-      } else if (!imgSrc.startsWith('http://') && !imgSrc.startsWith('https://') && !imgSrc.startsWith('data:')) {
-        // Relative URL
-        if (element.baseUrl) {
-          try {
-            fullUrl = new URL(imgSrc, element.baseUrl).toString();
-          } catch (e) {
-            console.error(`Error creating URL from ${imgSrc} with base ${element.baseUrl}: ${e.message}`);
-            // Just use the filename as is
-            imgFilename = path.basename(imgSrc);
-            createPlaceholderImage(imgFilename, path.join(assetsDir, imgFilename), assetsDir);
-            element.attributes.src = `assets/${imgFilename}`;
-            return;
-          }
-        } else {
-          console.log(`Cannot determine full URL for relative path without baseUrl: ${imgSrc}`);
-          imgFilename = path.basename(imgSrc);
-          createPlaceholderImage(imgFilename, path.join(assetsDir, imgFilename), assetsDir);
-          element.attributes.src = `assets/${imgFilename}`;
-          return;
-        }
+        fullUrl = 'https:' + imgSrc;
       }
-      
-      console.log(`Processing image source: ${imgSrc}`);
-      console.log(`Full URL for download: ${fullUrl}`);
       
       try {
         const imgUrl = new URL(fullUrl);
-        
         const pathname = imgUrl.pathname;
-        
         imgFilename = path.basename(pathname.split('?')[0]);
-        
         imgPath = path.dirname(pathname).replace(/^\//, '');
-        console.log(`Parsed URL - Filename: ${imgFilename}, Path: ${imgPath}`);
       } catch (e) {
-        console.log(`URL parsing failed: ${e.message}, using basic path extraction`);
         imgFilename = path.basename(imgSrc.split('?')[0]);
       }
       
       if (!imgFilename || imgFilename === '.' || imgFilename === '..') {
         imgFilename = 'image-' + Math.random().toString(36).substring(2, 10) + '.jpg';
-        console.log(`Generated random filename: ${imgFilename}`);
       }
-      
-      // Clean up the filename to remove invalid characters
-      imgFilename = imgFilename.replace(/[<>:"/\\|?*]/g, '_');
       
       const targetDir = imgPath ? path.join(assetsDir, imgPath) : assetsDir;
       if (imgPath && !fs.existsSync(targetDir)) {
@@ -204,7 +105,6 @@ async function extractImagesFromElement(element, assetsDir) {
       }
       
       const outputPath = path.join(targetDir, imgFilename);
-      console.log(`Output path for image: ${outputPath}`);
       
       if (fullUrl.startsWith('http://') || fullUrl.startsWith('https://')) {
         console.log(`Downloading image from: ${fullUrl}`);
@@ -225,24 +125,20 @@ async function extractImagesFromElement(element, assetsDir) {
             validateStatus: status => status < 400
           });
           
+          //image check  
           const contentType = response.headers['content-type'];
-          console.log(`Response content type: ${contentType}`);
-          
           if (contentType && contentType.startsWith('image/')) {
             fs.writeFileSync(outputPath, Buffer.from(response.data));
             console.log(`Downloaded image to: ${outputPath}`);
             
             const relativePath = imgPath ? `assets/${imgPath}/${imgFilename}` : `assets/${imgFilename}`;
             element.attributes.src = relativePath;
-            console.log(`Updated element src to: ${relativePath}`);
           } else {
             throw new Error(`Response is not an image: ${contentType}`);
           }
         } catch (error) {
           console.error(`Error downloading image: ${error.message}`);
-          
-          createPlaceholderImage(imgFilename, outputPath, targetDir);
-          
+                  
           const relativePath = imgPath ? `assets/${imgPath}/${imgFilename}` : `assets/${imgFilename}`;
           element.attributes.src = relativePath;
         }
@@ -260,7 +156,6 @@ async function extractImagesFromElement(element, assetsDir) {
             
             const finalOutputPath = path.join(targetDir, filename);
             fs.writeFileSync(finalOutputPath, buffer);
-            console.log(`Saved base64 image to: ${finalOutputPath}`);
             
             const relativePath = imgPath ? `assets/${imgPath}/${filename}` : `assets/${filename}`;
             element.attributes.src = relativePath;
@@ -269,13 +164,10 @@ async function extractImagesFromElement(element, assetsDir) {
           }
         } catch (error) {
           console.error(`Error processing base64 image: ${error.message}`);
-          createPlaceholderImage(imgFilename, outputPath, targetDir);
-          
           const relativePath = imgPath ? `assets/${imgPath}/${imgFilename}` : `assets/${imgFilename}`;
           element.attributes.src = relativePath;
         }
       } else {
-        createPlaceholderImage(imgFilename, outputPath, targetDir);
         
         const relativePath = imgPath ? `assets/${imgPath}/${imgFilename}` : `assets/${imgFilename}`;
         element.attributes.src = relativePath;
@@ -292,29 +184,6 @@ async function extractImagesFromElement(element, assetsDir) {
   }
 }
 
-function createPlaceholderImage(imgFilename, outputPath, targetDir) {
-  const svgContent = `<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
-    <rect width="200" height="200" fill="#f0f0f0"/>
-    <text x="50%" y="50%" font-family="Arial" font-size="16" text-anchor="middle" dominant-baseline="middle" fill="#333">
-      Image: ${imgFilename}
-    </text>
-  </svg>`;
-  
-  const svgFilename = imgFilename.replace(/\.[^/.]+$/, '') + '.svg';
-  const svgPath = path.join(targetDir, svgFilename);
-  fs.writeFileSync(svgPath, svgContent);
-  
-  if (!imgFilename.toLowerCase().endsWith('.svg')) {
-    try {
-      fs.copyFileSync(svgPath, outputPath);
-    } catch (error) {
-      fs.writeFileSync(outputPath, svgContent);
-    }
-  }
-  
-  console.log(`Created placeholder for image: ${imgFilename}`);
-}
-
 function generateHtml(page, allPages) {
   const htmlContent = renderElement(page.html);
   
@@ -322,16 +191,13 @@ function generateHtml(page, allPages) {
       htmlContent.trim().toLowerCase().startsWith('<html')) {
     return htmlContent;
   }
-  
-  const hasNavigation = checkForNavigation(page.html);
-  
+    
   return `<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>${getPageTitle(page)}</title>
-  <!-- No custom CSS link - only using CSS from JSON file -->
 </head>
 <body>
   <main>
@@ -339,71 +205,6 @@ function generateHtml(page, allPages) {
   </main>
 </body>
 </html>`;
-}
-
-function cleanupHtml(html) {
-  let cleaned = html.replace(/<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi, '');
-  
-  cleaned = cleaned.replace(/\s+data-ng-[a-zA-Z-]+="[^"]*"/g, '');
-  cleaned = cleaned.replace(/\s+ng-[a-zA-Z-]+="[^"]*"/g, '');
-  
-  cleaned = cleaned.replace(/<div id="includes"[^>]*>.*?<\/div>/gs, '');
-  
-  return cleaned;
-}
-
-function checkForNavigation(element) {
-  if (!element) return false;
-  
-  const tag = element.tagName || element.tag;
-  
-  if (tag && tag.toLowerCase() === 'nav') {
-    return true;
-  }
-  
-  if (element.attributes && element.attributes.class) {
-    const classStr = element.attributes.class.toString().toLowerCase();
-    if (classStr.includes('navigation-2-plugin') || 
-        classStr.includes('nav') || 
-        classStr.includes('menu') || 
-        classStr.includes('header')) {
-      return true;
-    }
-  }
-  
-  if (tag && ['ul', 'ol'].includes(tag.toLowerCase())) {
-    if (element.children && Array.isArray(element.children)) {
-      const hasLinks = element.children.some(child => {
-        const childTag = child.tagName || child.tag;
-        if (childTag && childTag.toLowerCase() === 'li') {
-          return child.children && Array.isArray(child.children) && 
-                 child.children.some(grandchild => {
-                   const grandchildTag = grandchild.tagName || grandchild.tag;
-                   return grandchildTag && grandchildTag.toLowerCase() === 'a';
-                 });
-        }
-        return false;
-      });
-      
-      if (hasLinks) {
-        return true;
-      }
-    }
-  }
-  
-  if (tag && tag.toLowerCase() === 'div' && 
-      element.attributes && element.attributes.id && 
-      (element.attributes.id.includes('nav') || 
-       element.attributes.id.includes('menu') || 
-       element.attributes.id.includes('header'))) {
-    return true;
-  }
-  
-  if (element.children && Array.isArray(element.children)) {
-    return element.children.some(child => checkForNavigation(child));
-  }
-  
-  return false;
 }
 
 function getPageTitle(page) {
@@ -463,33 +264,13 @@ function renderElement(element) {
 }
 
 function processImageSrc(element) {
-  // If the image source already starts with 'assets/', it's already been processed
-  if (element.attributes.src.startsWith('assets/')) {
-    return;
-  }
-  
-  if (!element.attributes.src.startsWith('http://') && 
+  if (!element.attributes.src.startsWith('assets/') && 
+      !element.attributes.src.startsWith('http://') && 
       !element.attributes.src.startsWith('https://') && 
       !element.attributes.src.startsWith('data:')) {
     
     try {
-      // Check if it's a valid URL
-      let imgUrl;
-      try {
-        // If we have a baseUrl, try to resolve the relative URL
-        if (element.baseUrl) {
-          imgUrl = new URL(element.attributes.src, element.baseUrl);
-        } else {
-          imgUrl = new URL(element.attributes.src);
-        }
-      } catch (e) {
-        // Not a valid URL, might be a relative path
-        // Just extract the filename and use it
-        const imgFilename = path.basename(element.attributes.src);
-        element.attributes.src = `assets/${imgFilename}`;
-        return;
-      }
-      
+      const imgUrl = new URL(element.attributes.src);
       const pathname = imgUrl.pathname;
       const imgFilename = path.basename(pathname);
       const imgPath = path.dirname(pathname).replace(/^\//, '');
@@ -508,28 +289,12 @@ function processImageSrc(element) {
 
 function processAnchorHref(element) {
   const href = element.attributes.href;
-  if (!href) return;
-  
-  // Skip external links and anchor links
-  if (href.startsWith('http://') || href.startsWith('https://') || href.startsWith('#')) {
-    return;
-  }
-  
-  // Remove any trailing slashes
-  let hrefPath = href.replace(/\/+$/, '');
-  
-  // Remove .html extension if it exists
-  hrefPath = hrefPath.replace(/\.html$/, '');
-  
-  // If it doesn't already have .html and doesn't contain fragments or query params
-  if (!hrefPath.endsWith('.html') && !hrefPath.includes('#') && !hrefPath.includes('?')) {
-    // Make sure it has a leading slash
-    if (!hrefPath.startsWith('/')) {
-      hrefPath = '/' + hrefPath;
-    }
+  if (!href.startsWith('http://') && !href.startsWith('https://') && !href.startsWith('#')) {
+    let hrefPath = href.replace(/\.html$/, '');
     
-    // Don't add .html extension - let the server handle it
-    element.attributes.href = hrefPath;
+    if (!hrefPath.endsWith('.html') && !hrefPath.includes('#') && !hrefPath.includes('?')) {
+      element.attributes.href = hrefPath + '.html';
+    }
   }
 }
 

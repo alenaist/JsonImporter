@@ -8,16 +8,19 @@
                 "k-webkit116"
             ]
         },
+        "text": null,
         "children": [
             {
                 "tag": "head",
                 "attributes": {},
+                "text": null,
                 "children": [
                     {
                         "tag": "style",
                         "attributes": {
                             "type": "text/css"
                         },
+                        "text": null,
                         "children": [
                             "@charset \"UTF-8\";[ng\\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\\:form{display:block;}"
                         ]
@@ -27,25 +30,29 @@
                         "attributes": {
                             "name": "keywords",
                             "content": ""
-                        }
+                        },
+                        "text": null
                     },
                     {
                         "tag": "meta",
                         "attributes": {
                             "name": "description",
                             "content": ""
-                        }
+                        },
+                        "text": null
                     },
                     {
                         "tag": "meta",
                         "attributes": {
                             "http-equiv": "content-type",
                             "content": "text/html;charset=utf-8"
-                        }
+                        },
+                        "text": null
                     },
                     {
                         "tag": "title",
-                        "attributes": {}
+                        "attributes": {},
+                        "text": null
                     },
                     {
                         "tag": "link",
@@ -55,7 +62,8 @@
                                 "stylesheet"
                             ],
                             "type": "text/css"
-                        }
+                        },
+                        "text": null
                     },
                     {
                         "tag": "link",
@@ -65,7 +73,8 @@
                             ],
                             "type": "text/css",
                             "href": "//assets.neo.registeredsite.com/libs/libs.css?ct=1729783872182"
-                        }
+                        },
+                        "text": null
                     },
                     {
                         "tag": "link",
@@ -75,13 +84,15 @@
                             ],
                             "type": "text/css",
                             "href": "//assets.neo.registeredsite.com/plugins/neo.css?ct=1729783872182"
-                        }
+                        },
+                        "text": null
                     },
                     {
                         "tag": "script",
                         "attributes": {
                             "type": "text/javascript"
                         },
+                        "text": null,
                         "children": [
                             "var builderSettings = {\n    appRoot: '//app.neo.registeredsite.com/neo/',\n    appRelativePath: '/neo',\n    assetsRoot: '//assets.neo.registeredsite.com',\n    repositoryRoot: '//repository.neo.registeredsite.com',\n    spRoot: '//repository.neo.registeredsite.com/starting-points',\n    usersRoot: '//users.neo.registeredsite.com',\n    sitesearchUrl: '//sitesearch.services.matrixbuilder.com/sitesearch/search',\n    siteDomain: '000l8sl.rcomhost.com',\n    isBuilder : false,\n    isPreview : false\n  };"
                         ]
@@ -94,7 +105,8 @@
                             ],
                             "type": "text/css",
                             "href": "//fonts.googleapis.com/css?family=Lato%7cActor"
-                        }
+                        },
+                        "text": null
                     }
                 ]
             },
@@ -105,6 +117,7 @@
                         "neo-publish"
                     ]
                 },
+                "text": null,
                 "children": [
                     "New builder template",
                     {
@@ -113,20 +126,23 @@
                             "id": "includes",
                             "style": "display: none"
                         },
+                        "text": null,
                         "children": [
                             {
                                 "tag": "script",
                                 "attributes": {
                                     "type": "text/javascript",
                                     "src": "//assets.neo.registeredsite.com/libs/libs.js?ct=1729783872182"
-                                }
+                                },
+                                "text": null
                             },
                             {
                                 "tag": "script",
                                 "attributes": {
                                     "type": "text/javascript",
                                     "src": "//assets.neo.registeredsite.com/libs/tinymce/4.1.7/tinymce.min.js?ct=1729783872182"
-                                }
+                                },
+                                "text": null
                             },
                             {
                                 "tag": "div",
@@ -135,6 +151,7 @@
                                         "sitesearch-plugin-inner"
                                     ]
                                 },
+                                "text": null,
                                 "children": [
                                     {
                                         "tag": "div",
@@ -144,6 +161,7 @@
                                             ],
                                             "data-ng-controller": "neo.SiteSearchPlugin.ngPluginController"
                                         },
+                                        "text": null,
                                         "children": [
                                             {
                                                 "tag": "div",
@@ -155,10 +173,12 @@
                                                     ],
                                                     "style": "width:100%"
                                                 },
+                                                "text": null,
                                                 "children": [
                                                     {
                                                         "tag": "form",
                                                         "attributes": {},
+                                                        "text": null,
                                                         "children": [
                                                             {
                                                                 "tag": "span",
@@ -167,7 +187,8 @@
                                                                         "ss-loading"
                                                                     ],
                                                                     "style": "display: none;"
-                                                                }
+                                                                },
+                                                                "text": null
                                                             },
                                                             {
                                                                 "tag": "input",
@@ -178,7 +199,8 @@
                                                                     "type": "text",
                                                                     "value": "",
                                                                     "placeholder": "Search ..."
-                                                                }
+                                                                },
+                                                                "text": null
                                                             },
                                                             {
                                                                 "tag": "input",
@@ -188,7 +210,8 @@
                                                                     ],
                                                                     "type": "submit",
                                                                     "value": ""
-                                                                }
+                                                                },
+                                                                "text": null
                                                             }
                                                         ]
                                                     }
@@ -204,6 +227,7 @@
                                     "type": "text/webcom-template",
                                     "id": "form-plugin-inner"
                                 },
+                                "text": null,
                                 "children": [
                                     "<div class=\"form-ng remove-on-save\">\n      <div id=\"{{FormId}}\">inject webcom-form here</div>\n    </div>"
                                 ]
@@ -215,6 +239,7 @@
                                         "text-plugin-inner"
                                     ]
                                 },
+                                "text": null,
                                 "children": [
                                     {
                                         "tag": "div",
@@ -228,7 +253,8 @@
                                             "data-ng-click": "select();",
                                             "data-ng-dblclick": "selectAndEdit();",
                                             "data-module-class": "neo.TextModule"
-                                        }
+                                        },
+                                        "text": null
                                     }
                                 ]
                             },
@@ -239,6 +265,7 @@
                                         "map-plugin-inner"
                                     ]
                                 },
+                                "text": null,
                                 "children": [
                                     {
                                         "tag": "div",
@@ -248,6 +275,7 @@
                                                 "remove-on-save"
                                             ]
                                         },
+                                        "text": null,
                                         "children": [
                                             {
                                                 "tag": "div",
@@ -256,6 +284,7 @@
                                                         "mapPlugin"
                                                     ]
                                                 },
+                                                "text": null,
                                                 "children": [
                                                     {
                                                         "tag": "div",
@@ -263,7 +292,8 @@
                                                             "class": [
                                                                 "neo-map-address-show"
                                                             ]
-                                                        }
+                                                        },
+                                                        "text": null
                                                     },
                                                     {
                                                         "tag": "div",
@@ -271,7 +301,8 @@
                                                             "class": [
                                                                 "neo-mapquest"
                                                             ]
-                                                        }
+                                                        },
+                                                        "text": null
                                                     },
                                                     {
                                                         "tag": "div",
@@ -279,7 +310,8 @@
                                                             "class": [
                                                                 "neo-map-direction"
                                                             ]
-                                                        }
+                                                        },
+                                                        "text": null
                                                     }
                                                 ]
                                             }
@@ -294,6 +326,7 @@
                                         "share-plugin-inner"
                                     ]
                                 },
+                                "text": null,
                                 "children": [
                                     {
                                         "tag": "div",
@@ -302,7 +335,8 @@
                                                 "fb-share-button-placeholder"
                                             ],
                                             "data-type": "button"
-                                        }
+                                        },
+                                        "text": null
                                     }
                                 ]
                             },
@@ -313,6 +347,7 @@
                                         "google-share-plugin-inner"
                                     ]
                                 },
+                                "text": null,
                                 "children": [
                                     {
                                         "tag": "div",
@@ -322,6 +357,7 @@
                                             ],
                                             "data-action": "share"
                                         },
+                                        "text": null,
                                         "children": [
                                             {
                                                 "tag": "div",
@@ -330,7 +366,8 @@
                                                         "g-plus"
                                                     ],
                                                     "data-action": "share"
-                                                }
+                                                },
+                                                "text": null
                                             }
                                         ]
                                     }
@@ -343,6 +380,7 @@
                                         "google-plusone-plugin-inner"
                                     ]
                                 },
+                                "text": null,
                                 "children": [
                                     {
                                         "tag": "div",
@@ -351,6 +389,7 @@
                                                 "gplusone-data"
                                             ]
                                         },
+                                        "text": null,
                                         "children": [
                                             {
                                                 "tag": "div",
@@ -358,7 +397,8 @@
                                                     "class": [
                                                         "g-plusone"
                                                     ]
-                                                }
+                                                },
+                                                "text": null
                                             }
                                         ]
                                     }
@@ -371,6 +411,7 @@
                                         "tap-plugin-inner"
                                     ]
                                 },
+                                "text": null,
                                 "children": [
                                     {
                                         "tag": "div",
@@ -379,6 +420,7 @@
                                                 "product-data"
                                             ]
                                         },
+                                        "text": null,
                                         "children": [
                                             "The product element will be here"
                                         ]
@@ -390,7 +432,8 @@
                                 "attributes": {
                                     "type": "text/javascript",
                                     "src": "//assets.neo.registeredsite.com/plugins/neo.js?ct=1729783872182"
-                                }
+                                },
+                                "text": null
                             }
                         ]
                     },
@@ -403,6 +446,7 @@
                                 "modal-effect"
                             ]
                         },
+                        "text": null,
                         "children": [
                             {
                                 "tag": "div",
@@ -411,6 +455,7 @@
                                         "modal-window"
                                     ]
                                 },
+                                "text": null,
                                 "children": [
                                     {
                                         "tag": "div",
@@ -419,6 +464,7 @@
                                                 "modal-top"
                                             ]
                                         },
+                                        "text": "Search Results",
                                         "children": [
                                             "Search Results"
                                         ]
@@ -429,7 +475,8 @@
                                             "class": [
                                                 "modal-bottom"
                                             ]
-                                        }
+                                        },
+                                        "text": null
                                     },
                                     {
                                         "tag": "div",
@@ -438,7 +485,8 @@
                                                 "modal-x"
                                             ],
                                             "data-ng-click": "closeSearchResult()"
-                                        }
+                                        },
+                                        "text": null
                                     }
                                 ]
                             }
@@ -450,7 +498,8 @@
                             "class": [
                                 "ss-modal-overlay"
                             ]
-                        }
+                        },
+                        "text": null
                     },
                     "End Includes",
                     {
@@ -466,6 +515,7 @@
                             ],
                             "style": "min-height: 858px;"
                         },
+                        "text": null,
                         "children": [
                             {
                                 "tag": "div",
@@ -473,13 +523,15 @@
                                     "id": "top-area",
                                     "style": "height: 55.3277px; width: 960px;",
                                     "class": []
-                                }
+                                },
+                                "text": ""
                             },
                             {
                                 "tag": "div",
                                 "attributes": {
                                     "id": "page-wrapper"
                                 },
+                                "text": null,
                                 "children": [
                                     {
                                         "tag": "div",
@@ -490,6 +542,7 @@
                                             ],
                                             "id": "header"
                                         },
+                                        "text": null,
                                         "children": [
                                             {
                                                 "tag": "div",
@@ -499,6 +552,7 @@
                                                     ],
                                                     "style": "margin: 0px auto; position: relative; height: 136px; width: 962px;"
                                                 },
+                                                "text": null,
                                                 "children": [
                                                     {
                                                         "tag": "div",
@@ -514,6 +568,7 @@
                                                             "data-settings": "{\"css\":{\"borderTopStyle\":null,\"borderBottomStyle\":null,\"borderLeftStyle\":null,\"borderRightStyle\":null,\"borderAllStyle\":\"none\",\"borderAllWidth\":\"\",\"borderTopWidth\":\"\",\"borderBottomWidth\":\"\",\"borderLeftWidth\":\"\",\"borderRightWidth\":\"\",\"borderTopColor\":null,\"borderLeftColor\":null,\"borderBottomColor\":null,\"borderRightColor\":null,\"borderAllColor\":\"#333333\",\"borderAllRadius\":null,\"borderTopLeftRadius\":\"\",\"borderTopRightRadius\":\"\",\"borderBottomLeftRadius\":\"\",\"borderBottomRightRadius\":\"\",\"paddingAll\":null,\"paddingTop\":\"\",\"paddingBottom\":\"\",\"paddingLeft\":\"\",\"paddingRight\":\"\",\"boxShadow\":\"0px 0px 0 0 rgba(0,0,0,0.5)\"},\"bgColor\":\"rgba(255, 255, 255, 0)\",\"backgroundOpacity\":100,\"shadowColor\":\"rgba(0,0,0,0.5)\",\"backgroundShadowAngle\":140,\"backgroundShadowOffset\":0}",
                                                             "data-module-class": "neo.ImageModule"
                                                         },
+                                                        "text": null,
                                                         "children": [
                                                             {
                                                                 "tag": "div",
@@ -523,16 +578,16 @@
                                                                     ],
                                                                     "style": "background-color: rgba(255, 255, 255, 0); opacity: 1; border-style: none; border-color: rgb(51, 51, 51); background-image: none; box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 0px 0px;"
                                                                 },
+                                                                "text": null,
                                                                 "children": [
                                                                     {
                                                                         "tag": "img",
                                                                         "attributes": {
                                                                             "style": "width: 113px; height: 155px;",
                                                                             "alt": "",
-                                                                            "src": "assets/J34984.E._Logo.JPG",
-                                                                            "width": "1467",
-                                                                            "height": "2000"
-                                                                        }
+                                                                            "src": "assets/J34984.E._Logo.JPG"
+                                                                        },
+                                                                        "text": null
                                                                     }
                                                                 ]
                                                             }
@@ -551,6 +606,7 @@
                                             ],
                                             "id": "content"
                                         },
+                                        "text": null,
                                         "children": [
                                             {
                                                 "tag": "div",
@@ -560,6 +616,7 @@
                                                     ],
                                                     "style": "margin: 0px auto; height: 530px; position: relative; width: 962px;"
                                                 },
+                                                "text": null,
                                                 "children": [
                                                     {
                                                         "tag": "div",
@@ -577,6 +634,7 @@
                                                             "data-ng-click": "select();",
                                                             "data-ng-dblclick": "selectAndEdit();"
                                                         },
+                                                        "text": null,
                                                         "children": [
                                                             {
                                                                 "tag": "div",
@@ -591,16 +649,19 @@
                                                                     "style": "background-color: rgb(255, 255, 255); opacity: 1; border-style: none; border-color: rgb(51, 51, 51); background-image: none; box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 0px 0px; position: relative;",
                                                                     "spellcheck": "false"
                                                                 },
+                                                                "text": null,
                                                                 "children": [
                                                                     {
                                                                         "tag": "p",
                                                                         "attributes": {},
+                                                                        "text": null,
                                                                         "children": [
                                                                             {
                                                                                 "tag": "br",
                                                                                 "attributes": {
                                                                                     "data-mce-bogus": "1"
-                                                                                }
+                                                                                },
+                                                                                "text": null
                                                                             }
                                                                         ]
                                                                     }
@@ -623,6 +684,7 @@
                                                             "data-ng-click": "select();",
                                                             "data-ng-dblclick": "selectAndEdit();"
                                                         },
+                                                        "text": null,
                                                         "children": [
                                                             {
                                                                 "tag": "div",
@@ -635,26 +697,31 @@
                                                                     "style": "background-color: rgb(255, 255, 255); position: relative; opacity: 1; border-style: none; border-color: rgb(51, 51, 51); background-image: none; box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 0px 0px;",
                                                                     "spellcheck": "false"
                                                                 },
+                                                                "text": null,
                                                                 "children": [
                                                                     {
                                                                         "tag": "p",
                                                                         "attributes": {},
+                                                                        "text": null,
                                                                         "children": [
                                                                             {
                                                                                 "tag": "strong",
                                                                                 "attributes": {},
+                                                                                "text": null,
                                                                                 "children": [
                                                                                     {
                                                                                         "tag": "span",
                                                                                         "attributes": {
                                                                                             "style": "font-family: Impact, Charcoal, sans-serif;"
                                                                                         },
+                                                                                        "text": null,
                                                                                         "children": [
                                                                                             {
                                                                                                 "tag": "span",
                                                                                                 "attributes": {
                                                                                                     "style": "font-family: Arial Black, Gadget, sans-serif; font-size: 24px;"
                                                                                                 },
+                                                                                                "text": "Welcome!",
                                                                                                 "children": [
                                                                                                     "Welcome!"
                                                                                                 ]
@@ -668,30 +735,35 @@
                                                                     {
                                                                         "tag": "p",
                                                                         "attributes": {},
+                                                                        "text": null,
                                                                         "children": [
                                                                             {
                                                                                 "tag": "span",
                                                                                 "attributes": {
                                                                                     "style": "font-size: 16px;"
                                                                                 },
+                                                                                "text": null,
                                                                                 "children": [
                                                                                     {
                                                                                         "tag": "span",
                                                                                         "attributes": {
                                                                                             "style": "font-family: Impact, Charcoal, sans-serif;"
                                                                                         },
+                                                                                        "text": null,
                                                                                         "children": [
                                                                                             {
                                                                                                 "tag": "span",
                                                                                                 "attributes": {
                                                                                                     "style": "font-family: Arial Black, Gadget, sans-serif;"
                                                                                                 },
+                                                                                                "text": null,
                                                                                                 "children": [
                                                                                                     {
                                                                                                         "tag": "span",
                                                                                                         "attributes": {
                                                                                                             "style": "font-family: Actor, sans-serif;"
                                                                                                         },
+                                                                                                        "text": "Receive high-quality professional services, from Jennette Electric School based in\u00a0Plainville MA 02762. Weather you are an individual or a large or small company, our teachers can provide the continuing education credits you need to get your license(s) renewed. Our track record for consistency, timely, service, and subject matter expertise makes your attendance an enjoyable experience.",
                                                                                                         "children": [
                                                                                                             "Receive high-quality professional services, from Jennette Electric School based in\u00a0Plainville MA 02762. Weather you are an individual or a large or small company, our teachers can provide the continuing education credits you need to get your license(s) renewed. Our track record for consistency, timely, service, and subject matter expertise makes your attendance an enjoyable experience."
                                                                                                         ]
@@ -707,30 +779,35 @@
                                                                     {
                                                                         "tag": "p",
                                                                         "attributes": {},
+                                                                        "text": null,
                                                                         "children": [
                                                                             {
                                                                                 "tag": "span",
                                                                                 "attributes": {
                                                                                     "style": "font-size: 16px;"
                                                                                 },
+                                                                                "text": null,
                                                                                 "children": [
                                                                                     {
                                                                                         "tag": "span",
                                                                                         "attributes": {
                                                                                             "style": "font-family: Impact, Charcoal, sans-serif;"
                                                                                         },
+                                                                                        "text": null,
                                                                                         "children": [
                                                                                             {
                                                                                                 "tag": "span",
                                                                                                 "attributes": {
                                                                                                     "style": "font-family: Arial Black, Gadget, sans-serif;"
                                                                                                 },
+                                                                                                "text": null,
                                                                                                 "children": [
                                                                                                     {
                                                                                                         "tag": "span",
                                                                                                         "attributes": {
                                                                                                             "style": "font-family: Actor, sans-serif;"
                                                                                                         },
+                                                                                                        "text": "We offer discounted pricing for companies who wish to hold private course at their facilities. To speak with an experienced member of our staff, simply contact us in\u00a0Plainville MA 02762 at your convenience.",
                                                                                                         "children": [
                                                                                                             "We offer discounted pricing for companies who wish to hold private course at their facilities. To speak with an experienced member of our staff, simply contact us in\u00a0Plainville MA 02762 at your convenience."
                                                                                                         ]
@@ -759,12 +836,14 @@
                                                             "data-settings": "{\"css\":{\"borderTopStyle\":null,\"borderBottomStyle\":null,\"borderLeftStyle\":null,\"borderRightStyle\":null,\"borderAllStyle\":\"none\",\"borderAllWidth\":\"\",\"borderTopWidth\":\"\",\"borderBottomWidth\":\"\",\"borderLeftWidth\":\"\",\"borderRightWidth\":\"\",\"borderTopColor\":null,\"borderLeftColor\":null,\"borderBottomColor\":null,\"borderRightColor\":null,\"borderAllColor\":\"#333333\",\"borderAllRadius\":null,\"borderTopLeftRadius\":\"\",\"borderTopRightRadius\":\"\",\"borderBottomLeftRadius\":\"\",\"borderBottomRightRadius\":\"\",\"paddingAll\":null,\"paddingTop\":\"\",\"paddingBottom\":\"\",\"paddingLeft\":\"\",\"paddingRight\":\"\",\"boxShadow\":\"0px 0px 0 0 rgba(0,0,0,0.5)\"},\"bgColor\":\"rgba(255, 255, 255, 0)\",\"backgroundOpacity\":100,\"shadowColor\":\"rgba(0,0,0,0.5)\",\"backgroundShadowAngle\":140,\"backgroundShadowOffset\":0}",
                                                             "data-module-class": "neo.Navigation2Module"
                                                         },
+                                                        "text": null,
                                                         "children": [
                                                             {
                                                                 "tag": "style",
                                                                 "attributes": {
                                                                     "id": "custom-style-for-asset-1513001945957"
                                                                 },
+                                                                "text": null,
                                                                 "children": [
                                                                     "/****************/\n                              /* neo main nav */\n                              /****************/\n                              #asset-1513001945957.main-nav-fixed-plugin .neo-asset-inner > ul > li {\n                                width: 130px;\n                              }\n                              #asset-1513001945957 .neo-asset-inner > ul > li {\n                                padding-top: 5px;\n                                padding-right: 10px;\n                                padding-bottom: 5px;\n                                padding-left: 10px;\n                                margin-right: 0;\n                                margin-bottom: 0;\n                                background-color: rgb(0, 0, 0);\n                                font-style: normal;\n                                font-weight: normal;\n                                font-size: 12px;\n                                font-family: Lato;\n                                text-align: left;\n\n                                border-left-color: rgb(51, 51, 51);\n                                border-left-style: none;\n                                border-left-width: 0;\n                                border-right-color: rgb(51, 51, 51);\n                                border-right-style: none;\n                                border-right-width: 0;\n                                border-bottom-color: rgb(51, 51, 51);\n                                border-bottom-style: none;\n                                border-bottom-width: 0;\n                                border-top-color: rgb(51, 51, 51);\n                                border-top-style: none;\n                                border-top-width: 0;\n                                border-top-left-radius:0;\n                                border-top-right-radius:0;\n                                border-bottom-left-radius:0;\n                                border-bottom-right-radius:0;\n\n                                -moz-box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                                -webkit-box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                                box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                              }\n                              #asset-1513001945957 .neo-asset-inner > ul > li > a {\n                                color: rgb(255, 255, 255);\n                              }\n                              #asset-1513001945957 .neo-asset-inner > ul > li.k-state-hover {\n                                padding-top: 5px;\n                                padding-right: 10px;\n                                padding-bottom: 5px;\n                                padding-left: 10px;\n                                background-color: rgb(16, 196, 178);\n                                font-style: normal;\n                                font-weight: normal;\n                                font-size: 12px;\n                                font-family: Lato;\n                                text-align: left;\n\n                                border-left-color: rgb(46, 179, 166);\n                                border-left-style: none;\n                                border-left-width: 0;\n                                border-right-color: rgb(46, 179, 166);\n                                border-right-style: none;\n                                border-right-width: 0;\n                                border-bottom-color: rgb(46, 179, 166);\n                                border-bottom-style: none;\n                                border-bottom-width: 0;\n                                border-top-color: rgb(46, 179, 166);\n                                border-top-style: none;\n                                border-top-width: 0;\n                                border-top-left-radius:0;\n                                border-top-right-radius:0;\n                                border-bottom-left-radius:0;\n                                border-bottom-right-radius:0;\n\n                                -moz-box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                                -webkit-box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                                box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                              }\n                              #asset-1513001945957 .neo-asset-inner > ul > li.k-state-hover > a {\n                                color: rgb(255, 255, 255);\n                              }\n                              #asset-1513001945957 .neo-asset-inner > ul > li.k-state-active {\n                                padding-top: 5px;\n                                padding-right: 10px;\n                                padding-bottom: 5px;\n                                padding-left: 10px;\n                                background-color: rgb(16, 196, 178);\n                                font-style: normal;\n                                font-weight: normal;\n                                font-size: 12px;\n                                font-family: Lato;\n                                text-align: left;\n\n                                border-left-color: rgb(16, 196, 178);\n                                border-left-style: none;\n                                border-left-width: 0;\n                                border-right-color: rgb(16, 196, 178);\n                                border-right-style: none;\n                                border-right-width: 0;\n                                border-bottom-color: rgb(16, 196, 178);\n                                border-bottom-style: none;\n                                border-bottom-width: 0;\n                                border-top-color: rgb(16, 196, 178);\n                                border-top-style: none;\n                                border-top-width: 0;\n                                border-top-left-radius:0;\n                                border-top-right-radius:0;\n                                border-bottom-left-radius:0;\n                                border-bottom-right-radius:0;\n\n                                -moz-box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                                -webkit-box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                                box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                              }\n                              #asset-1513001945957 .neo-asset-inner > ul > li.k-state-active > a {\n                                color: rgb(255, 255, 255);\n                              }\n                              /***************/\n                              /* neo sub nav */\n                              /***************/\n                              #asset-1513001945957.sub-nav-fixed-plugin ul ul > li {\n                                width: 130px;\n                              }\n                              #asset-1513001945957 ul ul > li {\n                                padding-top: 5px;\n                                padding-right: 10px;\n                                padding-bottom: 5px;\n                                padding-left: 10px;\n                                margin-bottom: 0;\n                                background-color: rgb(0, 0, 0);\n                                font-style: normal;\n                                font-weight: normal;\n                                font-size: 12px;\n                                font-family: Lato;\n                                text-align: left;\n\n                                border-left-color: rgb(51, 51, 51);\n                                border-left-style: none;\n                                border-left-width: 0;\n                                border-right-color: rgb(51, 51, 51);\n                                border-right-style: none;\n                                border-right-width: 0;\n                                border-bottom-color: rgb(51, 51, 51);\n                                border-bottom-style: none;\n                                border-bottom-width: 0;\n                                border-top-color: rgb(51, 51, 51);\n                                border-top-style: none;\n                                border-top-width: 0;\n                                border-top-left-radius:0;\n                                border-top-right-radius:0;\n                                border-bottom-left-radius:0;\n                                border-bottom-right-radius:0;\n\n                                -moz-box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                                -webkit-box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                                box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                              }\n                              #asset-1513001945957 ul ul > li > a {\n                                color: rgb(255, 255, 255);\n                              }\n                              #asset-1513001945957 ul ul > li.k-state-hover {\n                                padding-top: 5px;\n                                padding-right: 10px;\n                                padding-bottom: 5px;\n                                padding-left: 10px;\n                                background-color: rgb(16, 196, 178);\n                                font-style: normal;\n                                font-weight: normal;\n                                font-size: 12px;\n                                font-family: Lato;\n                                text-align: left;\n\n                                border-left-color: rgb(46, 179, 166);\n                                border-left-style: none;\n                                border-left-width: 0;\n                                border-right-color: rgb(46, 179, 166);\n                                border-right-style: none;\n                                border-right-width: 0;\n                                border-bottom-color: rgb(46, 179, 166);\n                                border-bottom-style: none;\n                                border-bottom-width: 0;\n                                border-top-color: rgb(46, 179, 166);\n                                border-top-style: none;\n                                border-top-width: 0;\n                                border-top-left-radius:0;\n                                border-top-right-radius:0;\n                                border-bottom-left-radius:0;\n                                border-bottom-right-radius:0;\n\n                                -moz-box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                                -webkit-box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                                box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                              }\n                              #asset-1513001945957 ul ul > li.k-state-hover > a {\n                                color: rgb(255, 255, 255);\n                              }\n                              #asset-1513001945957 ul ul > li.k-state-active {\n                                padding-top: 5px;\n                                padding-right: 10px;\n                                padding-bottom: 5px;\n                                padding-left: 10px;\n                                background-color: rgb(16, 196, 178);\n                                font-style: normal;\n                                font-weight: normal;\n                                font-size: 12px;\n                                font-family: Lato;\n                                text-align: left;\n\n                                border-left-color: rgb(16, 196, 178);\n                                border-left-style: none;\n                                border-left-width: 0;\n                                border-right-color: rgb(16, 196, 178);\n                                border-right-style: none;\n                                border-right-width: 0;\n                                border-bottom-color: rgb(16, 196, 178);\n                                border-bottom-style: none;\n                                border-bottom-width: 0;\n                                border-top-color: rgb(16, 196, 178);\n                                border-top-style: none;\n                                border-top-width: 0;\n                                border-top-left-radius:0;\n                                border-top-right-radius:0;\n                                border-bottom-left-radius:0;\n                                border-bottom-right-radius:0;\n\n                                -moz-box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                                -webkit-box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                                box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;\n                              }\n                              #asset-1513001945957 ul ul > li.k-state-active > a {\n                                color: rgb(255, 255, 255);\n                              }"
                                                                 ]
@@ -777,6 +856,7 @@
                                                                     ],
                                                                     "style": "background-color: rgba(255, 255, 255, 0); opacity: 1; border-style: none; border-color: rgb(51, 51, 51); background-image: none; box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 0px 0px;"
                                                                 },
+                                                                "text": null,
                                                                 "children": [
                                                                     {
                                                                         "tag": "ul",
@@ -797,6 +877,7 @@
                                                                             "data-kendo-menu": "",
                                                                             "tabindex": "0"
                                                                         },
+                                                                        "text": null,
                                                                         "children": [
                                                                             {
                                                                                 "tag": "li",
@@ -813,6 +894,7 @@
                                                                                     "id": "page-9923709-1271176176778",
                                                                                     "role": "menuitem"
                                                                                 },
+                                                                                "text": null,
                                                                                 "children": [
                                                                                     {
                                                                                         "tag": "a",
@@ -822,6 +904,7 @@
                                                                                             ],
                                                                                             "href": "index.html"
                                                                                         },
+                                                                                        "text": "Home",
                                                                                         "children": [
                                                                                             "Home"
                                                                                         ]
@@ -839,6 +922,7 @@
                                                                                     "id": "page-9923711-1321038023213",
                                                                                     "role": "menuitem"
                                                                                 },
+                                                                                "text": null,
                                                                                 "children": [
                                                                                     {
                                                                                         "tag": "a",
@@ -848,6 +932,7 @@
                                                                                             ],
                                                                                             "href": "about-us.html"
                                                                                         },
+                                                                                        "text": "About us",
                                                                                         "children": [
                                                                                             "About us"
                                                                                         ]
@@ -865,6 +950,7 @@
                                                                                     "id": "page-9923708-588568532681",
                                                                                     "role": "menuitem"
                                                                                 },
+                                                                                "text": null,
                                                                                 "children": [
                                                                                     {
                                                                                         "tag": "a",
@@ -874,6 +960,7 @@
                                                                                             ],
                                                                                             "href": "contact-us.html"
                                                                                         },
+                                                                                        "text": "Contact Us",
                                                                                         "children": [
                                                                                             "Contact Us"
                                                                                         ]
@@ -892,6 +979,7 @@
                                                                                     "id": "page-9923710-1252417677838",
                                                                                     "role": "menuitem"
                                                                                 },
+                                                                                "text": null,
                                                                                 "children": [
                                                                                     {
                                                                                         "tag": "a",
@@ -901,6 +989,7 @@
                                                                                             ],
                                                                                             "href": "application.html"
                                                                                         },
+                                                                                        "text": "Application",
                                                                                         "children": [
                                                                                             "Application"
                                                                                         ]
@@ -926,6 +1015,7 @@
                                             ],
                                             "id": "footer"
                                         },
+                                        "text": null,
                                         "children": [
                                             {
                                                 "tag": "div",
@@ -935,6 +1025,7 @@
                                                     ],
                                                     "style": "margin: 0px auto; height: 137px; position: relative; width: 962px;"
                                                 },
+                                                "text": null,
                                                 "children": [
                                                     {
                                                         "tag": "div",
@@ -948,6 +1039,7 @@
                                                             "data-module-class": "neo.ImageModule",
                                                             "data-settings": "{\"css\":{\"borderTopStyle\":null,\"borderBottomStyle\":null,\"borderLeftStyle\":null,\"borderRightStyle\":null,\"borderAllStyle\":\"none\",\"borderAllWidth\":\"\",\"borderTopWidth\":\"\",\"borderBottomWidth\":\"\",\"borderLeftWidth\":\"\",\"borderRightWidth\":\"\",\"borderTopColor\":null,\"borderLeftColor\":null,\"borderBottomColor\":null,\"borderRightColor\":null,\"borderAllColor\":\"#333333\",\"borderAllRadius\":null,\"borderTopLeftRadius\":\"\",\"borderTopRightRadius\":\"\",\"borderBottomLeftRadius\":\"\",\"borderBottomRightRadius\":\"\",\"paddingAll\":null,\"paddingTop\":\"\",\"paddingBottom\":\"\",\"paddingLeft\":\"\",\"paddingRight\":\"\",\"boxShadow\":\"0px 0px 0 0 rgba(0,0,0,0.5)\"},\"bgColor\":\"rgba(255, 255, 255, 0)\",\"backgroundOpacity\":100,\"shadowColor\":\"rgba(0,0,0,0.5)\",\"backgroundShadowAngle\":140,\"backgroundShadowOffset\":0}"
                                                         },
+                                                        "text": null,
                                                         "children": [
                                                             {
                                                                 "tag": "div",
@@ -957,15 +1049,15 @@
                                                                     ],
                                                                     "style": "background-color: rgba(255, 255, 255, 0); opacity: 1; border-style: none; border-color: rgb(51, 51, 51); background-image: none; box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 0px 0px;"
                                                                 },
+                                                                "text": null,
                                                                 "children": [
                                                                     {
                                                                         "tag": "img",
                                                                         "attributes": {
                                                                             "alt": "",
-                                                                            "src": "assets/register-site-seal.gif",
-                                                                            "width": "177",
-                                                                            "height": "68"
-                                                                        }
+                                                                            "src": "assets/register-site-seal.gif"
+                                                                        },
+                                                                        "text": null
                                                                     }
                                                                 ]
                                                             }
@@ -987,6 +1079,7 @@
                                                             "data-ng-click": "select();",
                                                             "data-ng-dblclick": "selectAndEdit();"
                                                         },
+                                                        "text": null,
                                                         "children": [
                                                             {
                                                                 "tag": "div",
@@ -999,12 +1092,14 @@
                                                                     "style": "background-color: rgba(255, 255, 255, 0); position: relative; opacity: 1; border-style: none; border-color: rgb(51, 51, 51); background-image: none; box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 0px 0px;",
                                                                     "spellcheck": "false"
                                                                 },
+                                                                "text": null,
                                                                 "children": [
                                                                     {
                                                                         "tag": "div",
                                                                         "attributes": {
                                                                             "style": "text-align: center; line-height: 1;"
                                                                         },
+                                                                        "text": "160 WASHINGTON ST #24 PLAINVILLE MA 02762-1316",
                                                                         "children": [
                                                                             "160 WASHINGTON ST #24 PLAINVILLE MA 02762-1316"
                                                                         ]
@@ -1014,17 +1109,20 @@
                                                                         "attributes": {
                                                                             "style": "text-align: center; line-height: 1;"
                                                                         },
+                                                                        "text": null,
                                                                         "children": [
                                                                             {
                                                                                 "tag": "span",
                                                                                 "attributes": {
                                                                                     "style": "font-size: 24px; font-family: Arial, Helvetica, sans-serif;"
                                                                                 },
+                                                                                "text": null,
                                                                                 "children": [
                                                                                     "508-380-7134 or Fax 774-643-6588",
                                                                                     {
                                                                                         "tag": "br",
-                                                                                        "attributes": {}
+                                                                                        "attributes": {},
+                                                                                        "text": null
                                                                                     }
                                                                                 ]
                                                                             }
@@ -1032,19 +1130,22 @@
                                                                     },
                                                                     {
                                                                         "tag": "p",
-                                                                        "attributes": {}
+                                                                        "attributes": {},
+                                                                        "text": null
                                                                     },
                                                                     {
                                                                         "tag": "div",
                                                                         "attributes": {
                                                                             "style": "line-height: 0.8;"
                                                                         },
+                                                                        "text": null,
                                                                         "children": [
                                                                             {
                                                                                 "tag": "span",
                                                                                 "attributes": {
                                                                                     "style": "font-size: 24px; font-family: Arial, Helvetica, sans-serif;"
-                                                                                }
+                                                                                },
+                                                                                "text": null
                                                                             }
                                                                         ]
                                                                     }
@@ -1064,7 +1165,8 @@
                                     "id": "bottom-area",
                                     "style": "width: 960px;",
                                     "class": []
-                                }
+                                },
+                                "text": null
                             }
                         ]
                     },
@@ -1074,6 +1176,7 @@
                         "attributes": {
                             "type": "text/javascript"
                         },
+                        "text": null,
                         "children": [
                             "<!--\ndocument.write('<'+'img style=\"position:fixed;\" src=\"//scorecard.wspisp.net/logger.php'+'?tag=dW5waWQ6MjA2MTA5MjY7MjE%3D&ref='+document.referrer+'&x='+Math.random()+'\" '+'width=\"1\" height=\"1\" alt=\"\" '+'>');\n//-->"
                         ]
@@ -1082,15 +1185,17 @@
                         "tag": "img",
                         "attributes": {
                             "style": "position:fixed;",
-                            "src": "//scorecard.wspisp.net/logger.php?tag=dW5waWQ6MjA2MTA5MjY7MjE%3D&ref=&x=0.4144157657282994",
+                            "src": "//scorecard.wspisp.net/logger.php?tag=dW5waWQ6MjA2MTA5MjY7MjE%3D&ref=&x=0.001299627888091015",
                             "width": "1",
                             "height": "1",
                             "alt": ""
-                        }
+                        },
+                        "text": null
                     },
                     {
                         "tag": "noscript",
                         "attributes": {},
+                        "text": null,
                         "children": [
                             {
                                 "tag": "img",
@@ -1100,7 +1205,8 @@
                                     "width": "1",
                                     "height": "1",
                                     "alt": ""
-                                }
+                                },
+                                "text": ""
                             }
                         ]
                     },

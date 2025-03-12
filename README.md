@@ -44,3 +44,4 @@ npm install
 
 The JSON file should follow this structure:
 //Final version structure not yet implemented
+At the moment JSON needs "link" field in each page object. This should match link in navigation navbar for routing to work. 
