@@ -1,0 +1,10 @@
+.generate_static_button {
+    border: 1px solid black;
+    background-color: transparent;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    &:hover {
+        background-color: #f0f0f0;
+    }
+}

@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useCallback } from "react";
 import { convertStyleStringToObject, extractBaseUrl } from "./utils/utils";
+import style from "./style.scss";
 
 const WebsiteBuilder = () => {
   const [pages, setPages] = useState([]);
@@ -21,6 +22,7 @@ const WebsiteBuilder = () => {
           const pagesData = json.pages || [];
           setPages(pagesData);
           setBaseUrl(extractBaseUrl(json));
+          console.log(jsonData);
         } catch (error) {
           console.error("Error parsing JSON:", error);
         }
@@ -170,7 +172,8 @@ const WebsiteBuilder = () => {
   }, [baseUrl, pages]);
 
   return (
-    <div>
+    <div style={{ padding: '20px' }}>
+      <h3 style={{ marginTop: '0px' }}>JSON to HTML parser</h3>
       <div className="control-container">
         <label>
           Import JSON
@@ -179,13 +182,14 @@ const WebsiteBuilder = () => {
             accept=".json"
             onChange={handleFileUpload}
             className="ml-2 mb-2"
+            style={{ marginLeft: '10px' }}
           />
         </label>
                 <div className="mt-4">
           <button
             onClick={handleGenerateStaticFiles}
             disabled={!jsonData || isGenerating}
-            className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 disabled:bg-gray-300 disabled:cursor-not-allowed"
+            className={ style.generate_static_button }
             style={{ 
       
               cursor: jsonData && !isGenerating ? 'pointer' : 'not-allowed',
@@ -225,11 +229,9 @@ const WebsiteBuilder = () => {
       </div>
 
       <div className="website-content">
-        {pages.length > 0 ? (
-          pages[currentPageIndex].html.children.map((element, index) => renderElement(element, index))
-        ) : (
-          <div className="text-gray-500">No content to display</div>
-        )}
+      {pages.length > 0 && pages[currentPageIndex].html.children.map((element, index) => 
+        renderElement(element, index)
+      )}
       </div>
     </div>
   );
