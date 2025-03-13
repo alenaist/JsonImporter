@@ -80,7 +80,7 @@
             "textContent": "var builderSettings = {\n    appRoot: '//app.neo.registeredsite.com/neo/',\n    appRelativePath: '/neo',\n    assetsRoot: '//assets.neo.registeredsite.com',\n    repositoryRoot: '//repository.neo.registeredsite.com',\n    spRoot: '//repository.neo.registeredsite.com/starting-points',\n    usersRoot: '//users.neo.registeredsite.com',\n    sitesearchUrl: '//sitesearch.services.matrixbuilder.com/sitesearch/search',\n    siteDomain: '000l8sl.rcomhost.com',\n    isBuilder : false,\n    isPreview : false\n  };"
           }
         ],
-        "textContent": "About Us \n  \n  \n  \n \n  var builderSettings = {\n    appRoot: '//app.neo.registeredsite.com/neo/',\n    appRelativePath: '/neo',\n    assetsRoot: '//assets.neo.registeredsite.com',\n    repositoryRoot: '//repository.neo.registeredsite.com',\n    spRoot: '//repository.neo.registeredsite.com/starting-points',\n    usersRoot: '//users.neo.registeredsite.com',\n    sitesearchUrl: '//sitesearch.services.matrixbuilder.com/sitesearch/search',\n    siteDomain: '000l8sl.rcomhost.com',\n    isBuilder : false,\n    isPreview : false\n  };"
+        "textContent": ""
       },
       {
         "tagName": "body",
@@ -218,10 +218,10 @@
                         "textContent": ""
                       }
                     ],
-                    "textContent": "Search Results"
+                    "textContent": ""
                   }
                 ],
-                "textContent": "Search Results"
+                "textContent": ""
               },
               {
                 "tagName": "script",
@@ -399,7 +399,7 @@
                 "textContent": ""
               }
             ],
-            "textContent": "Search Results\n     \n     \n     \n    \n   \n  \n    <div class=\"form-ng remove-on-save\">\n      <div id=\"{{FormId}}\">inject webcom-form here</div>\n    </div>"
+            "textContent": ""
           },
           {
             "tagName": "div",
@@ -533,16 +533,16 @@
                                             "textContent": "Jennette Electrical School"
                                           }
                                         ],
-                                        "textContent": "Jennette Electrical School"
+                                        "textContent": ""
                                       }
                                     ],
-                                    "textContent": "Jennette Electrical School"
+                                    "textContent": ""
                                   }
                                 ],
-                                "textContent": "Jennette Electrical School"
+                                "textContent": ""
                               }
                             ],
-                            "textContent": "Jennette Electrical School"
+                            "textContent": ""
                           },
                           {
                             "tagName": "div",
@@ -603,10 +603,10 @@
                                             "textContent": "About us"
                                           }
                                         ],
-                                        "textContent": "About us"
+                                        "textContent": ""
                                       }
                                     ],
-                                    "textContent": "About us"
+                                    "textContent": ""
                                   },
                                   {
                                     "tagName": "p",
@@ -645,7 +645,7 @@
                                         "textContent": "Association in1988 at the Blue Hill Regional Vocational High School as a night instructor."
                                       }
                                     ],
-                                    "textContent": "Jennette Electric and Jennette Electric School is owned and operated by Michael P Jennette. I have been in the Electrical trade since 1964. I hold 5 Master licenses and 2 Journeyman Licenses. I started teaching for the Associated Builders and Contractors Association in1988 at the Blue Hill Regional Vocational High School as a night instructor."
+                                    "textContent": ""
                                   },
                                   {
                                     "tagName": "p",
@@ -668,7 +668,7 @@
                                         "textContent": "the Commonwealth of Massachusetts, also with the states of  New Hampshire and Maine and by agreement for Rhode Island."
                                       }
                                     ],
-                                    "textContent": "I taught the Master and Journeyman course at Tri-County Regional Vocational High School at night in Franklin MA from 1993-2013. I am also a State Certified Provider for the 15 hour Massachusetts Continuing Education required by the Commonwealth of Massachusetts, also with the states of  New Hampshire and Maine and by agreement for Rhode Island."
+                                    "textContent": ""
                                   },
                                   {
                                     "tagName": "p",
@@ -699,10 +699,10 @@
                                             "textContent": "now requires an E-Mail as they are no longer mailing renewal notices"
                                           }
                                         ],
-                                        "textContent": "My next 15 Hour MCE will be held Sept 9-10, Oct 19-20, Nov 9-10, Jan 4-5, 2025, Feb 8-9, 2025, Mar 8-9, 2025, Apr 12-13, 2025, May 3-4, 2025, and Jun 7-8, 2025. Location will be determined according to class size. You must bringelectrical license(s) and a photo ID. State requires only a current code book, which we have for sale, hard or soft cover, hand books and electronic medium is allowed. The Commonwealth of Massachusetts Board of Electricians now requires an E-Mail as they are no longer mailing renewal notices, it is all electronic. Call for more information at 508-380-7134. This course is based on the 2023 National Electric Code with state amendments. Seating is limited, once a class is full you will be automatically put into the next class. Classes start promptly at 7:30 on Saturday and 8:00 on Sunday Please show up early to check in."
+                                        "textContent": ""
                                       }
                                     ],
-                                    "textContent": "My next 15 Hour MCE will be held Sept 9-10, Oct 19-20, Nov 9-10, Jan 4-5, 2025, Feb 8-9, 2025, Mar 8-9, 2025, Apr 12-13, 2025, May 3-4, 2025, and Jun 7-8, 2025. Location will be determined according to class size. You must bringelectrical license(s) and a photo ID. State requires only a current code book, which we have for sale, hard or soft cover, hand books and electronic medium is allowed. The Commonwealth of Massachusetts Board of Electricians now requires an E-Mail as they are no longer mailing renewal notices, it is all electronic. Call for more information at 508-380-7134. This course is based on the 2023 National Electric Code with state amendments. Seating is limited, once a class is full you will be automatically put into the next class. Classes start promptly at 7:30 on Saturday and 8:00 on Sunday Please show up early to check in."
+                                    "textContent": ""
                                   },
                                   {
                                     "tagName": "p",
@@ -717,19 +717,19 @@
                                         "textContent": "Grounding and Bonding classes will be offered startingin Sept, this course comes with a text bookwhich is your to keep. The dates are as follows; Sept 28, Oct 26, November 23, Jan 25, Feb 22, Mar 22, Apr 26, May 17, and Jun 21. Coffee and pastry will be served. We now accept Visa, MasterCard, Discover, and American Express"
                                       }
                                     ],
-                                    "textContent": "Grounding and Bonding classes will be offered startingin Sept, this course comes with a text bookwhich is your to keep. The dates are as follows; Sept 28, Oct 26, November 23, Jan 25, Feb 22, Mar 22, Apr 26, May 17, and Jun 21. Coffee and pastry will be served. We now accept Visa, MasterCard, Discover, and American Express"
+                                    "textContent": ""
                                   }
                                 ],
-                                "textContent": "About us \n       Jennette Electric and Jennette Electric School is owned and operated by Michael P Jennette. I have been in the Electrical trade since 1964. I hold 5 Master licenses and 2 Journeyman Licenses. I started teaching for the Associated Builders and Contractors Association in1988 at the Blue Hill Regional Vocational High School as a night instructor. \n       I taught the Master and Journeyman course at Tri-County Regional Vocational High School at night in Franklin MA from 1993-2013. I am also a State Certified Provider for the 15 hour Massachusetts Continuing Education required by the Commonwealth of Massachusetts, also with the states of  New Hampshire and Maine and by agreement for Rhode Island. \n       My next 15 Hour MCE will be held Sept 9-10, Oct 19-20, Nov 9-10, Jan 4-5, 2025, Feb 8-9, 2025, Mar 8-9, 2025, Apr 12-13, 2025, May 3-4, 2025, and Jun 7-8, 2025. Location will be determined according to class size. You must bringelectrical license(s) and a photo ID. State requires only a current code book, which we have for sale, hard or soft cover, hand books and electronic medium is allowed. The Commonwealth of Massachusetts Board of Electricians now requires an E-Mail as they are no longer mailing renewal notices, it is all electronic. Call for more information at 508-380-7134. This course is based on the 2023 National Electric Code with state amendments. Seating is limited, once a class is full you will be automatically put into the next class. Classes start promptly at 7:30 on Saturday and 8:00 on Sunday Please show up early to check in.  \n       Grounding and Bonding classes will be offered startingin Sept, this course comes with a text bookwhich is your to keep. The dates are as follows; Sept 28, Oct 26, November 23, Jan 25, Feb 22, Mar 22, Apr 26, May 17, and Jun 21. Coffee and pastry will be served. We now accept Visa, MasterCard, Discover, and American Express"
+                                "textContent": ""
                               }
                             ],
-                            "textContent": "About us \n       Jennette Electric and Jennette Electric School is owned and operated by Michael P Jennette. I have been in the Electrical trade since 1964. I hold 5 Master licenses and 2 Journeyman Licenses. I started teaching for the Associated Builders and Contractors Association in1988 at the Blue Hill Regional Vocational High School as a night instructor. \n       I taught the Master and Journeyman course at Tri-County Regional Vocational High School at night in Franklin MA from 1993-2013. I am also a State Certified Provider for the 15 hour Massachusetts Continuing Education required by the Commonwealth of Massachusetts, also with the states of  New Hampshire and Maine and by agreement for Rhode Island. \n       My next 15 Hour MCE will be held Sept 9-10, Oct 19-20, Nov 9-10, Jan 4-5, 2025, Feb 8-9, 2025, Mar 8-9, 2025, Apr 12-13, 2025, May 3-4, 2025, and Jun 7-8, 2025. Location will be determined according to class size. You must bringelectrical license(s) and a photo ID. State requires only a current code book, which we have for sale, hard or soft cover, hand books and electronic medium is allowed. The Commonwealth of Massachusetts Board of Electricians now requires an E-Mail as they are no longer mailing renewal notices, it is all electronic. Call for more information at 508-380-7134. This course is based on the 2023 National Electric Code with state amendments. Seating is limited, once a class is full you will be automatically put into the next class. Classes start promptly at 7:30 on Saturday and 8:00 on Sunday Please show up early to check in.  \n       Grounding and Bonding classes will be offered startingin Sept, this course comes with a text bookwhich is your to keep. The dates are as follows; Sept 28, Oct 26, November 23, Jan 25, Feb 22, Mar 22, Apr 26, May 17, and Jun 21. Coffee and pastry will be served. We now accept Visa, MasterCard, Discover, and American Express"
+                            "textContent": ""
                           }
                         ],
-                        "textContent": "Jennette Electrical School \n       \n      \n      \n       \n        \n       About us \n       Jennette Electric and Jennette Electric School is owned and operated by Michael P Jennette. I have been in the Electrical trade since 1964. I hold 5 Master licenses and 2 Journeyman Licenses. I started teaching for the Associated Builders and Contractors Association in1988 at the Blue Hill Regional Vocational High School as a night instructor. \n       I taught the Master and Journeyman course at Tri-County Regional Vocational High School at night in Franklin MA from 1993-2013. I am also a State Certified Provider for the 15 hour Massachusetts Continuing Education required by the Commonwealth of Massachusetts, also with the states of  New Hampshire and Maine and by agreement for Rhode Island. \n       My next 15 Hour MCE will be held Sept 9-10, Oct 19-20, Nov 9-10, Jan 4-5, 2025, Feb 8-9, 2025, Mar 8-9, 2025, Apr 12-13, 2025, May 3-4, 2025, and Jun 7-8, 2025. Location will be determined according to class size. You must bringelectrical license(s) and a photo ID. State requires only a current code book, which we have for sale, hard or soft cover, hand books and electronic medium is allowed. The Commonwealth of Massachusetts Board of Electricians now requires an E-Mail as they are no longer mailing renewal notices, it is all electronic. Call for more information at 508-380-7134. This course is based on the 2023 National Electric Code with state amendments. Seating is limited, once a class is full you will be automatically put into the next class. Classes start promptly at 7:30 on Saturday and 8:00 on Sunday Please show up early to check in.  \n       Grounding and Bonding classes will be offered startingin Sept, this course comes with a text bookwhich is your to keep. The dates are as follows; Sept 28, Oct 26, November 23, Jan 25, Feb 22, Mar 22, Apr 26, May 17, and Jun 21. Coffee and pastry will be served. We now accept Visa, MasterCard, Discover, and American Express"
+                        "textContent": ""
                       }
                     ],
-                    "textContent": "Jennette Electrical School \n       \n      \n      \n       \n        \n       About us \n       Jennette Electric and Jennette Electric School is owned and operated by Michael P Jennette. I have been in the Electrical trade since 1964. I hold 5 Master licenses and 2 Journeyman Licenses. I started teaching for the Associated Builders and Contractors Association in1988 at the Blue Hill Regional Vocational High School as a night instructor. \n       I taught the Master and Journeyman course at Tri-County Regional Vocational High School at night in Franklin MA from 1993-2013. I am also a State Certified Provider for the 15 hour Massachusetts Continuing Education required by the Commonwealth of Massachusetts, also with the states of  New Hampshire and Maine and by agreement for Rhode Island. \n       My next 15 Hour MCE will be held Sept 9-10, Oct 19-20, Nov 9-10, Jan 4-5, 2025, Feb 8-9, 2025, Mar 8-9, 2025, Apr 12-13, 2025, May 3-4, 2025, and Jun 7-8, 2025. Location will be determined according to class size. You must bringelectrical license(s) and a photo ID. State requires only a current code book, which we have for sale, hard or soft cover, hand books and electronic medium is allowed. The Commonwealth of Massachusetts Board of Electricians now requires an E-Mail as they are no longer mailing renewal notices, it is all electronic. Call for more information at 508-380-7134. This course is based on the 2023 National Electric Code with state amendments. Seating is limited, once a class is full you will be automatically put into the next class. Classes start promptly at 7:30 on Saturday and 8:00 on Sunday Please show up early to check in.  \n       Grounding and Bonding classes will be offered startingin Sept, this course comes with a text bookwhich is your to keep. The dates are as follows; Sept 28, Oct 26, November 23, Jan 25, Feb 22, Mar 22, Apr 26, May 17, and Jun 21. Coffee and pastry will be served. We now accept Visa, MasterCard, Discover, and American Express"
+                    "textContent": ""
                   },
                   {
                     "tagName": "div",
@@ -824,10 +824,10 @@
                                             "textContent": ""
                                           }
                                         ],
-                                        "textContent": "508-380-7134 or Fax 774-643-6588"
+                                        "textContent": ""
                                       }
                                     ],
-                                    "textContent": "508-380-7134 or Fax 774-643-6588"
+                                    "textContent": ""
                                   },
                                   {
                                     "tagName": "p",
@@ -853,19 +853,19 @@
                                     "textContent": ""
                                   }
                                 ],
-                                "textContent": "160 WASHINGTON ST #24 PLAINVILLE MA 02762-1316 \n        \n        \n        508-380-7134 or Fax 774-643-6588"
+                                "textContent": ""
                               }
                             ],
-                            "textContent": "160 WASHINGTON ST #24 PLAINVILLE MA 02762-1316 \n        \n        \n        508-380-7134 or Fax 774-643-6588"
+                            "textContent": ""
                           }
                         ],
-                        "textContent": "160 WASHINGTON ST #24 PLAINVILLE MA 02762-1316 \n        \n        \n        508-380-7134 or Fax 774-643-6588"
+                        "textContent": ""
                       }
                     ],
-                    "textContent": "160 WASHINGTON ST #24 PLAINVILLE MA 02762-1316 \n        \n        \n        508-380-7134 or Fax 774-643-6588"
+                    "textContent": ""
                   }
                 ],
-                "textContent": "Jennette Electrical School \n       \n      \n      \n       \n        \n       About us \n       Jennette Electric and Jennette Electric School is owned and operated by Michael P Jennette. I have been in the Electrical trade since 1964. I hold 5 Master licenses and 2 Journeyman Licenses. I started teaching for the Associated Builders and Contractors Association in1988 at the Blue Hill Regional Vocational High School as a night instructor. \n       I taught the Master and Journeyman course at Tri-County Regional Vocational High School at night in Franklin MA from 1993-2013. I am also a State Certified Provider for the 15 hour Massachusetts Continuing Education required by the Commonwealth of Massachusetts, also with the states of  New Hampshire and Maine and by agreement for Rhode Island. \n       My next 15 Hour MCE will be held Sept 9-10, Oct 19-20, Nov 9-10, Jan 4-5, 2025, Feb 8-9, 2025, Mar 8-9, 2025, Apr 12-13, 2025, May 3-4, 2025, and Jun 7-8, 2025. Location will be determined according to class size. You must bringelectrical license(s) and a photo ID. State requires only a current code book, which we have for sale, hard or soft cover, hand books and electronic medium is allowed. The Commonwealth of Massachusetts Board of Electricians now requires an E-Mail as they are no longer mailing renewal notices, it is all electronic. Call for more information at 508-380-7134. This course is based on the 2023 National Electric Code with state amendments. Seating is limited, once a class is full you will be automatically put into the next class. Classes start promptly at 7:30 on Saturday and 8:00 on Sunday Please show up early to check in.  \n       Grounding and Bonding classes will be offered startingin Sept, this course comes with a text bookwhich is your to keep. The dates are as follows; Sept 28, Oct 26, November 23, Jan 25, Feb 22, Mar 22, Apr 26, May 17, and Jun 21. Coffee and pastry will be served. We now accept Visa, MasterCard, Discover, and American Express \n       \n      \n     \n    \n    \n     \n      \n       \n        \n       \n      \n      \n       \n       \n         160 WASHINGTON ST #24 PLAINVILLE MA 02762-1316 \n        \n        \n        508-380-7134 or Fax 774-643-6588"
+                "textContent": ""
               },
               {
                 "tagName": "div",
@@ -878,7 +878,7 @@
                 "textContent": ""
               }
             ],
-            "textContent": "Jennette Electrical School \n       \n      \n      \n       \n        \n       About us \n       Jennette Electric and Jennette Electric School is owned and operated by Michael P Jennette. I have been in the Electrical trade since 1964. I hold 5 Master licenses and 2 Journeyman Licenses. I started teaching for the Associated Builders and Contractors Association in1988 at the Blue Hill Regional Vocational High School as a night instructor. \n       I taught the Master and Journeyman course at Tri-County Regional Vocational High School at night in Franklin MA from 1993-2013. I am also a State Certified Provider for the 15 hour Massachusetts Continuing Education required by the Commonwealth of Massachusetts, also with the states of  New Hampshire and Maine and by agreement for Rhode Island. \n       My next 15 Hour MCE will be held Sept 9-10, Oct 19-20, Nov 9-10, Jan 4-5, 2025, Feb 8-9, 2025, Mar 8-9, 2025, Apr 12-13, 2025, May 3-4, 2025, and Jun 7-8, 2025. Location will be determined according to class size. You must bringelectrical license(s) and a photo ID. State requires only a current code book, which we have for sale, hard or soft cover, hand books and electronic medium is allowed. The Commonwealth of Massachusetts Board of Electricians now requires an E-Mail as they are no longer mailing renewal notices, it is all electronic. Call for more information at 508-380-7134. This course is based on the 2023 National Electric Code with state amendments. Seating is limited, once a class is full you will be automatically put into the next class. Classes start promptly at 7:30 on Saturday and 8:00 on Sunday Please show up early to check in.  \n       Grounding and Bonding classes will be offered startingin Sept, this course comes with a text bookwhich is your to keep. The dates are as follows; Sept 28, Oct 26, November 23, Jan 25, Feb 22, Mar 22, Apr 26, May 17, and Jun 21. Coffee and pastry will be served. We now accept Visa, MasterCard, Discover, and American Express \n       \n      \n     \n    \n    \n     \n      \n       \n        \n       \n      \n      \n       \n       \n         160 WASHINGTON ST #24 PLAINVILLE MA 02762-1316 \n        \n        \n        508-380-7134 or Fax 774-643-6588"
+            "textContent": ""
           },
           {
             "tagName": "script",
@@ -895,10 +895,10 @@
             "textContent": "<img style=\"position:fixed;\" src=\"//scorecard.wspisp.net/logger.php?tag=dW5waWQ6MjA2MTA5MjY7MjE%3D\" width=\"1\" height=\"1\" alt=\"\" />"
           }
         ],
-        "textContent": "Search Results\n     \n     \n     \n    \n   \n  \n    <div class=\"form-ng remove-on-save\">\n      <div id=\"{{FormId}}\">inject webcom-form here</div>\n    </div>\n \n   \n    \n  \n   \n    \n     \n      \n      \n      \n     \n    \n   \n   \n    \n   \n   \n    \n     \n    \n   \n   \n    \n     \n    \n   \n   \n    \n     \n    \n   \n  \n \n \n  \n   \n   \n   \n    \n     \n      \n       \n        \n       \n      \n     \n    \n    \n     \n      \n       \n       Jennette Electrical School \n       \n      \n      \n       \n        \n       About us \n       Jennette Electric and Jennette Electric School is owned and operated by Michael P Jennette. I have been in the Electrical trade since 1964. I hold 5 Master licenses and 2 Journeyman Licenses. I started teaching for the Associated Builders and Contractors Association in1988 at the Blue Hill Regional Vocational High School as a night instructor. \n       I taught the Master and Journeyman course at Tri-County Regional Vocational High School at night in Franklin MA from 1993-2013. I am also a State Certified Provider for the 15 hour Massachusetts Continuing Education required by the Commonwealth of Massachusetts, also with the states of  New Hampshire and Maine and by agreement for Rhode Island. \n       My next 15 Hour MCE will be held Sept 9-10, Oct 19-20, Nov 9-10, Jan 4-5, 2025, Feb 8-9, 2025, Mar 8-9, 2025, Apr 12-13, 2025, May 3-4, 2025, and Jun 7-8, 2025. Location will be determined according to class size. You must bringelectrical license(s) and a photo ID. State requires only a current code book, which we have for sale, hard or soft cover, hand books and electronic medium is allowed. The Commonwealth of Massachusetts Board of Electricians now requires an E-Mail as they are no longer mailing renewal notices, it is all electronic. Call for more information at 508-380-7134. This course is based on the 2023 National Electric Code with state amendments. Seating is limited, once a class is full you will be automatically put into the next class. Classes start promptly at 7:30 on Saturday and 8:00 on Sunday Please show up early to check in.  \n       Grounding and Bonding classes will be offered startingin Sept, this course comes with a text bookwhich is your to keep. The dates are as follows; Sept 28, Oct 26, November 23, Jan 25, Feb 22, Mar 22, Apr 26, May 17, and Jun 21. Coffee and pastry will be served. We now accept Visa, MasterCard, Discover, and American Express \n       \n      \n     \n    \n    \n     \n      \n       \n        \n       \n      \n      \n       \n       \n         160 WASHINGTON ST #24 PLAINVILLE MA 02762-1316 \n        \n        \n        508-380-7134 or Fax 774-643-6588 \n        \n        \n        \n         \n        \n       \n      \n     \n    \n   \n   \n  \n  \n \n<!--\ndocument.write('<'+'img style=\"position:fixed;\" src=\"//scorecard.wspisp.net/logger.php'+'?tag=dW5waWQ6MjA2MTA5MjY7MjE%3D&ref='+document.referrer+'&x='+Math.random()+'\" '+'width=\"1\" height=\"1\" alt=\"\" '+'>');\n//-->\n \n \n  <img style=\"position:fixed;\" src=\"//scorecard.wspisp.net/logger.php?tag=dW5waWQ6MjA2MTA5MjY7MjE%3D\" width=\"1\" height=\"1\" alt=\"\" />"
+        "textContent": ""
       }
     ],
-    "textContent": "About Us \n  \n  \n  \n \n  var builderSettings = {\n    appRoot: '//app.neo.registeredsite.com/neo/',\n    appRelativePath: '/neo',\n    assetsRoot: '//assets.neo.registeredsite.com',\n    repositoryRoot: '//repository.neo.registeredsite.com',\n    spRoot: '//repository.neo.registeredsite.com/starting-points',\n    usersRoot: '//users.neo.registeredsite.com',\n    sitesearchUrl: '//sitesearch.services.matrixbuilder.com/sitesearch/search',\n    siteDomain: '000l8sl.rcomhost.com',\n    isBuilder : false,\n    isPreview : false\n  };\n \n\n \n \n  \n  \n   \n    \n     \n      \n       \n       \n       \n      \n     \n    \n   \n   \n    \n    \n     Search Results\n     \n     \n     \n    \n   \n  \n    <div class=\"form-ng remove-on-save\">\n      <div id=\"{{FormId}}\">inject webcom-form here</div>\n    </div>\n \n   \n    \n  \n   \n    \n     \n      \n      \n      \n     \n    \n   \n   \n    \n   \n   \n    \n     \n    \n   \n   \n    \n     \n    \n   \n   \n    \n     \n    \n   \n  \n \n \n  \n   \n   \n   \n    \n     \n      \n       \n        \n       \n      \n     \n    \n    \n     \n      \n       \n       Jennette Electrical School \n       \n      \n      \n       \n        \n       About us \n       Jennette Electric and Jennette Electric School is owned and operated by Michael P Jennette. I have been in the Electrical trade since 1964. I hold 5 Master licenses and 2 Journeyman Licenses. I started teaching for the Associated Builders and Contractors Association in1988 at the Blue Hill Regional Vocational High School as a night instructor. \n       I taught the Master and Journeyman course at Tri-County Regional Vocational High School at night in Franklin MA from 1993-2013. I am also a State Certified Provider for the 15 hour Massachusetts Continuing Education required by the Commonwealth of Massachusetts, also with the states of  New Hampshire and Maine and by agreement for Rhode Island. \n       My next 15 Hour MCE will be held Sept 9-10, Oct 19-20, Nov 9-10, Jan 4-5, 2025, Feb 8-9, 2025, Mar 8-9, 2025, Apr 12-13, 2025, May 3-4, 2025, and Jun 7-8, 2025. Location will be determined according to class size. You must bringelectrical license(s) and a photo ID. State requires only a current code book, which we have for sale, hard or soft cover, hand books and electronic medium is allowed. The Commonwealth of Massachusetts Board of Electricians now requires an E-Mail as they are no longer mailing renewal notices, it is all electronic. Call for more information at 508-380-7134. This course is based on the 2023 National Electric Code with state amendments. Seating is limited, once a class is full you will be automatically put into the next class. Classes start promptly at 7:30 on Saturday and 8:00 on Sunday Please show up early to check in.  \n       Grounding and Bonding classes will be offered startingin Sept, this course comes with a text bookwhich is your to keep. The dates are as follows; Sept 28, Oct 26, November 23, Jan 25, Feb 22, Mar 22, Apr 26, May 17, and Jun 21. Coffee and pastry will be served. We now accept Visa, MasterCard, Discover, and American Express \n       \n      \n     \n    \n    \n     \n      \n       \n        \n       \n      \n      \n       \n       \n         160 WASHINGTON ST #24 PLAINVILLE MA 02762-1316 \n        \n        \n        508-380-7134 or Fax 774-643-6588 \n        \n        \n        \n         \n        \n       \n      \n     \n    \n   \n   \n  \n  \n \n<!--\ndocument.write('<'+'img style=\"position:fixed;\" src=\"//scorecard.wspisp.net/logger.php'+'?tag=dW5waWQ6MjA2MTA5MjY7MjE%3D&ref='+document.referrer+'&x='+Math.random()+'\" '+'width=\"1\" height=\"1\" alt=\"\" '+'>');\n//-->\n \n \n  <img style=\"position:fixed;\" src=\"//scorecard.wspisp.net/logger.php?tag=dW5waWQ6MjA2MTA5MjY7MjE%3D\" width=\"1\" height=\"1\" alt=\"\" />"
+    "textContent": ""
   },
   "styles": {
     "links": [
