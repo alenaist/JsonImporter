@@ -148,7 +148,13 @@ const WebsiteBuilder = () => {
             </span>
           </a>
           );
-
+          case "body": 
+            return (
+              <div>
+                {children}
+                {content}
+              </div>
+            );
         case "meta":
         case "link":
         case "br":

@@ -2,7 +2,7 @@
   "url": "https://jennetteelectric.com/about-us.html",
   "state": "success",
   "timeSpent": "296 ms",
-  "structure": {
+  "html": {
     "tagName": "html",
     "attributes": {
       "class": "k-webkit k-webkit133"
