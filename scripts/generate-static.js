@@ -21,8 +21,11 @@ async function generateStaticFiles(jsonFilePath, outputDir = 'static-site') {
   const assetsDir = path.join(outputDir, 'assets');
   fs.mkdirSync(assetsDir);
   
-  //TODO - fix Extract and save images
-  await extractAndSaveImages(jsonData, assetsDir);
+  // Extract and save images with the base URL from jsonData
+  const baseURL = jsonData.url || (jsonData.pages && jsonData.pages.length > 0 ? jsonData.pages[0].url : null);
+  console.log(`Using base URL: ${baseURL}`);
+  
+  await extractAndSaveImages(jsonData, assetsDir, baseURL);
   
   jsonData.pages.forEach(page => {
     const url = new URL(page.url);
@@ -55,67 +58,160 @@ async function generateStaticFiles(jsonFilePath, outputDir = 'static-site') {
   return outputDir;
 }
 
-async function extractAndSaveImages(jsonData, assetsDir) {
+async function extractAndSaveImages(jsonData, assetsDir, baseURL) {
+  console.log(`Starting image extraction to: ${assetsDir}`);
+  
+  // Count of successful/failed downloads
+  let totalImages = 0;
+  let successfulImages = 0;
+  let failedImages = 0;
+  
   if (jsonData.pages) {
     for (const page of jsonData.pages) {
       if (page.html) {
-        await extractImagesFromElement(page.html, assetsDir);
+        // Use page URL as base URL for this page's images if available
+        const pageBaseURL = page.url || baseURL;
+        console.log(`Processing images for page: ${pageBaseURL}`);
+        
+        const result = await extractImagesFromElement(page.html, assetsDir, pageBaseURL, jsonData);
+        
+        totalImages += result.total;
+        successfulImages += result.success;
+        failedImages += result.failed;
       }
     }
   }
+  
+  console.log(`\nImage Extraction Summary:`);
+  console.log(`Total images processed: ${totalImages}`);
+  console.log(`Successfully downloaded: ${successfulImages}`);
+  console.log(`Failed to download: ${failedImages}`);
 }
 
-async function extractImagesFromElement(element, assetsDir) {
-  if (!element) return;
+async function extractImagesFromElement(element, assetsDir, baseURL, jsonData, stats = { total: 0, success: 0, failed: 0 }) {
+  if (!element) return stats;
   
   const tag = element.tagName || element.tag;
   if (tag && tag.toLowerCase() === 'img' && element.attributes && element.attributes.src) {
     const imgSrc = element.attributes.src;
+    stats.total++;
+    
+    console.log(`\n[IMAGE] Processing: ${imgSrc}`);
     
     try {
       if (imgSrc.trim() === '') {
-        return;
+        console.log(`[IMAGE] Empty src attribute, skipping.`);
+        stats.failed++;
+        return stats;
       }
       
+      // Variables to keep track of the image information
       let imgFilename;
       let imgPath = '';
       let fullUrl = imgSrc;
+      let isAssetPath = false;
       
-      if (imgSrc.startsWith('//')) {
+      // Case 1: Handle assets/ prefix which needs special handling
+      if (imgSrc.startsWith('assets/')) {
+        isAssetPath = true;
+        const assetPathParts = imgSrc.substring(7).split('/'); // Remove 'assets/'
+        imgFilename = assetPathParts.pop(); // Last part is the filename
+        imgPath = assetPathParts.length > 0 ? assetPathParts.join('/') : '';
+        
+        console.log(`[IMAGE] Asset path detected. Filename: ${imgFilename}, Path: ${imgPath}`);
+        
+        // We need to resolve against the base URL
+        if (baseURL) {
+          try {
+            // This handles both absolute and relative asset paths
+            const base = new URL(baseURL);
+            fullUrl = new URL(imgSrc, base).toString();
+            console.log(`[IMAGE] Resolved asset URL: ${fullUrl}`);
+          } catch (e) {
+            console.error(`[IMAGE] Error resolving URL: ${e.message}`);
+            fullUrl = imgSrc; // Use as-is if resolution fails
+          }
+        }
+      }
+      // Case 2: Handle protocol-relative URLs (//example.com/image.jpg)
+      else if (imgSrc.startsWith('//')) {
         fullUrl = 'https:' + imgSrc;
+        console.log(`[IMAGE] Protocol-relative URL. Using: ${fullUrl}`);
+        
+        try {
+          const imgUrl = new URL(fullUrl);
+          const pathname = imgUrl.pathname;
+          imgFilename = path.basename(pathname.split('?')[0]);
+          imgPath = path.dirname(pathname).replace(/^\//, '');
+          console.log(`[IMAGE] Parsed URL - Filename: ${imgFilename}, Path: ${imgPath}`);
+        } catch (e) {
+          console.error(`[IMAGE] URL parsing error: ${e.message}`);
+          imgFilename = path.basename(imgSrc.split('?')[0]);
+        }
+      }
+      // Case 3: Standard URLs and paths
+      else if (!isAssetPath) {
+        try {
+          // Try to parse as a complete URL first
+          if (fullUrl.startsWith('http://') || fullUrl.startsWith('https://')) {
+            const imgUrl = new URL(fullUrl);
+            const pathname = imgUrl.pathname;
+            imgFilename = path.basename(pathname.split('?')[0]);
+            imgPath = path.dirname(pathname).replace(/^\//, '');
+          }
+          // Then try to resolve against base URL if it's a relative path
+          else if (baseURL) {
+            try {
+              const fullUrlObj = new URL(imgSrc, baseURL);
+              fullUrl = fullUrlObj.toString();
+              const pathname = fullUrlObj.pathname;
+              imgFilename = path.basename(pathname.split('?')[0]);
+              imgPath = path.dirname(pathname).replace(/^\//, '');
+            } catch (e) {
+              console.error(`[IMAGE] Error resolving relative URL: ${e.message}`);
+              // Fall back to simple path extraction
+              imgFilename = path.basename(imgSrc.split('?')[0]);
+            }
+          } else {
+            // Simple path extraction without base URL
+            imgFilename = path.basename(imgSrc.split('?')[0]);
+          }
+          console.log(`[IMAGE] Parsed path - Filename: ${imgFilename}, Path: ${imgPath}`);
+        } catch (e) {
+          console.error(`[IMAGE] Path parsing error: ${e.message}`);
+          // Fall back to simple path extraction
+          imgFilename = path.basename(imgSrc.split('?')[0]);
+        }
       }
       
-      try {
-        const imgUrl = new URL(fullUrl);
-        const pathname = imgUrl.pathname;
-        imgFilename = path.basename(pathname.split('?')[0]);
-        imgPath = path.dirname(pathname).replace(/^\//, '');
-      } catch (e) {
-        imgFilename = path.basename(imgSrc.split('?')[0]);
-      }
-      
+      // Ensure we have a valid filename
       if (!imgFilename || imgFilename === '.' || imgFilename === '..') {
-        imgFilename = 'image-' + Math.random().toString(36).substring(2, 10) + '.jpg';
+        const randomId = Math.random().toString(36).substring(2, 10);
+        imgFilename = `image-${randomId}.jpg`;
+        console.log(`[IMAGE] Generated random filename: ${imgFilename}`);
       }
       
+      // Create target directory if needed
       const targetDir = imgPath ? path.join(assetsDir, imgPath) : assetsDir;
       if (imgPath && !fs.existsSync(targetDir)) {
         fs.mkdirSync(targetDir, { recursive: true });
-        console.log(`Created directory: ${targetDir}`);
+        console.log(`[IMAGE] Created directory: ${targetDir}`);
       }
       
       const outputPath = path.join(targetDir, imgFilename);
+      console.log(`[IMAGE] Target path: ${outputPath}`);
       
+      // Case A: URLs (http://, https://, resolved from relative paths)
       if (fullUrl.startsWith('http://') || fullUrl.startsWith('https://')) {
-        console.log(`Downloading image from: ${fullUrl}`);
+        console.log(`[IMAGE] Downloading from: ${fullUrl}`);
         
         try {
           const response = await axios({
             method: 'GET',
             url: fullUrl,
             responseType: 'arraybuffer',
-            timeout: 30000,
-            maxContentLength: 50 * 1024 * 1024,
+            timeout: 30000, // 30 second timeout
+            maxContentLength: 50 * 1024 * 1024, // 50MB max
             headers: {
               'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
               'Accept': 'image/*',
@@ -125,24 +221,38 @@ async function extractImagesFromElement(element, assetsDir) {
             validateStatus: status => status < 400
           });
           
-          //image check  
+          // Check content type to make sure it's an image
           const contentType = response.headers['content-type'];
           if (contentType && contentType.startsWith('image/')) {
             fs.writeFileSync(outputPath, Buffer.from(response.data));
-            console.log(`Downloaded image to: ${outputPath}`);
+            console.log(`[IMAGE] ✅ SUCCESS: Downloaded and saved image (${contentType}, ${response.data.length} bytes)`);
             
+            // Always update the src to the new relative path
             const relativePath = imgPath ? `assets/${imgPath}/${imgFilename}` : `assets/${imgFilename}`;
             element.attributes.src = relativePath;
+            console.log(`[IMAGE] Updated src attribute to: ${relativePath}`);
+            stats.success++;
           } else {
-            throw new Error(`Response is not an image: ${contentType}`);
+            console.error(`[IMAGE] ❌ ERROR: Response is not an image: ${contentType}`);
+            
+            // Still update the src attribute for consistency
+            const relativePath = imgPath ? `assets/${imgPath}/${imgFilename}` : `assets/${imgFilename}`;
+            element.attributes.src = relativePath;
+            stats.failed++;
           }
         } catch (error) {
-          console.error(`Error downloading image: ${error.message}`);
-                  
+          console.error(`[IMAGE] ❌ ERROR downloading: ${error.message}`);
+          
+          // For network errors, still update the src attribute
           const relativePath = imgPath ? `assets/${imgPath}/${imgFilename}` : `assets/${imgFilename}`;
           element.attributes.src = relativePath;
+          stats.failed++;
         }
-      } else if (imgSrc.startsWith('data:image/')) {
+      } 
+      // Case B: Base64 data URLs
+      else if (imgSrc.startsWith('data:image/')) {
+        console.log(`[IMAGE] Processing base64 image`);
+        
         try {
           const matches = imgSrc.match(/^data:image\/([a-zA-Z]+);base64,(.+)$/);
           if (matches && matches.length === 3) {
@@ -156,32 +266,51 @@ async function extractImagesFromElement(element, assetsDir) {
             
             const finalOutputPath = path.join(targetDir, filename);
             fs.writeFileSync(finalOutputPath, buffer);
+            console.log(`[IMAGE] ✅ SUCCESS: Saved base64 image (${buffer.length} bytes)`);
             
             const relativePath = imgPath ? `assets/${imgPath}/${filename}` : `assets/${filename}`;
             element.attributes.src = relativePath;
+            console.log(`[IMAGE] Updated src attribute to: ${relativePath}`);
+            stats.success++;
           } else {
-            throw new Error('Invalid data URL format');
+            console.error(`[IMAGE] ❌ ERROR: Invalid data URL format`);
+            
+            const relativePath = imgPath ? `assets/${imgPath}/${imgFilename}` : `assets/${imgFilename}`;
+            element.attributes.src = relativePath;
+            stats.failed++;
           }
         } catch (error) {
-          console.error(`Error processing base64 image: ${error.message}`);
+          console.error(`[IMAGE] ❌ ERROR processing base64 image: ${error.message}`);
+          
           const relativePath = imgPath ? `assets/${imgPath}/${imgFilename}` : `assets/${imgFilename}`;
           element.attributes.src = relativePath;
+          stats.failed++;
         }
-      } else {
+      } 
+      // Case C: All other types (local paths, etc.)
+      else {
+        console.log(`[IMAGE] Using local path: ${imgSrc}`);
         
+        // Simply update the src attribute to maintain consistency
         const relativePath = imgPath ? `assets/${imgPath}/${imgFilename}` : `assets/${imgFilename}`;
         element.attributes.src = relativePath;
+        console.log(`[IMAGE] Updated src attribute to: ${relativePath}`);
+        stats.success++;
       }
     } catch (error) {
-      console.error(`Error processing image ${imgSrc}: ${error.message}`);
+      console.error(`[IMAGE] ❌ CRITICAL ERROR processing image ${imgSrc}: ${error.message}`);
+      stats.failed++;
     }
   }
   
+  // Recursively process children
   if (element.children && Array.isArray(element.children)) {
     for (const child of element.children) {
-      await extractImagesFromElement(child, assetsDir);
+      await extractImagesFromElement(child, assetsDir, baseURL, jsonData, stats);
     }
   }
+  
+  return stats;
 }
 
 function generateHtml(page, allPages) {
