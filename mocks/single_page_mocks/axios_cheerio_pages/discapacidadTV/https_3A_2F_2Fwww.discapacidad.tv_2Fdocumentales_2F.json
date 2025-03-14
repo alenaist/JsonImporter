@@ -1,0 +1,3530 @@
+{
+  "url": "https://www.discapacidad.tv/documentales/",
+  "structure": {
+    "tagName": "html",
+    "attributes": {
+      "lang": "en"
+    },
+    "children": [
+      {
+        "tagName": "head",
+        "attributes": {},
+        "children": [
+          {
+            "tagName": "script",
+            "attributes": {},
+            "children": [],
+            "textContent": "//Nexus Build Date:2020-09-16 10:54:34 AM EST\n//Nexus Version:f5219c13dab0ea437ab4cecc40555b74a268a20c\nvar neo = {\ncdnUrl: 'https://cdn.create.web.com',\ngatewayUrl: 'https://services.create.web.com/gateway',\nmode: 'PUBLISH',\nversion: '5.0.3',\npublishDate: '2025/03/10 12:48:41'\n}"
+          },
+          {
+            "tagName": "meta",
+            "attributes": {
+              "charset": "UTF-8"
+            },
+            "children": [],
+            "textContent": ""
+          },
+          {
+            "tagName": "title",
+            "attributes": {},
+            "children": [],
+            "textContent": "DOCUMENTALES - DISCAPACIDAD TV | DISCAPACIDAD TELEVISIÓN"
+          },
+          {
+            "tagName": "meta",
+            "attributes": {
+              "name": "viewport",
+              "content": "width=device-width, initial-scale=1"
+            },
+            "children": [],
+            "textContent": ""
+          },
+          {
+            "tagName": "link",
+            "attributes": {
+              "rel": "stylesheet",
+              "id": "neo-base-css",
+              "href": "/files/extra/global/neo-base/1.0/neo-base.min.css?695037"
+            },
+            "children": [],
+            "textContent": ""
+          },
+          {
+            "tagName": "link",
+            "attributes": {
+              "rel": "stylesheet",
+              "id": "theme-css",
+              "href": "/files/extra/themes/basic/styles/theme.css?765948"
+            },
+            "children": [],
+            "textContent": ""
+          },
+          {
+            "tagName": "link",
+            "attributes": {
+              "rel": "stylesheet",
+              "id": "fonts-generic",
+              "href": "https://fonts.googleapis.com/css?family=Abril+Fatface|Actor|Alegreya+Sans:400,700|Alegreya:400,700|Amatic+SC:400,700|Architects+Daughter|Archivo+Narrow:400,700|Arvo:400,700|Bangers|Berkshire+Swash|Bevan|Cardo:400,700|Carter+One|Cinzel:400,700|Coming+Soon|Dancing+Script:400,700|Dosis|Droid+Sans:400,700|Droid+Serif:400,700|EB+Garamond:400,700|Eczar:400,700|Gravitas+One|Hind:400,700|Istok+Web:400,700|Italiana|Josefin+Sans:400,700|Josefin+Slab:400,700|Kaushan+Script|Lato:400,700|Lobster+Two:400,700|Lora:400,700|Love+Ya+Like+A+Sister|Lusitana:400,700|Merriweather+Sans:400,700|Merriweather:400,700|Montserrat:400,700|Muli:400,700|Old+Standard+TT:400,700|Open+Sans:400,700|Oswald:400,700|Overlock+SC|PT+Sans:400,700|PT+Serif:400,700|Pacifico|Patua+One|Permanent+Marker|Playfair+Display:400,700|Raleway:400,700|Roboto+Slab:400,700|Roboto:400,700|Roboto+Mono:400,700|Rubik:400,700|Shadows+Into+Light|Stalemate|Tangerine:400,700|Ubuntu:400,700|UnifrakturCook:700|Vollkorn:400,700|Exo:400,600|Source+Sans+Pro:400,600|Julius+Sans+One:400|Monda:400,700|Copse"
+            },
+            "children": [],
+            "textContent": ""
+          },
+          {
+            "tagName": "link",
+            "attributes": {
+              "rel": "stylesheet",
+              "id": "fonts-nx",
+              "href": "https://cdn.create.web.com/global/font-nexus/nx-font.min.css"
+            },
+            "children": [],
+            "textContent": ""
+          },
+          {
+            "tagName": "style",
+            "attributes": {},
+            "children": [],
+            "textContent": ".theme.basic  { --header-height: 240px; --header-height-collapsed: 90px; --welcome-margin-top: 240px; --nav-height: 60px; --banner-solid-bg: #0a3374; --banner-solid-class: u-bgColorDark; --nav-solid-bg: #0a3374; --nav-solid-bg-2: var(--nav-solid-bg); --nav-solid-class: u-bgColorDark; --header-solid-bg: #08295e; --header-solid-class: u-bgColorDark }\n.theme.basic .plugin-Footer { background-color: rgba(10, 51, 116, 1) }\n.theme.basic #c-k3c5dor09rk3>a:hover { background-color: rgba(251, 46, 43, 0.5) !important; color: rgba(255, 255, 255, 1) !important; border-color: rgba(251, 46, 43, 1) !important }\n.theme.basic .plugin-Footer .plugin-Logo-text { font-size: 2.5rem; font-family: Kaushan Script; color: rgba(255, 225, 30, 1) !important; fill: rgba(255, 225, 30, 1) !important }\n.theme.basic #c-kdpfg8utmUNV>a:hover { background-color: rgba(4, 4, 4, 1) !important; color: rgba(255, 0, 197, 1) !important; border-color: rgba(0, 0, 0, 0) !important }\n.theme.basic #c-kdpfgyui7V3P>a:hover { background-color: rgba(4, 4, 4, 1) !important; color: rgba(187, 0, 255, 1) !important; border-color: rgba(0, 0, 0, 0) !important }\n.theme.basic #c-kdpfily7Ui3r>a:hover { background-color: rgba(4, 4, 4, 1) !important; color: rgba(0, 243, 255, 1) !important; border-color: rgba(0, 0, 0, 0) !important }\n.theme.basic #c-kdpfjbtsQBhr>a:hover { background-color: rgba(4, 4, 4, 1) !important; color: rgba(125, 255, 0, 1) !important; border-color: rgba(0, 0, 0, 0) !important }\n.theme.basic #c-kdpfk4nkNX4M>a:hover { background-color: rgba(4, 4, 4, 1) !important; color: rgba(255, 235, 60, 1) !important; border-color: rgba(0, 0, 0, 0) !important }\n.theme.basic #c-kdpflel7IzUG>a:hover { background-color: rgba(4, 4, 4, 1) !important; color: rgba(255, 130, 3, 1) !important; border-color: rgba(0, 0, 0, 0) !important }\n.theme.basic #c-kdpfm985Xv8r>a:hover { background-color: rgba(4, 4, 4, 1) !important; color: rgba(251, 46, 43, 1) !important; border-color: rgba(0, 0, 0, 0) !important }\n.theme.basic .plugin-Footer .plugin-Contacts-email { font-size: 1.0rem; color: rgba(255, 255, 255, 1) !important; fill: rgba(255, 255, 255, 1) !important }\n.theme.basic .plugin-Footer .plugin-Contacts-phone { font-size: 1.0rem; color: rgba(255, 255, 255, 1) !important; fill: rgba(255, 255, 255, 1) !important }\n.theme.basic .plugin-Footer .plugin-Contacts-phone-alt { font-size: 1.0rem; color: rgba(255, 255, 255, 1) !important; fill: rgba(255, 255, 255, 1) !important }\n.theme.basic .plugin-Footer .plugin-Contacts-address { font-size: 1.0rem; color: rgba(255, 255, 255, 1) !important; fill: rgba(255, 255, 255, 1) !important }\n.theme.basic .plugin-Header .plugin-Header-top { background-color: rgba(8, 41, 94, 1) }\n.theme.basic .plugin-Header .plugin-Navigation-list { background-color: rgb(10, 51, 116) }\n.theme.basic #c-l51h2485nYTU>a:hover { color: rgba(251, 46, 43, 1) !important; background-color: rgba(255, 255, 255, 1) !important; border-color: rgba(251, 46, 43, 1) !important }\n.theme.basic .plugin-Header .plugin-Navigation-list .plugin-Navigation-link::before { background-color: rgba(255, 225, 30, 1) }\n.theme.basic .plugin-Header .plugin-Logo-text { font-size: 2.5rem; font-family: Kaushan Script; color: rgba(255, 225, 30, 1) !important; fill: rgba(255, 225, 30, 1) !important }\n.theme.basic .plugin-Header .plugin-Navigation-list .plugin-Navigation-link { color: rgba(255, 225, 30, 1) }"
+          },
+          {
+            "tagName": "meta",
+            "attributes": {
+              "property": "og:type",
+              "content": "website"
+            },
+            "children": [],
+            "textContent": ""
+          },
+          {
+            "tagName": "meta",
+            "attributes": {
+              "property": "og:title",
+              "content": "DOCUMENTALES - DISCAPACIDAD TV | DISCAPACIDAD TELEVISIÓN"
+            },
+            "children": [],
+            "textContent": ""
+          },
+          {
+            "tagName": "meta",
+            "attributes": {
+              "property": "og:description",
+              "content": "Los mejores documentales sobre discapacidad están aquí"
+            },
+            "children": [],
+            "textContent": ""
+          },
+          {
+            "tagName": "meta",
+            "attributes": {
+              "property": "og:image",
+              "content": "http://FACILITO.VIDEO/files/captura-video2024-06-12-19h01m22s350-2.jpg"
+            },
+            "children": [],
+            "textContent": ""
+          },
+          {
+            "tagName": "link",
+            "attributes": {
+              "id": "favicon-link",
+              "rel": "shortcut icon",
+              "href": "/files/bugpagina-web.png"
+            },
+            "children": [],
+            "textContent": ""
+          },
+          {
+            "tagName": "meta",
+            "attributes": {
+              "name": "description",
+              "content": "Los mejores documentales sobre discapacidad están aquí"
+            },
+            "children": [],
+            "textContent": ""
+          },
+          {
+            "tagName": "meta",
+            "attributes": {
+              "name": "keywords",
+              "content": "discapacidad television, discapacidad tv, autismo, ciegos, sordos, asperger, sindrome de down, discapacidad visual, discapacidad auditiva, discapacidad intelectual, facilito tv, facilito, tu puedes tv"
+            },
+            "children": [],
+            "textContent": ""
+          },
+          {
+            "tagName": "meta",
+            "attributes": {
+              "name": "generator",
+              "content": "Web.com Website Builder"
+            },
+            "children": [],
+            "textContent": ""
+          }
+        ],
+        "textContent": ""
+      },
+      {
+        "tagName": "body",
+        "attributes": {
+          "class": "theme basic page-standard"
+        },
+        "children": [
+          {
+            "tagName": "div",
+            "attributes": {
+              "class": "neo-header-block-1"
+            },
+            "children": [
+              {
+                "tagName": "header",
+                "attributes": {
+                  "class": "plugin-Section plugin-Header plugin-Header--10 neo-header",
+                  "id": "c-jxtj71e9tYYJ",
+                  "style": ""
+                },
+                "children": [
+                  {
+                    "tagName": "div",
+                    "attributes": {
+                      "class": "plugin-Header-top u-bgColorDark"
+                    },
+                    "children": [
+                      {
+                        "tagName": "div",
+                        "attributes": {
+                          "class": "flex-container flex-container--space-between flex-container--no-margin data-row plugin-Header-banner u-bgColorDark",
+                          "style": "background-color: rgb(10, 51, 116);"
+                        },
+                        "children": [
+                          {
+                            "tagName": "div",
+                            "attributes": {
+                              "class": "flex-column flex-column--100"
+                            },
+                            "children": [
+                              {
+                                "tagName": "div",
+                                "attributes": {
+                                  "class": "plugin-TextCta plugin-Text--short neo-element",
+                                  "id": "c-l51h2484mi1S"
+                                },
+                                "children": [
+                                  {
+                                    "tagName": "p",
+                                    "attributes": {
+                                      "style": "text-align: center;"
+                                    },
+                                    "children": [
+                                      {
+                                        "tagName": "span",
+                                        "attributes": {
+                                          "style": "font-weight: bold; color: rgb(255, 255, 255); text-transform: uppercase;"
+                                        },
+                                        "children": [],
+                                        "textContent": "DISCAPACIDAD TELEVISIÓN - DISCAPACIDAD TV"
+                                      },
+                                      {
+                                        "tagName": "a",
+                                        "attributes": {
+                                          "href": "http://www.discapacidad.tv"
+                                        },
+                                        "children": [],
+                                        "textContent": ""
+                                      }
+                                    ],
+                                    "textContent": ""
+                                  }
+                                ],
+                                "textContent": ""
+                              }
+                            ],
+                            "textContent": ""
+                          }
+                        ],
+                        "textContent": ""
+                      },
+                      {
+                        "tagName": "div",
+                        "attributes": {
+                          "class": "flex-container flex-container--space-between flex-container--no-margin header-Mobile-icons v-hidden"
+                        },
+                        "children": [
+                          {
+                            "tagName": "div",
+                            "attributes": {
+                              "class": "flex-column flex-column--100 v-overflowHidden"
+                            },
+                            "children": [
+                              {
+                                "tagName": "div",
+                                "attributes": {
+                                  "class": "neo-element plugin-ContactsMobile",
+                                  "data-sync-with": ".plugin-ContactsPhone, .plugin-ContactsEmail",
+                                  "id": "c-l51h2484wcoE"
+                                },
+                                "children": [],
+                                "textContent": ""
+                              }
+                            ],
+                            "textContent": ""
+                          }
+                        ],
+                        "textContent": ""
+                      },
+                      {
+                        "tagName": "div",
+                        "attributes": {
+                          "class": "flex-container flex-container--no-margin flex-container--nowrap js-affixCollapsable plugin-Header-collapsable"
+                        },
+                        "children": [
+                          {
+                            "tagName": "div",
+                            "attributes": {
+                              "class": "flex-column v-overflowHidden LogoContainer flex-column--50"
+                            },
+                            "children": [
+                              {
+                                "tagName": "div",
+                                "attributes": {
+                                  "class": "plugin-Logo neo-logo js-headerLogoEl neo-element v-textLeft plugin-Logo--noBusinessName",
+                                  "id": "c-l51h2485reGL",
+                                  "style": ""
+                                },
+                                "children": [
+                                  {
+                                    "tagName": "a",
+                                    "attributes": {
+                                      "class": "plugin-Logo-link",
+                                      "href": "/"
+                                    },
+                                    "children": [
+                                      {
+                                        "tagName": "img",
+                                        "attributes": {
+                                          "class": "plugin-Logo-image",
+                                          "src": "/files/captura-video2024-06-12-19h01m22s350-2.jpg",
+                                          "alt": "Logo",
+                                          "data-token-src": "{company-logo}",
+                                          "style": "border-radius: 2.5% / 4.5%;height: 100%;"
+                                        },
+                                        "children": [],
+                                        "textContent": ""
+                                      }
+                                    ],
+                                    "textContent": ""
+                                  }
+                                ],
+                                "textContent": ""
+                              }
+                            ],
+                            "textContent": ""
+                          },
+                          {
+                            "tagName": "div",
+                            "attributes": {
+                              "class": "flex-column header-sideContainer v-overflowHidden flex-column--50"
+                            },
+                            "children": [
+                              {
+                                "tagName": "div",
+                                "attributes": {
+                                  "class": "plugin-Anchor plugin-Anchor--header neo-element v-textRight",
+                                  "id": "c-l51h2485nYTU",
+                                  "style": ""
+                                },
+                                "children": [
+                                  {
+                                    "tagName": "a",
+                                    "attributes": {
+                                      "class": "v-anchorAnimate v-shadow v-rounded",
+                                      "href": "/vivo-directo",
+                                      "style": "background-color: rgb(251, 46, 43); border-color: rgba(0, 0, 0, 0); border-style: solid; color: rgb(255, 255, 255);"
+                                    },
+                                    "children": [],
+                                    "textContent": "VIVO | DIRECTO | LIVE"
+                                  }
+                                ],
+                                "textContent": ""
+                              }
+                            ],
+                            "textContent": ""
+                          },
+                          {
+                            "tagName": "div",
+                            "attributes": {
+                              "class": "neo-element plugin-Paypal-cartSync v-hidden",
+                              "data-sync-with": ".plugin-Paypal-cart",
+                              "id": "c-l51h2485B87N"
+                            },
+                            "children": [],
+                            "textContent": ""
+                          },
+                          {
+                            "tagName": "button",
+                            "attributes": {
+                              "class": "ToggleMenu ToggleMenu--elastic",
+                              "type": "button",
+                              "aria-label": "Toggle Primary Menu"
+                            },
+                            "children": [
+                              {
+                                "tagName": "span",
+                                "attributes": {
+                                  "class": "ToggleMenu-box"
+                                },
+                                "children": [
+                                  {
+                                    "tagName": "span",
+                                    "attributes": {
+                                      "class": "ToggleMenu-inner"
+                                    },
+                                    "children": [],
+                                    "textContent": ""
+                                  }
+                                ],
+                                "textContent": ""
+                              }
+                            ],
+                            "textContent": ""
+                          }
+                        ],
+                        "textContent": ""
+                      }
+                    ],
+                    "textContent": ""
+                  },
+                  {
+                    "tagName": "nav",
+                    "attributes": {
+                      "class": "plugin-Header-nav"
+                    },
+                    "children": [
+                      {
+                        "tagName": "div",
+                        "attributes": {
+                          "class": "neo-element plugin-Navigation u-bgColorDark",
+                          "data-version": "2.0.0",
+                          "id": "c-l51h2485c61w"
+                        },
+                        "children": [
+                          {
+                            "tagName": "ul",
+                            "attributes": {
+                              "class": "plugin-Navigation-list neo-navigation nav-4",
+                              "style": ""
+                            },
+                            "children": [
+                              {
+                                "tagName": "li",
+                                "attributes": {
+                                  "class": "plugin-Navigation-item",
+                                  "id": "page_96226"
+                                },
+                                "children": [
+                                  {
+                                    "tagName": "a",
+                                    "attributes": {
+                                      "class": "plugin-Navigation-link",
+                                      "href": "/index.html"
+                                    },
+                                    "children": [],
+                                    "textContent": "INICIO"
+                                  }
+                                ],
+                                "textContent": ""
+                              },
+                              {
+                                "tagName": "li",
+                                "attributes": {
+                                  "class": "plugin-Navigation-item",
+                                  "id": "page_146842"
+                                },
+                                "children": [
+                                  {
+                                    "tagName": "a",
+                                    "attributes": {
+                                      "class": "plugin-Navigation-link",
+                                      "href": "/vivo-directo/"
+                                    },
+                                    "children": [],
+                                    "textContent": "VIVO | DIRECTO"
+                                  }
+                                ],
+                                "textContent": ""
+                              },
+                              {
+                                "tagName": "li",
+                                "attributes": {
+                                  "class": "plugin-Navigation-item has-subnav",
+                                  "id": "page_144010"
+                                },
+                                "children": [
+                                  {
+                                    "tagName": "a",
+                                    "attributes": {
+                                      "class": "plugin-Navigation-link",
+                                      "data-toggle": "dropdown",
+                                      "role": "button",
+                                      "aria-haspopup": "true",
+                                      "aria-expanded": "false",
+                                      "href": "/a-la-carta-on-demand/"
+                                    },
+                                    "children": [],
+                                    "textContent": "A LA CARTA | ON DEMAND"
+                                  },
+                                  {
+                                    "tagName": "ul",
+                                    "attributes": {
+                                      "class": "plugin-Navigation-listsub"
+                                    },
+                                    "children": [
+                                      {
+                                        "tagName": "li",
+                                        "attributes": {
+                                          "class": "plugin-Navigation-itemsub",
+                                          "id": "page_157074"
+                                        },
+                                        "children": [
+                                          {
+                                            "tagName": "a",
+                                            "attributes": {
+                                              "class": "plugin-Navigation-linksub",
+                                              "href": "/cemcrq/"
+                                            },
+                                            "children": [],
+                                            "textContent": "CEMCRQ"
+                                          }
+                                        ],
+                                        "textContent": ""
+                                      },
+                                      {
+                                        "tagName": "li",
+                                        "attributes": {
+                                          "class": "plugin-Navigation-itemsub",
+                                          "id": "page_162209"
+                                        },
+                                        "children": [],
+                                        "textContent": ""
+                                      },
+                                      {
+                                        "tagName": "li",
+                                        "attributes": {
+                                          "class": "plugin-Navigation-itemsub",
+                                          "id": "page_160230"
+                                        },
+                                        "children": [],
+                                        "textContent": ""
+                                      },
+                                      {
+                                        "tagName": "li",
+                                        "attributes": {
+                                          "class": "plugin-Navigation-itemsub",
+                                          "id": "page_144058"
+                                        },
+                                        "children": [
+                                          {
+                                            "tagName": "a",
+                                            "attributes": {
+                                              "class": "plugin-Navigation-linksub",
+                                              "href": "/ciudades-accesibles/"
+                                            },
+                                            "children": [],
+                                            "textContent": "CIUDADES ACCESIBLES"
+                                          }
+                                        ],
+                                        "textContent": ""
+                                      },
+                                      {
+                                        "tagName": "li",
+                                        "attributes": {
+                                          "class": "plugin-Navigation-itemsub",
+                                          "id": "page_144050"
+                                        },
+                                        "children": [
+                                          {
+                                            "tagName": "a",
+                                            "attributes": {
+                                              "class": "plugin-Navigation-linksub",
+                                              "href": "/cojo-films/"
+                                            },
+                                            "children": [],
+                                            "textContent": "COJO FILMS"
+                                          }
+                                        ],
+                                        "textContent": ""
+                                      },
+                                      {
+                                        "tagName": "li",
+                                        "attributes": {
+                                          "class": "plugin-Navigation-itemsub",
+                                          "id": "page_148477"
+                                        },
+                                        "children": [
+                                          {
+                                            "tagName": "a",
+                                            "attributes": {
+                                              "class": "plugin-Navigation-linksub",
+                                              "href": "/cortometrajes/"
+                                            },
+                                            "children": [],
+                                            "textContent": "CORTOMETRAJES"
+                                          }
+                                        ],
+                                        "textContent": ""
+                                      },
+                                      {
+                                        "tagName": "li",
+                                        "attributes": {
+                                          "class": "plugin-Navigation-itemsub",
+                                          "id": "page_144052"
+                                        },
+                                        "children": [],
+                                        "textContent": ""
+                                      },
+                                      {
+                                        "tagName": "li",
+                                        "attributes": {
+                                          "class": "plugin-Navigation-itemsub",
+                                          "id": "page_148430"
+                                        },
+                                        "children": [],
+                                        "textContent": ""
+                                      },
+                                      {
+                                        "tagName": "li",
+                                        "attributes": {
+                                          "class": "plugin-Navigation-itemsub",
+                                          "id": "page_148429"
+                                        },
+                                        "children": [],
+                                        "textContent": ""
+                                      },
+                                      {
+                                        "tagName": "li",
+                                        "attributes": {
+                                          "class": "plugin-Navigation-itemsub",
+                                          "id": "page_144055"
+                                        },
+                                        "children": [
+                                          {
+                                            "tagName": "a",
+                                            "attributes": {
+                                              "class": "plugin-Navigation-linksub",
+                                              "href": "/deportes-adaptados/"
+                                            },
+                                            "children": [],
+                                            "textContent": "DEPORTES ADAPTADOS"
+                                          }
+                                        ],
+                                        "textContent": ""
+                                      },
+                                      {
+                                        "tagName": "li",
+                                        "attributes": {
+                                          "class": "plugin-Navigation-itemsub",
+                                          "id": "page_144051"
+                                        },
+                                        "children": [
+                                          {
+                                            "tagName": "a",
+                                            "attributes": {
+                                              "class": "plugin-Navigation-linksub",
+                                              "href": "/documentales/"
+                                            },
+                                            "children": [],
+                                            "textContent": "DOCUMENTALES"
+                                          }
+                                        ],
+                                        "textContent": ""
+                                      },
+                                      {
+                                        "tagName": "li",
+                                        "attributes": {
+                                          "class": "plugin-Navigation-itemsub",
+                                          "id": "page_156393"
+                                        },
+                                        "children": [],
+                                        "textContent": ""
+                                      },
+                                      {
+                                        "tagName": "li",
+                                        "attributes": {
+                                          "class": "plugin-Navigation-itemsub",
+                                          "id": "page_144760"
+                                        },
+                                        "children": [],
+                                        "textContent": ""
+                                      },
+                                      {
+                                        "tagName": "li",
+                                        "attributes": {
+                                          "class": "plugin-Navigation-itemsub",
+                                          "id": "page_144130"
+                                        },
+                                        "children": [],
+                                        "textContent": ""
+                                      },
+                                      {
+                                        "tagName": "li",
+                                        "attributes": {
+                                          "class": "plugin-Navigation-itemsub",
+                                          "id": "page_152843"
+                                        },
+                                        "children": [
+                                          {
+                                            "tagName": "a",
+                                            "attributes": {
+                                              "class": "plugin-Navigation-linksub",
+                                              "href": "/equilibrio-feng-shui-ttc/"
+                                            },
+                                            "children": [],
+                                            "textContent": "EQUILIBRIO FENG SHUI"
+                                          }
+                                        ],
+                                        "textContent": ""
+                                      },
+                                      {
+                                        "tagName": "li",
+                                        "attributes": {
+                                          "class": "plugin-Navigation-itemsub",
+                                          "id": "page_158104"
+                                        },
+                                        "children": [
+                                          {
+                                            "tagName": "a",
+                                            "attributes": {
+                                              "class": "plugin-Navigation-linksub",
+                                              "href": "/facilito-tv/"
+                                            },
+                                            "children": [],
+                                            "textContent": "FACILITO"
+                                          }
+                                        ],
+                                        "textContent": ""
+                                      },
+                                      {
+                                        "tagName": "li",
+                                        "attributes": {
+                                          "class": "plugin-Navigation-itemsub",
+                                          "id": "page_158399"
+                                        },
+                                        "children": [
+                                          {
+                                            "tagName": "a",
+                                            "attributes": {
+                                              "class": "plugin-Navigation-linksub",
+                                              "href": "/footless-jo/"
+                                            },
+                                            "children": [],
+                                            "textContent": "FOOTLESS JO"
+                                          }
+                                        ],
+                                        "textContent": ""
+                                      },
+                                      {
+                                        "tagName": "li",
+                                        "attributes": {
+                                          "class": "plugin-Navigation-itemsub",
+                                          "id": "page_161343"
+                                        },
+                                        "children": [
+                                          {
+                                            "tagName": "a",
+                                            "attributes": {
+                                              "class": "plugin-Navigation-linksub",
+                                              "href": "/hola-hola/"
+                                            },
+                                            "children": [],
+                                            "textContent": "¡HOLA HOLA!"
+                                          }
+                                        ],
+                                        "textContent": ""
+                                      },
+                                      {
+                                        "tagName": "li",
+                                        "attributes": {
+                                          "class": "plugin-Navigation-itemsub",
+                                          "id": "page_149022"
+                                        },
+                                        "children": [
+                                          {
+                                            "tagName": "a",
+                                            "attributes": {
+                                              "class": "plugin-Navigation-linksub",
+                                              "href": "/inclusion-discapacidad/"
+                                            },
+                                            "children": [],
+                                            "textContent": "INCLUSIÓN & DISCAPACIDAD"
+                                          }
+                                        ],
+                                        "textContent": ""
+                                      },
+                                      {
+                                        "tagName": "li",
+                                        "attributes": {
+                                          "class": "plugin-Navigation-itemsub",
+                                          "id": "page_160158"
+                                        },
+                                        "children": [
+                                          {
+                                            "tagName": "a",
+                                            "attributes": {
+                                              "class": "plugin-Navigation-linksub",
+                                              "href": "/polemica-omo/"
+                                            },
+                                            "children": [],
+                                            "textContent": "POLEMICA"
+                                          }
+                                        ],
+                                        "textContent": ""
+                                      },
+                                      {
+                                        "tagName": "li",
+                                        "attributes": {
+                                          "class": "plugin-Navigation-itemsub",
+                                          "id": "page_144053"
+                                        },
+                                        "children": [
+                                          {
+                                            "tagName": "a",
+                                            "attributes": {
+                                              "class": "plugin-Navigation-linksub",
+                                              "href": "/roxana-sin-limites/"
+                                            },
+                                            "children": [],
+                                            "textContent": "ROXANA SIN LÍMITES"
+                                          }
+                                        ],
+                                        "textContent": ""
+                                      },
+                                      {
+                                        "tagName": "li",
+                                        "attributes": {
+                                          "class": "plugin-Navigation-itemsub",
+                                          "id": "page_144056"
+                                        },
+                                        "children": [
+                                          {
+                                            "tagName": "a",
+                                            "attributes": {
+                                              "class": "plugin-Navigation-linksub",
+                                              "href": "/sin-barreras/"
+                                            },
+                                            "children": [],
+                                            "textContent": "SIN BARRERAS"
+                                          }
+                                        ],
+                                        "textContent": ""
+                                      },
+                                      {
+                                        "tagName": "li",
+                                        "attributes": {
+                                          "class": "plugin-Navigation-itemsub",
+                                          "id": "page_160517"
+                                        },
+                                        "children": [],
+                                        "textContent": ""
+                                      }
+                                    ],
+                                    "textContent": ""
+                                  }
+                                ],
+                                "textContent": ""
+                              },
+                              {
+                                "tagName": "li",
+                                "attributes": {
+                                  "class": "plugin-Navigation-item",
+                                  "id": "page_144012"
+                                },
+                                "children": [
+                                  {
+                                    "tagName": "a",
+                                    "attributes": {
+                                      "class": "plugin-Navigation-link",
+                                      "href": "/noticias-hnq/"
+                                    },
+                                    "children": [],
+                                    "textContent": "NOTICIAS"
+                                  }
+                                ],
+                                "textContent": ""
+                              },
+                              {
+                                "tagName": "li",
+                                "attributes": {
+                                  "class": "plugin-Navigation-item has-subnav",
+                                  "id": "page_144014"
+                                },
+                                "children": [
+                                  {
+                                    "tagName": "a",
+                                    "attributes": {
+                                      "class": "plugin-Navigation-link",
+                                      "data-toggle": "dropdown",
+                                      "role": "button",
+                                      "aria-haspopup": "true",
+                                      "aria-expanded": "false",
+                                      "href": "/sobre-nosotros/"
+                                    },
+                                    "children": [],
+                                    "textContent": "SOBRE NOSOTROS"
+                                  },
+                                  {
+                                    "tagName": "ul",
+                                    "attributes": {
+                                      "class": "plugin-Navigation-listsub"
+                                    },
+                                    "children": [
+                                      {
+                                        "tagName": "li",
+                                        "attributes": {
+                                          "class": "plugin-Navigation-itemsub",
+                                          "id": "page_144100"
+                                        },
+                                        "children": [
+                                          {
+                                            "tagName": "a",
+                                            "attributes": {
+                                              "class": "plugin-Navigation-linksub",
+                                              "href": "/historia/"
+                                            },
+                                            "children": [],
+                                            "textContent": "HISTORIA"
+                                          }
+                                        ],
+                                        "textContent": ""
+                                      },
+                                      {
+                                        "tagName": "li",
+                                        "attributes": {
+                                          "class": "plugin-Navigation-itemsub",
+                                          "id": "page_144101"
+                                        },
+                                        "children": [
+                                          {
+                                            "tagName": "a",
+                                            "attributes": {
+                                              "class": "plugin-Navigation-linksub",
+                                              "href": "/objetivos/"
+                                            },
+                                            "children": [],
+                                            "textContent": "OBJETIVOS"
+                                          }
+                                        ],
+                                        "textContent": ""
+                                      },
+                                      {
+                                        "tagName": "li",
+                                        "attributes": {
+                                          "class": "plugin-Navigation-itemsub",
+                                          "id": "page_144015"
+                                        },
+                                        "children": [
+                                          {
+                                            "tagName": "a",
+                                            "attributes": {
+                                              "class": "plugin-Navigation-linksub",
+                                              "href": "/formacion/"
+                                            },
+                                            "children": [],
+                                            "textContent": "FORMACIÓN"
+                                          }
+                                        ],
+                                        "textContent": ""
+                                      },
+                                      {
+                                        "tagName": "li",
+                                        "attributes": {
+                                          "class": "plugin-Navigation-itemsub",
+                                          "id": "page_144037"
+                                        },
+                                        "children": [
+                                          {
+                                            "tagName": "a",
+                                            "attributes": {
+                                              "class": "plugin-Navigation-linksub",
+                                              "href": "/voluntariado-1/"
+                                            },
+                                            "children": [],
+                                            "textContent": "VOLUNTARIADO"
+                                          }
+                                        ],
+                                        "textContent": ""
+                                      },
+                                      {
+                                        "tagName": "li",
+                                        "attributes": {
+                                          "class": "plugin-Navigation-itemsub",
+                                          "id": "page_147221"
+                                        },
+                                        "children": [],
+                                        "textContent": ""
+                                      },
+                                      {
+                                        "tagName": "li",
+                                        "attributes": {
+                                          "class": "plugin-Navigation-itemsub",
+                                          "id": "page_144017"
+                                        },
+                                        "children": [
+                                          {
+                                            "tagName": "a",
+                                            "attributes": {
+                                              "class": "plugin-Navigation-linksub",
+                                              "href": "/patrocinadores/"
+                                            },
+                                            "children": [],
+                                            "textContent": "PATROCINADORES"
+                                          }
+                                        ],
+                                        "textContent": ""
+                                      },
+                                      {
+                                        "tagName": "li",
+                                        "attributes": {
+                                          "class": "plugin-Navigation-itemsub",
+                                          "id": "page_144816"
+                                        },
+                                        "children": [
+                                          {
+                                            "tagName": "a",
+                                            "attributes": {
+                                              "class": "plugin-Navigation-linksub",
+                                              "href": "/publicidad/"
+                                            },
+                                            "children": [],
+                                            "textContent": "PUBLICIDAD"
+                                          }
+                                        ],
+                                        "textContent": ""
+                                      },
+                                      {
+                                        "tagName": "li",
+                                        "attributes": {
+                                          "class": "plugin-Navigation-itemsub",
+                                          "id": "page_144109"
+                                        },
+                                        "children": [
+                                          {
+                                            "tagName": "a",
+                                            "attributes": {
+                                              "class": "plugin-Navigation-linksub",
+                                              "href": "/donaciones/"
+                                            },
+                                            "children": [],
+                                            "textContent": "DONACIONES"
+                                          }
+                                        ],
+                                        "textContent": ""
+                                      }
+                                    ],
+                                    "textContent": ""
+                                  }
+                                ],
+                                "textContent": ""
+                              },
+                              {
+                                "tagName": "li",
+                                "attributes": {
+                                  "class": "plugin-Navigation-item",
+                                  "id": "page_158309"
+                                },
+                                "children": [
+                                  {
+                                    "tagName": "a",
+                                    "attributes": {
+                                      "class": "plugin-Navigation-link",
+                                      "href": "/tienda-online/"
+                                    },
+                                    "children": [],
+                                    "textContent": "TIENDA ONLINE"
+                                  }
+                                ],
+                                "textContent": ""
+                              }
+                            ],
+                            "textContent": ""
+                          }
+                        ],
+                        "textContent": ""
+                      },
+                      {
+                        "tagName": "div",
+                        "attributes": {
+                          "class": "header-Mobile-info"
+                        },
+                        "children": [
+                          {
+                            "tagName": "div",
+                            "attributes": {
+                              "class": "neo-element plugin-TextSync js-advancedOnly v-hidden",
+                              "data-sync-with": ".plugin-Text--Hours-of-operation",
+                              "id": "c-l51h2485mvZC"
+                            },
+                            "children": [
+                              {
+                                "tagName": "p",
+                                "attributes": {
+                                  "class": "v-textShadow-2",
+                                  "style": "line-height: 1;"
+                                },
+                                "children": [
+                                  {
+                                    "tagName": "a",
+                                    "attributes": {
+                                      "href": "http://www.discapacidad.tv"
+                                    },
+                                    "children": [],
+                                    "textContent": "www.discapacidad.tv"
+                                  }
+                                ],
+                                "textContent": ""
+                              }
+                            ],
+                            "textContent": ""
+                          },
+                          {
+                            "tagName": "div",
+                            "attributes": {
+                              "class": "neo-element plugin-AnchorSync plugin-AnchorSync--header",
+                              "data-sync-with": ".plugin-Anchor--header",
+                              "id": "c-l51h2485kALn"
+                            },
+                            "children": [
+                              {
+                                "tagName": "a",
+                                "attributes": {
+                                  "class": "v-anchorAnimate v-shadow v-rounded",
+                                  "href": "/vivo-directo",
+                                  "style": "background-color: rgb(251, 46, 43); border-color: rgba(0, 0, 0, 0); border-style: solid; color: rgb(255, 255, 255);"
+                                },
+                                "children": [],
+                                "textContent": "VIVO | DIRECTO | LIVE"
+                              }
+                            ],
+                            "textContent": ""
+                          }
+                        ],
+                        "textContent": ""
+                      },
+                      {
+                        "tagName": "div",
+                        "attributes": {
+                          "class": "header-Mobile-social v-hidden"
+                        },
+                        "children": [
+                          {
+                            "tagName": "div",
+                            "attributes": {
+                              "class": "neo-element plugin-SocialSync v-hidden",
+                              "data-sync-with": ".plugin-SocialSmall",
+                              "id": "c-l51h24859N6L"
+                            },
+                            "children": [
+                              {
+                                "tagName": "div",
+                                "attributes": {
+                                  "class": "plugin-Social-iconContainer"
+                                },
+                                "children": [
+                                  {
+                                    "tagName": "a",
+                                    "attributes": {
+                                      "rel": "nofollow",
+                                      "class": "plugin-Social-link",
+                                      "target": "_blank",
+                                      "title": "Facebook",
+                                      "aria-label": "Facebook Social Link",
+                                      "data-token-href": "{facebook-social-link}",
+                                      "href": "https://www.facebook.com/discapacidadtelevision/"
+                                    },
+                                    "children": [
+                                      {
+                                        "tagName": "img",
+                                        "attributes": {
+                                          "class": "plugin-Social-icon",
+                                          "alt": "Facebook",
+                                          "src": "https://cdn.create.web.com/global/neo-base/1.0/img/facebook.svg",
+                                          "style": "height: 30px; width: 30px;"
+                                        },
+                                        "children": [],
+                                        "textContent": ""
+                                      }
+                                    ],
+                                    "textContent": ""
+                                  },
+                                  {
+                                    "tagName": "a",
+                                    "attributes": {
+                                      "rel": "nofollow",
+                                      "class": "plugin-Social-link",
+                                      "target": "_blank",
+                                      "title": "Twitter",
+                                      "aria-label": "Twitter Social Link",
+                                      "data-token-href": "{twitter-social-link}",
+                                      "href": "https://twitter.com/DiscapacidadTv"
+                                    },
+                                    "children": [
+                                      {
+                                        "tagName": "img",
+                                        "attributes": {
+                                          "class": "plugin-Social-icon",
+                                          "alt": "Twitter",
+                                          "src": "https://cdn.create.web.com/global/neo-base/1.0/img/twitter.svg",
+                                          "style": "height: 30px; width: 30px;"
+                                        },
+                                        "children": [],
+                                        "textContent": ""
+                                      }
+                                    ],
+                                    "textContent": ""
+                                  },
+                                  {
+                                    "tagName": "a",
+                                    "attributes": {
+                                      "rel": "nofollow",
+                                      "class": "plugin-Social-link",
+                                      "target": "_blank",
+                                      "title": "Instagram",
+                                      "aria-label": "Instagram Social Link",
+                                      "data-token-href": "{instagram-social-link}",
+                                      "href": "https://www.instagram.com/discapacidadtv/"
+                                    },
+                                    "children": [
+                                      {
+                                        "tagName": "img",
+                                        "attributes": {
+                                          "class": "plugin-Social-icon",
+                                          "alt": "Instagram",
+                                          "src": "https://cdn.create.web.com/global/neo-base/1.0/img/instagram.svg",
+                                          "style": "height: 30px; width: 30px;"
+                                        },
+                                        "children": [],
+                                        "textContent": ""
+                                      }
+                                    ],
+                                    "textContent": ""
+                                  },
+                                  {
+                                    "tagName": "a",
+                                    "attributes": {
+                                      "rel": "nofollow",
+                                      "class": "plugin-Social-link",
+                                      "target": "_blank",
+                                      "title": "YouTube",
+                                      "aria-label": "YouTube",
+                                      "data-token-href": "{youtube-social-link}",
+                                      "href": "https://www.youtube.com/@discapacidadtv"
+                                    },
+                                    "children": [
+                                      {
+                                        "tagName": "img",
+                                        "attributes": {
+                                          "class": "plugin-Social-icon",
+                                          "alt": "YouTube",
+                                          "src": "https://cdn.create.web.com/global/neo-base/1.0/img/youtube.svg",
+                                          "style": "height: 30px; width: 30px;"
+                                        },
+                                        "children": [],
+                                        "textContent": ""
+                                      }
+                                    ],
+                                    "textContent": ""
+                                  }
+                                ],
+                                "textContent": ""
+                              }
+                            ],
+                            "textContent": ""
+                          }
+                        ],
+                        "textContent": ""
+                      }
+                    ],
+                    "textContent": ""
+                  }
+                ],
+                "textContent": ""
+              }
+            ],
+            "textContent": ""
+          },
+          {
+            "tagName": "div",
+            "attributes": {
+              "class": "neo-page-content"
+            },
+            "children": [
+              {
+                "tagName": "section",
+                "attributes": {
+                  "class": "media-1 plugin-Section is-first u-bgColorDark",
+                  "id": "c-kdqo8ofqpAi8",
+                  "style": "padding-top: 3vh; padding-bottom: 3vh; background: #003d21;"
+                },
+                "children": [
+                  {
+                    "tagName": "div",
+                    "attributes": {
+                      "class": "Container"
+                    },
+                    "children": [
+                      {
+                        "tagName": "div",
+                        "attributes": {
+                          "class": "flex-container flex-container--nowrap"
+                        },
+                        "children": [
+                          {
+                            "tagName": "div",
+                            "attributes": {
+                              "class": "flex-column flex-column--100"
+                            },
+                            "children": [
+                              {
+                                "tagName": "div",
+                                "attributes": {
+                                  "class": "neo-element v-textCenter plugin-Image",
+                                  "id": "c-lgk0onxzSfBh",
+                                  "data-version": "2.0.0"
+                                },
+                                "children": [
+                                  {
+                                    "tagName": "img",
+                                    "attributes": {
+                                      "src": "/files/documentales-banner-200-3.png",
+                                      "class": "",
+                                      "style": "width: 20%;"
+                                    },
+                                    "children": [],
+                                    "textContent": ""
+                                  }
+                                ],
+                                "textContent": ""
+                              },
+                              {
+                                "tagName": "div",
+                                "attributes": {
+                                  "class": "neo-element plugin-Text",
+                                  "id": "c-kdqot9f9wc9A"
+                                },
+                                "children": [
+                                  {
+                                    "tagName": "p",
+                                    "attributes": {
+                                      "style": "text-align: center; line-height: 1;",
+                                      "class": "v-textShadow-2 v-fontSize-responsive--xs"
+                                    },
+                                    "children": [
+                                      {
+                                        "tagName": "span",
+                                        "attributes": {
+                                          "style": "font-size: 1.8rem; font-family: Oswald;"
+                                        },
+                                        "children": [],
+                                        "textContent": "LOS MEJORES DOCUMENTALES SOBRE DISCAPACIDAD Y/O CAUSAS SOCIALES"
+                                      }
+                                    ],
+                                    "textContent": ""
+                                  },
+                                  {
+                                    "tagName": "p",
+                                    "attributes": {
+                                      "style": "text-align: center; line-height: 1.3;"
+                                    },
+                                    "children": [
+                                      {
+                                        "tagName": "span",
+                                        "attributes": {
+                                          "style": "font-weight: bold;"
+                                        },
+                                        "children": [
+                                          {
+                                            "tagName": "br",
+                                            "attributes": {},
+                                            "children": [],
+                                            "textContent": ""
+                                          }
+                                        ],
+                                        "textContent": ""
+                                      }
+                                    ],
+                                    "textContent": ""
+                                  },
+                                  {
+                                    "tagName": "p",
+                                    "attributes": {
+                                      "style": "text-align: center; line-height: 1.3;"
+                                    },
+                                    "children": [
+                                      {
+                                        "tagName": "span",
+                                        "attributes": {
+                                          "style": "font-weight: bold;"
+                                        },
+                                        "children": [
+                                          {
+                                            "tagName": "br",
+                                            "attributes": {},
+                                            "children": [],
+                                            "textContent": ""
+                                          }
+                                        ],
+                                        "textContent": ""
+                                      }
+                                    ],
+                                    "textContent": ""
+                                  }
+                                ],
+                                "textContent": ""
+                              }
+                            ],
+                            "textContent": ""
+                          }
+                        ],
+                        "textContent": ""
+                      },
+                      {
+                        "tagName": "div",
+                        "attributes": {
+                          "class": "flex-container flex-container--nowrap flex-container--center",
+                          "style": ""
+                        },
+                        "children": [
+                          {
+                            "tagName": "div",
+                            "attributes": {
+                              "class": "flex-column flex-column--16"
+                            },
+                            "children": [
+                              {
+                                "tagName": "div",
+                                "attributes": {
+                                  "class": "neo-element v-textCenter plugin-Anchor",
+                                  "id": "c-llr4xewoubfy"
+                                },
+                                "children": [
+                                  {
+                                    "tagName": "a",
+                                    "attributes": {
+                                      "class": "v-rounded",
+                                      "style": "border-color: rgb(251, 235, 1); border-style: solid; background-color: rgba(0, 0, 0, 0);"
+                                    },
+                                    "children": [],
+                                    "textContent": "4"
+                                  }
+                                ],
+                                "textContent": ""
+                              }
+                            ],
+                            "textContent": ""
+                          },
+                          {
+                            "tagName": "div",
+                            "attributes": {
+                              "class": "flex-column flex-column--16"
+                            },
+                            "children": [
+                              {
+                                "tagName": "div",
+                                "attributes": {
+                                  "class": "neo-element v-textCenter plugin-Anchor",
+                                  "id": "c-llr4xzk3yFSl"
+                                },
+                                "children": [
+                                  {
+                                    "tagName": "a",
+                                    "attributes": {
+                                      "class": "v-rounded v-anchorAnimate",
+                                      "style": "border-color: rgb(255, 130, 3); border-style: solid; background-color: rgb(255, 130, 3);",
+                                      "href": "/documentales-4"
+                                    },
+                                    "children": [],
+                                    "textContent": "3"
+                                  }
+                                ],
+                                "textContent": ""
+                              }
+                            ],
+                            "textContent": ""
+                          },
+                          {
+                            "tagName": "div",
+                            "attributes": {
+                              "class": "flex-column flex-column--16"
+                            },
+                            "children": [
+                              {
+                                "tagName": "div",
+                                "attributes": {
+                                  "class": "neo-element v-textCenter plugin-Anchor",
+                                  "id": "c-llr4ypjir4xH"
+                                },
+                                "children": [
+                                  {
+                                    "tagName": "a",
+                                    "attributes": {
+                                      "class": "v-rounded v-anchorAnimate",
+                                      "style": "border-color: rgb(255, 130, 3); border-style: solid; background-color: rgb(255, 130, 3);",
+                                      "href": "/documentales-3"
+                                    },
+                                    "children": [],
+                                    "textContent": "2"
+                                  }
+                                ],
+                                "textContent": ""
+                              }
+                            ],
+                            "textContent": ""
+                          },
+                          {
+                            "tagName": "div",
+                            "attributes": {
+                              "class": "flex-column flex-column--16"
+                            },
+                            "children": [
+                              {
+                                "tagName": "div",
+                                "attributes": {
+                                  "class": "neo-element v-textCenter plugin-Anchor",
+                                  "id": "c-llr4yrx5v85o"
+                                },
+                                "children": [
+                                  {
+                                    "tagName": "a",
+                                    "attributes": {
+                                      "class": "v-rounded",
+                                      "style": "border-color: rgb(255, 130, 3); border-style: solid; background-color: rgb(255, 130, 3);"
+                                    },
+                                    "children": [],
+                                    "textContent": "1"
+                                  }
+                                ],
+                                "textContent": ""
+                              }
+                            ],
+                            "textContent": ""
+                          }
+                        ],
+                        "textContent": ""
+                      },
+                      {
+                        "tagName": "div",
+                        "attributes": {
+                          "class": "flex-container flex-container--center flex-container--nowrap",
+                          "style": ""
+                        },
+                        "children": [
+                          {
+                            "tagName": "div",
+                            "attributes": {
+                              "class": "flex-column flex-column--33 flex-column--filled flex-column--cornersRounded flex-column--dropShadowed u-bgColorDark",
+                              "style": "background-color: rgba(196, 0, 20, 0.5);"
+                            },
+                            "children": [
+                              {
+                                "tagName": "div",
+                                "attributes": {
+                                  "class": "plugin-Video neo-element v-textCenter",
+                                  "id": "c-l8oz29iuBiD1"
+                                },
+                                "children": [
+                                  {
+                                    "tagName": "div",
+                                    "attributes": {
+                                      "class": "v-embedResponsive v-embedResponsive-16by9"
+                                    },
+                                    "children": [
+                                      {
+                                        "tagName": "iframe",
+                                        "attributes": {
+                                          "src": "//www.youtube.com/embed/4K4JaHl3d3g",
+                                          "frameborder": "0",
+                                          "class": "embed-responsive-item",
+                                          "scrolling": "no",
+                                          "allowfullscreen": ""
+                                        },
+                                        "children": [],
+                                        "textContent": ""
+                                      }
+                                    ],
+                                    "textContent": ""
+                                  }
+                                ],
+                                "textContent": ""
+                              }
+                            ],
+                            "textContent": ""
+                          },
+                          {
+                            "tagName": "div",
+                            "attributes": {
+                              "class": "flex-column v-flex v-flexDirectionColumn flex-column--66 flex-column--filled flex-column--cornersRounded flex-column--dropShadowed u-bgColorDark",
+                              "style": "background-color: rgba(196, 0, 20, 0.5);"
+                            },
+                            "children": [
+                              {
+                                "tagName": "div",
+                                "attributes": {
+                                  "class": "plugin-Text neo-element",
+                                  "id": "c-l8oz29iu5V0i"
+                                },
+                                "children": [
+                                  {
+                                    "tagName": "h4",
+                                    "attributes": {
+                                      "class": "v-textShadow-2"
+                                    },
+                                    "children": [
+                                      {
+                                        "tagName": "span",
+                                        "attributes": {
+                                          "style": "font-weight: normal;"
+                                        },
+                                        "children": [],
+                                        "textContent": "🔶|"
+                                      },
+                                      {
+                                        "tagName": "span",
+                                        "attributes": {
+                                          "style": "color: rgb(251, 235, 1);"
+                                        },
+                                        "children": [
+                                          {
+                                            "tagName": "span",
+                                            "attributes": {
+                                              "style": "font-weight: normal;"
+                                            },
+                                            "children": [],
+                                            "textContent": "MAESTROS DE LA COCINA"
+                                          },
+                                          {
+                                            "tagName": "br",
+                                            "attributes": {},
+                                            "children": [],
+                                            "textContent": ""
+                                          }
+                                        ],
+                                        "textContent": ""
+                                      }
+                                    ],
+                                    "textContent": ""
+                                  },
+                                  {
+                                    "tagName": "p",
+                                    "attributes": {},
+                                    "children": [],
+                                    "textContent": "UN DOCUMENTAL SOBRE UN CONCURSO DE COCINA PROTAGONIZADO POR JÓVENES COCINEROS CON DISCAPACIDAD INTELECTUAL, DONDE COMPITEN CON ESTRICTAS REGLAS PARA ALCANZAR LA MÁXIMA CALIDAD CULINARIA. GRABADO EN EL PARQUE TEMÁTICO DE PUYDU FOU - ESPAÑA JUNTO A IMPORTANTES REFERENTES DE LA COCINA ESPAÑOLA.EN EL PROGRAMA PODRÁS VER TODAS LAS CAPACIDADES DE ESTOS JÓVENES PARA COCINAR Y GANAR EN ESTE DESAFÍO ÚNICO.NO TE PIERDAS ESTA PRODUCCIÓN ÚNICA DE FACILITO.EU PARA EL COLECTIVO DE PERSONAS CON DISCAPACIDAD INTELECTUAL."
+                                  },
+                                  {
+                                    "tagName": "p",
+                                    "attributes": {},
+                                    "children": [
+                                      {
+                                        "tagName": "br",
+                                        "attributes": {
+                                          "data-text": "true"
+                                        },
+                                        "children": [],
+                                        "textContent": ""
+                                      }
+                                    ],
+                                    "textContent": ""
+                                  },
+                                  {
+                                    "tagName": "p",
+                                    "attributes": {},
+                                    "children": [
+                                      {
+                                        "tagName": "br",
+                                        "attributes": {
+                                          "data-text": "true"
+                                        },
+                                        "children": [],
+                                        "textContent": ""
+                                      }
+                                    ],
+                                    "textContent": ""
+                                  },
+                                  {
+                                    "tagName": "p",
+                                    "attributes": {},
+                                    "children": [],
+                                    "textContent": "-  ARGENTINA | URUGUAY: 21:00"
+                                  },
+                                  {
+                                    "tagName": "p",
+                                    "attributes": {},
+                                    "children": [],
+                                    "textContent": "-  CHILE | EE.UU. ET. | PARAGUAY: 20:00"
+                                  },
+                                  {
+                                    "tagName": "p",
+                                    "attributes": {},
+                                    "children": [],
+                                    "textContent": "-  COLOMBIA | MÉXICO | PERÚ: 19:00"
+                                  },
+                                  {
+                                    "tagName": "p",
+                                    "attributes": {
+                                      "class": "v-fontSize-responsive--xxs v-textShadow-2",
+                                      "style": "line-height: 1.3;"
+                                    },
+                                    "children": [
+                                      {
+                                        "tagName": "br",
+                                        "attributes": {},
+                                        "children": [],
+                                        "textContent": ""
+                                      },
+                                      {
+                                        "tagName": "span",
+                                        "attributes": {
+                                          "style": "color: rgb(251, 235, 1); font-size: 1.4rem;"
+                                        },
+                                        "children": [],
+                                        "textContent": "Audio:"
+                                      },
+                                      {
+                                        "tagName": "span",
+                                        "attributes": {
+                                          "style": "font-size: 1.4rem;"
+                                        },
+                                        "children": [],
+                                        "textContent": "Español"
+                                      }
+                                    ],
+                                    "textContent": ""
+                                  },
+                                  {
+                                    "tagName": "p",
+                                    "attributes": {
+                                      "class": "v-fontSize-responsive--xxs v-textShadow-2",
+                                      "style": "line-height: 1.3;"
+                                    },
+                                    "children": [
+                                      {
+                                        "tagName": "span",
+                                        "attributes": {
+                                          "style": "color: rgb(251, 235, 1); font-size: 14px;"
+                                        },
+                                        "children": [],
+                                        "textContent": "Subtítulos:"
+                                      },
+                                      {
+                                        "tagName": "span",
+                                        "attributes": {
+                                          "style": "font-size: 14px;"
+                                        },
+                                        "children": [],
+                                        "textContent": "Español"
+                                      },
+                                      {
+                                        "tagName": "br",
+                                        "attributes": {},
+                                        "children": [],
+                                        "textContent": ""
+                                      }
+                                    ],
+                                    "textContent": ""
+                                  }
+                                ],
+                                "textContent": ""
+                              }
+                            ],
+                            "textContent": ""
+                          }
+                        ],
+                        "textContent": ""
+                      },
+                      {
+                        "tagName": "div",
+                        "attributes": {
+                          "class": "flex-container flex-container--center flex-container--nowrap",
+                          "style": ""
+                        },
+                        "children": [
+                          {
+                            "tagName": "div",
+                            "attributes": {
+                              "class": "flex-column flex-column--filled flex-column--cornersRounded flex-column--dropShadowed flex-column--33 u-bgColorDark",
+                              "style": "background-color: rgba(255, 130, 3, 0.5);"
+                            },
+                            "children": [
+                              {
+                                "tagName": "div",
+                                "attributes": {
+                                  "class": "plugin-Video neo-element v-textCenter",
+                                  "id": "c-lhs77iyaUS9c"
+                                },
+                                "children": [
+                                  {
+                                    "tagName": "div",
+                                    "attributes": {
+                                      "class": "v-embedResponsive v-embedResponsive-16by9"
+                                    },
+                                    "children": [
+                                      {
+                                        "tagName": "iframe",
+                                        "attributes": {
+                                          "src": "//www.youtube.com/embed/tM23jLCLAuo",
+                                          "frameborder": "0",
+                                          "class": "embed-responsive-item",
+                                          "scrolling": "no",
+                                          "allowfullscreen": ""
+                                        },
+                                        "children": [],
+                                        "textContent": ""
+                                      }
+                                    ],
+                                    "textContent": ""
+                                  }
+                                ],
+                                "textContent": ""
+                              }
+                            ],
+                            "textContent": ""
+                          },
+                          {
+                            "tagName": "div",
+                            "attributes": {
+                              "class": "flex-column v-flex v-flexDirectionColumn flex-column--filled flex-column--cornersRounded flex-column--dropShadowed flex-column--66 u-bgColorDark",
+                              "style": "background-color: rgba(255, 130, 3, 0.5);"
+                            },
+                            "children": [
+                              {
+                                "tagName": "div",
+                                "attributes": {
+                                  "class": "plugin-Text neo-element",
+                                  "id": "c-lhs77iyabRnQ"
+                                },
+                                "children": [
+                                  {
+                                    "tagName": "h4",
+                                    "attributes": {
+                                      "class": "v-textShadow-2"
+                                    },
+                                    "children": [
+                                      {
+                                        "tagName": "span",
+                                        "attributes": {
+                                          "style": "font-weight: normal; color: rgb(251, 235, 1);"
+                                        },
+                                        "children": [],
+                                        "textContent": "🔶"
+                                      },
+                                      {
+                                        "tagName": "span",
+                                        "attributes": {
+                                          "style": "font-weight: normal; color: var(--secondary-color);"
+                                        },
+                                        "children": [],
+                                        "textContent": "|"
+                                      },
+                                      {
+                                        "tagName": "span",
+                                        "attributes": {
+                                          "style": "font-weight: normal; color: rgb(251, 235, 1);"
+                                        },
+                                        "children": [],
+                                        "textContent": "EL “SUPERPODER” DE UN HOMBRE CIEGO LE PERMITE ANDAR EN BICICLETA, PATINAR Y NAVEGAR POR EL MUNDO"
+                                      }
+                                    ],
+                                    "textContent": ""
+                                  },
+                                  {
+                                    "tagName": "p",
+                                    "attributes": {
+                                      "class": "v-fontSize-responsive--xxs v-textShadow-2",
+                                      "style": "line-height: 1.3;"
+                                    },
+                                    "children": [
+                                      {
+                                        "tagName": "br",
+                                        "attributes": {},
+                                        "children": [],
+                                        "textContent": ""
+                                      }
+                                    ],
+                                    "textContent": ""
+                                  },
+                                  {
+                                    "tagName": "p",
+                                    "attributes": {
+                                      "class": "v-fontSize-responsive--xxs v-textShadow-2",
+                                      "style": "line-height: 1.3;"
+                                    },
+                                    "children": [
+                                      {
+                                        "tagName": "span",
+                                        "attributes": {
+                                          "style": "font-size: 1.4rem;"
+                                        },
+                                        "children": [
+                                          {
+                                            "tagName": "br",
+                                            "attributes": {},
+                                            "children": [],
+                                            "textContent": ""
+                                          }
+                                        ],
+                                        "textContent": ""
+                                      }
+                                    ],
+                                    "textContent": ""
+                                  },
+                                  {
+                                    "tagName": "p",
+                                    "attributes": {
+                                      "class": "v-fontSize-responsive--xxs v-textShadow-2",
+                                      "style": "line-height: 1.3;"
+                                    },
+                                    "children": [
+                                      {
+                                        "tagName": "br",
+                                        "attributes": {},
+                                        "children": [],
+                                        "textContent": ""
+                                      },
+                                      {
+                                        "tagName": "span",
+                                        "attributes": {
+                                          "style": "color: rgb(251, 235, 1); font-size: 1.4rem;"
+                                        },
+                                        "children": [],
+                                        "textContent": "Audio:"
+                                      },
+                                      {
+                                        "tagName": "span",
+                                        "attributes": {
+                                          "style": "font-size: 1.4rem;"
+                                        },
+                                        "children": [],
+                                        "textContent": "Inglés"
+                                      }
+                                    ],
+                                    "textContent": ""
+                                  },
+                                  {
+                                    "tagName": "p",
+                                    "attributes": {
+                                      "class": "v-fontSize-responsive--xxs v-textShadow-2",
+                                      "style": "line-height: 1.3;"
+                                    },
+                                    "children": [
+                                      {
+                                        "tagName": "span",
+                                        "attributes": {
+                                          "style": "color: rgb(251, 235, 1); font-size: 1.4rem;"
+                                        },
+                                        "children": [],
+                                        "textContent": "Subtítulos:"
+                                      },
+                                      {
+                                        "tagName": "span",
+                                        "attributes": {
+                                          "style": "font-size: 1.4rem;"
+                                        },
+                                        "children": [],
+                                        "textContent": "Español"
+                                      }
+                                    ],
+                                    "textContent": ""
+                                  }
+                                ],
+                                "textContent": ""
+                              }
+                            ],
+                            "textContent": ""
+                          }
+                        ],
+                        "textContent": ""
+                      },
+                      {
+                        "tagName": "div",
+                        "attributes": {
+                          "class": "flex-container flex-container--center flex-container--nowrap",
+                          "style": ""
+                        },
+                        "children": [
+                          {
+                            "tagName": "div",
+                            "attributes": {
+                              "class": "flex-column flex-column--33 flex-column--filled flex-column--cornersRounded flex-column--dropShadowed u-bgColorDark",
+                              "style": "background-color: rgba(196, 0, 20, 0.5);"
+                            },
+                            "children": [
+                              {
+                                "tagName": "div",
+                                "attributes": {
+                                  "class": "plugin-Video neo-element v-textCenter",
+                                  "id": "c-m0muywpcus1n"
+                                },
+                                "children": [
+                                  {
+                                    "tagName": "div",
+                                    "attributes": {
+                                      "class": "v-embedResponsive v-embedResponsive-16by9"
+                                    },
+                                    "children": [
+                                      {
+                                        "tagName": "iframe",
+                                        "attributes": {
+                                          "src": "//www.youtube.com/embed/ZlfN_FLmqYg",
+                                          "frameborder": "0",
+                                          "class": "embed-responsive-item",
+                                          "scrolling": "no",
+                                          "allowfullscreen": ""
+                                        },
+                                        "children": [],
+                                        "textContent": ""
+                                      }
+                                    ],
+                                    "textContent": ""
+                                  }
+                                ],
+                                "textContent": ""
+                              }
+                            ],
+                            "textContent": ""
+                          },
+                          {
+                            "tagName": "div",
+                            "attributes": {
+                              "class": "flex-column v-flex v-flexDirectionColumn flex-column--66 flex-column--filled flex-column--cornersRounded flex-column--dropShadowed u-bgColorDark",
+                              "style": "background-color: rgba(196, 0, 20, 0.5);"
+                            },
+                            "children": [
+                              {
+                                "tagName": "div",
+                                "attributes": {
+                                  "class": "plugin-Text neo-element",
+                                  "id": "c-m0muywpcThn5"
+                                },
+                                "children": [
+                                  {
+                                    "tagName": "h4",
+                                    "attributes": {
+                                      "class": "v-textShadow-2"
+                                    },
+                                    "children": [
+                                      {
+                                        "tagName": "span",
+                                        "attributes": {
+                                          "style": "font-weight: normal;"
+                                        },
+                                        "children": [],
+                                        "textContent": "🔶|"
+                                      },
+                                      {
+                                        "tagName": "span",
+                                        "attributes": {
+                                          "style": "color: rgb(251, 235, 1);"
+                                        },
+                                        "children": [
+                                          {
+                                            "tagName": "span",
+                                            "attributes": {
+                                              "style": "font-weight: normal;"
+                                            },
+                                            "children": [],
+                                            "textContent": "TIC - SÍNDROME DE TOURETTE"
+                                          },
+                                          {
+                                            "tagName": "br",
+                                            "attributes": {},
+                                            "children": [],
+                                            "textContent": ""
+                                          }
+                                        ],
+                                        "textContent": ""
+                                      }
+                                    ],
+                                    "textContent": ""
+                                  },
+                                  {
+                                    "tagName": "p",
+                                    "attributes": {
+                                      "class": "v-fontSize-responsive--xxs v-textShadow-2",
+                                      "style": "line-height: 1.3;"
+                                    },
+                                    "children": [
+                                      {
+                                        "tagName": "span",
+                                        "attributes": {
+                                          "style": "background-color: initial; color: var(--on-dark-color); font-family: var(--body-font); font-size: 1.6rem;",
+                                          "class": "v-badge"
+                                        },
+                                        "children": [
+                                          {
+                                            "tagName": "span",
+                                            "attributes": {
+                                              "style": "font-size: 1.4rem;"
+                                            },
+                                            "children": [],
+                                            "textContent": "El documental Tourettes is Complex (TIC) trata sobre la exploración de la experiencia de vivir con Tourettes."
+                                          }
+                                        ],
+                                        "textContent": ""
+                                      },
+                                      {
+                                        "tagName": "br",
+                                        "attributes": {},
+                                        "children": [],
+                                        "textContent": ""
+                                      }
+                                    ],
+                                    "textContent": ""
+                                  },
+                                  {
+                                    "tagName": "p",
+                                    "attributes": {
+                                      "class": "v-fontSize-responsive--xxs v-textShadow-2",
+                                      "style": "line-height: 1.3;"
+                                    },
+                                    "children": [
+                                      {
+                                        "tagName": "span",
+                                        "attributes": {
+                                          "style": "font-size: 1.4rem;"
+                                        },
+                                        "children": [],
+                                        "textContent": "Fueron más de seis meses de filmación, puedes ver mi cabello rápidamente a lo largo del tiempo en el documental. Eso es todo lo que diré ahora."
+                                      }
+                                    ],
+                                    "textContent": ""
+                                  },
+                                  {
+                                    "tagName": "p",
+                                    "attributes": {
+                                      "class": "v-fontSize-responsive--xxs v-textShadow-2",
+                                      "style": "line-height: 1.3;"
+                                    },
+                                    "children": [
+                                      {
+                                        "tagName": "br",
+                                        "attributes": {},
+                                        "children": [],
+                                        "textContent": ""
+                                      }
+                                    ],
+                                    "textContent": ""
+                                  },
+                                  {
+                                    "tagName": "p",
+                                    "attributes": {
+                                      "class": "v-fontSize-responsive--xxs v-textShadow-2",
+                                      "style": "line-height: 1.3;"
+                                    },
+                                    "children": [
+                                      {
+                                        "tagName": "span",
+                                        "attributes": {
+                                          "style": "font-size: 1.4rem;"
+                                        },
+                                        "children": [],
+                                        "textContent": "El"
+                                      },
+                                      {
+                                        "tagName": "em",
+                                        "attributes": {},
+                                        "children": [
+                                          {
+                                            "tagName": "span",
+                                            "attributes": {
+                                              "style": "font-size: 1.4rem;"
+                                            },
+                                            "children": [],
+                                            "textContent": "síndrome"
+                                          }
+                                        ],
+                                        "textContent": ""
+                                      },
+                                      {
+                                        "tagName": "span",
+                                        "attributes": {
+                                          "style": "font-size: 1.4rem;"
+                                        },
+                                        "children": [],
+                                        "textContent": "de Gilles de la"
+                                      },
+                                      {
+                                        "tagName": "em",
+                                        "attributes": {},
+                                        "children": [
+                                          {
+                                            "tagName": "span",
+                                            "attributes": {
+                                              "style": "font-size: 1.4rem;"
+                                            },
+                                            "children": [],
+                                            "textContent": "Tourette"
+                                          }
+                                        ],
+                                        "textContent": ""
+                                      },
+                                      {
+                                        "tagName": "span",
+                                        "attributes": {
+                                          "style": "font-size: 1.4rem;"
+                                        },
+                                        "children": [],
+                                        "textContent": "es un trastorno caracterizado por movimientos repetitivos o sonidos indeseados (tics) que no se pueden controlar."
+                                      },
+                                      {
+                                        "tagName": "br",
+                                        "attributes": {},
+                                        "children": [],
+                                        "textContent": ""
+                                      }
+                                    ],
+                                    "textContent": ""
+                                  },
+                                  {
+                                    "tagName": "p",
+                                    "attributes": {
+                                      "class": "v-fontSize-responsive--xxs v-textShadow-2",
+                                      "style": "line-height: 1.3;"
+                                    },
+                                    "children": [
+                                      {
+                                        "tagName": "br",
+                                        "attributes": {},
+                                        "children": [],
+                                        "textContent": ""
+                                      },
+                                      {
+                                        "tagName": "span",
+                                        "attributes": {
+                                          "style": "color: rgb(251, 235, 1); font-size: 1.4rem;"
+                                        },
+                                        "children": [],
+                                        "textContent": "Audio:"
+                                      },
+                                      {
+                                        "tagName": "span",
+                                        "attributes": {
+                                          "style": "font-size: 1.4rem;"
+                                        },
+                                        "children": [],
+                                        "textContent": "Inglés"
+                                      }
+                                    ],
+                                    "textContent": ""
+                                  },
+                                  {
+                                    "tagName": "p",
+                                    "attributes": {
+                                      "class": "v-fontSize-responsive--xxs v-textShadow-2",
+                                      "style": "line-height: 1.3;"
+                                    },
+                                    "children": [
+                                      {
+                                        "tagName": "span",
+                                        "attributes": {
+                                          "style": "color: rgb(251, 235, 1); font-size: 14px;"
+                                        },
+                                        "children": [],
+                                        "textContent": "Subtítulos:"
+                                      },
+                                      {
+                                        "tagName": "span",
+                                        "attributes": {
+                                          "style": "font-size: 14px;"
+                                        },
+                                        "children": [],
+                                        "textContent": "Español"
+                                      },
+                                      {
+                                        "tagName": "br",
+                                        "attributes": {},
+                                        "children": [],
+                                        "textContent": ""
+                                      }
+                                    ],
+                                    "textContent": ""
+                                  }
+                                ],
+                                "textContent": ""
+                              }
+                            ],
+                            "textContent": ""
+                          }
+                        ],
+                        "textContent": ""
+                      },
+                      {
+                        "tagName": "div",
+                        "attributes": {
+                          "class": "flex-container flex-container--center flex-container--nowrap",
+                          "style": ""
+                        },
+                        "children": [
+                          {
+                            "tagName": "div",
+                            "attributes": {
+                              "class": "flex-column flex-column--filled flex-column--cornersRounded flex-column--dropShadowed flex-column--33 u-bgColorDark",
+                              "style": "background-color: rgba(255, 130, 3, 0.5);"
+                            },
+                            "children": [
+                              {
+                                "tagName": "div",
+                                "attributes": {
+                                  "class": "plugin-Video neo-element v-textCenter",
+                                  "id": "c-lhv5wb7lby2J"
+                                },
+                                "children": [
+                                  {
+                                    "tagName": "div",
+                                    "attributes": {
+                                      "class": "v-embedResponsive v-embedResponsive-16by9"
+                                    },
+                                    "children": [
+                                      {
+                                        "tagName": "iframe",
+                                        "attributes": {
+                                          "src": "//www.youtube.com/embed/XLI3SS2pRJo",
+                                          "frameborder": "0",
+                                          "class": "embed-responsive-item",
+                                          "scrolling": "no",
+                                          "allowfullscreen": ""
+                                        },
+                                        "children": [],
+                                        "textContent": ""
+                                      }
+                                    ],
+                                    "textContent": ""
+                                  }
+                                ],
+                                "textContent": ""
+                              }
+                            ],
+                            "textContent": ""
+                          },
+                          {
+                            "tagName": "div",
+                            "attributes": {
+                              "class": "flex-column v-flex v-flexDirectionColumn flex-column--filled flex-column--cornersRounded flex-column--dropShadowed flex-column--66 u-bgColorDark",
+                              "style": "background-color: rgba(255, 130, 3, 0.5);"
+                            },
+                            "children": [
+                              {
+                                "tagName": "div",
+                                "attributes": {
+                                  "class": "plugin-Text neo-element",
+                                  "id": "c-lhv5wb7mHTQz"
+                                },
+                                "children": [
+                                  {
+                                    "tagName": "h4",
+                                    "attributes": {
+                                      "class": "v-textShadow-2"
+                                    },
+                                    "children": [
+                                      {
+                                        "tagName": "span",
+                                        "attributes": {
+                                          "style": "font-weight: normal;"
+                                        },
+                                        "children": [
+                                          {
+                                            "tagName": "font",
+                                            "attributes": {
+                                              "color": "#fbeb01",
+                                              "style": ""
+                                            },
+                                            "children": [],
+                                            "textContent": "LOS INVISIBLES (THE INVISIBLE)"
+                                          }
+                                        ],
+                                        "textContent": ""
+                                      }
+                                    ],
+                                    "textContent": ""
+                                  },
+                                  {
+                                    "tagName": "p",
+                                    "attributes": {
+                                      "class": "v-fontSize-responsive--xxs v-textShadow-2",
+                                      "style": "line-height: 1.3;"
+                                    },
+                                    "children": [
+                                      {
+                                        "tagName": "br",
+                                        "attributes": {},
+                                        "children": [],
+                                        "textContent": ""
+                                      }
+                                    ],
+                                    "textContent": ""
+                                  },
+                                  {
+                                    "tagName": "p",
+                                    "attributes": {
+                                      "class": "v-fontSize-responsive--xxs v-textShadow-2",
+                                      "style": "line-height: 1.3;"
+                                    },
+                                    "children": [
+                                      {
+                                        "tagName": "span",
+                                        "attributes": {
+                                          "style": "font-size: 1.4rem;"
+                                        },
+                                        "children": [],
+                                        "textContent": "The Invisible, de la Unión Húngara de Libertades Civiles ofrece un mensaje claro y conmovedor de por qué las sociedades no deberían encerrar a las personas con discapacidad intelectual. Como señala la película, todavía tenemos cientos de instituciones en la llamada Europa civilizada en 2022 porque estos lugares son muy convenientes. Conveniente, es decir, excepto para las personas que se ven obligadas a vivir en las instituciones."
+                                      },
+                                      {
+                                        "tagName": "br",
+                                        "attributes": {},
+                                        "children": [],
+                                        "textContent": ""
+                                      }
+                                    ],
+                                    "textContent": ""
+                                  },
+                                  {
+                                    "tagName": "p",
+                                    "attributes": {
+                                      "class": "v-fontSize-responsive--xxs v-textShadow-2",
+                                      "style": "line-height: 1.3;"
+                                    },
+                                    "children": [
+                                      {
+                                        "tagName": "br",
+                                        "attributes": {},
+                                        "children": [],
+                                        "textContent": ""
+                                      },
+                                      {
+                                        "tagName": "span",
+                                        "attributes": {
+                                          "style": "color: rgb(251, 235, 1); font-size: 1.4rem;"
+                                        },
+                                        "children": [],
+                                        "textContent": "Audio:"
+                                      },
+                                      {
+                                        "tagName": "span",
+                                        "attributes": {
+                                          "style": "font-size: 1.4rem;"
+                                        },
+                                        "children": [],
+                                        "textContent": "Húngaro"
+                                      }
+                                    ],
+                                    "textContent": ""
+                                  },
+                                  {
+                                    "tagName": "p",
+                                    "attributes": {
+                                      "class": "v-fontSize-responsive--xxs v-textShadow-2",
+                                      "style": "line-height: 1.3;"
+                                    },
+                                    "children": [
+                                      {
+                                        "tagName": "span",
+                                        "attributes": {
+                                          "style": "color: rgb(251, 235, 1); font-size: 1.4rem;"
+                                        },
+                                        "children": [],
+                                        "textContent": "Subtítulos:"
+                                      },
+                                      {
+                                        "tagName": "span",
+                                        "attributes": {
+                                          "style": "font-size: 1.4rem;"
+                                        },
+                                        "children": [],
+                                        "textContent": "Español"
+                                      }
+                                    ],
+                                    "textContent": ""
+                                  }
+                                ],
+                                "textContent": ""
+                              }
+                            ],
+                            "textContent": ""
+                          }
+                        ],
+                        "textContent": ""
+                      },
+                      {
+                        "tagName": "div",
+                        "attributes": {
+                          "class": "flex-container flex-container--center flex-container--nowrap",
+                          "style": ""
+                        },
+                        "children": [
+                          {
+                            "tagName": "div",
+                            "attributes": {
+                              "class": "flex-column flex-column--33 flex-column--filled flex-column--cornersRounded flex-column--dropShadowed u-bgColorDark",
+                              "style": "background-color: rgba(196, 0, 20, 0.5);"
+                            },
+                            "children": [
+                              {
+                                "tagName": "div",
+                                "attributes": {
+                                  "class": "plugin-Video neo-element v-textCenter",
+                                  "id": "c-kfxglf79GYiy"
+                                },
+                                "children": [
+                                  {
+                                    "tagName": "div",
+                                    "attributes": {
+                                      "class": "v-embedResponsive v-embedResponsive-16by9"
+                                    },
+                                    "children": [
+                                      {
+                                        "tagName": "iframe",
+                                        "attributes": {
+                                          "src": "//www.youtube.com/embed/SObxAjlDr8k",
+                                          "frameborder": "0",
+                                          "class": "embed-responsive-item",
+                                          "scrolling": "no",
+                                          "allowfullscreen": ""
+                                        },
+                                        "children": [],
+                                        "textContent": ""
+                                      }
+                                    ],
+                                    "textContent": ""
+                                  }
+                                ],
+                                "textContent": ""
+                              }
+                            ],
+                            "textContent": ""
+                          },
+                          {
+                            "tagName": "div",
+                            "attributes": {
+                              "class": "flex-column v-flex v-flexDirectionColumn flex-column--66 flex-column--filled flex-column--cornersRounded flex-column--dropShadowed u-bgColorDark",
+                              "style": "background-color: rgba(196, 0, 20, 0.5);"
+                            },
+                            "children": [
+                              {
+                                "tagName": "div",
+                                "attributes": {
+                                  "class": "plugin-Text neo-element",
+                                  "id": "c-kfxglf7atxxh"
+                                },
+                                "children": [
+                                  {
+                                    "tagName": "h4",
+                                    "attributes": {
+                                      "class": "v-textShadow-2"
+                                    },
+                                    "children": [
+                                      {
+                                        "tagName": "span",
+                                        "attributes": {
+                                          "style": "font-weight: normal;"
+                                        },
+                                        "children": [],
+                                        "textContent": "🔶|"
+                                      },
+                                      {
+                                        "tagName": "span",
+                                        "attributes": {
+                                          "style": "color: rgb(251, 235, 1);"
+                                        },
+                                        "children": [
+                                          {
+                                            "tagName": "span",
+                                            "attributes": {
+                                              "style": "font-weight: normal;"
+                                            },
+                                            "children": [],
+                                            "textContent": "VIVIENDO CON CRIOGLOBULINEMIA - LA HISTORIA DE EILEEN PROPP"
+                                          },
+                                          {
+                                            "tagName": "br",
+                                            "attributes": {},
+                                            "children": [],
+                                            "textContent": ""
+                                          }
+                                        ],
+                                        "textContent": ""
+                                      }
+                                    ],
+                                    "textContent": ""
+                                  },
+                                  {
+                                    "tagName": "p",
+                                    "attributes": {
+                                      "class": "v-fontSize-responsive--xxs v-textShadow-2",
+                                      "style": "line-height: 1.3;"
+                                    },
+                                    "children": [
+                                      {
+                                        "tagName": "br",
+                                        "attributes": {},
+                                        "children": [],
+                                        "textContent": ""
+                                      }
+                                    ],
+                                    "textContent": ""
+                                  },
+                                  {
+                                    "tagName": "p",
+                                    "attributes": {
+                                      "class": "v-fontSize-responsive--xxs v-textShadow-2",
+                                      "style": "line-height: 1.3;"
+                                    },
+                                    "children": [
+                                      {
+                                        "tagName": "span",
+                                        "attributes": {
+                                          "style": "font-size: 1.4rem;"
+                                        },
+                                        "children": [],
+                                        "textContent": "Eileen Propp fue diagnosticada con crioglobulinemia mixta esencial (EMC) a la edad de 26 años. La vida de Propp hasta ese momento se había caracterizado por dolencias misteriosas, enfermedades inexplicables, lesiones y diagnósticos erróneos."
+                                      }
+                                    ],
+                                    "textContent": ""
+                                  },
+                                  {
+                                    "tagName": "p",
+                                    "attributes": {
+                                      "class": "v-fontSize-responsive--xxs v-textShadow-2",
+                                      "style": "line-height: 1.3;"
+                                    },
+                                    "children": [
+                                      {
+                                        "tagName": "br",
+                                        "attributes": {},
+                                        "children": [],
+                                        "textContent": ""
+                                      },
+                                      {
+                                        "tagName": "span",
+                                        "attributes": {
+                                          "style": "font-size: 1.4rem;"
+                                        },
+                                        "children": [],
+                                        "textContent": "Desde su diagnóstico de EMC, ha adquirido una comprensión de la enfermedad y cómo manejarla. Propp, de 42 años, ha soportado más de 30 cirugías, procedimientos quirúrgicos, numerosos huesos rotos, coágulos de sangre, lesiones internas, insuficiencia cardíaca y varios diagnósticos erróneos. También obtuvo un doctorado, ha sido intérprete de lenguaje de señas estadounidense y defensora de personas con discapacidades."
+                                      }
+                                    ],
+                                    "textContent": ""
+                                  },
+                                  {
+                                    "tagName": "p",
+                                    "attributes": {
+                                      "class": "v-fontSize-responsive--xxs v-textShadow-2",
+                                      "style": "line-height: 1.3;"
+                                    },
+                                    "children": [
+                                      {
+                                        "tagName": "br",
+                                        "attributes": {},
+                                        "children": [],
+                                        "textContent": ""
+                                      },
+                                      {
+                                        "tagName": "span",
+                                        "attributes": {
+                                          "style": "font-size: 1.4rem;"
+                                        },
+                                        "children": [],
+                                        "textContent": "Este documental cuenta la historia a través de entrevistas con Propp, su familia, amigos, compañeros de trabajo y clientes. Examina los aspectos físicos, emocionales y psicológicos y los impactos de vivir con una enfermedad rara. Propp continúa viviendo como una feroz defensora de sí misma mientras se niega a dejar que su enfermedad la defina. Vive con su esposo y su perro de servicio y está en proceso de regresar al trabajo."
+                                      },
+                                      {
+                                        "tagName": "span",
+                                        "attributes": {
+                                          "style": "background-color: initial; color: var(--on-dark-color); font-family: var(--body-font); font-size: 1.6rem;",
+                                          "class": "v-badge"
+                                        },
+                                        "children": [
+                                          {
+                                            "tagName": "br",
+                                            "attributes": {},
+                                            "children": [],
+                                            "textContent": ""
+                                          }
+                                        ],
+                                        "textContent": ""
+                                      }
+                                    ],
+                                    "textContent": ""
+                                  },
+                                  {
+                                    "tagName": "p",
+                                    "attributes": {
+                                      "class": "v-fontSize-responsive--xxs v-textShadow-2",
+                                      "style": "line-height: 1.3;"
+                                    },
+                                    "children": [
+                                      {
+                                        "tagName": "br",
+                                        "attributes": {},
+                                        "children": [],
+                                        "textContent": ""
+                                      },
+                                      {
+                                        "tagName": "span",
+                                        "attributes": {
+                                          "style": "color: rgb(251, 235, 1); font-size: 1.4rem;"
+                                        },
+                                        "children": [],
+                                        "textContent": "Audio:"
+                                      },
+                                      {
+                                        "tagName": "span",
+                                        "attributes": {
+                                          "style": "font-size: 1.4rem;"
+                                        },
+                                        "children": [],
+                                        "textContent": "Inglés"
+                                      }
+                                    ],
+                                    "textContent": ""
+                                  },
+                                  {
+                                    "tagName": "p",
+                                    "attributes": {
+                                      "class": "v-fontSize-responsive--xxs v-textShadow-2",
+                                      "style": "line-height: 1.3;"
+                                    },
+                                    "children": [
+                                      {
+                                        "tagName": "span",
+                                        "attributes": {
+                                          "style": "color: rgb(251, 235, 1); font-size: 14px;"
+                                        },
+                                        "children": [],
+                                        "textContent": "Subtítulos:"
+                                      },
+                                      {
+                                        "tagName": "span",
+                                        "attributes": {
+                                          "style": "font-size: 14px;"
+                                        },
+                                        "children": [],
+                                        "textContent": "Español"
+                                      },
+                                      {
+                                        "tagName": "br",
+                                        "attributes": {},
+                                        "children": [],
+                                        "textContent": ""
+                                      }
+                                    ],
+                                    "textContent": ""
+                                  }
+                                ],
+                                "textContent": ""
+                              }
+                            ],
+                            "textContent": ""
+                          }
+                        ],
+                        "textContent": ""
+                      },
+                      {
+                        "tagName": "div",
+                        "attributes": {
+                          "class": "flex-container flex-container--center flex-container--nowrap",
+                          "style": ""
+                        },
+                        "children": [
+                          {
+                            "tagName": "div",
+                            "attributes": {
+                              "class": "flex-column flex-column--filled flex-column--cornersRounded flex-column--dropShadowed flex-column--33 u-bgColorDark",
+                              "style": "background-color: rgba(255, 130, 3, 0.5);"
+                            },
+                            "children": [
+                              {
+                                "tagName": "div",
+                                "attributes": {
+                                  "class": "plugin-Video neo-element v-textCenter",
+                                  "id": "c-l8p1a9bqmwPQ"
+                                },
+                                "children": [
+                                  {
+                                    "tagName": "div",
+                                    "attributes": {
+                                      "class": "v-embedResponsive v-embedResponsive-16by9"
+                                    },
+                                    "children": [
+                                      {
+                                        "tagName": "iframe",
+                                        "attributes": {
+                                          "src": "//www.youtube.com/embed/eg3VCBJiI4w",
+                                          "frameborder": "0",
+                                          "class": "embed-responsive-item",
+                                          "scrolling": "no",
+                                          "allowfullscreen": ""
+                                        },
+                                        "children": [],
+                                        "textContent": ""
+                                      }
+                                    ],
+                                    "textContent": ""
+                                  }
+                                ],
+                                "textContent": ""
+                              }
+                            ],
+                            "textContent": ""
+                          },
+                          {
+                            "tagName": "div",
+                            "attributes": {
+                              "class": "flex-column v-flex v-flexDirectionColumn flex-column--filled flex-column--cornersRounded flex-column--dropShadowed flex-column--66 u-bgColorDark",
+                              "style": "background-color: rgba(255, 130, 3, 0.5);"
+                            },
+                            "children": [
+                              {
+                                "tagName": "div",
+                                "attributes": {
+                                  "class": "plugin-Text neo-element",
+                                  "id": "c-l8p1a9bqqMUa"
+                                },
+                                "children": [
+                                  {
+                                    "tagName": "h4",
+                                    "attributes": {
+                                      "class": "v-textShadow-2"
+                                    },
+                                    "children": [
+                                      {
+                                        "tagName": "span",
+                                        "attributes": {
+                                          "style": "font-weight: normal;"
+                                        },
+                                        "children": [
+                                          {
+                                            "tagName": "span",
+                                            "attributes": {
+                                              "style": "color: rgb(255, 235, 60);"
+                                            },
+                                            "children": [],
+                                            "textContent": "MODELOS CON DISCAPACIDAD EN LA INDUSTRIA DE LA MODA Y LA BELLEZA"
+                                          }
+                                        ],
+                                        "textContent": ""
+                                      },
+                                      {
+                                        "tagName": "br",
+                                        "attributes": {},
+                                        "children": [],
+                                        "textContent": ""
+                                      }
+                                    ],
+                                    "textContent": ""
+                                  },
+                                  {
+                                    "tagName": "p",
+                                    "attributes": {
+                                      "class": "v-fontSize-responsive--xxs v-textShadow-2",
+                                      "style": "line-height: 1.3;"
+                                    },
+                                    "children": [
+                                      {
+                                        "tagName": "br",
+                                        "attributes": {},
+                                        "children": [],
+                                        "textContent": ""
+                                      }
+                                    ],
+                                    "textContent": ""
+                                  },
+                                  {
+                                    "tagName": "p",
+                                    "attributes": {
+                                      "class": "v-fontSize-responsive--xxs v-textShadow-2",
+                                      "style": "line-height: 1.3;"
+                                    },
+                                    "children": [
+                                      {
+                                        "tagName": "span",
+                                        "attributes": {
+                                          "style": "font-size: 1.4rem;"
+                                        },
+                                        "children": [],
+                                        "textContent": "Jack Eyers, Kelly Knox, Rebekah Marine, Shaholly Ayers, Stefanie Reid trabajan de modelos en el mundo de la moda y la publicidad; pero tienen algo en común, discapacidad."
+                                      },
+                                      {
+                                        "tagName": "br",
+                                        "attributes": {},
+                                        "children": [],
+                                        "textContent": ""
+                                      },
+                                      {
+                                        "tagName": "br",
+                                        "attributes": {},
+                                        "children": [],
+                                        "textContent": ""
+                                      },
+                                      {
+                                        "tagName": "span",
+                                        "attributes": {
+                                          "style": "font-size: 1.4rem;"
+                                        },
+                                        "children": [],
+                                        "textContent": "Producida y dirigida por Adam Finch"
+                                      },
+                                      {
+                                        "tagName": "br",
+                                        "attributes": {},
+                                        "children": [],
+                                        "textContent": ""
+                                      },
+                                      {
+                                        "tagName": "span",
+                                        "attributes": {
+                                          "style": "font-size: 1.4rem;"
+                                        },
+                                        "children": [],
+                                        "textContent": "Modelos: Jack Eyers, Kelly Knox, Rebekah Marine, Shaholly Ayers, Stefanie Reid"
+                                      },
+                                      {
+                                        "tagName": "br",
+                                        "attributes": {},
+                                        "children": [],
+                                        "textContent": ""
+                                      },
+                                      {
+                                        "tagName": "span",
+                                        "attributes": {
+                                          "style": "font-size: 1.4rem;"
+                                        },
+                                        "children": [],
+                                        "textContent": "Colaboradores: Jo Swinson, Michelle Dowdall, Mik Scarlet, Sally Williams"
+                                      },
+                                      {
+                                        "tagName": "br",
+                                        "attributes": {},
+                                        "children": [],
+                                        "textContent": ""
+                                      },
+                                      {
+                                        "tagName": "span",
+                                        "attributes": {
+                                          "style": "font-size: 1.4rem;"
+                                        },
+                                        "children": [],
+                                        "textContent": "Música: 'She Moves' y 'Sacrifice' de Mik Scarlet"
+                                      },
+                                      {
+                                        "tagName": "br",
+                                        "attributes": {},
+                                        "children": [],
+                                        "textContent": ""
+                                      }
+                                    ],
+                                    "textContent": ""
+                                  },
+                                  {
+                                    "tagName": "p",
+                                    "attributes": {
+                                      "class": "v-fontSize-responsive--xxs v-textShadow-2",
+                                      "style": "line-height: 1.3;"
+                                    },
+                                    "children": [
+                                      {
+                                        "tagName": "br",
+                                        "attributes": {},
+                                        "children": [],
+                                        "textContent": ""
+                                      },
+                                      {
+                                        "tagName": "span",
+                                        "attributes": {
+                                          "style": "color: rgb(251, 235, 1); font-size: 1.4rem;"
+                                        },
+                                        "children": [],
+                                        "textContent": "Audio:"
+                                      },
+                                      {
+                                        "tagName": "span",
+                                        "attributes": {
+                                          "style": "font-size: 1.4rem;"
+                                        },
+                                        "children": [],
+                                        "textContent": "Inglés"
+                                      }
+                                    ],
+                                    "textContent": ""
+                                  },
+                                  {
+                                    "tagName": "p",
+                                    "attributes": {
+                                      "class": "v-fontSize-responsive--xxs v-textShadow-2",
+                                      "style": "line-height: 1.3;"
+                                    },
+                                    "children": [
+                                      {
+                                        "tagName": "span",
+                                        "attributes": {
+                                          "style": "color: rgb(251, 235, 1); font-size: 1.4rem;"
+                                        },
+                                        "children": [],
+                                        "textContent": "Subtítulos:"
+                                      },
+                                      {
+                                        "tagName": "span",
+                                        "attributes": {
+                                          "style": "font-size: 1.4rem;"
+                                        },
+                                        "children": [],
+                                        "textContent": "Español"
+                                      }
+                                    ],
+                                    "textContent": ""
+                                  }
+                                ],
+                                "textContent": ""
+                              }
+                            ],
+                            "textContent": ""
+                          }
+                        ],
+                        "textContent": ""
+                      },
+                      {
+                        "tagName": "div",
+                        "attributes": {
+                          "class": "flex-container flex-container--nowrap flex-container--center"
+                        },
+                        "children": [
+                          {
+                            "tagName": "div",
+                            "attributes": {
+                              "class": "flex-column flex-column--16"
+                            },
+                            "children": [
+                              {
+                                "tagName": "div",
+                                "attributes": {
+                                  "class": "neo-element v-textCenter plugin-Anchor",
+                                  "id": "c-llr4zb9cJfYY"
+                                },
+                                "children": [
+                                  {
+                                    "tagName": "a",
+                                    "attributes": {
+                                      "class": "v-rounded",
+                                      "style": "border-color: rgb(251, 235, 1); border-style: solid; background-color: rgba(0, 0, 0, 0);"
+                                    },
+                                    "children": [],
+                                    "textContent": "4"
+                                  }
+                                ],
+                                "textContent": ""
+                              }
+                            ],
+                            "textContent": ""
+                          },
+                          {
+                            "tagName": "div",
+                            "attributes": {
+                              "class": "flex-column flex-column--16"
+                            },
+                            "children": [
+                              {
+                                "tagName": "div",
+                                "attributes": {
+                                  "class": "neo-element v-textCenter plugin-Anchor",
+                                  "id": "c-llr4zb9csc4K"
+                                },
+                                "children": [
+                                  {
+                                    "tagName": "a",
+                                    "attributes": {
+                                      "class": "v-rounded v-anchorAnimate",
+                                      "style": "border-color: rgb(255, 130, 3); border-style: solid; background-color: rgb(255, 130, 3);",
+                                      "href": "/documentales-4"
+                                    },
+                                    "children": [],
+                                    "textContent": "3"
+                                  }
+                                ],
+                                "textContent": ""
+                              }
+                            ],
+                            "textContent": ""
+                          },
+                          {
+                            "tagName": "div",
+                            "attributes": {
+                              "class": "flex-column flex-column--16"
+                            },
+                            "children": [
+                              {
+                                "tagName": "div",
+                                "attributes": {
+                                  "class": "neo-element v-textCenter plugin-Anchor",
+                                  "id": "c-llr4zb9cHWsY"
+                                },
+                                "children": [
+                                  {
+                                    "tagName": "a",
+                                    "attributes": {
+                                      "class": "v-rounded v-anchorAnimate",
+                                      "style": "border-color: rgb(255, 130, 3); border-style: solid; background-color: rgb(255, 130, 3);",
+                                      "href": "/documentales-3"
+                                    },
+                                    "children": [],
+                                    "textContent": "2"
+                                  }
+                                ],
+                                "textContent": ""
+                              }
+                            ],
+                            "textContent": ""
+                          },
+                          {
+                            "tagName": "div",
+                            "attributes": {
+                              "class": "flex-column flex-column--16"
+                            },
+                            "children": [
+                              {
+                                "tagName": "div",
+                                "attributes": {
+                                  "class": "neo-element v-textCenter plugin-Anchor",
+                                  "id": "c-llr4zb9cwhRO"
+                                },
+                                "children": [
+                                  {
+                                    "tagName": "a",
+                                    "attributes": {
+                                      "class": "v-rounded",
+                                      "style": "border-color: rgb(255, 130, 3); border-style: solid; background-color: rgb(255, 130, 3);"
+                                    },
+                                    "children": [],
+                                    "textContent": "1"
+                                  }
+                                ],
+                                "textContent": ""
+                              }
+                            ],
+                            "textContent": ""
+                          }
+                        ],
+                        "textContent": ""
+                      }
+                    ],
+                    "textContent": ""
+                  }
+                ],
+                "textContent": ""
+              },
+              {
+                "tagName": "script",
+                "attributes": {
+                  "type": "text/javascript"
+                },
+                "children": [],
+                "textContent": "<!--\ndocument.write('<'+'img style=\"position:fixed;\" src=\"//scorecard.wspisp.net/logger.php'+'?tag=dW5waWQ6d24uaHAuMzQ2NzYwNDg2O25ldHNvbGhvc3Rpbmc%3D&ref='+document.referrer+'&x='+Math.random()+'\" '+'width=\"1\" height=\"1\" alt=\"\" '+'>');\n//-->"
+              },
+              {
+                "tagName": "noscript",
+                "attributes": {},
+                "children": [],
+                "textContent": "<img style=\"position:fixed;\" src=\"//scorecard.wspisp.net/logger.php?tag=dW5waWQ6d24uaHAuMzQ2NzYwNDg2O25ldHNvbGhvc3Rpbmc%3D\" width=\"1\" height=\"1\" alt=\"\">"
+              }
+            ],
+            "textContent": ""
+          },
+          {
+            "tagName": "div",
+            "attributes": {
+              "class": "neo-footer-block-1"
+            },
+            "children": [
+              {
+                "tagName": "footer",
+                "attributes": {
+                  "class": "plugin-Footer neo-footer plugin-Section u-bgColorDark",
+                  "id": "c-jxtj71geYKFQ"
+                },
+                "children": [
+                  {
+                    "tagName": "div",
+                    "attributes": {
+                      "class": "flex-container flex-container--space-around plugin-Footer-container"
+                    },
+                    "children": [
+                      {
+                        "tagName": "div",
+                        "attributes": {
+                          "class": "flex-column flex-column--25 plugin-Footer-column v-overflowHidden"
+                        },
+                        "children": [
+                          {
+                            "tagName": "div",
+                            "attributes": {
+                              "class": "plugin-Logo plugin-Logo--footer neo-logo v-expandHeight js-footerLogoEl neo-element v-textCenter",
+                              "id": "c-jxtj71gjbhys"
+                            },
+                            "children": [
+                              {
+                                "tagName": "a",
+                                "attributes": {
+                                  "class": "plugin-Logo-link",
+                                  "href": "/"
+                                },
+                                "children": [
+                                  {
+                                    "tagName": "img",
+                                    "attributes": {
+                                      "class": "plugin-Logo-image plugin-Logo-image--footer",
+                                      "alt": "Logo",
+                                      "src": "/files/discaptvweb2-3-2.jpg",
+                                      "data-token-alt": "{company-name} Logo",
+                                      "data-token-src": "{company-logo}",
+                                      "style": "height: 90%;"
+                                    },
+                                    "children": [],
+                                    "textContent": ""
+                                  },
+                                  {
+                                    "tagName": "p",
+                                    "attributes": {
+                                      "class": "plugin-Logo-text v-fontSize-responsive--xs",
+                                      "data-token-text": "{company-name}"
+                                    },
+                                    "children": [],
+                                    "textContent": "¡Hola  Mundo!"
+                                  }
+                                ],
+                                "textContent": ""
+                              }
+                            ],
+                            "textContent": ""
+                          }
+                        ],
+                        "textContent": ""
+                      },
+                      {
+                        "tagName": "div",
+                        "attributes": {
+                          "class": "flex-column flex-column--25 plugin-Footer-column PageBusinessHoursColumn"
+                        },
+                        "children": [
+                          {
+                            "tagName": "div",
+                            "attributes": {
+                              "class": "PageBusinessHours js-footerBusinessHoursEl v-expandHeight v-textCenter neo-element plugin-Text",
+                              "id": "c-jxtj71gkgFKj"
+                            },
+                            "children": [
+                              {
+                                "tagName": "h1",
+                                "attributes": {
+                                  "class": "section__title v-fontSize-responsive--xxs"
+                                },
+                                "children": [
+                                  {
+                                    "tagName": "span",
+                                    "attributes": {
+                                      "style": "font-weight: normal;"
+                                    },
+                                    "children": [
+                                      {
+                                        "tagName": "span",
+                                        "attributes": {
+                                          "style": "font-family: \"Open Sans\"; font-size: 1rem;"
+                                        },
+                                        "children": [],
+                                        "textContent": "Copyright"
+                                      },
+                                      {
+                                        "tagName": "span",
+                                        "attributes": {
+                                          "style": "font-family: Lato;"
+                                        },
+                                        "children": [
+                                          {
+                                            "tagName": "span",
+                                            "attributes": {
+                                              "style": "font-size: 1rem; font-family: \"Open Sans\";"
+                                            },
+                                            "children": [],
+                                            "textContent": "© 2006 - 2025 Discapacidad Televisión - All Rights Reserved"
+                                          }
+                                        ],
+                                        "textContent": ""
+                                      }
+                                    ],
+                                    "textContent": ""
+                                  }
+                                ],
+                                "textContent": ""
+                              },
+                              {
+                                "tagName": "h1",
+                                "attributes": {
+                                  "class": "section__title v-fontSize-responsive--xxs"
+                                },
+                                "children": [
+                                  {
+                                    "tagName": "span",
+                                    "attributes": {
+                                      "style": "font-weight: normal;"
+                                    },
+                                    "children": [
+                                      {
+                                        "tagName": "span",
+                                        "attributes": {
+                                          "style": "font-family: Lato;"
+                                        },
+                                        "children": [
+                                          {
+                                            "tagName": "span",
+                                            "attributes": {
+                                              "style": "font-size: 12px;"
+                                            },
+                                            "children": [
+                                              {
+                                                "tagName": "a",
+                                                "attributes": {
+                                                  "href": "/terminos",
+                                                  "style": ""
+                                                },
+                                                "children": [
+                                                  {
+                                                    "tagName": "span",
+                                                    "attributes": {
+                                                      "style": "font-size: 0.8rem; text-transform: uppercase; font-family: \"Open Sans\";"
+                                                    },
+                                                    "children": [],
+                                                    "textContent": "Términos y condiciones de uso"
+                                                  }
+                                                ],
+                                                "textContent": ""
+                                              }
+                                            ],
+                                            "textContent": ""
+                                          }
+                                        ],
+                                        "textContent": ""
+                                      }
+                                    ],
+                                    "textContent": ""
+                                  }
+                                ],
+                                "textContent": ""
+                              }
+                            ],
+                            "textContent": ""
+                          }
+                        ],
+                        "textContent": ""
+                      },
+                      {
+                        "tagName": "div",
+                        "attributes": {
+                          "class": "flex-column flex-column--25 plugin-Footer-column"
+                        },
+                        "children": [
+                          {
+                            "tagName": "div",
+                            "attributes": {
+                              "class": "plugin-Social v-expandHeight v-textCenter js-footerSocialEl neo-element",
+                              "id": "c-jxtj71gnJHgi"
+                            },
+                            "children": [
+                              {
+                                "tagName": "div",
+                                "attributes": {
+                                  "class": "plugin-Social-iconContainer"
+                                },
+                                "children": [
+                                  {
+                                    "tagName": "a",
+                                    "attributes": {
+                                      "rel": "nofollow",
+                                      "class": "plugin-Social-link",
+                                      "target": "_blank",
+                                      "title": "Facebook",
+                                      "aria-label": "Facebook Social Link",
+                                      "data-token-href": "{facebook-social-link}",
+                                      "href": "https://www.facebook.com/discapacidadtelevision/"
+                                    },
+                                    "children": [
+                                      {
+                                        "tagName": "img",
+                                        "attributes": {
+                                          "class": "plugin-Social-icon",
+                                          "alt": "Facebook",
+                                          "src": "https://cdn.create.web.com/global/neo-base/1.0/img/facebook.svg",
+                                          "style": "height: 30px; width: 30px;"
+                                        },
+                                        "children": [],
+                                        "textContent": ""
+                                      }
+                                    ],
+                                    "textContent": ""
+                                  },
+                                  {
+                                    "tagName": "a",
+                                    "attributes": {
+                                      "rel": "nofollow",
+                                      "class": "plugin-Social-link",
+                                      "target": "_blank",
+                                      "title": "Twitter",
+                                      "aria-label": "Twitter Social Link",
+                                      "data-token-href": "{twitter-social-link}",
+                                      "href": "https://twitter.com/DiscapacidadTv"
+                                    },
+                                    "children": [
+                                      {
+                                        "tagName": "img",
+                                        "attributes": {
+                                          "class": "plugin-Social-icon",
+                                          "alt": "Twitter",
+                                          "src": "https://cdn.create.web.com/global/neo-base/1.0/img/twitter.svg",
+                                          "style": "height: 30px; width: 30px;"
+                                        },
+                                        "children": [],
+                                        "textContent": ""
+                                      }
+                                    ],
+                                    "textContent": ""
+                                  },
+                                  {
+                                    "tagName": "a",
+                                    "attributes": {
+                                      "rel": "nofollow",
+                                      "class": "plugin-Social-link",
+                                      "target": "_blank",
+                                      "title": "Instagram",
+                                      "aria-label": "Instagram Social Link",
+                                      "data-token-href": "{instagram-social-link}",
+                                      "href": "https://www.instagram.com/discapacidadtv/"
+                                    },
+                                    "children": [
+                                      {
+                                        "tagName": "img",
+                                        "attributes": {
+                                          "class": "plugin-Social-icon",
+                                          "alt": "Instagram",
+                                          "src": "https://cdn.create.web.com/global/neo-base/1.0/img/instagram.svg",
+                                          "style": "height: 30px; width: 30px;"
+                                        },
+                                        "children": [],
+                                        "textContent": ""
+                                      }
+                                    ],
+                                    "textContent": ""
+                                  },
+                                  {
+                                    "tagName": "a",
+                                    "attributes": {
+                                      "rel": "nofollow",
+                                      "class": "plugin-Social-link",
+                                      "target": "_blank",
+                                      "title": "YouTube",
+                                      "aria-label": "YouTube",
+                                      "data-token-href": "{youtube-social-link}",
+                                      "href": "https://www.youtube.com/@discapacidadtv"
+                                    },
+                                    "children": [
+                                      {
+                                        "tagName": "img",
+                                        "attributes": {
+                                          "class": "plugin-Social-icon",
+                                          "alt": "YouTube",
+                                          "src": "https://cdn.create.web.com/global/neo-base/1.0/img/youtube.svg",
+                                          "style": "height: 30px; width: 30px;"
+                                        },
+                                        "children": [],
+                                        "textContent": ""
+                                      }
+                                    ],
+                                    "textContent": ""
+                                  }
+                                ],
+                                "textContent": ""
+                              }
+                            ],
+                            "textContent": ""
+                          }
+                        ],
+                        "textContent": ""
+                      }
+                    ],
+                    "textContent": ""
+                  }
+                ],
+                "textContent": ""
+              }
+            ],
+            "textContent": ""
+          },
+          {
+            "tagName": "script",
+            "attributes": {
+              "src": "https://cdn.create.web.com/libs/jquery/3.4.1/jquery.min.js"
+            },
+            "children": [],
+            "textContent": ""
+          },
+          {
+            "tagName": "script",
+            "attributes": {
+              "id": "neo-base-js",
+              "src": "https://cdn.create.web.com/global/neo-base/1.0/neo-base.min.js?c7639c"
+            },
+            "children": [],
+            "textContent": ""
+          },
+          {
+            "tagName": "script",
+            "attributes": {
+              "type": "text/javascript"
+            },
+            "children": [],
+            "textContent": "var sc_project=4211873; \nvar sc_invisible=1; \nvar sc_security=\"a11ca4f7\";"
+          },
+          {
+            "tagName": "script",
+            "attributes": {
+              "type": "text/javascript",
+              "src": "https://www.statcounter.com/counter/counter.js",
+              "async": ""
+            },
+            "children": [],
+            "textContent": ""
+          },
+          {
+            "tagName": "noscript",
+            "attributes": {},
+            "children": [],
+            "textContent": "<div class=\"statcounter\"><a title=\"Web Analytics\nMade Easy - StatCounter\" href=\"https://statcounter.com/\"\ntarget=\"_blank\"><img class=\"statcounter\"\nsrc=\"https://c.statcounter.com/4211873/0/a11ca4f7/1/\"\nalt=\"Web Analytics Made Easy -\nStatCounter\"></a></div>"
+          }
+        ],
+        "textContent": ""
+      }
+    ],
+    "textContent": ""
+  },
+  "styles": {
+    "links": [
+      "https://www.discapacidad.tv/files/extra/global/neo-base/1.0/neo-base.min.css?695037",
+      "https://www.discapacidad.tv/files/extra/themes/basic/styles/theme.css?765948",
+      "https://fonts.googleapis.com/css?family=Abril+Fatface%7CActor%7CAlegreya+Sans:400,700%7CAlegreya:400,700%7CAmatic+SC:400,700%7CArchitects+Daughter%7CArchivo+Narrow:400,700%7CArvo:400,700%7CBangers%7CBerkshire+Swash%7CBevan%7CCardo:400,700%7CCarter+One%7CCinzel:400,700%7CComing+Soon%7CDancing+Script:400,700%7CDosis%7CDroid+Sans:400,700%7CDroid+Serif:400,700%7CEB+Garamond:400,700%7CEczar:400,700%7CGravitas+One%7CHind:400,700%7CIstok+Web:400,700%7CItaliana%7CJosefin+Sans:400,700%7CJosefin+Slab:400,700%7CKaushan+Script%7CLato:400,700%7CLobster+Two:400,700%7CLora:400,700%7CLove+Ya+Like+A+Sister%7CLusitana:400,700%7CMerriweather+Sans:400,700%7CMerriweather:400,700%7CMontserrat:400,700%7CMuli:400,700%7COld+Standard+TT:400,700%7COpen+Sans:400,700%7COswald:400,700%7COverlock+SC%7CPT+Sans:400,700%7CPT+Serif:400,700%7CPacifico%7CPatua+One%7CPermanent+Marker%7CPlayfair+Display:400,700%7CRaleway:400,700%7CRoboto+Slab:400,700%7CRoboto:400,700%7CRoboto+Mono:400,700%7CRubik:400,700%7CShadows+Into+Light%7CStalemate%7CTangerine:400,700%7CUbuntu:400,700%7CUnifrakturCook:700%7CVollkorn:400,700%7CExo:400,600%7CSource+Sans+Pro:400,600%7CJulius+Sans+One:400%7CMonda:400,700%7CCopse",
+      "https://cdn.create.web.com/global/font-nexus/nx-font.min.css"
+    ],
+    "inline": [
+      ".theme.basic  { --header-height: 240px; --header-height-collapsed: 90px; --welcome-margin-top: 240px; --nav-height: 60px; --banner-solid-bg: #0a3374; --banner-solid-class: u-bgColorDark; --nav-solid-bg: #0a3374; --nav-solid-bg-2: var(--nav-solid-bg); --nav-solid-class: u-bgColorDark; --header-solid-bg: #08295e; --header-solid-class: u-bgColorDark }\n.theme.basic .plugin-Footer { background-color: rgba(10, 51, 116, 1) }\n.theme.basic #c-k3c5dor09rk3>a:hover { background-color: rgba(251, 46, 43, 0.5) !important; color: rgba(255, 255, 255, 1) !important; border-color: rgba(251, 46, 43, 1) !important }\n.theme.basic .plugin-Footer .plugin-Logo-text { font-size: 2.5rem; font-family: Kaushan Script; color: rgba(255, 225, 30, 1) !important; fill: rgba(255, 225, 30, 1) !important }\n.theme.basic #c-kdpfg8utmUNV>a:hover { background-color: rgba(4, 4, 4, 1) !important; color: rgba(255, 0, 197, 1) !important; border-color: rgba(0, 0, 0, 0) !important }\n.theme.basic #c-kdpfgyui7V3P>a:hover { background-color: rgba(4, 4, 4, 1) !important; color: rgba(187, 0, 255, 1) !important; border-color: rgba(0, 0, 0, 0) !important }\n.theme.basic #c-kdpfily7Ui3r>a:hover { background-color: rgba(4, 4, 4, 1) !important; color: rgba(0, 243, 255, 1) !important; border-color: rgba(0, 0, 0, 0) !important }\n.theme.basic #c-kdpfjbtsQBhr>a:hover { background-color: rgba(4, 4, 4, 1) !important; color: rgba(125, 255, 0, 1) !important; border-color: rgba(0, 0, 0, 0) !important }\n.theme.basic #c-kdpfk4nkNX4M>a:hover { background-color: rgba(4, 4, 4, 1) !important; color: rgba(255, 235, 60, 1) !important; border-color: rgba(0, 0, 0, 0) !important }\n.theme.basic #c-kdpflel7IzUG>a:hover { background-color: rgba(4, 4, 4, 1) !important; color: rgba(255, 130, 3, 1) !important; border-color: rgba(0, 0, 0, 0) !important }\n.theme.basic #c-kdpfm985Xv8r>a:hover { background-color: rgba(4, 4, 4, 1) !important; color: rgba(251, 46, 43, 1) !important; border-color: rgba(0, 0, 0, 0) !important }\n.theme.basic .plugin-Footer .plugin-Contacts-email { font-size: 1.0rem; color: rgba(255, 255, 255, 1) !important; fill: rgba(255, 255, 255, 1) !important }\n.theme.basic .plugin-Footer .plugin-Contacts-phone { font-size: 1.0rem; color: rgba(255, 255, 255, 1) !important; fill: rgba(255, 255, 255, 1) !important }\n.theme.basic .plugin-Footer .plugin-Contacts-phone-alt { font-size: 1.0rem; color: rgba(255, 255, 255, 1) !important; fill: rgba(255, 255, 255, 1) !important }\n.theme.basic .plugin-Footer .plugin-Contacts-address { font-size: 1.0rem; color: rgba(255, 255, 255, 1) !important; fill: rgba(255, 255, 255, 1) !important }\n.theme.basic .plugin-Header .plugin-Header-top { background-color: rgba(8, 41, 94, 1) }\n.theme.basic .plugin-Header .plugin-Navigation-list { background-color: rgb(10, 51, 116) }\n.theme.basic #c-l51h2485nYTU>a:hover { color: rgba(251, 46, 43, 1) !important; background-color: rgba(255, 255, 255, 1) !important; border-color: rgba(251, 46, 43, 1) !important }\n.theme.basic .plugin-Header .plugin-Navigation-list .plugin-Navigation-link::before { background-color: rgba(255, 225, 30, 1) }\n.theme.basic .plugin-Header .plugin-Logo-text { font-size: 2.5rem; font-family: Kaushan Script; color: rgba(255, 225, 30, 1) !important; fill: rgba(255, 225, 30, 1) !important }\n.theme.basic .plugin-Header .plugin-Navigation-list .plugin-Navigation-link { color: rgba(255, 225, 30, 1) }"
+    ]
+  },
+  "scripts": {
+    "links": [
+      "https://cdn.create.web.com/libs/jquery/3.4.1/jquery.min.js",
+      "https://cdn.create.web.com/global/neo-base/1.0/neo-base.min.js?c7639c",
+      "https://www.statcounter.com/counter/counter.js"
+    ],
+    "inline": [
+      "//Nexus Build Date:2020-09-16 10:54:34 AM EST\n//Nexus Version:f5219c13dab0ea437ab4cecc40555b74a268a20c\nvar neo = {\ncdnUrl: 'https://cdn.create.web.com',\ngatewayUrl: 'https://services.create.web.com/gateway',\nmode: 'PUBLISH',\nversion: '5.0.3',\npublishDate: '2025/03/10 12:48:41'\n}",
+      "<!--\ndocument.write('<'+'img style=\"position:fixed;\" src=\"//scorecard.wspisp.net/logger.php'+'?tag=dW5waWQ6d24uaHAuMzQ2NzYwNDg2O25ldHNvbGhvc3Rpbmc%3D&ref='+document.referrer+'&x='+Math.random()+'\" '+'width=\"1\" height=\"1\" alt=\"\" '+'>');\n//-->",
+      "var sc_project=4211873; \nvar sc_invisible=1; \nvar sc_security=\"a11ca4f7\";"
+    ]
+  }
+}

@@ -1,0 +1,3148 @@
+{
+  "url": "https://www.discapacidad.tv/patrocinadores/",
+  "structure": {
+    "tagName": "html",
+    "attributes": {
+      "lang": "en"
+    },
+    "children": [
+      {
+        "tagName": "head",
+        "attributes": {},
+        "children": [
+          {
+            "tagName": "script",
+            "attributes": {},
+            "children": [],
+            "textContent": "//Nexus Build Date:2020-09-16 10:54:34 AM EST\n//Nexus Version:f5219c13dab0ea437ab4cecc40555b74a268a20c\nvar neo = {\ncdnUrl: 'https://cdn.create.web.com',\ngatewayUrl: 'https://services.create.web.com/gateway',\nmode: 'PUBLISH',\nversion: '5.0.3',\npublishDate: '2025/03/10 12:48:41'\n}"
+          },
+          {
+            "tagName": "meta",
+            "attributes": {
+              "charset": "UTF-8"
+            },
+            "children": [],
+            "textContent": ""
+          },
+          {
+            "tagName": "title",
+            "attributes": {},
+            "children": [],
+            "textContent": "PATROCINADORES - DISCAPACIDAD TV | DISCAPACIDAD TELEVISIÓN"
+          },
+          {
+            "tagName": "meta",
+            "attributes": {
+              "name": "viewport",
+              "content": "width=device-width, initial-scale=1"
+            },
+            "children": [],
+            "textContent": ""
+          },
+          {
+            "tagName": "link",
+            "attributes": {
+              "rel": "stylesheet",
+              "id": "neo-base-css",
+              "href": "/files/extra/global/neo-base/1.0/neo-base.min.css?695037"
+            },
+            "children": [],
+            "textContent": ""
+          },
+          {
+            "tagName": "link",
+            "attributes": {
+              "rel": "stylesheet",
+              "id": "theme-css",
+              "href": "/files/extra/themes/basic/styles/theme.css?765948"
+            },
+            "children": [],
+            "textContent": ""
+          },
+          {
+            "tagName": "link",
+            "attributes": {
+              "rel": "stylesheet",
+              "id": "fonts-generic",
+              "href": "https://fonts.googleapis.com/css?family=Abril+Fatface|Actor|Alegreya+Sans:400,700|Alegreya:400,700|Amatic+SC:400,700|Architects+Daughter|Archivo+Narrow:400,700|Arvo:400,700|Bangers|Berkshire+Swash|Bevan|Cardo:400,700|Carter+One|Cinzel:400,700|Coming+Soon|Dancing+Script:400,700|Dosis|Droid+Sans:400,700|Droid+Serif:400,700|EB+Garamond:400,700|Eczar:400,700|Gravitas+One|Hind:400,700|Istok+Web:400,700|Italiana|Josefin+Sans:400,700|Josefin+Slab:400,700|Kaushan+Script|Lato:400,700|Lobster+Two:400,700|Lora:400,700|Love+Ya+Like+A+Sister|Lusitana:400,700|Merriweather+Sans:400,700|Merriweather:400,700|Montserrat:400,700|Muli:400,700|Old+Standard+TT:400,700|Open+Sans:400,700|Oswald:400,700|Overlock+SC|PT+Sans:400,700|PT+Serif:400,700|Pacifico|Patua+One|Permanent+Marker|Playfair+Display:400,700|Raleway:400,700|Roboto+Slab:400,700|Roboto:400,700|Roboto+Mono:400,700|Rubik:400,700|Shadows+Into+Light|Stalemate|Tangerine:400,700|Ubuntu:400,700|UnifrakturCook:700|Vollkorn:400,700|Exo:400,600|Source+Sans+Pro:400,600|Julius+Sans+One:400|Monda:400,700|Copse"
+            },
+            "children": [],
+            "textContent": ""
+          },
+          {
+            "tagName": "link",
+            "attributes": {
+              "rel": "stylesheet",
+              "id": "fonts-nx",
+              "href": "https://cdn.create.web.com/global/font-nexus/nx-font.min.css"
+            },
+            "children": [],
+            "textContent": ""
+          },
+          {
+            "tagName": "style",
+            "attributes": {},
+            "children": [],
+            "textContent": ".theme.basic  { --header-height: 240px; --header-height-collapsed: 90px; --welcome-margin-top: 240px; --nav-height: 60px; --banner-solid-bg: #0a3374; --banner-solid-class: u-bgColorDark; --nav-solid-bg: #0a3374; --nav-solid-bg-2: var(--nav-solid-bg); --nav-solid-class: u-bgColorDark; --header-solid-bg: #08295e; --header-solid-class: u-bgColorDark }\n.theme.basic .plugin-Footer { background-color: rgba(10, 51, 116, 1) }\n.theme.basic #c-k3c5dor09rk3>a:hover { background-color: rgba(251, 46, 43, 0.5) !important; color: rgba(255, 255, 255, 1) !important; border-color: rgba(251, 46, 43, 1) !important }\n.theme.basic .plugin-Footer .plugin-Logo-text { font-size: 2.5rem; font-family: Kaushan Script; color: rgba(255, 225, 30, 1) !important; fill: rgba(255, 225, 30, 1) !important }\n.theme.basic #c-kdpfg8utmUNV>a:hover { background-color: rgba(4, 4, 4, 1) !important; color: rgba(255, 0, 197, 1) !important; border-color: rgba(0, 0, 0, 0) !important }\n.theme.basic #c-kdpfgyui7V3P>a:hover { background-color: rgba(4, 4, 4, 1) !important; color: rgba(187, 0, 255, 1) !important; border-color: rgba(0, 0, 0, 0) !important }\n.theme.basic #c-kdpfily7Ui3r>a:hover { background-color: rgba(4, 4, 4, 1) !important; color: rgba(0, 243, 255, 1) !important; border-color: rgba(0, 0, 0, 0) !important }\n.theme.basic #c-kdpfjbtsQBhr>a:hover { background-color: rgba(4, 4, 4, 1) !important; color: rgba(125, 255, 0, 1) !important; border-color: rgba(0, 0, 0, 0) !important }\n.theme.basic #c-kdpfk4nkNX4M>a:hover { background-color: rgba(4, 4, 4, 1) !important; color: rgba(255, 235, 60, 1) !important; border-color: rgba(0, 0, 0, 0) !important }\n.theme.basic #c-kdpflel7IzUG>a:hover { background-color: rgba(4, 4, 4, 1) !important; color: rgba(255, 130, 3, 1) !important; border-color: rgba(0, 0, 0, 0) !important }\n.theme.basic #c-kdpfm985Xv8r>a:hover { background-color: rgba(4, 4, 4, 1) !important; color: rgba(251, 46, 43, 1) !important; border-color: rgba(0, 0, 0, 0) !important }\n.theme.basic .plugin-Footer .plugin-Contacts-email { font-size: 1.0rem; color: rgba(255, 255, 255, 1) !important; fill: rgba(255, 255, 255, 1) !important }\n.theme.basic .plugin-Footer .plugin-Contacts-phone { font-size: 1.0rem; color: rgba(255, 255, 255, 1) !important; fill: rgba(255, 255, 255, 1) !important }\n.theme.basic .plugin-Footer .plugin-Contacts-phone-alt { font-size: 1.0rem; color: rgba(255, 255, 255, 1) !important; fill: rgba(255, 255, 255, 1) !important }\n.theme.basic .plugin-Footer .plugin-Contacts-address { font-size: 1.0rem; color: rgba(255, 255, 255, 1) !important; fill: rgba(255, 255, 255, 1) !important }\n.theme.basic .plugin-Header .plugin-Header-top { background-color: rgba(8, 41, 94, 1) }\n.theme.basic .plugin-Header .plugin-Navigation-list { background-color: rgb(10, 51, 116) }\n.theme.basic #c-l51h2485nYTU>a:hover { color: rgba(251, 46, 43, 1) !important; background-color: rgba(255, 255, 255, 1) !important; border-color: rgba(251, 46, 43, 1) !important }\n.theme.basic .plugin-Header .plugin-Navigation-list .plugin-Navigation-link::before { background-color: rgba(255, 225, 30, 1) }\n.theme.basic .plugin-Header .plugin-Logo-text { font-size: 2.5rem; font-family: Kaushan Script; color: rgba(255, 225, 30, 1) !important; fill: rgba(255, 225, 30, 1) !important }\n.theme.basic .plugin-Header .plugin-Navigation-list .plugin-Navigation-link { color: rgba(255, 225, 30, 1) }"
+          },
+          {
+            "tagName": "meta",
+            "attributes": {
+              "property": "og:type",
+              "content": "website"
+            },
+            "children": [],
+            "textContent": ""
+          },
+          {
+            "tagName": "meta",
+            "attributes": {
+              "property": "og:title",
+              "content": "PATROCINADORES - DISCAPACIDAD TV | DISCAPACIDAD TELEVISIÓN"
+            },
+            "children": [],
+            "textContent": ""
+          },
+          {
+            "tagName": "meta",
+            "attributes": {
+              "property": "og:description",
+              "content": "Estas empresas y/o organizaciones sin fines de lucro que colaboran con Discapacidad Television"
+            },
+            "children": [],
+            "textContent": ""
+          },
+          {
+            "tagName": "meta",
+            "attributes": {
+              "property": "og:image",
+              "content": "http://FACILITO.VIDEO/files/captura-video2024-06-12-19h01m22s350-2.jpg"
+            },
+            "children": [],
+            "textContent": ""
+          },
+          {
+            "tagName": "link",
+            "attributes": {
+              "id": "favicon-link",
+              "rel": "shortcut icon",
+              "href": "/files/bugpagina-web.png"
+            },
+            "children": [],
+            "textContent": ""
+          },
+          {
+            "tagName": "meta",
+            "attributes": {
+              "name": "description",
+              "content": "Estas empresas y/o organizaciones sin fines de lucro que colaboran con Discapacidad Television"
+            },
+            "children": [],
+            "textContent": ""
+          },
+          {
+            "tagName": "meta",
+            "attributes": {
+              "name": "keywords",
+              "content": "discapacidad television, discapacidad tv, autismo, ciegos, sordos, asperger, sindrome de down, discapacidad visual, discapacidad auditiva, discapacidad intelectual, facilito tv, facilito, tu puedes tv"
+            },
+            "children": [],
+            "textContent": ""
+          },
+          {
+            "tagName": "meta",
+            "attributes": {
+              "name": "generator",
+              "content": "Web.com Website Builder"
+            },
+            "children": [],
+            "textContent": ""
+          }
+        ],
+        "textContent": ""
+      },
+      {
+        "tagName": "body",
+        "attributes": {
+          "class": "theme basic page-standard"
+        },
+        "children": [
+          {
+            "tagName": "div",
+            "attributes": {
+              "class": "neo-header-block-1"
+            },
+            "children": [
+              {
+                "tagName": "header",
+                "attributes": {
+                  "class": "plugin-Section plugin-Header plugin-Header--10 neo-header",
+                  "id": "c-jxtj71e9tYYJ",
+                  "style": ""
+                },
+                "children": [
+                  {
+                    "tagName": "div",
+                    "attributes": {
+                      "class": "plugin-Header-top u-bgColorDark"
+                    },
+                    "children": [
+                      {
+                        "tagName": "div",
+                        "attributes": {
+                          "class": "flex-container flex-container--space-between flex-container--no-margin data-row plugin-Header-banner u-bgColorDark",
+                          "style": "background-color: rgb(10, 51, 116);"
+                        },
+                        "children": [
+                          {
+                            "tagName": "div",
+                            "attributes": {
+                              "class": "flex-column flex-column--100"
+                            },
+                            "children": [
+                              {
+                                "tagName": "div",
+                                "attributes": {
+                                  "class": "plugin-TextCta plugin-Text--short neo-element",
+                                  "id": "c-l51h2484mi1S"
+                                },
+                                "children": [
+                                  {
+                                    "tagName": "p",
+                                    "attributes": {
+                                      "style": "text-align: center;"
+                                    },
+                                    "children": [
+                                      {
+                                        "tagName": "span",
+                                        "attributes": {
+                                          "style": "font-weight: bold; color: rgb(255, 255, 255); text-transform: uppercase;"
+                                        },
+                                        "children": [],
+                                        "textContent": "DISCAPACIDAD TELEVISIÓN - DISCAPACIDAD TV"
+                                      },
+                                      {
+                                        "tagName": "a",
+                                        "attributes": {
+                                          "href": "http://www.discapacidad.tv"
+                                        },
+                                        "children": [],
+                                        "textContent": ""
+                                      }
+                                    ],
+                                    "textContent": ""
+                                  }
+                                ],
+                                "textContent": ""
+                              }
+                            ],
+                            "textContent": ""
+                          }
+                        ],
+                        "textContent": ""
+                      },
+                      {
+                        "tagName": "div",
+                        "attributes": {
+                          "class": "flex-container flex-container--space-between flex-container--no-margin header-Mobile-icons v-hidden"
+                        },
+                        "children": [
+                          {
+                            "tagName": "div",
+                            "attributes": {
+                              "class": "flex-column flex-column--100 v-overflowHidden"
+                            },
+                            "children": [
+                              {
+                                "tagName": "div",
+                                "attributes": {
+                                  "class": "neo-element plugin-ContactsMobile",
+                                  "data-sync-with": ".plugin-ContactsPhone, .plugin-ContactsEmail",
+                                  "id": "c-l51h2484wcoE"
+                                },
+                                "children": [],
+                                "textContent": ""
+                              }
+                            ],
+                            "textContent": ""
+                          }
+                        ],
+                        "textContent": ""
+                      },
+                      {
+                        "tagName": "div",
+                        "attributes": {
+                          "class": "flex-container flex-container--no-margin flex-container--nowrap js-affixCollapsable plugin-Header-collapsable"
+                        },
+                        "children": [
+                          {
+                            "tagName": "div",
+                            "attributes": {
+                              "class": "flex-column v-overflowHidden LogoContainer flex-column--50"
+                            },
+                            "children": [
+                              {
+                                "tagName": "div",
+                                "attributes": {
+                                  "class": "plugin-Logo neo-logo js-headerLogoEl neo-element v-textLeft plugin-Logo--noBusinessName",
+                                  "id": "c-l51h2485reGL",
+                                  "style": ""
+                                },
+                                "children": [
+                                  {
+                                    "tagName": "a",
+                                    "attributes": {
+                                      "class": "plugin-Logo-link",
+                                      "href": "/"
+                                    },
+                                    "children": [
+                                      {
+                                        "tagName": "img",
+                                        "attributes": {
+                                          "class": "plugin-Logo-image",
+                                          "src": "/files/captura-video2024-06-12-19h01m22s350-2.jpg",
+                                          "alt": "Logo",
+                                          "data-token-src": "{company-logo}",
+                                          "style": "border-radius: 2.5% / 4.5%;height: 100%;"
+                                        },
+                                        "children": [],
+                                        "textContent": ""
+                                      }
+                                    ],
+                                    "textContent": ""
+                                  }
+                                ],
+                                "textContent": ""
+                              }
+                            ],
+                            "textContent": ""
+                          },
+                          {
+                            "tagName": "div",
+                            "attributes": {
+                              "class": "flex-column header-sideContainer v-overflowHidden flex-column--50"
+                            },
+                            "children": [
+                              {
+                                "tagName": "div",
+                                "attributes": {
+                                  "class": "plugin-Anchor plugin-Anchor--header neo-element v-textRight",
+                                  "id": "c-l51h2485nYTU",
+                                  "style": ""
+                                },
+                                "children": [
+                                  {
+                                    "tagName": "a",
+                                    "attributes": {
+                                      "class": "v-anchorAnimate v-shadow v-rounded",
+                                      "href": "/vivo-directo",
+                                      "style": "background-color: rgb(251, 46, 43); border-color: rgba(0, 0, 0, 0); border-style: solid; color: rgb(255, 255, 255);"
+                                    },
+                                    "children": [],
+                                    "textContent": "VIVO | DIRECTO | LIVE"
+                                  }
+                                ],
+                                "textContent": ""
+                              }
+                            ],
+                            "textContent": ""
+                          },
+                          {
+                            "tagName": "div",
+                            "attributes": {
+                              "class": "neo-element plugin-Paypal-cartSync v-hidden",
+                              "data-sync-with": ".plugin-Paypal-cart",
+                              "id": "c-l51h2485B87N"
+                            },
+                            "children": [],
+                            "textContent": ""
+                          },
+                          {
+                            "tagName": "button",
+                            "attributes": {
+                              "class": "ToggleMenu ToggleMenu--elastic",
+                              "type": "button",
+                              "aria-label": "Toggle Primary Menu"
+                            },
+                            "children": [
+                              {
+                                "tagName": "span",
+                                "attributes": {
+                                  "class": "ToggleMenu-box"
+                                },
+                                "children": [
+                                  {
+                                    "tagName": "span",
+                                    "attributes": {
+                                      "class": "ToggleMenu-inner"
+                                    },
+                                    "children": [],
+                                    "textContent": ""
+                                  }
+                                ],
+                                "textContent": ""
+                              }
+                            ],
+                            "textContent": ""
+                          }
+                        ],
+                        "textContent": ""
+                      }
+                    ],
+                    "textContent": ""
+                  },
+                  {
+                    "tagName": "nav",
+                    "attributes": {
+                      "class": "plugin-Header-nav"
+                    },
+                    "children": [
+                      {
+                        "tagName": "div",
+                        "attributes": {
+                          "class": "neo-element plugin-Navigation u-bgColorDark",
+                          "data-version": "2.0.0",
+                          "id": "c-l51h2485c61w"
+                        },
+                        "children": [
+                          {
+                            "tagName": "ul",
+                            "attributes": {
+                              "class": "plugin-Navigation-list neo-navigation nav-4",
+                              "style": ""
+                            },
+                            "children": [
+                              {
+                                "tagName": "li",
+                                "attributes": {
+                                  "class": "plugin-Navigation-item",
+                                  "id": "page_96226"
+                                },
+                                "children": [
+                                  {
+                                    "tagName": "a",
+                                    "attributes": {
+                                      "class": "plugin-Navigation-link",
+                                      "href": "/index.html"
+                                    },
+                                    "children": [],
+                                    "textContent": "INICIO"
+                                  }
+                                ],
+                                "textContent": ""
+                              },
+                              {
+                                "tagName": "li",
+                                "attributes": {
+                                  "class": "plugin-Navigation-item",
+                                  "id": "page_146842"
+                                },
+                                "children": [
+                                  {
+                                    "tagName": "a",
+                                    "attributes": {
+                                      "class": "plugin-Navigation-link",
+                                      "href": "/vivo-directo/"
+                                    },
+                                    "children": [],
+                                    "textContent": "VIVO | DIRECTO"
+                                  }
+                                ],
+                                "textContent": ""
+                              },
+                              {
+                                "tagName": "li",
+                                "attributes": {
+                                  "class": "plugin-Navigation-item has-subnav",
+                                  "id": "page_144010"
+                                },
+                                "children": [
+                                  {
+                                    "tagName": "a",
+                                    "attributes": {
+                                      "class": "plugin-Navigation-link",
+                                      "data-toggle": "dropdown",
+                                      "role": "button",
+                                      "aria-haspopup": "true",
+                                      "aria-expanded": "false",
+                                      "href": "/a-la-carta-on-demand/"
+                                    },
+                                    "children": [],
+                                    "textContent": "A LA CARTA | ON DEMAND"
+                                  },
+                                  {
+                                    "tagName": "ul",
+                                    "attributes": {
+                                      "class": "plugin-Navigation-listsub"
+                                    },
+                                    "children": [
+                                      {
+                                        "tagName": "li",
+                                        "attributes": {
+                                          "class": "plugin-Navigation-itemsub",
+                                          "id": "page_157074"
+                                        },
+                                        "children": [
+                                          {
+                                            "tagName": "a",
+                                            "attributes": {
+                                              "class": "plugin-Navigation-linksub",
+                                              "href": "/cemcrq/"
+                                            },
+                                            "children": [],
+                                            "textContent": "CEMCRQ"
+                                          }
+                                        ],
+                                        "textContent": ""
+                                      },
+                                      {
+                                        "tagName": "li",
+                                        "attributes": {
+                                          "class": "plugin-Navigation-itemsub",
+                                          "id": "page_162209"
+                                        },
+                                        "children": [],
+                                        "textContent": ""
+                                      },
+                                      {
+                                        "tagName": "li",
+                                        "attributes": {
+                                          "class": "plugin-Navigation-itemsub",
+                                          "id": "page_160230"
+                                        },
+                                        "children": [],
+                                        "textContent": ""
+                                      },
+                                      {
+                                        "tagName": "li",
+                                        "attributes": {
+                                          "class": "plugin-Navigation-itemsub",
+                                          "id": "page_144058"
+                                        },
+                                        "children": [
+                                          {
+                                            "tagName": "a",
+                                            "attributes": {
+                                              "class": "plugin-Navigation-linksub",
+                                              "href": "/ciudades-accesibles/"
+                                            },
+                                            "children": [],
+                                            "textContent": "CIUDADES ACCESIBLES"
+                                          }
+                                        ],
+                                        "textContent": ""
+                                      },
+                                      {
+                                        "tagName": "li",
+                                        "attributes": {
+                                          "class": "plugin-Navigation-itemsub",
+                                          "id": "page_144050"
+                                        },
+                                        "children": [
+                                          {
+                                            "tagName": "a",
+                                            "attributes": {
+                                              "class": "plugin-Navigation-linksub",
+                                              "href": "/cojo-films/"
+                                            },
+                                            "children": [],
+                                            "textContent": "COJO FILMS"
+                                          }
+                                        ],
+                                        "textContent": ""
+                                      },
+                                      {
+                                        "tagName": "li",
+                                        "attributes": {
+                                          "class": "plugin-Navigation-itemsub",
+                                          "id": "page_148477"
+                                        },
+                                        "children": [
+                                          {
+                                            "tagName": "a",
+                                            "attributes": {
+                                              "class": "plugin-Navigation-linksub",
+                                              "href": "/cortometrajes/"
+                                            },
+                                            "children": [],
+                                            "textContent": "CORTOMETRAJES"
+                                          }
+                                        ],
+                                        "textContent": ""
+                                      },
+                                      {
+                                        "tagName": "li",
+                                        "attributes": {
+                                          "class": "plugin-Navigation-itemsub",
+                                          "id": "page_144052"
+                                        },
+                                        "children": [],
+                                        "textContent": ""
+                                      },
+                                      {
+                                        "tagName": "li",
+                                        "attributes": {
+                                          "class": "plugin-Navigation-itemsub",
+                                          "id": "page_148430"
+                                        },
+                                        "children": [],
+                                        "textContent": ""
+                                      },
+                                      {
+                                        "tagName": "li",
+                                        "attributes": {
+                                          "class": "plugin-Navigation-itemsub",
+                                          "id": "page_148429"
+                                        },
+                                        "children": [],
+                                        "textContent": ""
+                                      },
+                                      {
+                                        "tagName": "li",
+                                        "attributes": {
+                                          "class": "plugin-Navigation-itemsub",
+                                          "id": "page_144055"
+                                        },
+                                        "children": [
+                                          {
+                                            "tagName": "a",
+                                            "attributes": {
+                                              "class": "plugin-Navigation-linksub",
+                                              "href": "/deportes-adaptados/"
+                                            },
+                                            "children": [],
+                                            "textContent": "DEPORTES ADAPTADOS"
+                                          }
+                                        ],
+                                        "textContent": ""
+                                      },
+                                      {
+                                        "tagName": "li",
+                                        "attributes": {
+                                          "class": "plugin-Navigation-itemsub",
+                                          "id": "page_144051"
+                                        },
+                                        "children": [
+                                          {
+                                            "tagName": "a",
+                                            "attributes": {
+                                              "class": "plugin-Navigation-linksub",
+                                              "href": "/documentales/"
+                                            },
+                                            "children": [],
+                                            "textContent": "DOCUMENTALES"
+                                          }
+                                        ],
+                                        "textContent": ""
+                                      },
+                                      {
+                                        "tagName": "li",
+                                        "attributes": {
+                                          "class": "plugin-Navigation-itemsub",
+                                          "id": "page_156393"
+                                        },
+                                        "children": [],
+                                        "textContent": ""
+                                      },
+                                      {
+                                        "tagName": "li",
+                                        "attributes": {
+                                          "class": "plugin-Navigation-itemsub",
+                                          "id": "page_144760"
+                                        },
+                                        "children": [],
+                                        "textContent": ""
+                                      },
+                                      {
+                                        "tagName": "li",
+                                        "attributes": {
+                                          "class": "plugin-Navigation-itemsub",
+                                          "id": "page_144130"
+                                        },
+                                        "children": [],
+                                        "textContent": ""
+                                      },
+                                      {
+                                        "tagName": "li",
+                                        "attributes": {
+                                          "class": "plugin-Navigation-itemsub",
+                                          "id": "page_152843"
+                                        },
+                                        "children": [
+                                          {
+                                            "tagName": "a",
+                                            "attributes": {
+                                              "class": "plugin-Navigation-linksub",
+                                              "href": "/equilibrio-feng-shui-ttc/"
+                                            },
+                                            "children": [],
+                                            "textContent": "EQUILIBRIO FENG SHUI"
+                                          }
+                                        ],
+                                        "textContent": ""
+                                      },
+                                      {
+                                        "tagName": "li",
+                                        "attributes": {
+                                          "class": "plugin-Navigation-itemsub",
+                                          "id": "page_158104"
+                                        },
+                                        "children": [
+                                          {
+                                            "tagName": "a",
+                                            "attributes": {
+                                              "class": "plugin-Navigation-linksub",
+                                              "href": "/facilito-tv/"
+                                            },
+                                            "children": [],
+                                            "textContent": "FACILITO"
+                                          }
+                                        ],
+                                        "textContent": ""
+                                      },
+                                      {
+                                        "tagName": "li",
+                                        "attributes": {
+                                          "class": "plugin-Navigation-itemsub",
+                                          "id": "page_158399"
+                                        },
+                                        "children": [
+                                          {
+                                            "tagName": "a",
+                                            "attributes": {
+                                              "class": "plugin-Navigation-linksub",
+                                              "href": "/footless-jo/"
+                                            },
+                                            "children": [],
+                                            "textContent": "FOOTLESS JO"
+                                          }
+                                        ],
+                                        "textContent": ""
+                                      },
+                                      {
+                                        "tagName": "li",
+                                        "attributes": {
+                                          "class": "plugin-Navigation-itemsub",
+                                          "id": "page_161343"
+                                        },
+                                        "children": [
+                                          {
+                                            "tagName": "a",
+                                            "attributes": {
+                                              "class": "plugin-Navigation-linksub",
+                                              "href": "/hola-hola/"
+                                            },
+                                            "children": [],
+                                            "textContent": "¡HOLA HOLA!"
+                                          }
+                                        ],
+                                        "textContent": ""
+                                      },
+                                      {
+                                        "tagName": "li",
+                                        "attributes": {
+                                          "class": "plugin-Navigation-itemsub",
+                                          "id": "page_149022"
+                                        },
+                                        "children": [
+                                          {
+                                            "tagName": "a",
+                                            "attributes": {
+                                              "class": "plugin-Navigation-linksub",
+                                              "href": "/inclusion-discapacidad/"
+                                            },
+                                            "children": [],
+                                            "textContent": "INCLUSIÓN & DISCAPACIDAD"
+                                          }
+                                        ],
+                                        "textContent": ""
+                                      },
+                                      {
+                                        "tagName": "li",
+                                        "attributes": {
+                                          "class": "plugin-Navigation-itemsub",
+                                          "id": "page_160158"
+                                        },
+                                        "children": [
+                                          {
+                                            "tagName": "a",
+                                            "attributes": {
+                                              "class": "plugin-Navigation-linksub",
+                                              "href": "/polemica-omo/"
+                                            },
+                                            "children": [],
+                                            "textContent": "POLEMICA"
+                                          }
+                                        ],
+                                        "textContent": ""
+                                      },
+                                      {
+                                        "tagName": "li",
+                                        "attributes": {
+                                          "class": "plugin-Navigation-itemsub",
+                                          "id": "page_144053"
+                                        },
+                                        "children": [
+                                          {
+                                            "tagName": "a",
+                                            "attributes": {
+                                              "class": "plugin-Navigation-linksub",
+                                              "href": "/roxana-sin-limites/"
+                                            },
+                                            "children": [],
+                                            "textContent": "ROXANA SIN LÍMITES"
+                                          }
+                                        ],
+                                        "textContent": ""
+                                      },
+                                      {
+                                        "tagName": "li",
+                                        "attributes": {
+                                          "class": "plugin-Navigation-itemsub",
+                                          "id": "page_144056"
+                                        },
+                                        "children": [
+                                          {
+                                            "tagName": "a",
+                                            "attributes": {
+                                              "class": "plugin-Navigation-linksub",
+                                              "href": "/sin-barreras/"
+                                            },
+                                            "children": [],
+                                            "textContent": "SIN BARRERAS"
+                                          }
+                                        ],
+                                        "textContent": ""
+                                      },
+                                      {
+                                        "tagName": "li",
+                                        "attributes": {
+                                          "class": "plugin-Navigation-itemsub",
+                                          "id": "page_160517"
+                                        },
+                                        "children": [],
+                                        "textContent": ""
+                                      }
+                                    ],
+                                    "textContent": ""
+                                  }
+                                ],
+                                "textContent": ""
+                              },
+                              {
+                                "tagName": "li",
+                                "attributes": {
+                                  "class": "plugin-Navigation-item",
+                                  "id": "page_144012"
+                                },
+                                "children": [
+                                  {
+                                    "tagName": "a",
+                                    "attributes": {
+                                      "class": "plugin-Navigation-link",
+                                      "href": "/noticias-hnq/"
+                                    },
+                                    "children": [],
+                                    "textContent": "NOTICIAS"
+                                  }
+                                ],
+                                "textContent": ""
+                              },
+                              {
+                                "tagName": "li",
+                                "attributes": {
+                                  "class": "plugin-Navigation-item has-subnav",
+                                  "id": "page_144014"
+                                },
+                                "children": [
+                                  {
+                                    "tagName": "a",
+                                    "attributes": {
+                                      "class": "plugin-Navigation-link",
+                                      "data-toggle": "dropdown",
+                                      "role": "button",
+                                      "aria-haspopup": "true",
+                                      "aria-expanded": "false",
+                                      "href": "/sobre-nosotros/"
+                                    },
+                                    "children": [],
+                                    "textContent": "SOBRE NOSOTROS"
+                                  },
+                                  {
+                                    "tagName": "ul",
+                                    "attributes": {
+                                      "class": "plugin-Navigation-listsub"
+                                    },
+                                    "children": [
+                                      {
+                                        "tagName": "li",
+                                        "attributes": {
+                                          "class": "plugin-Navigation-itemsub",
+                                          "id": "page_144100"
+                                        },
+                                        "children": [
+                                          {
+                                            "tagName": "a",
+                                            "attributes": {
+                                              "class": "plugin-Navigation-linksub",
+                                              "href": "/historia/"
+                                            },
+                                            "children": [],
+                                            "textContent": "HISTORIA"
+                                          }
+                                        ],
+                                        "textContent": ""
+                                      },
+                                      {
+                                        "tagName": "li",
+                                        "attributes": {
+                                          "class": "plugin-Navigation-itemsub",
+                                          "id": "page_144101"
+                                        },
+                                        "children": [
+                                          {
+                                            "tagName": "a",
+                                            "attributes": {
+                                              "class": "plugin-Navigation-linksub",
+                                              "href": "/objetivos/"
+                                            },
+                                            "children": [],
+                                            "textContent": "OBJETIVOS"
+                                          }
+                                        ],
+                                        "textContent": ""
+                                      },
+                                      {
+                                        "tagName": "li",
+                                        "attributes": {
+                                          "class": "plugin-Navigation-itemsub",
+                                          "id": "page_144015"
+                                        },
+                                        "children": [
+                                          {
+                                            "tagName": "a",
+                                            "attributes": {
+                                              "class": "plugin-Navigation-linksub",
+                                              "href": "/formacion/"
+                                            },
+                                            "children": [],
+                                            "textContent": "FORMACIÓN"
+                                          }
+                                        ],
+                                        "textContent": ""
+                                      },
+                                      {
+                                        "tagName": "li",
+                                        "attributes": {
+                                          "class": "plugin-Navigation-itemsub",
+                                          "id": "page_144037"
+                                        },
+                                        "children": [
+                                          {
+                                            "tagName": "a",
+                                            "attributes": {
+                                              "class": "plugin-Navigation-linksub",
+                                              "href": "/voluntariado-1/"
+                                            },
+                                            "children": [],
+                                            "textContent": "VOLUNTARIADO"
+                                          }
+                                        ],
+                                        "textContent": ""
+                                      },
+                                      {
+                                        "tagName": "li",
+                                        "attributes": {
+                                          "class": "plugin-Navigation-itemsub",
+                                          "id": "page_147221"
+                                        },
+                                        "children": [],
+                                        "textContent": ""
+                                      },
+                                      {
+                                        "tagName": "li",
+                                        "attributes": {
+                                          "class": "plugin-Navigation-itemsub",
+                                          "id": "page_144017"
+                                        },
+                                        "children": [
+                                          {
+                                            "tagName": "a",
+                                            "attributes": {
+                                              "class": "plugin-Navigation-linksub",
+                                              "href": "/patrocinadores/"
+                                            },
+                                            "children": [],
+                                            "textContent": "PATROCINADORES"
+                                          }
+                                        ],
+                                        "textContent": ""
+                                      },
+                                      {
+                                        "tagName": "li",
+                                        "attributes": {
+                                          "class": "plugin-Navigation-itemsub",
+                                          "id": "page_144816"
+                                        },
+                                        "children": [
+                                          {
+                                            "tagName": "a",
+                                            "attributes": {
+                                              "class": "plugin-Navigation-linksub",
+                                              "href": "/publicidad/"
+                                            },
+                                            "children": [],
+                                            "textContent": "PUBLICIDAD"
+                                          }
+                                        ],
+                                        "textContent": ""
+                                      },
+                                      {
+                                        "tagName": "li",
+                                        "attributes": {
+                                          "class": "plugin-Navigation-itemsub",
+                                          "id": "page_144109"
+                                        },
+                                        "children": [
+                                          {
+                                            "tagName": "a",
+                                            "attributes": {
+                                              "class": "plugin-Navigation-linksub",
+                                              "href": "/donaciones/"
+                                            },
+                                            "children": [],
+                                            "textContent": "DONACIONES"
+                                          }
+                                        ],
+                                        "textContent": ""
+                                      }
+                                    ],
+                                    "textContent": ""
+                                  }
+                                ],
+                                "textContent": ""
+                              },
+                              {
+                                "tagName": "li",
+                                "attributes": {
+                                  "class": "plugin-Navigation-item",
+                                  "id": "page_158309"
+                                },
+                                "children": [
+                                  {
+                                    "tagName": "a",
+                                    "attributes": {
+                                      "class": "plugin-Navigation-link",
+                                      "href": "/tienda-online/"
+                                    },
+                                    "children": [],
+                                    "textContent": "TIENDA ONLINE"
+                                  }
+                                ],
+                                "textContent": ""
+                              }
+                            ],
+                            "textContent": ""
+                          }
+                        ],
+                        "textContent": ""
+                      },
+                      {
+                        "tagName": "div",
+                        "attributes": {
+                          "class": "header-Mobile-info"
+                        },
+                        "children": [
+                          {
+                            "tagName": "div",
+                            "attributes": {
+                              "class": "neo-element plugin-TextSync js-advancedOnly v-hidden",
+                              "data-sync-with": ".plugin-Text--Hours-of-operation",
+                              "id": "c-l51h2485mvZC"
+                            },
+                            "children": [
+                              {
+                                "tagName": "p",
+                                "attributes": {
+                                  "class": "v-textShadow-2",
+                                  "style": "line-height: 1;"
+                                },
+                                "children": [
+                                  {
+                                    "tagName": "a",
+                                    "attributes": {
+                                      "href": "http://www.discapacidad.tv"
+                                    },
+                                    "children": [],
+                                    "textContent": "www.discapacidad.tv"
+                                  }
+                                ],
+                                "textContent": ""
+                              }
+                            ],
+                            "textContent": ""
+                          },
+                          {
+                            "tagName": "div",
+                            "attributes": {
+                              "class": "neo-element plugin-AnchorSync plugin-AnchorSync--header",
+                              "data-sync-with": ".plugin-Anchor--header",
+                              "id": "c-l51h2485kALn"
+                            },
+                            "children": [
+                              {
+                                "tagName": "a",
+                                "attributes": {
+                                  "class": "v-anchorAnimate v-shadow v-rounded",
+                                  "href": "/vivo-directo",
+                                  "style": "background-color: rgb(251, 46, 43); border-color: rgba(0, 0, 0, 0); border-style: solid; color: rgb(255, 255, 255);"
+                                },
+                                "children": [],
+                                "textContent": "VIVO | DIRECTO | LIVE"
+                              }
+                            ],
+                            "textContent": ""
+                          }
+                        ],
+                        "textContent": ""
+                      },
+                      {
+                        "tagName": "div",
+                        "attributes": {
+                          "class": "header-Mobile-social v-hidden"
+                        },
+                        "children": [
+                          {
+                            "tagName": "div",
+                            "attributes": {
+                              "class": "neo-element plugin-SocialSync v-hidden",
+                              "data-sync-with": ".plugin-SocialSmall",
+                              "id": "c-l51h24859N6L"
+                            },
+                            "children": [
+                              {
+                                "tagName": "div",
+                                "attributes": {
+                                  "class": "plugin-Social-iconContainer"
+                                },
+                                "children": [
+                                  {
+                                    "tagName": "a",
+                                    "attributes": {
+                                      "rel": "nofollow",
+                                      "class": "plugin-Social-link",
+                                      "target": "_blank",
+                                      "title": "Facebook",
+                                      "aria-label": "Facebook Social Link",
+                                      "data-token-href": "{facebook-social-link}",
+                                      "href": "https://www.facebook.com/discapacidadtelevision/"
+                                    },
+                                    "children": [
+                                      {
+                                        "tagName": "img",
+                                        "attributes": {
+                                          "class": "plugin-Social-icon",
+                                          "alt": "Facebook",
+                                          "src": "https://cdn.create.web.com/global/neo-base/1.0/img/facebook.svg",
+                                          "style": "height: 30px; width: 30px;"
+                                        },
+                                        "children": [],
+                                        "textContent": ""
+                                      }
+                                    ],
+                                    "textContent": ""
+                                  },
+                                  {
+                                    "tagName": "a",
+                                    "attributes": {
+                                      "rel": "nofollow",
+                                      "class": "plugin-Social-link",
+                                      "target": "_blank",
+                                      "title": "Twitter",
+                                      "aria-label": "Twitter Social Link",
+                                      "data-token-href": "{twitter-social-link}",
+                                      "href": "https://twitter.com/DiscapacidadTv"
+                                    },
+                                    "children": [
+                                      {
+                                        "tagName": "img",
+                                        "attributes": {
+                                          "class": "plugin-Social-icon",
+                                          "alt": "Twitter",
+                                          "src": "https://cdn.create.web.com/global/neo-base/1.0/img/twitter.svg",
+                                          "style": "height: 30px; width: 30px;"
+                                        },
+                                        "children": [],
+                                        "textContent": ""
+                                      }
+                                    ],
+                                    "textContent": ""
+                                  },
+                                  {
+                                    "tagName": "a",
+                                    "attributes": {
+                                      "rel": "nofollow",
+                                      "class": "plugin-Social-link",
+                                      "target": "_blank",
+                                      "title": "Instagram",
+                                      "aria-label": "Instagram Social Link",
+                                      "data-token-href": "{instagram-social-link}",
+                                      "href": "https://www.instagram.com/discapacidadtv/"
+                                    },
+                                    "children": [
+                                      {
+                                        "tagName": "img",
+                                        "attributes": {
+                                          "class": "plugin-Social-icon",
+                                          "alt": "Instagram",
+                                          "src": "https://cdn.create.web.com/global/neo-base/1.0/img/instagram.svg",
+                                          "style": "height: 30px; width: 30px;"
+                                        },
+                                        "children": [],
+                                        "textContent": ""
+                                      }
+                                    ],
+                                    "textContent": ""
+                                  },
+                                  {
+                                    "tagName": "a",
+                                    "attributes": {
+                                      "rel": "nofollow",
+                                      "class": "plugin-Social-link",
+                                      "target": "_blank",
+                                      "title": "YouTube",
+                                      "aria-label": "YouTube",
+                                      "data-token-href": "{youtube-social-link}",
+                                      "href": "https://www.youtube.com/@discapacidadtv"
+                                    },
+                                    "children": [
+                                      {
+                                        "tagName": "img",
+                                        "attributes": {
+                                          "class": "plugin-Social-icon",
+                                          "alt": "YouTube",
+                                          "src": "https://cdn.create.web.com/global/neo-base/1.0/img/youtube.svg",
+                                          "style": "height: 30px; width: 30px;"
+                                        },
+                                        "children": [],
+                                        "textContent": ""
+                                      }
+                                    ],
+                                    "textContent": ""
+                                  }
+                                ],
+                                "textContent": ""
+                              }
+                            ],
+                            "textContent": ""
+                          }
+                        ],
+                        "textContent": ""
+                      }
+                    ],
+                    "textContent": ""
+                  }
+                ],
+                "textContent": ""
+              }
+            ],
+            "textContent": ""
+          },
+          {
+            "tagName": "div",
+            "attributes": {
+              "class": "neo-page-content"
+            },
+            "children": [
+              {
+                "tagName": "section",
+                "attributes": {
+                  "class": "text-only-6 plugin-Section is-first u-bgColorDark",
+                  "id": "c-kdmbu2t0eiu1",
+                  "style": "padding-top: 5vh; padding-bottom: 5vh; background:  linear-gradient(225deg, #0276bc 0%, #062049 100%) fixed;"
+                },
+                "children": [
+                  {
+                    "tagName": "div",
+                    "attributes": {
+                      "class": "Container"
+                    },
+                    "children": [
+                      {
+                        "tagName": "div",
+                        "attributes": {
+                          "class": "flex-container flex-container--nowrap flex-container--center"
+                        },
+                        "children": [
+                          {
+                            "tagName": "div",
+                            "attributes": {
+                              "class": "flex-column flex-column--filled u-bgColorDark flex-column--dropShadowed flex-column--cornersRounded flex-column--91",
+                              "style": "background-color: rgb(11, 55, 126); border-width: 0px;"
+                            },
+                            "children": [
+                              {
+                                "tagName": "div",
+                                "attributes": {
+                                  "class": "neo-element plugin-Text",
+                                  "id": "c-kdmc48gyCkE3"
+                                },
+                                "children": [
+                                  {
+                                    "tagName": "p",
+                                    "attributes": {
+                                      "style": "text-align: center; ",
+                                      "class": "v-fontSize-responsive--xs"
+                                    },
+                                    "children": [
+                                      {
+                                        "tagName": "span",
+                                        "attributes": {
+                                          "style": "font-family: Oswald; font-size: 3rem; color: var(--secondary-color);"
+                                        },
+                                        "children": [],
+                                        "textContent": "PATROCINADORES | SPONSORED PARTNERS"
+                                      }
+                                    ],
+                                    "textContent": ""
+                                  }
+                                ],
+                                "textContent": ""
+                              }
+                            ],
+                            "textContent": ""
+                          }
+                        ],
+                        "textContent": ""
+                      },
+                      {
+                        "tagName": "div",
+                        "attributes": {
+                          "class": "flex-container flex-container--center flex-container--nowrap"
+                        },
+                        "children": [
+                          {
+                            "tagName": "div",
+                            "attributes": {
+                              "class": "flex-column flex-column--bordered flex-column--filled v-bgCustomColor2 flex-column--cornersRounded flex-column--dropShadowed u-bgColorLight flex-column--91",
+                              "style": "border-color: var(--primary-color); border-width: 3px; background-color: rgb(255, 255, 255);"
+                            },
+                            "children": [
+                              {
+                                "tagName": "div",
+                                "attributes": {
+                                  "class": "neo-element v-textCenter plugin-Image",
+                                  "id": "c-kdmc6mjxk2Sn",
+                                  "data-version": "2.0.0"
+                                },
+                                "children": [
+                                  {
+                                    "tagName": "a",
+                                    "attributes": {
+                                      "href": "https://ots7.com/otszone",
+                                      "target": "_blank",
+                                      "class": "v-anchorAnimate"
+                                    },
+                                    "children": [
+                                      {
+                                        "tagName": "img",
+                                        "attributes": {
+                                          "src": "/files/2019-08-14_17_17_03_otslabs-ghdr-logo.jpg",
+                                          "class": "",
+                                          "style": "border-radius: 0.9% / 4.5%; width: 25%;",
+                                          "title": "OTS LABS",
+                                          "alt": "CLICA AQUI PARA INGRESAR A OTS LABS"
+                                        },
+                                        "children": [],
+                                        "textContent": ""
+                                      }
+                                    ],
+                                    "textContent": ""
+                                  }
+                                ],
+                                "textContent": ""
+                              },
+                              {
+                                "tagName": "div",
+                                "attributes": {
+                                  "class": "plugin-Text neo-element",
+                                  "id": "c-kdmbu2t3hkm8"
+                                },
+                                "children": [
+                                  {
+                                    "tagName": "h4",
+                                    "attributes": {
+                                      "style": "line-height: 1;",
+                                      "class": "v-fontSize-responsive--xxs"
+                                    },
+                                    "children": [
+                                      {
+                                        "tagName": "span",
+                                        "attributes": {
+                                          "style": "color: var(--on-light-color); font-family: var(--body-font); font-size: 1rem; background-color: initial; text-transform: uppercase;"
+                                        },
+                                        "children": [],
+                                        "textContent": "Desde 2006, EN nuestros comienzos en las transmisiones EN VIVO, OTS Labs. nos ha acompañado y brindado el soporte robusto, confiable y adecuado para una excelente transmisión en vivo, como es el software OTS Broadcaster."
+                                      }
+                                    ],
+                                    "textContent": ""
+                                  }
+                                ],
+                                "textContent": ""
+                              },
+                              {
+                                "tagName": "div",
+                                "attributes": {
+                                  "class": "neo-element plugin-Text",
+                                  "id": "c-kdo0a26d1FqM"
+                                },
+                                "children": [
+                                  {
+                                    "tagName": "p",
+                                    "attributes": {
+                                      "class": "v-fontSize-responsive--xxs"
+                                    },
+                                    "children": [
+                                      {
+                                        "tagName": "span",
+                                        "attributes": {
+                                          "style": "font-size: 1rem; text-transform: uppercase; font-weight: bold; color: rgb(0, 115, 228);"
+                                        },
+                                        "children": [],
+                                        "textContent": "Since 2006 IN our beginnings in broadcasting LIVE, OTS Labs. Has accompanied us and provided the robust, reliable and adequate support for an excellent live broadcast Software, such as OTS Broadcaster."
+                                      }
+                                    ],
+                                    "textContent": ""
+                                  }
+                                ],
+                                "textContent": ""
+                              },
+                              {
+                                "tagName": "div",
+                                "attributes": {
+                                  "class": "neo-element v-textCenter plugin-Image",
+                                  "id": "c-kdmc0akpVOVG",
+                                  "data-version": "2.0.0"
+                                },
+                                "children": [
+                                  {
+                                    "tagName": "a",
+                                    "attributes": {
+                                      "href": "https://ots7.com/otszone",
+                                      "target": "_blank",
+                                      "class": "v-anchorAnimate"
+                                    },
+                                    "children": [
+                                      {
+                                        "tagName": "img",
+                                        "attributes": {
+                                          "src": "/files/2019-08-14_17_10_05_ots_discapacidad_tv.png",
+                                          "class": "",
+                                          "title": "OTS LABS",
+                                          "alt": "CLICA AQUÍ PARA ACCEDER A OTS LABS",
+                                          "style": "width: 60%;"
+                                        },
+                                        "children": [],
+                                        "textContent": ""
+                                      }
+                                    ],
+                                    "textContent": ""
+                                  }
+                                ],
+                                "textContent": ""
+                              }
+                            ],
+                            "textContent": ""
+                          }
+                        ],
+                        "textContent": ""
+                      },
+                      {
+                        "tagName": "div",
+                        "attributes": {
+                          "class": "flex-container flex-container--nowrap flex-container--center"
+                        },
+                        "children": [
+                          {
+                            "tagName": "div",
+                            "attributes": {
+                              "class": "flex-column flex-column--cornersRounded flex-column--dropShadowed flex-column--filled u-bgColorDark flex-column--91",
+                              "style": "background-color: rgb(11, 55, 126); border-width: 0px;"
+                            },
+                            "children": [
+                              {
+                                "tagName": "div",
+                                "attributes": {
+                                  "class": "neo-element plugin-Text",
+                                  "id": "c-kdmdbfthhxsh"
+                                },
+                                "children": [
+                                  {
+                                    "tagName": "p",
+                                    "attributes": {
+                                      "style": "text-align: center; ",
+                                      "class": "v-textShadow-2 v-fontSize-responsive--xs"
+                                    },
+                                    "children": [
+                                      {
+                                        "tagName": "span",
+                                        "attributes": {
+                                          "style": "font-family: Oswald; font-size: 3rem;"
+                                        },
+                                        "children": [],
+                                        "textContent": "COLABORAN CON DISCAPACIDAD TELEVISIÓN"
+                                      },
+                                      {
+                                        "tagName": "span",
+                                        "attributes": {
+                                          "style": "font-size: 2.4rem;"
+                                        },
+                                        "children": [],
+                                        "textContent": ""
+                                      }
+                                    ],
+                                    "textContent": ""
+                                  }
+                                ],
+                                "textContent": ""
+                              }
+                            ],
+                            "textContent": ""
+                          }
+                        ],
+                        "textContent": ""
+                      },
+                      {
+                        "tagName": "div",
+                        "attributes": {
+                          "class": "flex-container flex-container--nowrap flex-container--center"
+                        },
+                        "children": [
+                          {
+                            "tagName": "div",
+                            "attributes": {
+                              "class": "flex-column flex-column--filled u-bgColorLight flex-column--cornersRounded flex-column--dropShadowed flex-column--25",
+                              "style": "background-color: rgb(255, 255, 255);"
+                            },
+                            "children": [
+                              {
+                                "tagName": "div",
+                                "attributes": {
+                                  "class": "neo-element v-textCenter plugin-Image",
+                                  "id": "c-ke4k207zLo06",
+                                  "data-version": "2.0.0"
+                                },
+                                "children": [
+                                  {
+                                    "tagName": "a",
+                                    "attributes": {
+                                      "href": "https://theconversation.com/us",
+                                      "target": "_blank",
+                                      "class": "v-anchorAnimate"
+                                    },
+                                    "children": [
+                                      {
+                                        "tagName": "img",
+                                        "attributes": {
+                                          "src": "/files/tc_horizontal-eng-2.png",
+                                          "class": "",
+                                          "style": "width: 90%;",
+                                          "title": "THE CONVERSATION, CLICA PARA VISITAR EL SITIO",
+                                          "alt": ""
+                                        },
+                                        "children": [],
+                                        "textContent": ""
+                                      }
+                                    ],
+                                    "textContent": ""
+                                  }
+                                ],
+                                "textContent": ""
+                              }
+                            ],
+                            "textContent": ""
+                          },
+                          {
+                            "tagName": "div",
+                            "attributes": {
+                              "class": "flex-column flex-column--25"
+                            },
+                            "children": [
+                              {
+                                "tagName": "div",
+                                "attributes": {
+                                  "class": "neo-element v-textCenter plugin-Image",
+                                  "id": "c-keotkgb7O84b",
+                                  "data-version": "2.0.0"
+                                },
+                                "children": [
+                                  {
+                                    "tagName": "a",
+                                    "attributes": {
+                                      "href": "https://presidencia.gencat.cat/ca/inici",
+                                      "target": "_blank",
+                                      "class": "v-anchorAnimate"
+                                    },
+                                    "children": [
+                                      {
+                                        "tagName": "img",
+                                        "attributes": {
+                                          "src": "/files/logos-generalitat-2-2.png",
+                                          "class": "",
+                                          "style": "width: 90%;",
+                                          "title": "Generalitat de Catalunya - Departamento de la Presidencia",
+                                          "alt": ""
+                                        },
+                                        "children": [],
+                                        "textContent": ""
+                                      }
+                                    ],
+                                    "textContent": ""
+                                  }
+                                ],
+                                "textContent": ""
+                              }
+                            ],
+                            "textContent": ""
+                          },
+                          {
+                            "tagName": "div",
+                            "attributes": {
+                              "class": "flex-column flex-column--25"
+                            },
+                            "children": [
+                              {
+                                "tagName": "div",
+                                "attributes": {
+                                  "class": "neo-element v-textCenter plugin-Image",
+                                  "id": "c-keotonmd5yp8",
+                                  "data-version": "2.0.0"
+                                },
+                                "children": [
+                                  {
+                                    "tagName": "a",
+                                    "attributes": {
+                                      "href": "https://treballiaferssocials.gencat.cat/ca/inici",
+                                      "target": "_blank",
+                                      "class": "v-anchorAnimate"
+                                    },
+                                    "children": [
+                                      {
+                                        "tagName": "img",
+                                        "attributes": {
+                                          "src": "/files/logos-generalitat-1-2.png",
+                                          "class": "",
+                                          "style": "width: 91%;",
+                                          "title": "Generalitat de Catalunya - Departamento de Trabajo, Temas Sociales y Familia",
+                                          "alt": ""
+                                        },
+                                        "children": [],
+                                        "textContent": ""
+                                      }
+                                    ],
+                                    "textContent": ""
+                                  }
+                                ],
+                                "textContent": ""
+                              }
+                            ],
+                            "textContent": ""
+                          },
+                          {
+                            "tagName": "div",
+                            "attributes": {
+                              "class": "flex-column flex-column--filled u-bgColorLight flex-column--cornersRounded flex-column--dropShadowed flex-column--16",
+                              "style": "background-color: rgb(255, 255, 255);"
+                            },
+                            "children": [
+                              {
+                                "tagName": "div",
+                                "attributes": {
+                                  "class": "neo-element v-textCenter plugin-Image",
+                                  "id": "c-ke8zx0i4vRq2",
+                                  "data-version": "2.0.0"
+                                },
+                                "children": [
+                                  {
+                                    "tagName": "a",
+                                    "attributes": {
+                                      "href": "https://www.ted.com/",
+                                      "target": "_blank",
+                                      "class": "v-anchorAnimate"
+                                    },
+                                    "children": [
+                                      {
+                                        "tagName": "img",
+                                        "attributes": {
+                                          "src": "/files/ted-logo-fb-2.jpg",
+                                          "class": "",
+                                          "style": "width: 50%;"
+                                        },
+                                        "children": [],
+                                        "textContent": ""
+                                      }
+                                    ],
+                                    "textContent": ""
+                                  }
+                                ],
+                                "textContent": ""
+                              }
+                            ],
+                            "textContent": ""
+                          }
+                        ],
+                        "textContent": ""
+                      },
+                      {
+                        "tagName": "div",
+                        "attributes": {
+                          "class": "flex-container flex-container--nowrap flex-container--center"
+                        },
+                        "children": [
+                          {
+                            "tagName": "div",
+                            "attributes": {
+                              "class": "flex-column flex-column--16",
+                              "style": ""
+                            },
+                            "children": [
+                              {
+                                "tagName": "div",
+                                "attributes": {
+                                  "class": "neo-element v-textCenter plugin-Image",
+                                  "id": "c-kiafb649pNaA",
+                                  "data-version": "2.0.0"
+                                },
+                                "children": [
+                                  {
+                                    "tagName": "a",
+                                    "attributes": {
+                                      "href": "https://cemdpcd.org/",
+                                      "target": "_blank",
+                                      "class": "v-anchorAnimate"
+                                    },
+                                    "children": [
+                                      {
+                                        "tagName": "img",
+                                        "attributes": {
+                                          "src": "/files/horizontal-4.png",
+                                          "class": "",
+                                          "style": ""
+                                        },
+                                        "children": [],
+                                        "textContent": ""
+                                      }
+                                    ],
+                                    "textContent": ""
+                                  }
+                                ],
+                                "textContent": ""
+                              },
+                              {
+                                "tagName": "div",
+                                "attributes": {
+                                  "class": "neo-element plugin-Text",
+                                  "id": "c-kiafentsKg4E"
+                                },
+                                "children": [
+                                  {
+                                    "tagName": "p",
+                                    "attributes": {
+                                      "class": "v-fontSize-responsive--xxs",
+                                      "style": "text-align: center; line-height: 1;"
+                                    },
+                                    "children": [
+                                      {
+                                        "tagName": "span",
+                                        "attributes": {
+                                          "style": "font-weight: bold; font-size: 1rem;"
+                                        },
+                                        "children": [
+                                          {
+                                            "tagName": "br",
+                                            "attributes": {},
+                                            "children": [],
+                                            "textContent": ""
+                                          }
+                                        ],
+                                        "textContent": ""
+                                      }
+                                    ],
+                                    "textContent": ""
+                                  }
+                                ],
+                                "textContent": ""
+                              }
+                            ],
+                            "textContent": ""
+                          },
+                          {
+                            "tagName": "div",
+                            "attributes": {
+                              "class": "flex-column flex-column--16",
+                              "style": ""
+                            },
+                            "children": [
+                              {
+                                "tagName": "div",
+                                "attributes": {
+                                  "class": "neo-element v-textCenter plugin-Image",
+                                  "id": "c-kkcvoeu0wSXy",
+                                  "data-version": "2.0.0"
+                                },
+                                "children": [
+                                  {
+                                    "tagName": "a",
+                                    "attributes": {
+                                      "href": "https://www.facebook.com/bsr.puertollano",
+                                      "target": "_blank",
+                                      "class": "v-anchorAnimate"
+                                    },
+                                    "children": [
+                                      {
+                                        "tagName": "img",
+                                        "attributes": {
+                                          "src": "/files/puertollano-2.png",
+                                          "class": "",
+                                          "style": "width: 60%;",
+                                          "title": "BSR Puertollano - Club de Baloncesto Adaptado",
+                                          "alt": ""
+                                        },
+                                        "children": [],
+                                        "textContent": ""
+                                      }
+                                    ],
+                                    "textContent": ""
+                                  }
+                                ],
+                                "textContent": ""
+                              },
+                              {
+                                "tagName": "div",
+                                "attributes": {
+                                  "class": "neo-element plugin-Text",
+                                  "id": "c-kkcvoeu24h1a"
+                                },
+                                "children": [
+                                  {
+                                    "tagName": "p",
+                                    "attributes": {
+                                      "style": "text-align: center; line-height: 1;",
+                                      "class": "v-fontSize-responsive--xxs"
+                                    },
+                                    "children": [
+                                      {
+                                        "tagName": "span",
+                                        "attributes": {
+                                          "style": "font-size: 1rem; font-weight: bold;"
+                                        },
+                                        "children": [],
+                                        "textContent": "BSR PUERTOLLANO"
+                                      }
+                                    ],
+                                    "textContent": ""
+                                  }
+                                ],
+                                "textContent": ""
+                              }
+                            ],
+                            "textContent": ""
+                          },
+                          {
+                            "tagName": "div",
+                            "attributes": {
+                              "class": "flex-column flex-column--16",
+                              "style": ""
+                            },
+                            "children": [
+                              {
+                                "tagName": "div",
+                                "attributes": {
+                                  "class": "neo-element v-textCenter plugin-Image",
+                                  "id": "c-kkctlmwdqXRC",
+                                  "data-version": "2.0.0"
+                                },
+                                "children": [
+                                  {
+                                    "tagName": "a",
+                                    "attributes": {
+                                      "href": "https://unes.cat/es/",
+                                      "target": "_blank",
+                                      "class": "v-anchorAnimate"
+                                    },
+                                    "children": [
+                                      {
+                                        "tagName": "img",
+                                        "attributes": {
+                                          "src": "/files/unes.png",
+                                          "class": "",
+                                          "style": "width: 68%;",
+                                          "title": "Unes - Barça Unió Esportiva",
+                                          "alt": ""
+                                        },
+                                        "children": [],
+                                        "textContent": ""
+                                      }
+                                    ],
+                                    "textContent": ""
+                                  }
+                                ],
+                                "textContent": ""
+                              },
+                              {
+                                "tagName": "div",
+                                "attributes": {
+                                  "class": "neo-element plugin-Text",
+                                  "id": "c-kkctn7brjCZO"
+                                },
+                                "children": [
+                                  {
+                                    "tagName": "p",
+                                    "attributes": {
+                                      "style": "text-align: center; line-height: 1;",
+                                      "class": "v-fontSize-responsive--xxs"
+                                    },
+                                    "children": [
+                                      {
+                                        "tagName": "span",
+                                        "attributes": {
+                                          "style": "font-size: 1rem; font-weight: bold;"
+                                        },
+                                        "children": [],
+                                        "textContent": "UNES UNIÓ ESPORTIVA"
+                                      }
+                                    ],
+                                    "textContent": ""
+                                  }
+                                ],
+                                "textContent": ""
+                              }
+                            ],
+                            "textContent": ""
+                          },
+                          {
+                            "tagName": "div",
+                            "attributes": {
+                              "class": "flex-column flex-column--16",
+                              "style": ""
+                            },
+                            "children": [
+                              {
+                                "tagName": "div",
+                                "attributes": {
+                                  "class": "neo-element v-textCenter plugin-Image",
+                                  "id": "c-kdmc80yhx6Es",
+                                  "data-version": "2.0.0"
+                                },
+                                "children": [
+                                  {
+                                    "tagName": "a",
+                                    "attributes": {
+                                      "href": "https://www.b1b2b3.org/es/",
+                                      "target": "_blank",
+                                      "class": "v-anchorAnimate"
+                                    },
+                                    "children": [
+                                      {
+                                        "tagName": "img",
+                                        "attributes": {
+                                          "src": "/files/2019-07-07_21_46_24_b1b2b3_logo_blanco-5.png",
+                                          "class": "",
+                                          "style": "width: 63%;",
+                                          "title": "ASSOCIACIÓ DISCAPACITATS  VISUALS CATALUNYA",
+                                          "alt": "CLICA EN LA IMAGEN PARA IR A LA WEB"
+                                        },
+                                        "children": [],
+                                        "textContent": ""
+                                      }
+                                    ],
+                                    "textContent": ""
+                                  }
+                                ],
+                                "textContent": ""
+                              },
+                              {
+                                "tagName": "div",
+                                "attributes": {
+                                  "class": "neo-element plugin-Text",
+                                  "id": "c-kdrhzq6u5kCq"
+                                },
+                                "children": [
+                                  {
+                                    "tagName": "span",
+                                    "attributes": {
+                                      "style": "text-transform: uppercase"
+                                    },
+                                    "children": [
+                                      {
+                                        "tagName": "p",
+                                        "attributes": {
+                                          "style": "text-align: center; line-height: 1;",
+                                          "class": "v-fontSize-responsive--xxs v-textShadow-2"
+                                        },
+                                        "children": [
+                                          {
+                                            "tagName": "span",
+                                            "attributes": {
+                                              "style": "font-size: 1rem; font-weight: bold;"
+                                            },
+                                            "children": [],
+                                            "textContent": "Associació Discapacitats"
+                                          }
+                                        ],
+                                        "textContent": ""
+                                      },
+                                      {
+                                        "tagName": "p",
+                                        "attributes": {
+                                          "style": "text-align: center; line-height: 1;",
+                                          "class": "v-fontSize-responsive--xxs v-textShadow-2"
+                                        },
+                                        "children": [
+                                          {
+                                            "tagName": "span",
+                                            "attributes": {
+                                              "style": "font-size: 1rem; font-weight: bold;"
+                                            },
+                                            "children": [],
+                                            "textContent": "Visuals Catalunya"
+                                          }
+                                        ],
+                                        "textContent": ""
+                                      }
+                                    ],
+                                    "textContent": ""
+                                  }
+                                ],
+                                "textContent": ""
+                              }
+                            ],
+                            "textContent": ""
+                          },
+                          {
+                            "tagName": "div",
+                            "attributes": {
+                              "class": "flex-column flex-column--25",
+                              "style": ""
+                            },
+                            "children": [
+                              {
+                                "tagName": "div",
+                                "attributes": {
+                                  "class": "neo-element v-textCenter plugin-Image",
+                                  "id": "c-kdmc9sumXzzb",
+                                  "data-version": "2.0.0"
+                                },
+                                "children": [
+                                  {
+                                    "tagName": "a",
+                                    "attributes": {
+                                      "href": "https://esportadaptat.org/",
+                                      "target": "_blank",
+                                      "class": "v-anchorAnimate"
+                                    },
+                                    "children": [
+                                      {
+                                        "tagName": "img",
+                                        "attributes": {
+                                          "src": "/files/fondo-blanco-4.jpg",
+                                          "class": "",
+                                          "style": "border-radius: 3.2% / 4.5%; width: 60%;",
+                                          "title": "FEDERACIÓ CATALANA D'ESPORTS DE PERSONES AMB DISCAPACITAT FÍSICA",
+                                          "alt": "CLICA AQUI PARA ACCEDER A LA WEB DE LA FEDERACIÓN"
+                                        },
+                                        "children": [],
+                                        "textContent": ""
+                                      }
+                                    ],
+                                    "textContent": ""
+                                  }
+                                ],
+                                "textContent": ""
+                              },
+                              {
+                                "tagName": "div",
+                                "attributes": {
+                                  "class": "neo-element plugin-Text",
+                                  "id": "c-kdri4mg9a7xZ"
+                                },
+                                "children": [
+                                  {
+                                    "tagName": "p",
+                                    "attributes": {
+                                      "style": "text-align: center; line-height: 1;",
+                                      "class": "v-fontSize-responsive--xxs v-textShadow-2"
+                                    },
+                                    "children": [
+                                      {
+                                        "tagName": "span",
+                                        "attributes": {
+                                          "style": "font-size: 1rem; font-weight: bold; text-transform: uppercase;"
+                                        },
+                                        "children": [],
+                                        "textContent": "Federació Catalana d'Esports de Persones amb Discapacitat Física"
+                                      }
+                                    ],
+                                    "textContent": ""
+                                  }
+                                ],
+                                "textContent": ""
+                              }
+                            ],
+                            "textContent": ""
+                          }
+                        ],
+                        "textContent": ""
+                      },
+                      {
+                        "tagName": "div",
+                        "attributes": {
+                          "class": "flex-container flex-container--nowrap flex-container--center"
+                        },
+                        "children": [
+                          {
+                            "tagName": "div",
+                            "attributes": {
+                              "class": "flex-column flex-column--20",
+                              "style": ""
+                            },
+                            "children": [
+                              {
+                                "tagName": "div",
+                                "attributes": {
+                                  "class": "neo-element v-textCenter plugin-Image",
+                                  "id": "c-kkd5xp9tJF9H",
+                                  "data-version": "2.0.0"
+                                },
+                                "children": [
+                                  {
+                                    "tagName": "a",
+                                    "attributes": {
+                                      "href": "http://www.ecom.cat/",
+                                      "target": "_blank",
+                                      "class": "v-anchorAnimate"
+                                    },
+                                    "children": [
+                                      {
+                                        "tagName": "img",
+                                        "attributes": {
+                                          "src": "/files/logo-6-9.png",
+                                          "class": "",
+                                          "style": "width: 90%;",
+                                          "title": "Federación Ecom",
+                                          "alt": ""
+                                        },
+                                        "children": [],
+                                        "textContent": ""
+                                      }
+                                    ],
+                                    "textContent": ""
+                                  }
+                                ],
+                                "textContent": ""
+                              },
+                              {
+                                "tagName": "div",
+                                "attributes": {
+                                  "class": "neo-element plugin-Text",
+                                  "id": "c-kkd5xp9v6UP4"
+                                },
+                                "children": [
+                                  {
+                                    "tagName": "p",
+                                    "attributes": {
+                                      "class": "v-fontSize-responsive--xxs",
+                                      "style": "text-align: center; "
+                                    },
+                                    "children": [
+                                      {
+                                        "tagName": "span",
+                                        "attributes": {
+                                          "style": "font-size: 1rem;"
+                                        },
+                                        "children": [
+                                          {
+                                            "tagName": "b",
+                                            "attributes": {},
+                                            "children": [],
+                                            "textContent": "FEDERACIÓ ECOM"
+                                          }
+                                        ],
+                                        "textContent": ""
+                                      },
+                                      {
+                                        "tagName": "span",
+                                        "attributes": {
+                                          "style": "font-size: 1.2rem;"
+                                        },
+                                        "children": [],
+                                        "textContent": ""
+                                      }
+                                    ],
+                                    "textContent": ""
+                                  }
+                                ],
+                                "textContent": ""
+                              }
+                            ],
+                            "textContent": ""
+                          },
+                          {
+                            "tagName": "div",
+                            "attributes": {
+                              "class": "flex-column flex-column--16",
+                              "style": ""
+                            },
+                            "children": [
+                              {
+                                "tagName": "div",
+                                "attributes": {
+                                  "class": "neo-element v-textCenter plugin-Image",
+                                  "id": "c-kdmd6v19T5tu",
+                                  "data-version": "2.0.0"
+                                },
+                                "children": [
+                                  {
+                                    "tagName": "a",
+                                    "attributes": {
+                                      "href": "https://macclean.com.ar/",
+                                      "target": "_blank",
+                                      "class": "v-anchorAnimate"
+                                    },
+                                    "children": [
+                                      {
+                                        "tagName": "img",
+                                        "attributes": {
+                                          "src": "/files/mac-clean-9.png",
+                                          "class": "",
+                                          "style": "width: 99%;",
+                                          "title": "MAC CLEAN ARGENTINA, SERVICIOS DE LIMPIEZA",
+                                          "alt": "CLICA AQUÍ PARA CONOCER TODOS LOS SERVICIOS Y PRODUCTOS DE MAC CLEAN ARGENTINA"
+                                        },
+                                        "children": [],
+                                        "textContent": ""
+                                      }
+                                    ],
+                                    "textContent": ""
+                                  }
+                                ],
+                                "textContent": ""
+                              },
+                              {
+                                "tagName": "div",
+                                "attributes": {
+                                  "class": "neo-element plugin-Text",
+                                  "id": "c-kdrij3czWmQh"
+                                },
+                                "children": [
+                                  {
+                                    "tagName": "p",
+                                    "attributes": {
+                                      "class": "v-fontSize-responsive--xxs v-textShadow-2",
+                                      "style": "text-align: center; line-height: 1;"
+                                    },
+                                    "children": [
+                                      {
+                                        "tagName": "span",
+                                        "attributes": {
+                                          "style": "font-size: 1rem; font-weight: bold;"
+                                        },
+                                        "children": [],
+                                        "textContent": "MAC CLEAN ARGENTINA"
+                                      }
+                                    ],
+                                    "textContent": ""
+                                  }
+                                ],
+                                "textContent": ""
+                              }
+                            ],
+                            "textContent": ""
+                          },
+                          {
+                            "tagName": "div",
+                            "attributes": {
+                              "class": "flex-column flex-column--16",
+                              "style": ""
+                            },
+                            "children": [
+                              {
+                                "tagName": "div",
+                                "attributes": {
+                                  "class": "neo-element v-textCenter plugin-Image",
+                                  "id": "c-kdmd828xPWQo",
+                                  "data-version": "2.0.0"
+                                },
+                                "children": [
+                                  {
+                                    "tagName": "a",
+                                    "attributes": {
+                                      "href": "https://www.engerundio.com",
+                                      "target": "_blank",
+                                      "class": "v-anchorAnimate"
+                                    },
+                                    "children": [
+                                      {
+                                        "tagName": "img",
+                                        "attributes": {
+                                          "src": "/files/gerundio-4.png",
+                                          "class": "",
+                                          "style": "width: 85%;",
+                                          "title": "EN GERUNDIO",
+                                          "alt": "¿Escribiste un libro y querés saber cómo publicarlo? ​ Enterate acá de qué pasos dar."
+                                        },
+                                        "children": [],
+                                        "textContent": ""
+                                      }
+                                    ],
+                                    "textContent": ""
+                                  }
+                                ],
+                                "textContent": ""
+                              },
+                              {
+                                "tagName": "div",
+                                "attributes": {
+                                  "class": "neo-element plugin-Text",
+                                  "id": "c-kdril5xhNihN"
+                                },
+                                "children": [
+                                  {
+                                    "tagName": "p",
+                                    "attributes": {
+                                      "class": "v-fontSize-responsive--xxs v-textShadow-2",
+                                      "style": "text-align: center; line-height: 1;"
+                                    },
+                                    "children": [
+                                      {
+                                        "tagName": "span",
+                                        "attributes": {
+                                          "style": "font-size: 1rem; font-weight: bold;"
+                                        },
+                                        "children": [],
+                                        "textContent": "EN GERUNDIO"
+                                      }
+                                    ],
+                                    "textContent": ""
+                                  }
+                                ],
+                                "textContent": ""
+                              }
+                            ],
+                            "textContent": ""
+                          },
+                          {
+                            "tagName": "div",
+                            "attributes": {
+                              "class": "flex-column flex-column--16",
+                              "style": ""
+                            },
+                            "children": [
+                              {
+                                "tagName": "div",
+                                "attributes": {
+                                  "class": "neo-element v-textCenter plugin-Image",
+                                  "id": "c-ke3cmzsaFmjg",
+                                  "data-version": "2.0.0"
+                                },
+                                "children": [
+                                  {
+                                    "tagName": "a",
+                                    "attributes": {
+                                      "href": "https://associacioapso.com/associacio-apso",
+                                      "target": "_blank",
+                                      "class": "v-anchorAnimate"
+                                    },
+                                    "children": [
+                                      {
+                                        "tagName": "img",
+                                        "attributes": {
+                                          "src": "/files/logo-2.jpg",
+                                          "class": "",
+                                          "style": "border-radius: 6.4% / 7%; width: 60%;",
+                                          "title": "ASOCIACIÓ APSO",
+                                          "alt": ""
+                                        },
+                                        "children": [],
+                                        "textContent": ""
+                                      }
+                                    ],
+                                    "textContent": ""
+                                  }
+                                ],
+                                "textContent": ""
+                              },
+                              {
+                                "tagName": "div",
+                                "attributes": {
+                                  "class": "neo-element plugin-Text",
+                                  "id": "c-ke3cp2wyklRX"
+                                },
+                                "children": [
+                                  {
+                                    "tagName": "p",
+                                    "attributes": {
+                                      "style": "text-align: center; ",
+                                      "class": "v-fontSize-responsive--xxs v-textShadow-2"
+                                    },
+                                    "children": [
+                                      {
+                                        "tagName": "span",
+                                        "attributes": {
+                                          "style": "font-size: 1rem; font-weight: bold;"
+                                        },
+                                        "children": [],
+                                        "textContent": "ASOCIACIÓ APSO"
+                                      }
+                                    ],
+                                    "textContent": ""
+                                  }
+                                ],
+                                "textContent": ""
+                              }
+                            ],
+                            "textContent": ""
+                          },
+                          {
+                            "tagName": "div",
+                            "attributes": {
+                              "class": "flex-column flex-column--16",
+                              "style": ""
+                            },
+                            "children": [
+                              {
+                                "tagName": "div",
+                                "attributes": {
+                                  "class": "neo-element v-textCenter plugin-Image",
+                                  "id": "c-kdmcwy9dgUFB",
+                                  "data-version": "2.0.0"
+                                },
+                                "children": [
+                                  {
+                                    "tagName": "a",
+                                    "attributes": {
+                                      "href": "https://www.bryansartfoundation.com/",
+                                      "target": "_blank",
+                                      "class": "v-anchorAnimate"
+                                    },
+                                    "children": [
+                                      {
+                                        "tagName": "img",
+                                        "attributes": {
+                                          "src": "/files/logotipo-bryan.png",
+                                          "class": "",
+                                          "style": "width: 65%;",
+                                          "title": "BRYAN´S ART FOUNDATION USA",
+                                          "alt": "CLICA AQUÍ PARA ACCEDER A LA WEB DE LA FUNDACIÓN"
+                                        },
+                                        "children": [],
+                                        "textContent": ""
+                                      }
+                                    ],
+                                    "textContent": ""
+                                  }
+                                ],
+                                "textContent": ""
+                              },
+                              {
+                                "tagName": "div",
+                                "attributes": {
+                                  "class": "neo-element plugin-Text",
+                                  "id": "c-kdri6z6r42cL"
+                                },
+                                "children": [
+                                  {
+                                    "tagName": "p",
+                                    "attributes": {
+                                      "style": "text-align: center; line-height: 1;",
+                                      "class": "v-fontSize-responsive--xxs v-textShadow-2"
+                                    },
+                                    "children": [
+                                      {
+                                        "tagName": "span",
+                                        "attributes": {
+                                          "style": "font-weight: bold; font-size: 1rem;"
+                                        },
+                                        "children": [],
+                                        "textContent": "BRYAN´S ART"
+                                      },
+                                      {
+                                        "tagName": "span",
+                                        "attributes": {
+                                          "style": "font-size: 1rem; font-weight: bold; color: var(--on-dark-color); font-family: var(--body-font); background-color: initial;"
+                                        },
+                                        "children": [
+                                          {
+                                            "tagName": "br",
+                                            "attributes": {},
+                                            "children": [],
+                                            "textContent": ""
+                                          }
+                                        ],
+                                        "textContent": ""
+                                      }
+                                    ],
+                                    "textContent": ""
+                                  }
+                                ],
+                                "textContent": ""
+                              }
+                            ],
+                            "textContent": ""
+                          }
+                        ],
+                        "textContent": ""
+                      },
+                      {
+                        "tagName": "div",
+                        "attributes": {
+                          "class": "flex-container flex-container--nowrap flex-container--center"
+                        },
+                        "children": [
+                          {
+                            "tagName": "div",
+                            "attributes": {
+                              "class": "flex-column flex-column--25",
+                              "style": ""
+                            },
+                            "children": [
+                              {
+                                "tagName": "div",
+                                "attributes": {
+                                  "class": "neo-element v-textCenter plugin-Image",
+                                  "id": "c-lnrpp8ffoYUN",
+                                  "data-version": "2.0.0"
+                                },
+                                "children": [
+                                  {
+                                    "tagName": "a",
+                                    "attributes": {
+                                      "href": "http://www.facilito.eu",
+                                      "target": "_blank",
+                                      "class": "v-anchorAnimate"
+                                    },
+                                    "children": [
+                                      {
+                                        "tagName": "img",
+                                        "attributes": {
+                                          "src": "/files/02_upscayl_4x_realesrgan-x4plus-anime-3.png",
+                                          "class": "",
+                                          "style": "width: 50%;",
+                                          "title": "Facilito",
+                                          "alt": ""
+                                        },
+                                        "children": [],
+                                        "textContent": ""
+                                      }
+                                    ],
+                                    "textContent": ""
+                                  }
+                                ],
+                                "textContent": ""
+                              },
+                              {
+                                "tagName": "div",
+                                "attributes": {
+                                  "class": "neo-element plugin-Text",
+                                  "id": "c-lo3audefspzM"
+                                },
+                                "children": [
+                                  {
+                                    "tagName": "p",
+                                    "attributes": {
+                                      "class": "v-fontSize-responsive--xxs",
+                                      "style": "text-align: center; "
+                                    },
+                                    "children": [
+                                      {
+                                        "tagName": "span",
+                                        "attributes": {
+                                          "style": "font-size: 1rem; font-weight: bold;"
+                                        },
+                                        "children": [],
+                                        "textContent": "FACILITO"
+                                      }
+                                    ],
+                                    "textContent": ""
+                                  }
+                                ],
+                                "textContent": ""
+                              }
+                            ],
+                            "textContent": ""
+                          },
+                          {
+                            "tagName": "div",
+                            "attributes": {
+                              "class": "flex-column flex-column--25",
+                              "style": ""
+                            },
+                            "children": [
+                              {
+                                "tagName": "div",
+                                "attributes": {
+                                  "class": "neo-element v-textCenter plugin-Image",
+                                  "id": "c-kdmczvgxZRld",
+                                  "data-version": "2.0.0"
+                                },
+                                "children": [
+                                  {
+                                    "tagName": "a",
+                                    "attributes": {
+                                      "href": "https://www.facebook.com/unlimitedmagazineusa/",
+                                      "target": "_blank",
+                                      "class": "v-anchorAnimate"
+                                    },
+                                    "children": [
+                                      {
+                                        "tagName": "img",
+                                        "attributes": {
+                                          "src": "/files/990e2bcf-a90c-4825-a259-015695625c69-3.png",
+                                          "class": "",
+                                          "style": "border-radius: 50%; width: 40%;",
+                                          "title": "UNLIMITED MAGAZINE USA",
+                                          "alt": "CLICA AQUÍ PARA ACCEDER A LA WEB DE LA REVISTA"
+                                        },
+                                        "children": [],
+                                        "textContent": ""
+                                      }
+                                    ],
+                                    "textContent": ""
+                                  }
+                                ],
+                                "textContent": ""
+                              },
+                              {
+                                "tagName": "div",
+                                "attributes": {
+                                  "class": "neo-element plugin-Text",
+                                  "id": "c-kdribhoeQXUl"
+                                },
+                                "children": [
+                                  {
+                                    "tagName": "p",
+                                    "attributes": {
+                                      "style": "text-align: center; line-height: 1;",
+                                      "class": "v-fontSize-responsive--xxs v-textShadow-2"
+                                    },
+                                    "children": [
+                                      {
+                                        "tagName": "span",
+                                        "attributes": {
+                                          "style": "font-weight: bold; font-size: 1rem;"
+                                        },
+                                        "children": [
+                                          {
+                                            "tagName": "br",
+                                            "attributes": {},
+                                            "children": [],
+                                            "textContent": ""
+                                          }
+                                        ],
+                                        "textContent": ""
+                                      }
+                                    ],
+                                    "textContent": ""
+                                  }
+                                ],
+                                "textContent": ""
+                              }
+                            ],
+                            "textContent": ""
+                          },
+                          {
+                            "tagName": "div",
+                            "attributes": {
+                              "class": "flex-column flex-column--25",
+                              "style": ""
+                            },
+                            "children": [
+                              {
+                                "tagName": "div",
+                                "attributes": {
+                                  "class": "neo-element v-textCenter plugin-Image",
+                                  "id": "c-kkcy2buyfM0e",
+                                  "data-version": "2.0.0"
+                                },
+                                "children": [
+                                  {
+                                    "tagName": "a",
+                                    "attributes": {
+                                      "href": "https://www.paralimpicos.es/",
+                                      "target": "_blank",
+                                      "class": "v-anchorAnimate"
+                                    },
+                                    "children": [
+                                      {
+                                        "tagName": "img",
+                                        "attributes": {
+                                          "src": "/files/paralimpicos-logo-6.png",
+                                          "class": "",
+                                          "title": "Paralímpicos - Comité Paralímpico Español",
+                                          "alt": "",
+                                          "style": "width: 60%;"
+                                        },
+                                        "children": [],
+                                        "textContent": ""
+                                      }
+                                    ],
+                                    "textContent": ""
+                                  }
+                                ],
+                                "textContent": ""
+                              },
+                              {
+                                "tagName": "div",
+                                "attributes": {
+                                  "class": "neo-element plugin-Text",
+                                  "id": "c-kkcy2buzBKjC"
+                                },
+                                "children": [
+                                  {
+                                    "tagName": "p",
+                                    "attributes": {
+                                      "class": "v-fontSize-responsive--xxs v-textShadow-2",
+                                      "style": "text-align: center; line-height: 1;"
+                                    },
+                                    "children": [
+                                      {
+                                        "tagName": "span",
+                                        "attributes": {
+                                          "style": "font-size: 10px; font-weight: 700;"
+                                        },
+                                        "children": [],
+                                        "textContent": "COMITÉ PARALÍMPICO ESPAÑOL"
+                                      }
+                                    ],
+                                    "textContent": ""
+                                  }
+                                ],
+                                "textContent": ""
+                              }
+                            ],
+                            "textContent": ""
+                          }
+                        ],
+                        "textContent": ""
+                      }
+                    ],
+                    "textContent": ""
+                  }
+                ],
+                "textContent": ""
+              },
+              {
+                "tagName": "script",
+                "attributes": {
+                  "type": "text/javascript"
+                },
+                "children": [],
+                "textContent": "<!--\ndocument.write('<'+'img style=\"position:fixed;\" src=\"//scorecard.wspisp.net/logger.php'+'?tag=dW5waWQ6d24uaHAuMzQ2NzYwNDg2O25ldHNvbGhvc3Rpbmc%3D&ref='+document.referrer+'&x='+Math.random()+'\" '+'width=\"1\" height=\"1\" alt=\"\" '+'>');\n//-->"
+              },
+              {
+                "tagName": "noscript",
+                "attributes": {},
+                "children": [],
+                "textContent": "<img style=\"position:fixed;\" src=\"//scorecard.wspisp.net/logger.php?tag=dW5waWQ6d24uaHAuMzQ2NzYwNDg2O25ldHNvbGhvc3Rpbmc%3D\" width=\"1\" height=\"1\" alt=\"\">"
+              }
+            ],
+            "textContent": ""
+          },
+          {
+            "tagName": "div",
+            "attributes": {
+              "class": "neo-footer-block-1"
+            },
+            "children": [
+              {
+                "tagName": "footer",
+                "attributes": {
+                  "class": "plugin-Footer neo-footer plugin-Section u-bgColorDark",
+                  "id": "c-jxtj71geYKFQ"
+                },
+                "children": [
+                  {
+                    "tagName": "div",
+                    "attributes": {
+                      "class": "flex-container flex-container--space-around plugin-Footer-container"
+                    },
+                    "children": [
+                      {
+                        "tagName": "div",
+                        "attributes": {
+                          "class": "flex-column flex-column--25 plugin-Footer-column v-overflowHidden"
+                        },
+                        "children": [
+                          {
+                            "tagName": "div",
+                            "attributes": {
+                              "class": "plugin-Logo plugin-Logo--footer neo-logo v-expandHeight js-footerLogoEl neo-element v-textCenter",
+                              "id": "c-jxtj71gjbhys"
+                            },
+                            "children": [
+                              {
+                                "tagName": "a",
+                                "attributes": {
+                                  "class": "plugin-Logo-link",
+                                  "href": "/"
+                                },
+                                "children": [
+                                  {
+                                    "tagName": "img",
+                                    "attributes": {
+                                      "class": "plugin-Logo-image plugin-Logo-image--footer",
+                                      "alt": "Logo",
+                                      "src": "/files/discaptvweb2-3-2.jpg",
+                                      "data-token-alt": "{company-name} Logo",
+                                      "data-token-src": "{company-logo}",
+                                      "style": "height: 90%;"
+                                    },
+                                    "children": [],
+                                    "textContent": ""
+                                  },
+                                  {
+                                    "tagName": "p",
+                                    "attributes": {
+                                      "class": "plugin-Logo-text v-fontSize-responsive--xs",
+                                      "data-token-text": "{company-name}"
+                                    },
+                                    "children": [],
+                                    "textContent": "¡Hola  Mundo!"
+                                  }
+                                ],
+                                "textContent": ""
+                              }
+                            ],
+                            "textContent": ""
+                          }
+                        ],
+                        "textContent": ""
+                      },
+                      {
+                        "tagName": "div",
+                        "attributes": {
+                          "class": "flex-column flex-column--25 plugin-Footer-column PageBusinessHoursColumn"
+                        },
+                        "children": [
+                          {
+                            "tagName": "div",
+                            "attributes": {
+                              "class": "PageBusinessHours js-footerBusinessHoursEl v-expandHeight v-textCenter neo-element plugin-Text",
+                              "id": "c-jxtj71gkgFKj"
+                            },
+                            "children": [
+                              {
+                                "tagName": "h1",
+                                "attributes": {
+                                  "class": "section__title v-fontSize-responsive--xxs"
+                                },
+                                "children": [
+                                  {
+                                    "tagName": "span",
+                                    "attributes": {
+                                      "style": "font-weight: normal;"
+                                    },
+                                    "children": [
+                                      {
+                                        "tagName": "span",
+                                        "attributes": {
+                                          "style": "font-family: \"Open Sans\"; font-size: 1rem;"
+                                        },
+                                        "children": [],
+                                        "textContent": "Copyright"
+                                      },
+                                      {
+                                        "tagName": "span",
+                                        "attributes": {
+                                          "style": "font-family: Lato;"
+                                        },
+                                        "children": [
+                                          {
+                                            "tagName": "span",
+                                            "attributes": {
+                                              "style": "font-size: 1rem; font-family: \"Open Sans\";"
+                                            },
+                                            "children": [],
+                                            "textContent": "© 2006 - 2025 Discapacidad Televisión - All Rights Reserved"
+                                          }
+                                        ],
+                                        "textContent": ""
+                                      }
+                                    ],
+                                    "textContent": ""
+                                  }
+                                ],
+                                "textContent": ""
+                              },
+                              {
+                                "tagName": "h1",
+                                "attributes": {
+                                  "class": "section__title v-fontSize-responsive--xxs"
+                                },
+                                "children": [
+                                  {
+                                    "tagName": "span",
+                                    "attributes": {
+                                      "style": "font-weight: normal;"
+                                    },
+                                    "children": [
+                                      {
+                                        "tagName": "span",
+                                        "attributes": {
+                                          "style": "font-family: Lato;"
+                                        },
+                                        "children": [
+                                          {
+                                            "tagName": "span",
+                                            "attributes": {
+                                              "style": "font-size: 12px;"
+                                            },
+                                            "children": [
+                                              {
+                                                "tagName": "a",
+                                                "attributes": {
+                                                  "href": "/terminos",
+                                                  "style": ""
+                                                },
+                                                "children": [
+                                                  {
+                                                    "tagName": "span",
+                                                    "attributes": {
+                                                      "style": "font-size: 0.8rem; text-transform: uppercase; font-family: \"Open Sans\";"
+                                                    },
+                                                    "children": [],
+                                                    "textContent": "Términos y condiciones de uso"
+                                                  }
+                                                ],
+                                                "textContent": ""
+                                              }
+                                            ],
+                                            "textContent": ""
+                                          }
+                                        ],
+                                        "textContent": ""
+                                      }
+                                    ],
+                                    "textContent": ""
+                                  }
+                                ],
+                                "textContent": ""
+                              }
+                            ],
+                            "textContent": ""
+                          }
+                        ],
+                        "textContent": ""
+                      },
+                      {
+                        "tagName": "div",
+                        "attributes": {
+                          "class": "flex-column flex-column--25 plugin-Footer-column"
+                        },
+                        "children": [
+                          {
+                            "tagName": "div",
+                            "attributes": {
+                              "class": "plugin-Social v-expandHeight v-textCenter js-footerSocialEl neo-element",
+                              "id": "c-jxtj71gnJHgi"
+                            },
+                            "children": [
+                              {
+                                "tagName": "div",
+                                "attributes": {
+                                  "class": "plugin-Social-iconContainer"
+                                },
+                                "children": [
+                                  {
+                                    "tagName": "a",
+                                    "attributes": {
+                                      "rel": "nofollow",
+                                      "class": "plugin-Social-link",
+                                      "target": "_blank",
+                                      "title": "Facebook",
+                                      "aria-label": "Facebook Social Link",
+                                      "data-token-href": "{facebook-social-link}",
+                                      "href": "https://www.facebook.com/discapacidadtelevision/"
+                                    },
+                                    "children": [
+                                      {
+                                        "tagName": "img",
+                                        "attributes": {
+                                          "class": "plugin-Social-icon",
+                                          "alt": "Facebook",
+                                          "src": "https://cdn.create.web.com/global/neo-base/1.0/img/facebook.svg",
+                                          "style": "height: 30px; width: 30px;"
+                                        },
+                                        "children": [],
+                                        "textContent": ""
+                                      }
+                                    ],
+                                    "textContent": ""
+                                  },
+                                  {
+                                    "tagName": "a",
+                                    "attributes": {
+                                      "rel": "nofollow",
+                                      "class": "plugin-Social-link",
+                                      "target": "_blank",
+                                      "title": "Twitter",
+                                      "aria-label": "Twitter Social Link",
+                                      "data-token-href": "{twitter-social-link}",
+                                      "href": "https://twitter.com/DiscapacidadTv"
+                                    },
+                                    "children": [
+                                      {
+                                        "tagName": "img",
+                                        "attributes": {
+                                          "class": "plugin-Social-icon",
+                                          "alt": "Twitter",
+                                          "src": "https://cdn.create.web.com/global/neo-base/1.0/img/twitter.svg",
+                                          "style": "height: 30px; width: 30px;"
+                                        },
+                                        "children": [],
+                                        "textContent": ""
+                                      }
+                                    ],
+                                    "textContent": ""
+                                  },
+                                  {
+                                    "tagName": "a",
+                                    "attributes": {
+                                      "rel": "nofollow",
+                                      "class": "plugin-Social-link",
+                                      "target": "_blank",
+                                      "title": "Instagram",
+                                      "aria-label": "Instagram Social Link",
+                                      "data-token-href": "{instagram-social-link}",
+                                      "href": "https://www.instagram.com/discapacidadtv/"
+                                    },
+                                    "children": [
+                                      {
+                                        "tagName": "img",
+                                        "attributes": {
+                                          "class": "plugin-Social-icon",
+                                          "alt": "Instagram",
+                                          "src": "https://cdn.create.web.com/global/neo-base/1.0/img/instagram.svg",
+                                          "style": "height: 30px; width: 30px;"
+                                        },
+                                        "children": [],
+                                        "textContent": ""
+                                      }
+                                    ],
+                                    "textContent": ""
+                                  },
+                                  {
+                                    "tagName": "a",
+                                    "attributes": {
+                                      "rel": "nofollow",
+                                      "class": "plugin-Social-link",
+                                      "target": "_blank",
+                                      "title": "YouTube",
+                                      "aria-label": "YouTube",
+                                      "data-token-href": "{youtube-social-link}",
+                                      "href": "https://www.youtube.com/@discapacidadtv"
+                                    },
+                                    "children": [
+                                      {
+                                        "tagName": "img",
+                                        "attributes": {
+                                          "class": "plugin-Social-icon",
+                                          "alt": "YouTube",
+                                          "src": "https://cdn.create.web.com/global/neo-base/1.0/img/youtube.svg",
+                                          "style": "height: 30px; width: 30px;"
+                                        },
+                                        "children": [],
+                                        "textContent": ""
+                                      }
+                                    ],
+                                    "textContent": ""
+                                  }
+                                ],
+                                "textContent": ""
+                              }
+                            ],
+                            "textContent": ""
+                          }
+                        ],
+                        "textContent": ""
+                      }
+                    ],
+                    "textContent": ""
+                  }
+                ],
+                "textContent": ""
+              }
+            ],
+            "textContent": ""
+          },
+          {
+            "tagName": "script",
+            "attributes": {
+              "src": "https://cdn.create.web.com/libs/jquery/3.4.1/jquery.min.js"
+            },
+            "children": [],
+            "textContent": ""
+          },
+          {
+            "tagName": "script",
+            "attributes": {
+              "id": "neo-base-js",
+              "src": "https://cdn.create.web.com/global/neo-base/1.0/neo-base.min.js?c7639c"
+            },
+            "children": [],
+            "textContent": ""
+          },
+          {
+            "tagName": "script",
+            "attributes": {
+              "type": "text/javascript"
+            },
+            "children": [],
+            "textContent": "var sc_project=4211873; \nvar sc_invisible=1; \nvar sc_security=\"a11ca4f7\";"
+          },
+          {
+            "tagName": "script",
+            "attributes": {
+              "type": "text/javascript",
+              "src": "https://www.statcounter.com/counter/counter.js",
+              "async": ""
+            },
+            "children": [],
+            "textContent": ""
+          },
+          {
+            "tagName": "noscript",
+            "attributes": {},
+            "children": [],
+            "textContent": "<div class=\"statcounter\"><a title=\"Web Analytics\nMade Easy - StatCounter\" href=\"https://statcounter.com/\"\ntarget=\"_blank\"><img class=\"statcounter\"\nsrc=\"https://c.statcounter.com/4211873/0/a11ca4f7/1/\"\nalt=\"Web Analytics Made Easy -\nStatCounter\"></a></div>"
+          }
+        ],
+        "textContent": ""
+      }
+    ],
+    "textContent": ""
+  },
+  "styles": {
+    "links": [
+      "https://www.discapacidad.tv/files/extra/global/neo-base/1.0/neo-base.min.css?695037",
+      "https://www.discapacidad.tv/files/extra/themes/basic/styles/theme.css?765948",
+      "https://fonts.googleapis.com/css?family=Abril+Fatface%7CActor%7CAlegreya+Sans:400,700%7CAlegreya:400,700%7CAmatic+SC:400,700%7CArchitects+Daughter%7CArchivo+Narrow:400,700%7CArvo:400,700%7CBangers%7CBerkshire+Swash%7CBevan%7CCardo:400,700%7CCarter+One%7CCinzel:400,700%7CComing+Soon%7CDancing+Script:400,700%7CDosis%7CDroid+Sans:400,700%7CDroid+Serif:400,700%7CEB+Garamond:400,700%7CEczar:400,700%7CGravitas+One%7CHind:400,700%7CIstok+Web:400,700%7CItaliana%7CJosefin+Sans:400,700%7CJosefin+Slab:400,700%7CKaushan+Script%7CLato:400,700%7CLobster+Two:400,700%7CLora:400,700%7CLove+Ya+Like+A+Sister%7CLusitana:400,700%7CMerriweather+Sans:400,700%7CMerriweather:400,700%7CMontserrat:400,700%7CMuli:400,700%7COld+Standard+TT:400,700%7COpen+Sans:400,700%7COswald:400,700%7COverlock+SC%7CPT+Sans:400,700%7CPT+Serif:400,700%7CPacifico%7CPatua+One%7CPermanent+Marker%7CPlayfair+Display:400,700%7CRaleway:400,700%7CRoboto+Slab:400,700%7CRoboto:400,700%7CRoboto+Mono:400,700%7CRubik:400,700%7CShadows+Into+Light%7CStalemate%7CTangerine:400,700%7CUbuntu:400,700%7CUnifrakturCook:700%7CVollkorn:400,700%7CExo:400,600%7CSource+Sans+Pro:400,600%7CJulius+Sans+One:400%7CMonda:400,700%7CCopse",
+      "https://cdn.create.web.com/global/font-nexus/nx-font.min.css"
+    ],
+    "inline": [
+      ".theme.basic  { --header-height: 240px; --header-height-collapsed: 90px; --welcome-margin-top: 240px; --nav-height: 60px; --banner-solid-bg: #0a3374; --banner-solid-class: u-bgColorDark; --nav-solid-bg: #0a3374; --nav-solid-bg-2: var(--nav-solid-bg); --nav-solid-class: u-bgColorDark; --header-solid-bg: #08295e; --header-solid-class: u-bgColorDark }\n.theme.basic .plugin-Footer { background-color: rgba(10, 51, 116, 1) }\n.theme.basic #c-k3c5dor09rk3>a:hover { background-color: rgba(251, 46, 43, 0.5) !important; color: rgba(255, 255, 255, 1) !important; border-color: rgba(251, 46, 43, 1) !important }\n.theme.basic .plugin-Footer .plugin-Logo-text { font-size: 2.5rem; font-family: Kaushan Script; color: rgba(255, 225, 30, 1) !important; fill: rgba(255, 225, 30, 1) !important }\n.theme.basic #c-kdpfg8utmUNV>a:hover { background-color: rgba(4, 4, 4, 1) !important; color: rgba(255, 0, 197, 1) !important; border-color: rgba(0, 0, 0, 0) !important }\n.theme.basic #c-kdpfgyui7V3P>a:hover { background-color: rgba(4, 4, 4, 1) !important; color: rgba(187, 0, 255, 1) !important; border-color: rgba(0, 0, 0, 0) !important }\n.theme.basic #c-kdpfily7Ui3r>a:hover { background-color: rgba(4, 4, 4, 1) !important; color: rgba(0, 243, 255, 1) !important; border-color: rgba(0, 0, 0, 0) !important }\n.theme.basic #c-kdpfjbtsQBhr>a:hover { background-color: rgba(4, 4, 4, 1) !important; color: rgba(125, 255, 0, 1) !important; border-color: rgba(0, 0, 0, 0) !important }\n.theme.basic #c-kdpfk4nkNX4M>a:hover { background-color: rgba(4, 4, 4, 1) !important; color: rgba(255, 235, 60, 1) !important; border-color: rgba(0, 0, 0, 0) !important }\n.theme.basic #c-kdpflel7IzUG>a:hover { background-color: rgba(4, 4, 4, 1) !important; color: rgba(255, 130, 3, 1) !important; border-color: rgba(0, 0, 0, 0) !important }\n.theme.basic #c-kdpfm985Xv8r>a:hover { background-color: rgba(4, 4, 4, 1) !important; color: rgba(251, 46, 43, 1) !important; border-color: rgba(0, 0, 0, 0) !important }\n.theme.basic .plugin-Footer .plugin-Contacts-email { font-size: 1.0rem; color: rgba(255, 255, 255, 1) !important; fill: rgba(255, 255, 255, 1) !important }\n.theme.basic .plugin-Footer .plugin-Contacts-phone { font-size: 1.0rem; color: rgba(255, 255, 255, 1) !important; fill: rgba(255, 255, 255, 1) !important }\n.theme.basic .plugin-Footer .plugin-Contacts-phone-alt { font-size: 1.0rem; color: rgba(255, 255, 255, 1) !important; fill: rgba(255, 255, 255, 1) !important }\n.theme.basic .plugin-Footer .plugin-Contacts-address { font-size: 1.0rem; color: rgba(255, 255, 255, 1) !important; fill: rgba(255, 255, 255, 1) !important }\n.theme.basic .plugin-Header .plugin-Header-top { background-color: rgba(8, 41, 94, 1) }\n.theme.basic .plugin-Header .plugin-Navigation-list { background-color: rgb(10, 51, 116) }\n.theme.basic #c-l51h2485nYTU>a:hover { color: rgba(251, 46, 43, 1) !important; background-color: rgba(255, 255, 255, 1) !important; border-color: rgba(251, 46, 43, 1) !important }\n.theme.basic .plugin-Header .plugin-Navigation-list .plugin-Navigation-link::before { background-color: rgba(255, 225, 30, 1) }\n.theme.basic .plugin-Header .plugin-Logo-text { font-size: 2.5rem; font-family: Kaushan Script; color: rgba(255, 225, 30, 1) !important; fill: rgba(255, 225, 30, 1) !important }\n.theme.basic .plugin-Header .plugin-Navigation-list .plugin-Navigation-link { color: rgba(255, 225, 30, 1) }"
+    ]
+  },
+  "scripts": {
+    "links": [
+      "https://cdn.create.web.com/libs/jquery/3.4.1/jquery.min.js",
+      "https://cdn.create.web.com/global/neo-base/1.0/neo-base.min.js?c7639c",
+      "https://www.statcounter.com/counter/counter.js"
+    ],
+    "inline": [
+      "//Nexus Build Date:2020-09-16 10:54:34 AM EST\n//Nexus Version:f5219c13dab0ea437ab4cecc40555b74a268a20c\nvar neo = {\ncdnUrl: 'https://cdn.create.web.com',\ngatewayUrl: 'https://services.create.web.com/gateway',\nmode: 'PUBLISH',\nversion: '5.0.3',\npublishDate: '2025/03/10 12:48:41'\n}",
+      "<!--\ndocument.write('<'+'img style=\"position:fixed;\" src=\"//scorecard.wspisp.net/logger.php'+'?tag=dW5waWQ6d24uaHAuMzQ2NzYwNDg2O25ldHNvbGhvc3Rpbmc%3D&ref='+document.referrer+'&x='+Math.random()+'\" '+'width=\"1\" height=\"1\" alt=\"\" '+'>');\n//-->",
+      "var sc_project=4211873; \nvar sc_invisible=1; \nvar sc_security=\"a11ca4f7\";"
+    ]
+  }
+}
