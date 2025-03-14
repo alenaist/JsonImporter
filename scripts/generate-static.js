@@ -27,6 +27,11 @@ async function generateStaticFiles(jsonFilePath, outputDir = 'static-site') {
   
   await extractAndSaveImages(jsonData, assetsDir, baseURL);
   
+  // Extract and save CSS
+  const cssPath = await extractAndSaveCss(jsonData, outputDir);
+  // Get the relative path for CSS to use in HTML
+  const cssRelativePath = cssPath ? path.relative(outputDir, cssPath).replace(/\\/g, '/') : null;
+  
   jsonData.pages.forEach(page => {
     const url = new URL(page.url);
     let pagePath = url.pathname;
@@ -48,7 +53,7 @@ async function generateStaticFiles(jsonFilePath, outputDir = 'static-site') {
       }
     }
     
-    const htmlContent = generateHtml(page, jsonData.pages);
+    const htmlContent = generateHtml(page, jsonData.pages, cssRelativePath);
     
     fs.writeFileSync(outputPath, htmlContent);
     console.log(`Generated: ${outputPath}`);
@@ -56,6 +61,190 @@ async function generateStaticFiles(jsonFilePath, outputDir = 'static-site') {
   
   console.log(`Static site generation complete! Files are in the '${outputDir}' directory.`);
   return outputDir;
+}
+
+async function extractAndSaveCss(jsonData, outputDir) {
+  console.log(`Starting CSS extraction to: ${outputDir}`);
+  
+  // Create styles directory if it doesn't exist
+  const stylesDir = path.join(outputDir, 'styles');
+  if (!fs.existsSync(stylesDir)) {
+    fs.mkdirSync(stylesDir);
+  }
+
+  let cssContent = '';
+  let cssFound = false;
+  
+  // Track external CSS files to download
+  const externalCssUrls = [];
+  
+  // Extract CSS from pages
+  if (jsonData.pages) {
+    for (const page of jsonData.pages) {
+      if (page.html) {
+        // Extract inline CSS
+        const pageStyles = extractCssFromElement(page.html);
+        if (pageStyles) {
+          cssContent += pageStyles + '\n';
+          cssFound = true;
+        }
+        
+        // Find external CSS files
+        findExternalCssUrls(page.html, externalCssUrls);
+      }
+    }
+  }
+  
+  // Download external CSS files
+  if (externalCssUrls.length > 0) {
+    cssFound = true;
+    console.log(`[CSS] Found ${externalCssUrls.length} external CSS files to download`);
+    
+    const baseURL = jsonData.url || (jsonData.pages && jsonData.pages.length > 0 ? jsonData.pages[0].url : null);
+    
+    for (const cssUrl of externalCssUrls) {
+      try {
+        let fullUrl = cssUrl;
+        
+        // Handle relative URLs
+        if (!cssUrl.startsWith('http://') && !cssUrl.startsWith('https://') && !cssUrl.startsWith('//')) {
+          if (baseURL) {
+            try {
+              fullUrl = new URL(cssUrl, baseURL).toString();
+            } catch (e) {
+              console.error(`[CSS] Error resolving URL: ${e.message}`);
+            }
+          }
+        } else if (cssUrl.startsWith('//')) {
+          fullUrl = 'https:' + cssUrl;
+        }
+        
+        console.log(`[CSS] Downloading: ${fullUrl}`);
+        
+        // Extract the original filename from the URL
+        let originalFilename = '';
+        try {
+          const urlObj = new URL(fullUrl);
+          originalFilename = path.basename(urlObj.pathname);
+          
+          // Preserve query parameters in the filename (like version numbers)
+          if (urlObj.search) {
+            originalFilename += urlObj.search.replace(/\?/g, '-');
+          }
+        } catch (e) {
+          // If URL parsing fails, generate a filename based on the URL
+          originalFilename = `css-${Date.now()}.css`;
+        }
+        
+        const response = await axios({
+          method: 'GET',
+          url: fullUrl,
+          responseType: 'text',
+          timeout: 30000,
+          headers: {
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
+            'Accept': 'text/css,*/*;q=0.1'
+          }
+        });
+        
+        if (response.status === 200) {
+          // Fix relative URLs in the CSS
+          let processedCss = response.data;
+          if (baseURL) {
+            processedCss = fixCssRelativeUrls(processedCss, fullUrl);
+          }
+          
+          // Save the CSS file with its original filename
+          const individualCssPath = path.join(stylesDir, originalFilename);
+          fs.writeFileSync(individualCssPath, processedCss);
+          console.log(`[CSS] ✅ Saved CSS file as: ${individualCssPath}`);
+          
+          // Add to the combined CSS file
+          cssContent += `/* CSS from ${cssUrl} */\n${processedCss}\n\n`;
+          
+          // Update the HTML to reference the individual CSS file
+          // This will be handled in the HTML generation part
+          console.log(`[CSS] ✅ Successfully downloaded CSS from ${cssUrl}`);
+        }
+      } catch (error) {
+        console.error(`[CSS] ❌ Error downloading CSS from ${cssUrl}: ${error.message}`);
+      }
+    }
+  }
+
+  if (cssFound) {
+    const cssPath = path.join(stylesDir, 'styles.css');
+    fs.writeFileSync(cssPath, cssContent);
+    console.log(`[CSS] ✅ Generated CSS file: ${cssPath}`);
+    return cssPath;
+  } else {
+    console.log('[CSS] No CSS styles found in pages');
+    return null;
+  }
+}
+
+// Helper function to find external CSS URLs
+function findExternalCssUrls(element, urls = []) {
+  if (!element) return urls;
+  
+  const tag = element.tagName || element.tag;
+  if (tag && tag.toLowerCase() === 'link' && 
+      element.attributes && 
+      element.attributes.rel === 'stylesheet' && 
+      element.attributes.href) {
+    
+    const href = element.attributes.href;
+    if (href && !urls.includes(href)) {
+      urls.push(href);
+    }
+  }
+  
+  // Recursively process children
+  if (element.children && Array.isArray(element.children)) {
+    for (const child of element.children) {
+      findExternalCssUrls(child, urls);
+    }
+  }
+  
+  return urls;
+}
+
+function extractCssFromElement(element) {
+  if (!element) return null;
+
+  let cssContent = '';
+
+  // Check if element is a style tag
+  const tag = element.tagName || element.tag;
+  if (tag && tag.toLowerCase() === 'style') {
+    const content = element.text || element.textContent;
+    if (content) {
+      cssContent += content + '\n';
+    }
+  }
+  
+  // Check if element is a link tag with rel="stylesheet"
+  if (tag && tag.toLowerCase() === 'link' && 
+      element.attributes && 
+      element.attributes.rel === 'stylesheet' && 
+      element.attributes.href) {
+    // Add a comment to indicate the source of this CSS
+    cssContent += `/* CSS from ${element.attributes.href} */\n`;
+    // Note: The actual content would need to be downloaded separately
+    // This is handled by the extractAndSaveCss function
+  }
+
+  // Recursively process children
+  if (element.children && Array.isArray(element.children)) {
+    for (const child of element.children) {
+      const childCss = extractCssFromElement(child);
+      if (childCss) {
+        cssContent += childCss + '\n';
+      }
+    }
+  }
+
+  return cssContent.trim() || null;
 }
 
 async function extractAndSaveImages(jsonData, assetsDir, baseURL) {
@@ -313,20 +502,60 @@ async function extractImagesFromElement(element, assetsDir, baseURL, jsonData, s
   return stats;
 }
 
-function generateHtml(page, allPages) {
+function generateHtml(page, allPages, cssRelativePath) {
   const htmlContent = renderElement(page.html);
   
+  // Check if the HTML already contains a complete document structure
   if (htmlContent.trim().toLowerCase().startsWith('<!doctype') || 
       htmlContent.trim().toLowerCase().startsWith('<html')) {
-    return htmlContent;
-  }
     
+    // For complete HTML documents, we need to fix the CSS paths
+    let modifiedHtml = htmlContent;
+    
+    // Replace absolute CSS paths with relative ones
+    modifiedHtml = modifiedHtml.replace(
+      /<link\s+[^>]*href=["']\/files\/([^"'?]+)(\?[^"']*)?["'][^>]*>/g, 
+      (match, path, query) => {
+        const filename = path.split('/').pop() + (query ? query.replace(/\?/g, '-') : '');
+        return `<link rel="stylesheet" href="styles/${filename}">`;
+      }
+    );
+    
+    // Replace CDN CSS paths
+    modifiedHtml = modifiedHtml.replace(
+      /<link\s+[^>]*href=["'](https?:\/\/[^"']+)["'][^>]*>/g, 
+      (match, url) => {
+        try {
+          const urlObj = new URL(url);
+          const filename = path.basename(urlObj.pathname) + 
+                          (urlObj.search ? urlObj.search.replace(/\?/g, '-') : '');
+          return `<link rel="stylesheet" href="styles/${filename}">`;
+        } catch (e) {
+          return `<link rel="stylesheet" href="styles/styles.css">`;
+        }
+      }
+    );
+    
+    // Add our custom CSS link if it doesn't exist
+    if (!modifiedHtml.includes('custom.css')) {
+      modifiedHtml = modifiedHtml.replace(
+        /<\/head>/i,
+        `  <link rel="stylesheet" href="styles/custom.css">\n</head>`
+      );
+    }
+    
+    return modifiedHtml;
+  }
+  
+  // For partial HTML, create a complete document
   return `<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>${getPageTitle(page)}</title>
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/custom.css">
 </head>
 <body>
   <main>
@@ -526,6 +755,60 @@ function renderAttributes(attributes) {
       return ` ${key}="${stringValue}"`;
     }
   }).join('');
+}
+
+// Helper function to fix relative URLs in CSS
+function fixCssRelativeUrls(cssContent, cssUrl) {
+  // Process @import statements
+  cssContent = processImportStatements(cssContent, cssUrl);
+  
+  // Replace url() references with absolute URLs
+  return cssContent.replace(/url\(['"]?([^'")]+)['"]?\)/g, (match, url) => {
+    // Skip data URLs and absolute URLs
+    if (url.startsWith('data:') || 
+        url.startsWith('http://') || 
+        url.startsWith('https://') || 
+        url.startsWith('//')) {
+      return match;
+    }
+    
+    try {
+      // Resolve relative URL against the CSS file's URL
+      const absoluteUrl = new URL(url, cssUrl).toString();
+      return `url("${absoluteUrl}")`;
+    } catch (e) {
+      console.error(`[CSS] Error resolving URL in CSS: ${e.message}`);
+      return match;
+    }
+  });
+}
+
+// Process @import statements in CSS
+function processImportStatements(cssContent, baseUrl) {
+  // Find all @import statements
+  const importRegex = /@import\s+(?:url\(['"]?([^'")]+)['"]?\)|['"]([^'"]+)['"]);/g;
+  
+  // Replace each @import with the URL resolved against the base URL
+  return cssContent.replace(importRegex, (match, urlMatch, quotedMatch) => {
+    const importUrl = urlMatch || quotedMatch;
+    
+    // Skip if it's already an absolute URL
+    if (importUrl.startsWith('http://') || 
+        importUrl.startsWith('https://') || 
+        importUrl.startsWith('//') ||
+        importUrl.startsWith('data:')) {
+      return match;
+    }
+    
+    try {
+      // Resolve the import URL against the base URL
+      const absoluteUrl = new URL(importUrl, baseUrl).toString();
+      return `@import url("${absoluteUrl}");`;
+    } catch (e) {
+      console.error(`[CSS] Error resolving @import URL: ${e.message}`);
+      return match;
+    }
+  });
 }
 
 if (require.main === module) {

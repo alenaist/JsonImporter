@@ -68,33 +68,39 @@ const WebsiteBuilder = () => {
     }
   };
 
-  const renderElement = useCallback((element, index) => {
+  const renderElement = useCallback((element, index, parentTextContent = null) => {
     if (!element) return null;
     
     const tagType = element.tagName || element.tag;
     if (!tagType) return null;
 
     const content = element.text || element.textContent;
+    
+    // Skip rendering this text content if it's identical to the parent's
+    const shouldSkipTextContent = parentTextContent === content && content;
 
     const commonProps = {
-      key: index,
       id: element.attributes?.id,
       className: element.attributes?.class,
       style: convertStyleStringToObject(element.attributes?.style)
     };
 
+    // Pass the current element's textContent to children
     const children = element.children?.map((child, childIndex) =>
-      renderElement(child, `${index}-${childIndex}`)
+      renderElement(child, `${index}-${childIndex}`, content)
     );
 
     const Tag = tagType.toLowerCase();
 
-    if (["div", "ul", "li", "strong", "span", "p", "a", "input", "script", "style", "img", "br", "meta", "link", "title", "form", "head", "body", "html", "noscript"].includes(Tag)) {
+    if (["html", "head", "title", "meta", "link", "script", "noscript", "body", 
+         "div", "span", "p", "h1", "ul", "li", "a", "img", "br", 
+         "b", "strong", "form", "input", "style",
+         "nav", "header", "iframe", "section", "footer", "button"].includes(Tag)) {
       switch (Tag) {
         case "script":
         case "style":
           return (
-            <Tag {...commonProps} 
+            <Tag key={index} {...commonProps} 
               dangerouslySetInnerHTML={{ __html: content || '' }}
             />
           );
@@ -104,18 +110,30 @@ const WebsiteBuilder = () => {
           const fullSrc = imageSrc?.startsWith('assets/') 
             ? `${baseUrl}${imageSrc}`
             : imageSrc;
-          return <img {...commonProps} src={fullSrc} alt={element.attributes?.alt || ''} />;
+          return <img key={index} {...commonProps} src={fullSrc} alt={element.attributes?.alt || ''} />;
         }
-
-        case "a":
-
+        case "head":
           return (
-            <a onClick={(e) => { e.preventDefault(); }}>
+            <div key={index} {...commonProps}>
+              {children}
+              {content}
+            </div>
+          );
+        case "b": 
+          return (
+            <b key={index}>
+              {children}
+              {content}
+            </b>
+          );
+          
+        case "a":
+          return (
+            <a key={index} onClick={(e) => { e.preventDefault(); }}>
             <span
               {...commonProps}
               onClick={() => {
                 if (element.attributes?.href) {
-
                   console.log(element.attributes.href);
                   
                   let hrefPath = element.attributes.href.replace(/\.html$/, '');
@@ -144,30 +162,29 @@ const WebsiteBuilder = () => {
               style={{ cursor: 'pointer', ...commonProps.style }}
             >
               {children}
-              {content}
+              {!shouldSkipTextContent && content}
             </span>
           </a>
           );
           case "body": 
             return (
-              <div>
+              <div key={index}>
                 {children}
-                {content}
+                {!shouldSkipTextContent && content}
               </div>
             );
         case "meta":
         case "link":
         case "br":
         case "input":
-
           const { children: _, dangerouslySetInnerHTML: __, ...attrs } = element.attributes || {};
-          return <Tag {...commonProps} {...attrs} />;
+          return <Tag key={index} {...commonProps} {...attrs} />;
 
         default:
           return (
-            <Tag {...commonProps}>
+            <Tag key={index} {...commonProps}>
               {children}
-              {content}
+              {!shouldSkipTextContent && content}
             </Tag>
           );
       }
@@ -236,7 +253,7 @@ const WebsiteBuilder = () => {
 
       <div className="website-content">
       {pages.length > 0 && pages[currentPageIndex].html.children.map((element, index) => 
-        renderElement(element, index)
+        renderElement(element, index, null)
       )}
       </div>
     </div>
