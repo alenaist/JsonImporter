@@ -72,51 +72,54 @@ async function extractAndSaveCss(jsonData, outputDir) {
     fs.mkdirSync(stylesDir);
   }
 
-  let cssContent = '';
-  let cssFound = false;
+  // Track CSS sources for combined file
+  const cssSourcesMap = new Map(); // Map to store CSS content by source URL
+  let inlineStyles = ''; // String to store inline styles
   
-  // Track external CSS files to download
-  const externalCssUrls = [];
-  
-  // Extract CSS from pages
+  // Single pass to extract all CSS information
   if (jsonData.pages) {
     for (const page of jsonData.pages) {
       if (page.html) {
-        // Extract inline CSS
-        const pageStyles = extractCssFromElement(page.html);
-        if (pageStyles) {
-          cssContent += pageStyles + '\n';
-          cssFound = true;
-        }
-        
-        // Find external CSS files
-        findExternalCssUrls(page.html, externalCssUrls);
+        // Process the HTML tree once to extract all CSS information
+        extractCssFromHtml(page.html, cssSourcesMap, inlineStyles);
       }
     }
   }
   
-  // Download external CSS files
-  if (externalCssUrls.length > 0) {
-    cssFound = true;
-    console.log(`[CSS] Found ${externalCssUrls.length} external CSS files to download`);
-    
-    const baseURL = jsonData.url || (jsonData.pages && jsonData.pages.length > 0 ? jsonData.pages[0].url : null);
-    
-    for (const cssUrl of externalCssUrls) {
+  // Add inline styles to the sources map
+  if (inlineStyles.trim()) {
+    cssSourcesMap.set('inline-styles', inlineStyles);
+  }
+  
+  // If no CSS found, return early
+  if (cssSourcesMap.size === 0) {
+    console.log('[CSS] No CSS styles found in pages');
+    return null;
+  }
+  
+  console.log(`[CSS] Found ${cssSourcesMap.size} CSS sources`);
+  
+  // Download external CSS files and save them individually
+  const baseURL = jsonData.url || (jsonData.pages && jsonData.pages.length > 0 ? jsonData.pages[0].url : null);
+  let combinedCssContent = '';
+  
+  for (const [source, content] of cssSourcesMap.entries()) {
+    // If this is an external CSS file that needs to be downloaded
+    if (source !== 'inline-styles' && source.startsWith('http') || source.startsWith('/') || source.startsWith('//')) {
       try {
-        let fullUrl = cssUrl;
+        let fullUrl = source;
         
         // Handle relative URLs
-        if (!cssUrl.startsWith('http://') && !cssUrl.startsWith('https://') && !cssUrl.startsWith('//')) {
+        if (source.startsWith('/') && !source.startsWith('//')) {
           if (baseURL) {
             try {
-              fullUrl = new URL(cssUrl, baseURL).toString();
+              fullUrl = new URL(source, baseURL).toString();
             } catch (e) {
               console.error(`[CSS] Error resolving URL: ${e.message}`);
             }
           }
-        } else if (cssUrl.startsWith('//')) {
-          fullUrl = 'https:' + cssUrl;
+        } else if (source.startsWith('//')) {
+          fullUrl = 'https:' + source;
         }
         
         console.log(`[CSS] Downloading: ${fullUrl}`);
@@ -148,103 +151,64 @@ async function extractAndSaveCss(jsonData, outputDir) {
         });
         
         if (response.status === 200) {
-          // Fix relative URLs in the CSS
-          let processedCss = response.data;
-          if (baseURL) {
-            processedCss = fixCssRelativeUrls(processedCss, fullUrl);
-          }
-          
           // Save the CSS file with its original filename
           const individualCssPath = path.join(stylesDir, originalFilename);
-          fs.writeFileSync(individualCssPath, processedCss);
+          fs.writeFileSync(individualCssPath, response.data);
           console.log(`[CSS] ✅ Saved CSS file as: ${individualCssPath}`);
           
           // Add to the combined CSS file
-          cssContent += `/* CSS from ${cssUrl} */\n${processedCss}\n\n`;
-          
-          // Update the HTML to reference the individual CSS file
-          // This will be handled in the HTML generation part
-          console.log(`[CSS] ✅ Successfully downloaded CSS from ${cssUrl}`);
+          combinedCssContent += `/* CSS from ${source} */\n${response.data}\n\n`;
+          console.log(`[CSS] ✅ Successfully downloaded CSS from ${source}`);
         }
       } catch (error) {
-        console.error(`[CSS] ❌ Error downloading CSS from ${cssUrl}: ${error.message}`);
+        console.error(`[CSS] ❌ Error downloading CSS from ${source}: ${error.message}`);
       }
+    } else {
+      // For inline styles, just add them to the combined content
+      combinedCssContent += `/* Inline styles */\n${content}\n\n`;
     }
   }
-
-  if (cssFound) {
-    const cssPath = path.join(stylesDir, 'styles.css');
-    fs.writeFileSync(cssPath, cssContent);
-    console.log(`[CSS] ✅ Generated CSS file: ${cssPath}`);
-    return cssPath;
-  } else {
-    console.log('[CSS] No CSS styles found in pages');
-    return null;
-  }
+  
+  // Save the combined CSS file
+  const cssPath = path.join(stylesDir, 'styles.css');
+  fs.writeFileSync(cssPath, combinedCssContent);
+  console.log(`[CSS] ✅ Generated combined CSS file: ${cssPath}`);
+  return cssPath;
 }
 
-// Helper function to find external CSS URLs
-function findExternalCssUrls(element, urls = []) {
-  if (!element) return urls;
-  
+// New function to extract all CSS in a single pass
+function extractCssFromHtml(element, cssSourcesMap, inlineStyles) {
+  if (!element) return;
+
   const tag = element.tagName || element.tag;
+  
+  // Extract inline styles from <style> tags
+  if (tag && tag.toLowerCase() === 'style') {
+    const content = element.text || element.textContent;
+    if (content) {
+      inlineStyles += content + '\n';
+    }
+  }
+  
+  // Extract external CSS file references from <link> tags
   if (tag && tag.toLowerCase() === 'link' && 
       element.attributes && 
       element.attributes.rel === 'stylesheet' && 
       element.attributes.href) {
     
     const href = element.attributes.href;
-    if (href && !urls.includes(href)) {
-      urls.push(href);
+    if (href && !cssSourcesMap.has(href)) {
+      // Just mark this URL for downloading later
+      cssSourcesMap.set(href, '');
     }
-  }
-  
-  // Recursively process children
-  if (element.children && Array.isArray(element.children)) {
-    for (const child of element.children) {
-      findExternalCssUrls(child, urls);
-    }
-  }
-  
-  return urls;
-}
-
-function extractCssFromElement(element) {
-  if (!element) return null;
-
-  let cssContent = '';
-
-  // Check if element is a style tag
-  const tag = element.tagName || element.tag;
-  if (tag && tag.toLowerCase() === 'style') {
-    const content = element.text || element.textContent;
-    if (content) {
-      cssContent += content + '\n';
-    }
-  }
-  
-  // Check if element is a link tag with rel="stylesheet"
-  if (tag && tag.toLowerCase() === 'link' && 
-      element.attributes && 
-      element.attributes.rel === 'stylesheet' && 
-      element.attributes.href) {
-    // Add a comment to indicate the source of this CSS
-    cssContent += `/* CSS from ${element.attributes.href} */\n`;
-    // Note: The actual content would need to be downloaded separately
-    // This is handled by the extractAndSaveCss function
   }
 
   // Recursively process children
   if (element.children && Array.isArray(element.children)) {
     for (const child of element.children) {
-      const childCss = extractCssFromElement(child);
-      if (childCss) {
-        cssContent += childCss + '\n';
-      }
+      extractCssFromHtml(child, cssSourcesMap, inlineStyles);
     }
   }
-
-  return cssContent.trim() || null;
 }
 
 async function extractAndSaveImages(jsonData, assetsDir, baseURL) {
@@ -512,7 +476,7 @@ function generateHtml(page, allPages, cssRelativePath) {
     // For complete HTML documents, we need to fix the CSS paths
     let modifiedHtml = htmlContent;
     
-    // Replace absolute CSS paths with relative ones
+    // Keep Google Fonts links as they are (don't modify them)
     modifiedHtml = modifiedHtml.replace(
       /<link\s+[^>]*href=["']\/files\/([^"'?]+)(\?[^"']*)?["'][^>]*>/g, 
       (match, path, query) => {
@@ -521,9 +485,9 @@ function generateHtml(page, allPages, cssRelativePath) {
       }
     );
     
-    // Replace CDN CSS paths
+    // Only replace non-Google Fonts CDN links
     modifiedHtml = modifiedHtml.replace(
-      /<link\s+[^>]*href=["'](https?:\/\/[^"']+)["'][^>]*>/g, 
+      /<link\s+[^>]*href=["'](https?:\/\/(?!fonts\.googleapis\.com)[^"']+)["'][^>]*>/g, 
       (match, url) => {
         try {
           const urlObj = new URL(url);
